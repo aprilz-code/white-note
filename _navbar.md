@@ -1,4 +1,6 @@
-- 📙[笔记仓库](https://gitee.com/moxi159753/LearningNotes)
-- 📖[蘑菇博客](http://moguit.cn/#/)
-- 📪[联系白](https://t.1yb.co/sBOZ)
+- 📙[笔记仓库](https://github.com/liushaohui1/white-note)
+
+[comment]: <> (- 📖[蘑菇博客]&#40;http://moguit.cn/#/&#41;)
+
+[comment]: <> (- 📪[联系白]&#40;https://t.1yb.co/sBOZ&#41;)
 
