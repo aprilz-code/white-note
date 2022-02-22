@@ -228,7 +228,7 @@
 - [Docker容器相关命令](./Docker/Docker容器相关命令/README.md)
 - [Docker图形化工具Portainer介绍与安装](./Docker/Docker图形化工具Portainer介绍与安装/README.md)
 - [对象存储MinIO入门简介](./Docker/对象存储MinIO入门简介/README.md)
-- [如何将镜像推送到阿里云容器镜像服务](./Docker/如何将镜像推送到阿里云容器镜像服务/README.md)
+- [如何将镜像推送到阿里云容器镜像服务](./Docker/如何将镜像推送到阿里云容器镜像服务/README)
 - [使用DockerCompose制作蘑菇博客YAML镜像文件](./Docker/使用DockerCompose制作蘑菇博客YAML镜像文件/README.md)
 - [使用GithubAction构建蘑菇博客镜像提交DockerHub](./Docker/使用GithubAction构建蘑菇博客镜像提交DockerHub/README.md)
 
