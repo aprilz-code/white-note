@@ -83,8 +83,6 @@
 
 [comment]: <> (- [SpringBoot项目启动时增加自定义Banner]&#40;http://www.moguit.cn/#/info?blogOid=245&#41;)
 
-[comment]: <> (- [蘑菇博客Golang版安装指南]&#40;http://www.moguit.cn/#/info?blogOid=593&#41;)
-
 [comment]: <> (- [开源项目蘑菇博客如何集成Minio对象存储服务器]&#40;http://www.moguit.cn/#/info?blogOid=278&#41;)
 
 [comment]: <> (- [读者问:有没有高效的记视频笔记方法？]&#40;http://www.moguit.cn/#/info?blogOid=594&#41;)
@@ -505,67 +503,6 @@
 - [京东零售提前批Java二面](./校招面试/面经汇总/4_京东零售提前批Java二面/README.md)
 - [滴滴出行提前批Java123面](./校招面试/面经汇总/5_滴滴出行提前批Java123面/README.md)
 
-## Golang基础
-
-> 来源Bilibili IT营 大地老师学习视频：[点我传送](https://www.bilibili.com/video/BV14T4y1g7h9)
-
-- [Go语言的安装](./Golang/Golang基础/0_Go语言的安装/README.md)
-- [Go语言发展简史](./Golang/Golang基础/1_Go语言发展简史/README.md)
-- [Go的变量](./Golang/Golang基础/2_Go的变量/README.md)
-- [Go的数据类型](./Golang/Golang基础/3_Go的数据类型/README.md)
-- [Go的运算符](./Golang/Golang基础/4_Go的运算符/README.md)
-- [Go的流程控制](./Golang/Golang基础/5_Go的流程控制/README.md)
-- [Go的数组](./Golang/Golang基础/6_Go的数组/README.md)
-- [Go的切片](./Golang/Golang基础/7_Go的切片/README.md)
-- [Go的map](./Golang/Golang基础/8_Go的map/README.md)
-- [Go的函数](./Golang/Golang基础/9_Go的函数/README.md)
-- [Go中的日期函数](./Golang/Golang基础/10_Go中的日期函数/README.md)
-- [Go中的指针](./Golang/Golang基础/11_Go中的指针/README.md)
-- [Go中的结构体](./Golang/Golang基础/12_Go中的结构体/README.md)
-- [Go中的包以及GoMod](./Golang/Golang基础/13_Go中的包以及GoMod/README.md)
-- [Go中的接口](./Golang/Golang基础/14_Go中的接口/README.md)
-- [goroutine实现并行和并发](./Golang/Golang基础/15_goroutine实现并行和并发/README.md)
-- [Golang中的反射](./Golang/Golang基础/16_Golang中的反射/README.md)
-- [源码](./Golang/Golang基础/Code)
-
-## Golang进阶
-
-> 来源bilibili 七米老师的学习视频：[点我传送](https://www.bilibili.com/video/BV17Q4y1P7n9)
->
-> 李文周老师的博客：[点我传送](https://www.liwenzhou.com/)
-
-- [Golang并发编程](./Golang/Golang进阶/4_Golang并发编程/README.md)
-- [互联网协议介绍](./Golang/Golang进阶/5_互联网协议介绍/README.md)
-- [HTTP请求](./Golang/Golang进阶/6_HTTP请求/README.md)
-- [日志库](./Golang/Golang进阶/7_日志库/README.md)
-- [反射](./Golang/Golang进阶/8_反射/README.md)
-- [单元测试](./Golang/Golang进阶/9_单元测试/README.md)
-- [Flag包的用法](./Golang/Golang进阶/10_Flag包的用法/README.md)
-- [Go操作数据库](./Golang/Golang进阶/11_Go操作数据库/README.md)
-- [sqlx库的使用](./Golang/Golang进阶/12_sqlx库的使用/README.md)
-- [Go操作Redis](./Golang/Golang进阶/13_Go操作Redis/README.md)
-- [Go操作消息队列](./Golang/Golang进阶/14_Go操作消息队列/README.md)
-- [Go的依赖管理GoModule](./Golang/Golang进阶/15_Go的依赖管理GoModule/README.md)
-- [GoContext的使用](./Golang/Golang进阶/16_GoContext的使用/README.md)
-- [日志收集项目架构设计及Kafka介绍](./Golang/Golang进阶/17_日志收集项目架构设计及Kafka介绍/README.md)
-- [etcd介绍](./Golang/Golang进阶/18_etcd介绍/README.md)
-- [ES介绍和使用](./Golang/Golang进阶/19_ES介绍和使用/README.md)
-- [Kafka消费示例](./Golang/Golang进阶/20_Kafka消费示例/README.md)
-- [Kibana介绍和使用](./Golang/Golang进阶/21_Kibana介绍和使用/README.md)
-- [Prometheus和Grafana介绍](./Golang/Golang进阶/22_Prometheus和Grafana介绍/README.md)
-- [源码](./Golang/Golang进阶/GoAdvanceCode)
-
-## Golang框架-Gin
-
-> 来源bilibili 七米老师的学习视频：[点我传送](https://www.bilibili.com/video/BV17Q4y1P7n9)
->
-> 李文周老师的博客：[点我传送](https://www.liwenzhou.com/)
-
-- [Gin内容介绍](./Golang/Gin框架/1_Gin内容介绍/README.md)
-- [Http及Template介绍](./Golang/Gin框架/2_http及Template介绍/README.md)
-- [GORM介绍和使用](./Golang/Gin框架/3_GORM介绍和使用/README.md)
-- [GORM进行CURD](./Golang/Gin框架/4_GORM进行CURD/README.md)
-- [源码](./Golang/Gin框架/Code)
 
 [comment]: <> (## 关注&交流)
 
