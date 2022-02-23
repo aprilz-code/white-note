@@ -295,6 +295,7 @@
 - **数据库**
   - [MyBatis常见面试题](./数据库/MyBatis常见面试题/README.md)
   - [MyBatis的缓存机制](./数据库/MyBatis的缓存机制/README.md)
+  - [MySQL优化](./数据库/MySQL优化/README.md)
   - [MySQL索引](./数据库/MySQL索引/README.md)
 - **操作系统**
   - [进程和线程通信](./操作系统/1_进程和线程通信/README.md)
