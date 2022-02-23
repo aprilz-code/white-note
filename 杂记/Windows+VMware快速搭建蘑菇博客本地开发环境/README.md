@@ -1,5 +1,5 @@
-# Windows+VMware一键搭建蘑菇博客本地开发环境
-
+### <center>Windows+VMware一键搭建蘑菇博客本地开发环境
+***
 ## 前言
 
 大家好，我是**白**

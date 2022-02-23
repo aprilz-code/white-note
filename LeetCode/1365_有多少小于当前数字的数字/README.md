@@ -1,5 +1,5 @@
-# 有多少小于当前数字的数字
-
+### <center>有多少小于当前数字的数字
+***
 ## 来源
 
 https://leetcode-cn.com/problems/how-many-numbers-are-smaller-than-the-current-number/

@@ -1,5 +1,5 @@
-# 机器学习算法之Boosting算法
-
+### <center>机器学习算法之Boosting算法
+***
 原文链接：
 
 - https://www.biaodianfu.com/lightgbm.html

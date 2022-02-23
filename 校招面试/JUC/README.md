@@ -35,7 +35,6 @@
 - [Java中的强引用_软引用_弱引用_虚引用分别是什么](http://www.moguit.cn/#/info?blogUid=a6977c422f1da0a71a292e9fdeabf3c2)
 - [Java内存溢出OOM](http://www.moguit.cn/#/info?blogUid=a608650963729d09a3c285a623a32be3)
 - [垃圾回收器](http://www.moguit.cn/#/info?blogUid=0b5a41c33fcb1fac230f2684a3208eb0)
-- [Linux相关命令](http://www.moguit.cn/#/info?blogUid=daf07eceb56cb41931b2d73427d93cb3)
 - [Github学习](http://www.moguit.cn/#/info?blogUid=a31fc7326ace247a6540c482c58c7340)
 - [乐观锁和悲观锁](./15_乐观锁和悲观锁)
 - [源码](Code)

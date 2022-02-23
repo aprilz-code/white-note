@@ -1,5 +1,5 @@
-# CentOS下安装Sentinel
-
+### <center>CentOS下安装Sentinel
+***
 ## 前言
 
 Sentinel被称为分布式系统的流量防卫兵，这里主要讲的是CentOS下如何安装Sentinel，关于Windows下的安装以及Sentinel的介绍，可以参考下面的博客

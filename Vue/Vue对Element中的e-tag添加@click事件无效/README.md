@@ -1,5 +1,5 @@
-# Vue对Element中的el-tag添加@click事件无效
-
+### <center>Vue对Element中的el-tag添加@click事件无效
+***
 ## 前言
 
 今天在做评论模块的时候，想着对el-tag元素添加点击事件，发现无法触发，代码如下所示

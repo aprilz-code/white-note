@@ -1,5 +1,5 @@
-# 解压编码列表
-
+### <center>解压编码列表
+***
 ## 来源
 
 https://leetcode-cn.com/problems/decompress-run-length-encoded-list/

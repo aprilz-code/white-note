@@ -1,5 +1,5 @@
-# 通过翻转子数组使两个数组相等
-
+### <center>通过翻转子数组使两个数组相等
+***
 ## 来源
 
 https://leetcode-cn.com/problems/make-two-arrays-equal-by-reversing-sub-arrays/

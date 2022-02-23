@@ -1,5 +1,5 @@
-# DockerCompose部署的博客增加域名访问
-
+### <center>DockerCompose部署的博客增加域名访问
+***
 ## 前言
 
 最近群里的小伙伴在配置域名访问的时候一直存在问题，因此本篇博客主要讲解使用 [DockerCompose一键部署蘑菇博客(Nacos版)](http://www.moguit.cn/#/info?blogOid=565) 后，如何配置域名访问我们的服务器。

@@ -1,5 +1,5 @@
-# 模型融合
-
+### <center>模型融合
+***
 来源：https://www.bilibili.com/video/BV13K4y1k7Vy
 
 模型融合的主要目的是降低偏差和方差

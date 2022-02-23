@@ -1,5 +1,5 @@
-# 对称的二叉树
-
+### <center>对称的二叉树
+***
 ## 来源
 
 https://www.nowcoder.com/practice/ff05d44dfdb04e1d83bdbdab320efbcb

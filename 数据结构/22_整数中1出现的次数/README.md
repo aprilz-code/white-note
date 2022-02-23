@@ -1,5 +1,5 @@
-# 整数中1出现的个数
-
+### <center>整数中1出现的个数
+***
 [题目传送门](https://www.nowcoder.com/practice/bd7f978302044eee894445e244c7eee6?tpId=13&tqId=11184&tPage=1&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
 
 ## 题目描述

@@ -1,5 +1,5 @@
-# Vue集成MarkDown编辑器tui-editor
-
+### <center>Vue集成MarkDown编辑器tui-editor
+***
 ## 前言
 
 前阵子有个老哥希望蘑菇博客能够支持Markdown语法，因为蘑菇博客使用的是富文本编辑器CKEditor，虽然说里面能支持Markdown，但是不能很好的转换，因此想集成一个Markdown编辑器进去，后面发现了tui-editor，tui.editor（TOAST UI Editor）是一款所见即所得的Markdown编辑器。TOAST UI Editor提供Markdown模式和WYSIWYG模式。它的功能非常强大，你可以编辑表格，UML图和图表等。

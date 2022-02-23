@@ -1,5 +1,5 @@
-# 二叉搜索树的后序遍历序列
-
+### <center>二叉搜索树的后序遍历序列
+***
 https://www.nowcoder.com/practice/a861533d45854474ac791d90e447bafd
 
 ## 题目

@@ -1,5 +1,5 @@
-# 消息总线SpringCloudBUS
-
+### <center>消息总线SpringCloudBUS
+***
 消息总线一般是配合SpringCloudConfig一起使用的
 
 ## 概述

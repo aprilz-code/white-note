@@ -1,5 +1,5 @@
-# 蘑菇博客Sentinel安装指南
-
+### <center>蘑菇博客Sentinel安装指南
+***
 ## 前言
 
 Sentinel被称为分布式系统的流量防卫兵，相当于Hystrix

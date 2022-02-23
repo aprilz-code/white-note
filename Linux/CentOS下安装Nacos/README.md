@@ -1,5 +1,5 @@
-# CentOS下安装Nacos
-
+### <center>CentOS下安装Nacos
+***
 ## 前言
 
 这阵子因为蘑菇博客的镜像越来越大，所以就打算重新构建一下蘑菇博客的Docker镜像，这里就打算在Centos下安装配置Nacos，之前写过一篇博客关于Window下配置蘑菇博客的Nacos，感兴趣的小伙伴可以参考一下

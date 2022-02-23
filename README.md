@@ -216,7 +216,7 @@
 - [Java中的强引用_软引用_弱引用_虚引用分别是什么](./校招面试/JUC/12_JVM/JVM面试题汇总/3_Java中的强引用_软引用_弱引用_虚引用分别是什么/README.md)
 - [Java内存溢出OOM](./校招面试/JUC/12_JVM/JVM面试题汇总/4_Java内存溢出OOM/README.md)
 - [垃圾回收器](./校招面试/JUC/12_JVM/JVM面试题汇总/5_垃圾回收器/README.md)
-- [Linux相关命令](./校招面试/JUC/13_Linux相关命令/README.md)
+
 - [Github学习](./校招面试/JUC/14_Github学习/README.md)
 - [乐观锁和悲观锁](./校招面试/JUC/15_乐观锁和悲观锁/README.md)
 - [源码](./校招面试/JUC/Code)
@@ -445,7 +445,6 @@
 - [使用JustAuth集成QQ登录](./杂记/使用JustAuth集成QQ登录/README.md)
 - [使用开源项目申请JetBrains全家桶](./杂记/使用开源项目申请JetBrains全家桶/README.md)
 - [什么是CICD](./杂记/什么是CICD/README.md)
-- [罗技K380快捷键](./杂记/罗技K380快捷键/README.md)
 - [将PDF转换为Kindle能识别的MOBI格式](./杂记/将PDF转换为Kindle能识别的MOBI格式/README.md)
 - [OCR文字识别软件](./杂记/OCR文字识别软件/README.md)
 - [如何向开源社区正确提问](./杂记/如何向开源社区正确提问/README.md)
@@ -461,6 +460,7 @@
 - [VMWare中CentOS如何配置固定IP](./Linux/VMWare中CentOS如何配置固定IP/README.md)
 - [CentOS中将文本中的ip替换成服务器外网ip](./Linux/CentOS中将文本中的ip替换成服务器外网ip/README.md)
 - [Asciinema-一种基于文本的终端录制方法](./Linux/Asciinema-一种基于文本的终端录制方法/README.md)
+- [Linux相关命令](./校招面试/JUC/13_Linux相关命令/README.md)
 
 ## Redis
 

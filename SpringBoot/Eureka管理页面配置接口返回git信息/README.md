@@ -1,5 +1,5 @@
-# Eureka管理页面配置/actuator/info接口返回git信息
-
+### <center>Eureka管理页面配置/actuator/info接口返回git信息
+***
 ## 前言
 
 这阵子在弄监控页面，我点击eureka里面的地址

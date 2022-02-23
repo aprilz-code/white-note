@@ -1,5 +1,5 @@
-# CLion搭建C语言环境
-
+### <center>CLion搭建C语言环境
+***
 ## 安装MinGW
 
 网址：`https://osdn.net/projects/mingw/downloads/68260/mingw-get-setup.exe/`

@@ -1,5 +1,5 @@
-# SpringSecurity在单机环境下使用
-
+### <center>SpringSecurity在单机环境下使用
+***
 ## 参考
 
 来源于黑马程序员： [手把手教你精通新版SpringSecurity](https://www.bilibili.com/video/BV1EE411u7YV?p=33)

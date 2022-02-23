@@ -1,5 +1,5 @@
-# Java8新特性
-
+### <center>Java8新特性
+***
 ## 主要特性
 
 - Lambda表达式

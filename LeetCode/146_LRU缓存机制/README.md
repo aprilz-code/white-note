@@ -1,5 +1,5 @@
-# LRU缓存机制
-
+### <center>LRU缓存机制
+***
 ## 来源
 
 https://leetcode-cn.com/problems/lru-cache/

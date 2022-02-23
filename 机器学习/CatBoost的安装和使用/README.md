@@ -1,5 +1,5 @@
-# CatBoost的安装和使用
-
+### <center>CatBoost的安装和使用
+***
 ## 前言
 
 CatBoost算法也是GBDT家族中的一种，是由俄罗斯大兄弟于2017年发表出来的[论文](https://arxiv.org/pdf/1706.09516.pdf)，它具备如下的优点：

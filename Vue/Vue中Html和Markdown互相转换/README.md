@@ -1,5 +1,5 @@
-# Vue中Html和Markdown互相转换
-
+### <center>Vue中Html和Markdown互相转换
+***
 ## 前言
 
 最近想实现的一个功能，就是将系统中的博客进行导出成Markdown格式，后面经过了调研发现有两种方法能够满足需求，一个是Java后台中将HTML转换成Markdown， 然后导出。第二种方式是在客户端将Html转换成Markdown

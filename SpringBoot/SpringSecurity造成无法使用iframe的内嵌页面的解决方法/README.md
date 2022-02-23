@@ -1,8 +1,8 @@
-# Spring Security造成Eureka 无法使用iframe的内嵌页面的解决方法
-
+### <center>Spring Security造成Eureka 无法使用iframe的内嵌页面的解决方法
+***
 ## 前言
 
-最近想写个监控页面，让eureka的管理页面能够嵌入到我们的后台管理中，我们使用<iframe>标签，代码如下所示：
+最近想写个监控页面，让eureka的管理页面能够嵌入到我们的后台管理中，我们使用`<iframe>`标签，代码如下所示：
 
 ```html
 <template>

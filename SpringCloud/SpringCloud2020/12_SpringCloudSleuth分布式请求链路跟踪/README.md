@@ -1,5 +1,5 @@
-# SpringCloudSleuth分布式请求链路跟踪
-
+### <center>SpringCloudSleuth分布式请求链路跟踪
+***
 ## 概述
 
 详细可以参考：[使用Zipkin搭建蘑菇博客链路追踪](http://moguit.cn/#/info?blogUid=35bd93cabc08611c7f74ce4564753ef9)

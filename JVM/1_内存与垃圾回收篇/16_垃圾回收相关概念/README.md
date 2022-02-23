@@ -1,5 +1,5 @@
-# 垃圾回收相关概念
-
+### <center>垃圾回收相关概念
+***
 ## System.gc()的理解
 
 在默认情况下，通过system.gc（）者Runtime.getRuntime().gc() 的调用，会显式触发FullGC，同时对老年代和新生代进行回收，尝试释放被丢弃对象占用的内存。

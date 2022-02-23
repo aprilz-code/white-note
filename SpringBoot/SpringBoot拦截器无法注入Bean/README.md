@@ -1,5 +1,5 @@
-# SpringBoot拦截器无法注入Bean
-
+### <center>SpringBoot拦截器无法注入Bean
+***
 ## 前言
 
 今天在给mogu_picture模块添加拦截器，用于拦截用户传递过来的token，并获取到用户信息，这里需要注入RedisUtil工具类

@@ -1,5 +1,5 @@
-# 蘑菇博客QQ小程序发布指南
-
+### <center>蘑菇博客QQ小程序发布指南
+***
 ## 前言
 
 这阵子使用 [uniapp](https://uniapp.dcloud.io/) 和 [ColorUI](https://github.com/weilanwl/ColorUI) 搭建了蘑菇博客的移动端应用，uniapp是使用vue.js开发的前端应用框架，可以做到开发一套代码，可发布到iOS、Android、H5、以及各种小程序（微信/支付宝/百度/头条/QQ/钉钉/淘宝）、快应用等多个平台，下面演示一下uniapp打包成QQ小程序后的效果图。

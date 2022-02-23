@@ -1,5 +1,5 @@
-# 蘑菇博客Nacos部署指南
-
+### <center>蘑菇博客Nacos部署指南
+***
 ## 前言
 
 蘑菇博客这阵子将部分SpringCloud组件替换成了SpringCloudAlibaba组件，其中包括注册中心由Eureka替换成Nacos、新增了Sentinel作为熔断和限流组件

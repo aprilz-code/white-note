@@ -1,5 +1,5 @@
-# 分布式配置中心SpringCloudConfig
-
+### <center>分布式配置中心SpringCloudConfig
+***
 ## 概述
 
 ### 面临的问题

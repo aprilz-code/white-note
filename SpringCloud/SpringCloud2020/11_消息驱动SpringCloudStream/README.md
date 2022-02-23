@@ -1,5 +1,5 @@
-# SpringCloud Stream 消息驱动
-
+### <center>SpringCloud Stream 消息驱动
+***
 ## 为什么引入消息驱动？
 
 首先看到消息驱动，我们会想到，消息中间件

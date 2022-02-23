@@ -1,5 +1,5 @@
-# Feign配置全局Sentinel流控异常和降级异常
-
+### <center>Feign配置全局Sentinel流控异常和降级异常
+***
 ## 前言
 
 最近在使用feign调用的时候，因为加入了sentinel进行流控和降级机制，在我们如果没有对Sentinel异常处理进行封装的话，默认返回的信息如下所示

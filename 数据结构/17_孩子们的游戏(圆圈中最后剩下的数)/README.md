@@ -1,5 +1,5 @@
-# 孩子们的游戏(圆圈中最后剩下的数)
-
+### <center>孩子们的游戏(圆圈中最后剩下的数)
+***
 ## 描述
 
 来源：https://www.nowcoder.com/practice/f78a359491e64a50bce2d89cff857eb6

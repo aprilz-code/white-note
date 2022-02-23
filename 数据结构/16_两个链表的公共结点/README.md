@@ -1,5 +1,5 @@
-# 两个链表的公共结点
-
+### <center>两个链表的公共结点
+***
 ## 描述
 
 来源：https://www.nowcoder.com/practice/6ab1d9a29e88450685099d45c9e31e46

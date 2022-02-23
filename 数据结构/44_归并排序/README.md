@@ -1,5 +1,5 @@
-# 归并排序
-
+### <center>归并排序
+***
 ## 题目
 
 - [把数组排成最小的数](https://www.nowcoder.com/practice/8fecd3f8ba334add803bf2a06af1b993)

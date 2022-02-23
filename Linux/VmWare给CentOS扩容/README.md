@@ -1,5 +1,5 @@
-# VMWare给CentOS扩容
-
+### <center>VMWare给CentOS扩容
+***
 ## 前言
 
 今天因为自己的虚拟机满了，无法继续创建Docker镜像，就想着给虚拟机扩容，从原来的20G提升到40G

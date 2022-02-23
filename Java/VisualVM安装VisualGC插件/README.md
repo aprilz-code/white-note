@@ -1,5 +1,5 @@
-# VisualVM安装VisualGC插件
-
+### <center>VisualVM安装VisualGC插件
+***
 ## 前言
 
 在我们安装的JDK中，提供了一个很棒的JVM调优工具，也就是 Java VisualVM，通过它我们能够看到很多关于我们Java程序的信息，比如查看 Eden，Survivor From, Survivor To区的空间使用情况，以及排查程序中那些对象造成OOM。

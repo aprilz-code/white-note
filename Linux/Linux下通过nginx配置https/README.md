@@ -1,5 +1,5 @@
-# Linux下通过nginx配置https
-
+### <center>Linux下通过nginx配置https
+***
 ## 前言
 
 这阵子在做蘑菇博客的小程序端，因为小程序的发布需要接口采用https加密的方式，因此打算通过nginx配置一下ssl安全证书

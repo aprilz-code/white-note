@@ -1,5 +1,5 @@
-## VueX学习
-
+### <center>VueX学习
+***
 ### 使用vue-cli创建vue项目
 
 ```bash

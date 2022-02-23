@@ -1,11 +1,3 @@
-## PDF下载
-
-本笔记同时提供 **PDF** 离线版本，请扫描下方公众号『**白教你学编程**』后，回复关键字『**PDF**』，即可下载 **PDF 版本的笔记**。
-
-<p align=center>
-    <img src="../doc/images/qq/获取PDF.jpg" width="500" />
-</p>
-
 ## 笔记
 
 > 来源Bilibili黑马程序员的视频：[Elastic Stack（ELK）从入门到实践](https://www.bilibili.com/video/BV1iJ411c7Az)

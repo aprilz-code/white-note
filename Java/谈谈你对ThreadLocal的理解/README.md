@@ -1,5 +1,5 @@
-# 谈谈你对ThreadLocal的理解
-
+### <center>谈谈你对ThreadLocal的理解
+***
 ## ThreadLocal介绍
 
 从Java官方文档中的描述：ThreadLocal类用来提供线程内部的局部变量。这种变量在多线程环境下访问（通过get和set方法访问）时能保证各个线程的变量相对独立于其他线程内的变量。ThreadLocal实例通常来说都是private static类型的，用于关联线程和线程上下文。

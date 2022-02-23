@@ -1,5 +1,5 @@
-# SPA 的 SEO 方案对比、最终实践
-
+### <center>SPA 的 SEO 方案对比、最终实践
+***
 > 前端开发技术日新月异，由于现代化构建、用户体验的需求，angular/vue/react 等框架已经成为开发标配，大部分应用都是 [SPA](https://zh.wikipedia.org/zh-hans/单页应用)，同时也带来了很多新问题：
 >
 > - [SEO](https://zh.wikipedia.org/wiki/搜尋引擎最佳化) 不友好

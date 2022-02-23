@@ -1,5 +1,5 @@
-# DockerCompose一键部署蘑菇博客(Nacos版)
-
+### <center>DockerCompose一键部署蘑菇博客(Nacos版)
+***
 ## 前言
 
 首先，特别感谢群里小伙伴 [@你钉钉响了](https://gitee.com/it00021hot) 和 [@touch fish](https://gitee.com/chengccn1)， 一块完成了蘑菇博客的镜像制作。

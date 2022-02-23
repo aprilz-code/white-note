@@ -1,5 +1,5 @@
-# Stream API
-
+### <center>Stream API
+***
 ## 了解Stream
 
 Java8中有两个比较大的改变

@@ -1,5 +1,5 @@
-# 使用开源软件给Jetbrains全家桶续费
-
+### <center>使用开源软件给Jetbrains全家桶续费
+***
 ## 前言
 
 今天JetBrains给我发了一份邮件，如下所示

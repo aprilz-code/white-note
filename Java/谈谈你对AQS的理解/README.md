@@ -1,5 +1,5 @@
-# 谈谈你对AQS的理解
-
+### <center>谈谈你对AQS的理解
+***
 ## 前言
 
 AQS：AbstractQueuedSynchronizer   抽象队列同步器

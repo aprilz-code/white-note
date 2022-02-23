@@ -1,5 +1,5 @@
-# 如何向开源社区提问题
-
+### <center>如何向开源社区提问题
+***
 ## 来源
 
 Github开源项目：[seajs](https://github.com/seajs/seajs/issues/545)

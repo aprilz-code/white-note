@@ -1,5 +1,5 @@
-# Kibana入门
-
+### <center>Kibana入门
+***
 Kibana 是一款开源的数据分析和可视化平台，它是 Elastic Stack 成员之一，设计用于和 Elasticsearch 协作。您可以使用 Kibana 对 Elasticsearch 索引中的数据进行搜索、查看、交互操作。您可以很方便的利用图表、表格及地图对数据进行多元化的分析和呈现。
 
 官网：https://www.elastic.co/cn/kibana

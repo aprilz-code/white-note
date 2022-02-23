@@ -1,5 +1,5 @@
-# 二叉树的右视图
-
+### <center>二叉树的右视图
+***
 ## 来源
 
 https://leetcode-cn.com/problems/binary-tree-right-side-view/

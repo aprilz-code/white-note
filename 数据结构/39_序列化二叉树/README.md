@@ -1,5 +1,5 @@
-# 序列化二叉树
-
+### <center>序列化二叉树
+***
 ## 题目
 
 https://www.nowcoder.com/practice/cf7e25aa97c04cc1a68c8f040e71fb84

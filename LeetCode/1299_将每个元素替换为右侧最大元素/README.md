@@ -1,5 +1,5 @@
-# 将每个元素替换为右侧最大的元素
-
+### <center>将每个元素替换为右侧最大的元素
+***
 ## 来源
 
 https://leetcode-cn.com/problems/replace-elements-with-greatest-element-on-right-side/

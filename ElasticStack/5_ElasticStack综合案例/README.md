@@ -1,5 +1,5 @@
-# ElasticStack综合案例
-
+### <center>ElasticStack综合案例
+***
 本篇将我们前面学习到的技术：ElasticSearch、Beats、Kibana、Logstash 整合起来，做一个综合性的学习，目的是为了让小伙伴们能够更加深刻的理解ElasticStack的使用
 
 ## 流程说明

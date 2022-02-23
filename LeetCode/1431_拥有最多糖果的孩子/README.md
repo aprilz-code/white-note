@@ -1,5 +1,5 @@
-# 拥有糖果最多的孩子
-
+### <center>拥有糖果最多的孩子
+***
 ## 来源
 
 https://leetcode-cn.com/problems/kids-with-the-greatest-number-of-candies/

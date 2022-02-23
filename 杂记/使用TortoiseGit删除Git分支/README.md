@@ -1,5 +1,5 @@
-# 使用TortoiseGit删除Git分支
-
+### <center>使用TortoiseGit删除Git分支
+***
 ## 前言
 
 平时我在进行开发的时候，比如需要开发一个新功能，这里以蘑菇博客开发服务网关-gateway功能为例

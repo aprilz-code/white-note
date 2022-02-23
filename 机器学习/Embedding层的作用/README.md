@@ -1,5 +1,5 @@
-# Embedding层的作用
-
+### <center>Embedding层的作用
+***
 ## 前言
 
 在深度学习实验中经常会遇到Embedding层，网络上关于Embedding层介绍非常含糊。Embedding是数学领域的专有名词：指某个对象X被嵌入到另一个对象Y中。Word Embedding 是NLP中一组语言模型和特征学习技术的总称。主要作用是：嵌入层将正整数转换为具有固定大小的词向量

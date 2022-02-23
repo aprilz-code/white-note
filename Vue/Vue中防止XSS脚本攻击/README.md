@@ -1,5 +1,5 @@
-# Vue中防止XSS脚本攻击
-
+### <center>Vue中防止XSS脚本攻击
+***
 最近写了一个博客评论模块，因为引入了表情包，所以就将原来的v-text的形式，改成了v-html，也就是渲染html标签，但是这样不可不免的会带来问题，就是XSS跨站脚本攻击
 
 XSS解决方案官网：[点我传送](https://jsxss.com/zh/index.html)

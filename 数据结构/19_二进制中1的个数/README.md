@@ -1,5 +1,5 @@
-# 二进制中的1的个数
-
+### <center>二进制中的1的个数
+***
 ## 描述
 
 来源：https://www.nowcoder.com/practice/8ee967e43c2c4ec193b040ea7fbb10b8

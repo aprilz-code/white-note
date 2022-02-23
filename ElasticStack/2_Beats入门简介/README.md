@@ -1,5 +1,5 @@
-# Beats入门简介
-
+### <center>Beats入门简介
+***
 使用Beat收集nginx日志和指标数据
 
 ## 项目需求

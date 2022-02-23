@@ -1,5 +1,5 @@
-# Vue项目中引入markdown编辑器vditor
-
+### <center>Vue项目中引入markdown编辑器vditor
+***
 ## 前言
 
 这阵子在Github上看到一个非常不错的Markdown编辑器[Vditor](https://github.com/Vanessa219/vditor)，和我使用Typora写博客的体验几乎一致，所以这次就打算在项目中集成一下vditor

@@ -1,5 +1,5 @@
-# StringTable
-
+### <center>StringTable
+***
 ## String的基本特性
 
 - String：字符串，使用一对 ”” 引起来表示

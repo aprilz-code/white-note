@@ -1,5 +1,5 @@
-# 重新排列数组
-
+### <center>重新排列数组
+***
 ## 来源
 
 https://leetcode-cn.com/problems/shuffle-the-array/

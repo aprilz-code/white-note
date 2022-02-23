@@ -1,5 +1,5 @@
-# Swagger-ui.html页面出现404
-
+### <center>Swagger-ui.html页面出现404
+***
 ## 前言
 
 首先感谢群里小伙伴@Major_Tom的反馈，今天排查了一下mogu_picture的 swagger-ui.html页面打不开了，显示的是404。因为 swagger-ui的引入比较简单，所以我先排查了一下依赖和配置，以及对应方法上的注解，都是正常的，并且同样的配置在mogu_web和mogu_admin项目是正常的，所以非常好奇问题出来哪里？

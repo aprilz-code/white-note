@@ -1,5 +1,5 @@
-# 路径总和
-
+### <center>路径总和
+***
 ## 来源
 
 https://leetcode-cn.com/problems/path-sum/

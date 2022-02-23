@@ -1,5 +1,5 @@
-# 浅谈ArrayList及扩容机制
-
+### <center>浅谈ArrayList及扩容机制
+***
 ## ArrayList
 
 ArrayList就是动态数组，其实就是Array的复杂版本，它提供了动态的添加元素和删除元素的方法，同时实现了Collection 和 List接口，能够灵活的设置数组的大小。

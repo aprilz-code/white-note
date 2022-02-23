@@ -1,5 +1,5 @@
-# 常见问题汇总
-
+### <center>常见问题汇总
+***
 以下收集了一些小伙伴在使用过程中遇到的一些场景问题
 
 ## 1、启动出现 I/O error on POSt request for "http://localhost:9411/api/v2/span" ：connect timeout

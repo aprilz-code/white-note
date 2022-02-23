@@ -1,5 +1,5 @@
-# 使用SpringBoot+Vue+Echarts制作一个文章贡献度表
-
+### <center>使用SpringBoot+Vue+Echarts制作一个文章贡献度表
+***
 ## 前言
 
 最近想给博客做一个类似于码云代码提交记录的图表，就类似于下面这样的

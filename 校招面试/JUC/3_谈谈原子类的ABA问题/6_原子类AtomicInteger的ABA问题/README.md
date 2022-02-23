@@ -1,5 +1,5 @@
-# 原子类AtomicInteger的ABA问题
-
+### <center>原子类AtomicInteger的ABA问题
+***
 ## 连环套路
 
 从AtomicInteger引出下面的问题

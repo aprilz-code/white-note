@@ -1,5 +1,5 @@
-# 按既定顺序逛街目标数组
-
+### <center>按既定顺序逛街目标数组
+***
 ## 来源
 
 https://leetcode-cn.com/problems/create-target-array-in-the-given-order/

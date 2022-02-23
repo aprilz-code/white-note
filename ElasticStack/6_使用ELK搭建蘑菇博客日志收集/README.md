@@ -1,5 +1,5 @@
-# 使用ELK搭建蘑菇博客日志收集
-
+### <center>使用ELK搭建蘑菇博客日志收集
+***
 ## 前言
 
 前阵子学习了ElasticStack的技术栈，其中包括ElasticSearch 、Beats、Kibana、Logstash。因为打算将其用于蘑菇博客的项目中，关于ElasticStack的技术栈学习，可以参考前面写的博客~

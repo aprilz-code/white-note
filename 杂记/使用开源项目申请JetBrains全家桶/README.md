@@ -1,5 +1,5 @@
-# 使用开源项目申请JetBrains全家桶
-
+### <center>使用开源项目申请JetBrains全家桶
+***
 
 
 https://www.cnblogs.com/evenyao/p/10290482.html

@@ -1,5 +1,5 @@
-# 数组异或操作
-
+### <center>数组异或操作
+***
 ## 来源
 
 https://leetcode-cn.com/problems/xor-operation-in-an-array/

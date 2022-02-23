@@ -1,5 +1,5 @@
-# 访问所有点的最小时间
-
+### <center>访问所有点的最小时间
+***
 ## 题目
 
 https://leetcode-cn.com/problems/minimum-time-visiting-all-points/

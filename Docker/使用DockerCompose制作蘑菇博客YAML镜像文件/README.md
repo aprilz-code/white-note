@@ -1,5 +1,5 @@
-# 使用DockerCompose制作蘑菇博客YAML镜像文件
-
+### <center>使用DockerCompose制作蘑菇博客YAML镜像文件
+***
 ## 前言
 
 首先特别感谢群里的小伙伴 [@touch fish](https://gitee.com/chengccn1) 使用DockerCompose部署了蘑菇博客，并且提供了 [搭建文档](https://gitee.com/chengccn1/mogu_blog_v2/blob/Nacos/docker-compose%E9%83%A8%E7%BD%B2.md)，本博客也是在上面的文档基础上进行修改~

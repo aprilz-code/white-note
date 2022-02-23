@@ -1,5 +1,5 @@
-# Volatile的应用
-
+### <center>Volatile的应用
+***
 ## 单例模式DCL代码
 
 首先回顾一下，单线程下的单例模式代码
