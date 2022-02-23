@@ -17,9 +17,9 @@
 
 
 
-# 1.Docker
+# 1 Docker
 
-## 1.1.apt source
+## 1.1 apt source
 
 更换apt源大多数情况下可以加快软件下载速度。
 
@@ -93,7 +93,7 @@ apt update
 
 “deb”是指deb包目录；“deb-src”是源码目录，一般注释掉。
 
-## 1.2.install docker
+## 1.2 install docker
 
 官网
 
@@ -129,7 +129,7 @@ apt-cache madison docker-ce
 sudo apt-get install docker-ce=<VERSION_STRING> docker-ce-cli=<VERSION_STRING> containerd.io
 ```
 
-## 1.3.docker source
+## 1.3 docker source
 
 配置镜像加速器
 
