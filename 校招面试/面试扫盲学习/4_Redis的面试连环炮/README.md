@@ -1,7 +1,7 @@
 
 
-# Redis的面试连环炮
-
+### <center>Redis的面试连环炮
+***
 ## 面试题
 
 - [Redis和Memcache有什么区别](##Redis和Memcache有什么区别)

@@ -1,5 +1,5 @@
-# 分布式Session方案
-
+### <center>分布式Session方案
+***
 ## 什么是Session
 
 ![01_分布式会话是什么](images/01_分布式会话是什么.png)

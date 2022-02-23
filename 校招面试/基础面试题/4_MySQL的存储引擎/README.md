@@ -1,5 +1,5 @@
-# Mysql默认搜索引擎  
-
+### <center>Mysql默认搜索引擎  
+***
 ## Mysql默认搜索引擎 
 
 Mysql5.5以后默认使用InnoDB为搜索引擎
