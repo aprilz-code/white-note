@@ -198,7 +198,7 @@
 - [CAS底层原理](./校招面试/JUC/2_谈谈CAS/5_CAS底层原理/README.md)
 - [原子类AtomicInteger的ABA问题](./校招面试/JUC/3_谈谈原子类的ABA问题/6_原子类AtomicInteger的ABA问题/README.md)
 - [ArrayList为什么是线程不安全的](./校招面试/JUC/4_ArrayList为什么线程不安全/ArrayList线程不安全的举例/README.md)
-- [TransferValue是什么](./校招面试/JUC/5_TransferValue是什么/README.md)
+- [值传递和引用传递](./校招面试/JUC/5_值传递和引用传递/README.md)
 - [Java锁之读写锁](./校招面试/JUC/6_Java的锁/Java锁之读写锁/README.md)
 - [Java锁之公平锁和非公平锁](./校招面试/JUC/6_Java的锁/Java锁之公平锁和非公平锁/README.md)
 - [Java锁之可重入锁和递归锁](./校招面试/JUC/6_Java的锁/Java锁之可重入锁和递归锁/README.md)

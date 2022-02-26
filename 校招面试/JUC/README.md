@@ -11,7 +11,7 @@
 - [CAS底层原理](http://www.moguit.cn/#/info?blogUid=0f36e78050dc34b71128fa178f68ced5)
 - [原子类AtomicInteger的ABA问题](http://www.moguit.cn/#/info?blogUid=46973eba956ece213e8116ebbdb3c80a)
 - [ArrayList为什么是线程不安全的](http://www.moguit.cn/#/info?blogUid=e234c0b2a67556c9eef84f6ea234f373)
-- [TransferValue是什么](./5_TransferValue是什么)
+- [值传递和引用传递](./5_值传递和引用传递)
 - [Java锁之读写锁](http://www.moguit.cn/#/info?blogUid=ed4637e5173004e2510bea1822cc496f)
 - [Java锁之公平锁和非公平锁](http://www.moguit.cn/#/info?blogUid=8bf613b6c0fb5ca3155d89f6a159ee4b)
 - [Java锁之可重入锁和递归锁](http://www.moguit.cn/#/info?blogUid=6907a51312089de9bd4f4d299c35bee9)
