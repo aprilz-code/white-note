@@ -103,7 +103,7 @@ public class SingletonDemo {
 
 ### 解决方法2
 
-通过引入DCL   Double Check Lock   双端检锁机制
+通过引入单例模式DCL(DCL的全拼是double check lock，也就是双重锁判断机制。)
 
 就是在进来和出去的时候，进行检测
 

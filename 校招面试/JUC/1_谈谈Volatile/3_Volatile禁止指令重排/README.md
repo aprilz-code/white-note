@@ -149,7 +149,7 @@ Volatile实现禁止指令重排优化，从而避免了多线程环境下程序
 ## 总线嗅探
 
 ## 补充
- 单例模式DCL(DCL的全拼是double check lock，也就是双重锁判断机制。) 必须加volati。
+必须加volati。
 
 当 INSTANCE = new SingleInstance() 创建实例对象时，并不是原子操作，它是分三步来完成的：
 
