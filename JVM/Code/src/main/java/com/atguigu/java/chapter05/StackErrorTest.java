@@ -2,7 +2,7 @@ package com.atguigu.java.chapter05;
 
 /**
  * 演示栈中的异常：StackOverflowError
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-05-17:11
  */
 public class StackErrorTest {

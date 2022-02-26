@@ -3,7 +3,7 @@ package com.moxi.interview.study.annotation;
 /**
  * Class类创建的方式
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-29-9:56
  */
 class Person {

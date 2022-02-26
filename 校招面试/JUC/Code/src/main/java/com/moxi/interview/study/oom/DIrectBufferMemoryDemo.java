@@ -3,7 +3,7 @@ package com.moxi.interview.study.oom;
 import java.nio.ByteBuffer;
 
 /**
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-24-15:46
  */
 public class DIrectBufferMemoryDemo {

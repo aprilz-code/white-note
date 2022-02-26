@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * NIO版QQ服务器
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-28-12:16
  */
 public class QQServerByNIO {

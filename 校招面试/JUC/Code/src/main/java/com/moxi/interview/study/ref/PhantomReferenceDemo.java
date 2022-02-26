@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * 虚引用
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-24-12:09
  */
 public class PhantomReferenceDemo {

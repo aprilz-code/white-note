@@ -1971,7 +1971,7 @@ import java.util.Map;
 /**
  * 使用低级客户端 访问
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-09-23-16:33
  */
 public class ESApi {
@@ -2090,7 +2090,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * ES高级客户端
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-09-23-16:56
  */
 public class ESHightApi {

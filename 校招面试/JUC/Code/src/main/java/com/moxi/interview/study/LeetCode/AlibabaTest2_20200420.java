@@ -3,7 +3,7 @@ package com.moxi.interview.study.LeetCode;
 import java.util.Scanner;
 
 /**
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-04-20-18:56
  */
 public class AlibabaTest2_20200420 {

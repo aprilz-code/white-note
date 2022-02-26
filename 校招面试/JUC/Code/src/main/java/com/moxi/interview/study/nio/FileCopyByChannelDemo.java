@@ -8,7 +8,7 @@ import java.nio.file.StandardOpenOption;
 
 /**
  * 利用通道直接进行数据传输
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-27-16:36
  */
 public class FileCopyByChannelDemo {

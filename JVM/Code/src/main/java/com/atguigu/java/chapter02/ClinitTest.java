@@ -1,7 +1,7 @@
 package com.atguigu.java.chapter02;
 
 /**
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-05-8:56
  */
 public class ClinitTest {

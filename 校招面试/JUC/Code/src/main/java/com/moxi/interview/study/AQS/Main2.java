@@ -1,7 +1,7 @@
 package com.moxi.interview.study.AQS;
 
 /**
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-17-15:56
  */
 public class Main2 {

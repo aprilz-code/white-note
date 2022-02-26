@@ -36,7 +36,7 @@ ClassLoader只负责class文件的加载，至于它是否可以运行，则由E
 ```java
 /**
  * 类加载子系统
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-05-8:24
  */
 public class HelloLoader {
@@ -99,7 +99,7 @@ public class HelloLoader {
 
 ```java
 /**
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-05-8:42
  */
 public class HelloApp {
@@ -144,7 +144,7 @@ public class HelloApp {
 
 ```java
 /**
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-05-8:47
  */
 public class ClassInitTest {
@@ -169,7 +169,7 @@ public class ClassInitTest {
 
 ```java
 /**
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-05-9:06
  */
 public class ClinitTest1 {
@@ -204,7 +204,7 @@ return
 
 ```java
 /**
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-05-9:14
  */
 public class DeadThreadTest {
@@ -258,7 +258,7 @@ JVM支持两种类型的类加载器 。分别为引导类加载器（Bootstrap 
 
 ```java
 /**
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-05-9:47
  */
 public class ClassLoaderTest {
@@ -344,7 +344,7 @@ null
 
 ```java
 /**
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-05-10:17
  */
 public class ClassLoaderTest1 {

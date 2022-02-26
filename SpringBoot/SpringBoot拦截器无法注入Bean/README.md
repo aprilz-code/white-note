@@ -17,7 +17,7 @@ RedisUtil redisUtil;
 
 ```
 /**
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-06-14-21:55
  */
 @Configuration
@@ -54,7 +54,7 @@ import java.util.Locale;
 /**
  * SpringUtils
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-05-9:30
  */
 @Component

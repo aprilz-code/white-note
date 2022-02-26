@@ -1,7 +1,7 @@
 package com.moxi.interview.study.basic;
 
 /**
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-04-03-22:46
  */
 public class OrderNumberCreateUtil {

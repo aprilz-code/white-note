@@ -3,7 +3,7 @@ package com.atguigu.java.chapter05;
 /**
  * 动态链接
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-06-10:06
  */
 public class DynamicLinkingTest {

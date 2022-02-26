@@ -33,7 +33,7 @@ OutOfMemoryError和StackOverflowError是属于Error，不是Exception
 
 ```
 /**
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-24-14:42
  */
 public class StackOverflowErrorDemo {
@@ -69,7 +69,7 @@ Exception in thread "main" java.lang.StackOverflowError
 ```
 /**
  * Java堆内存不足
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-24-14:50
  */
 public class JavaHeapSpaceDemo {
@@ -112,7 +112,7 @@ GC回收时间过长时会抛出OutOfMemoryError，过长的定义是，超过�
 /**
  * GC 回收超时
  * JVM参数配置: -Xms10m -Xmx10m -XX:+PrintGCDetails -XX:MaxDirectMemorySize=5m
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-24-15:14
  */
 public class GCOverheadLimitDemo {
@@ -225,7 +225,7 @@ Exception in thread "main" java.lang.OutOfMemoryError: Direct buffer memory
 /**
  * 无法创建更多的线程
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-24-17:02
  */
 public class UnableCreateNewThreadDemo {
@@ -291,7 +291,7 @@ Metaspace是方法区HotSpot中的实现，它与持久代最大的区别在于�
 /**
  * 元空间溢出
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-24-17:32
  */
 public class MetaspaceOutOfMemoryDemo {

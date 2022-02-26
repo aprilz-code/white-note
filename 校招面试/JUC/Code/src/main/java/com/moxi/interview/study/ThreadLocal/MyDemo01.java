@@ -5,7 +5,7 @@ package com.moxi.interview.study.ThreadLocal;
  * 在多线程并发的场景下，每个线程中的变量都是相互独立的
  * 线程A：设置变量1，获取变量2
  * 线程B：设置变量2，获取变量2
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-10-17:03
  */
 public class MyDemo01 {

@@ -6,7 +6,7 @@ import java.nio.channels.FileChannel;
 import java.security.MessageDigest;
 
 /**
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-06-06-16:21
  */
 public class SHA1Demo {

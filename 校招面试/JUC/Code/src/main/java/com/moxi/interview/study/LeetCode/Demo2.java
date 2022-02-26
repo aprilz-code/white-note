@@ -20,7 +20,7 @@ package com.moxi.interview.study.LeetCode;
  * 我们可以把它分成两块，例如 [1, 0], [2, 3, 4]。
  * 然而，分成 [1, 0], [2], [3], [4] 可以得到最多的块数。
  * 
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-04-18-19:37
  */
 public class Demo2 {

@@ -28,7 +28,7 @@ import java.util.Set;
  * 输入的字符串只包含小写字母
  * 两个字符串的长度都在 [1, 10,000] 之间
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-06-17-19:10
  */
 public class CheckInclusion {

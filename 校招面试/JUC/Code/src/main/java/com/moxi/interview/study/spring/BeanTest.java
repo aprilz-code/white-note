@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 /**
  * Bean类
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-04-02-9:09
  */
 @Component("c")

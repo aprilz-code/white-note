@@ -66,7 +66,7 @@ public interface PictureFeignClient {
 /**
  * 图片服务降级兜底方法【当服务不可用时会触发】
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-10-03-20:54
  */
 @Component
@@ -129,7 +129,7 @@ FeignBlockHandler.java
 ```java
 /**
  * 全局feign异常处理类
- * @author: 陌溪
+ *  @author: mx
  * @date: 2020-10-03-21:56
  */
 @Component

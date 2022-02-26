@@ -6,7 +6,7 @@ import java.lang.ref.WeakReference;
 /**
  * 弱引用
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-24-10:18
  */
 public class WeakReferenceDemo {

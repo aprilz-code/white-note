@@ -6,7 +6,7 @@ package com.atguigu.java.chapter08;
  *  ms：memory start
  * -Xmx：用来设置堆空间（年轻代+老年代）的最大内存大小
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-06-20:44
  */
 public class HeapSpaceInitial {

@@ -51,7 +51,7 @@ Zookeeper使用直接关闭临时节点session会话连接，因为临时节点�
 
 ```
 /**
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-04-03-22:46
  */
 public class OrderNumberCreateUtil {
@@ -70,7 +70,7 @@ public class OrderNumberCreateUtil {
 /**
  * 订单业务逻辑
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-04-03-22:47
  */
 public class OrderService {
@@ -88,7 +88,7 @@ public class OrderService {
 /**
  * 客户端
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-04-03-22:48
  */
 public class Client {
@@ -223,7 +223,7 @@ public class Client {
 /**
  * ZkLock
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-04-03-23:05
  */
 public interface ZkLock {
@@ -241,7 +241,7 @@ public interface ZkLock {
  * ZkLock抽象类
  * 这就是模板设计模式
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-04-03-23:06
  */
 public abstract class ZkAbstractTemplateLock implements ZkLock{
@@ -282,7 +282,7 @@ public abstract class ZkAbstractTemplateLock implements ZkLock{
 /**
  * 分布式锁
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-04-03-23:21
  */
 public class ZkDistributedLock extends ZkAbstractTemplateLock{
@@ -310,7 +310,7 @@ public class ZkDistributedLock extends ZkAbstractTemplateLock{
 /**
  * 订单业务逻辑
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-04-03-22:47
  */
 public class OrderService {
@@ -338,7 +338,7 @@ public class OrderService {
 /**
  * 客户端
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-04-03-22:48
  */
 public class Client {

@@ -135,7 +135,7 @@ System.out.println(new String(dst, 0, dst.length));
  * 根据数据类型不同，提供相同类型的缓冲区（除了Boolean）
  * ByteBuffer
  * CharBuffer
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-27-14:48
  */
 public class BufferDemo {
@@ -300,7 +300,7 @@ Java 针对支持通道的类，提供了一个getChannel() 方法
 ```
 /**
  * 利用通道完成文件的复制
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-27-16:36
  */
 public class FileCopyDemo {
@@ -368,7 +368,7 @@ public class FileCopyDemo {
 ```
 /**
  * 利用通道完成文件的复制（直接缓冲区，内存映射）
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-27-16:36
  */
 public class FileCopyByDirectDemo {
@@ -400,7 +400,7 @@ public class FileCopyByDirectDemo {
   ```
   /**
    * 利用通道直接进行数据传输
-   * @author: 陌溪
+   *  @author: mx
    * @create: 2020-03-27-16:36
    */
   public class FileCopyByChannelDemo {
@@ -496,7 +496,7 @@ public class FileCopyByDirectDemo {
 /**
  * 通道字符集编码
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-27-18:20
  */
 public class ChannelCharsetDemo {
@@ -632,7 +632,7 @@ public class ChannelCharsetDemo {
 /**
  * 阻塞式NIO
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-27-19:16
  */
 public class TestBlockingDemo {
@@ -745,7 +745,7 @@ public class TestBlockingDemo {
 
 ```
 /**
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-28-8:57
  */
 public class TestNonBlockingNIODemo {
@@ -886,7 +886,7 @@ public class TestNonBlockingNIODemo {
 ```
 /**
  * 使用非阻塞IO制作聊天室  服务端
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-28-8:57
  */
 public class ChatServerDemo {
@@ -972,7 +972,7 @@ public class ChatServerDemo {
 ```
 /**
  * 使用非阻塞IO制作聊天室  客户端
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-28-8:57
  */
 public class ChatClientDemo {
@@ -1039,7 +1039,7 @@ Java NIO管道是两个线程之间的单向数据连接。Pipe有一个source�
 ```
 /**
  * 管道
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-28-10:49
  */
 public class PipeDemo {

@@ -31,7 +31,7 @@ Person p = new Person()
 ```
 /**
  * 强引用
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-23-16:25
  */
 public class StrongReferenceDemo {
@@ -78,7 +78,7 @@ java.lang.Object@14ae5a5
 /**
  * 软引用
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-23-16:39
  */
 public class SoftReferenceDemo {
@@ -199,7 +199,7 @@ null
 /**
  * 弱引用
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-24-10:18
  */
 public class WeakReferenceDemo {
@@ -276,7 +276,7 @@ WeakHashMap和HashMap类似，只不过它的Key是使用了弱引用的，也�
 ```
 /**
  * WeakHashMap
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-24-11:33
  */
 public class WeakHashMapDemo {
@@ -378,7 +378,7 @@ WeakReference<Object> weakReference = new WeakReference<>(o1, referenceQueue);
 /**
  * 虚引用
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-24-12:09
  */
 public class PhantomReferenceDemo {

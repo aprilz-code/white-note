@@ -2,7 +2,7 @@ package com.moxi.interview.study.thread;
 
 /**
  * 值传递和引用传递
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-14-18:25
  */
 public class TransferValueDemo {

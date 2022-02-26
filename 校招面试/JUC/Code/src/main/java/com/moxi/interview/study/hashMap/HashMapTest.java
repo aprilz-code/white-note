@@ -8,7 +8,7 @@ import java.util.Map;
 /**
  * JDK7中的HashMap
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-06-05-21:08
  */
 public class HashMapTest {

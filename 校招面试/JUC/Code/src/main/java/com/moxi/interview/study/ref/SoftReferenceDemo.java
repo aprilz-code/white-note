@@ -4,7 +4,7 @@ import java.lang.ref.SoftReference;
 /**
  * 软引用
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-23-16:39
  */
 public class SoftReferenceDemo {

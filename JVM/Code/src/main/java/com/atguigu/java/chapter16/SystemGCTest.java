@@ -3,7 +3,7 @@ package com.atguigu.java.chapter16;
 /**
  * System.gc()
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-12-19:07
  */
 public class SystemGCTest {

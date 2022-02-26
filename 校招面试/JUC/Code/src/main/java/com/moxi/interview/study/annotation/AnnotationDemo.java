@@ -3,7 +3,7 @@ package com.moxi.interview.study.annotation;
 /**
  * 什么是注解
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-28-22:32
  */
 public class AnnotationDemo extends Object{

@@ -90,7 +90,7 @@ Java堆区用于存储Java对象实例，那么堆的大小在JVM启动时就已
  *  ms：memory start
  * -Xmx：用来设置堆空间（年轻代+老年代）的最大内存大小
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-06-20:44
  */
 public class HeapSpaceInitial {
@@ -138,7 +138,7 @@ jps  ->  jstat -gc 进程id
 /**
  * OOM测试
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-06-21:11
  */
 public class OOMTest {
@@ -257,7 +257,7 @@ Java堆区进一步细分的话，可以划分为年轻代（YoungGen）和老�
 /**
  * 代码演示对象创建过程
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-07-9:16
  */
 public class HeapInstanceTest {
@@ -380,7 +380,7 @@ Major GC的速度一般会比MinorGc慢1e倍以上，STW的时间更长，如果
 /**
  * GC测试
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-07-10:01
  */
 public class GCTest {
@@ -597,7 +597,7 @@ public static String createStringBuffer(String s1, String s2) {
 /**
  * 逃逸分析
  * 如何快速的判断是否发生了逃逸分析，大家就看new的对象是否在方法外被调用。
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-07-20:05
  */
 public class EscapeAnalysis {
@@ -671,7 +671,7 @@ JIT编译器在编译期间根据逃逸分析的结果，发现如果一个对�
 /**
  * 栈上分配
  * -Xmx1G -Xms1G -XX:-DoEscapeAnalysis -XX:+PrintGCDetails
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-07-20:23
  */
 class User {

@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * 翻转链表
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-06-26-17:09
  */
 public class ReversePrint {

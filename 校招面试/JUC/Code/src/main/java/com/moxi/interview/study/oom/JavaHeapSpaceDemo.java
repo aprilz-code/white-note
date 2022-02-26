@@ -5,7 +5,7 @@ import java.util.UUID;
 
 /**
  * Java堆内存不足
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-24-14:50
  */
 public class JavaHeapSpaceDemo {

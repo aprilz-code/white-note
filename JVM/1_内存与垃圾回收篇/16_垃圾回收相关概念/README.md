@@ -14,7 +14,7 @@ JVM实现者可以通过system.gc() 调用来决定JVM的GC行为。而一般情
 /**
  * System.gc()
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-12-19:07
  */
 public class SystemGCTest {
@@ -47,7 +47,7 @@ SystemGCTest 执行了 finalize方法
 /**
  * 局部变量回收
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-12-19:12
  */
 public class LocalVarGC {
@@ -412,7 +412,7 @@ obj = null;
 
 ```java
 /**
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-12-21:42
  */
 public class PhantomReferenceTest {

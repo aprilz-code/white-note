@@ -3,7 +3,7 @@ package com.atguigu.java.chapter15;
 /**
  * 引用计数算法测试
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-12-10:26
  */
 public class RefCountGC {

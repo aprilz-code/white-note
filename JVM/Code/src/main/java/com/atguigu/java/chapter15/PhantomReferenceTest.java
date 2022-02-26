@@ -4,7 +4,7 @@ import java.lang.ref.PhantomReference;
 import java.lang.ref.ReferenceQueue;
 
 /**
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-12-21:42
  */
 public class PhantomReferenceTest {

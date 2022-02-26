@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Lambda表达式学习
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-04-05-17:56
  */
 public class LambdaTest2 {

@@ -2,7 +2,7 @@ package com.atguigu.java.chapter13;
 
 /**
  * 使用Intern() 测试执行效率
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-11-15:19
  */
 public class StringIntern2 {

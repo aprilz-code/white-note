@@ -3,7 +3,7 @@ package com.moxi.interview.study.basic;
 /**
  * ZkLock
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-04-03-23:05
  */
 public interface ZkLock {

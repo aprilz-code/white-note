@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * 单线程版服务器，NIO的伪代码
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-28-12:04
  */
 public class QQServerByOneThread {

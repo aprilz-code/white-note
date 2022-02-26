@@ -3,7 +3,7 @@ package com.moxi.interview.study.lq;
 import java.util.Scanner;
 
 /**
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-13-18:58
  */
 public class Demo4 {

@@ -6,7 +6,7 @@ import java.util.concurrent.Executors;
 /**
  * 顺序执行线程
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-04-12-21:59
  */
 public class SequenceThread {

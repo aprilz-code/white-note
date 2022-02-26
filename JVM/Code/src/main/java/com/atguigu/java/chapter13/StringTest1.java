@@ -3,7 +3,7 @@ package com.atguigu.java.chapter13;
 /**
  * String的不可变性
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-11-8:57
  */
 public class StringTest1 {

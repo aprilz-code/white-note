@@ -41,7 +41,7 @@ String：代表不可变的字符序列。简称：不可变性。
 /**
  * String的不可变性
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-11-8:57
  */
 public class StringTest1 {
@@ -104,7 +104,7 @@ mbc
 /**
  * 面试题
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-11-9:05
  */
 public class StringExer {
@@ -335,7 +335,7 @@ String myInfo = new string("I love atguigu").intern();
 ```
 /**
  * 使用Intern() 测试执行效率
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-11-15:19
  */
 public class StringIntern2 {
@@ -372,7 +372,7 @@ public class StringIntern2 {
 /**
  * new String("ab") 会创建几个对象？ 看字节码就知道是2个对象
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-11-11:17
  */
 public class StringNewTest {
@@ -404,7 +404,7 @@ public class StringNewTest {
 /**
  * new String("ab") 会创建几个对象？ 看字节码就知道是2个对象
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-11-11:17
  */
 public class StringNewTest {
@@ -563,7 +563,7 @@ true
 /**
  * String的垃圾回收
  * -Xms15m -Xmx15m -XX:+PrintStringTableStatistics -XX:+PrintGCDetails
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-11-16:55
  */
 public class StringGCTest {

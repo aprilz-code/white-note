@@ -47,7 +47,7 @@ public class ArrayListNotSafeDemo {
 ```
 /**
  * 集合类线程不安全举例
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-12-20:15
  */
 public class ArrayListNotSafeDemo {

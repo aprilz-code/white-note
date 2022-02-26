@@ -8,7 +8,7 @@ import java.net.Socket;
 /**
  * QQ客户端
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-28-11:09
  */
 public class QQServer {

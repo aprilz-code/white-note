@@ -58,7 +58,7 @@ Java 虚拟机规范允许Java栈的大小是动态的或者是固定不变的�
 ```
 /**
  * 演示栈中的异常：StackOverflowError
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-05-17:11
  */
 public class StackErrorTest {
@@ -113,7 +113,7 @@ JVM直接对Java栈的操作只有两个，就是对栈帧的压栈和出栈，�
 /**
  * 栈帧
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-05-20:33
  */
 public class StackFrameTest {
@@ -530,7 +530,7 @@ Java7中增加的动态语言类型支持的本质是对Java虚拟机规范的�
  * 何为线程安全？
  *    如果只有一个线程才可以操作此数据，则必是线程安全的
  *    如果有多个线程操作，则此数据是共享数据，如果不考虑共享机制，则为线程不安全
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-06-16:08
  */
 public class StringBuilderTest {

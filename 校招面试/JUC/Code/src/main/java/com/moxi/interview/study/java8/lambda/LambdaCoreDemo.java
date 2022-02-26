@@ -11,7 +11,7 @@ import java.util.function.Supplier;
 /**
  * Lambda四大核心函数接口
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-04-05-22:03
  */
 public class LambdaCoreDemo {

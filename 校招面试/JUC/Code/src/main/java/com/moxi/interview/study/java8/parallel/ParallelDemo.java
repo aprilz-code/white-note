@@ -3,7 +3,7 @@ package com.moxi.interview.study.java8.parallel;
 /**
  * 并行Demo
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-04-06-12:27
  */
 public class ParallelDemo {

@@ -24,7 +24,7 @@
  * 循环比较获取直到成功为止，没有类似于wait的阻塞
  *
  * 通过CAS操作完成自旋锁，A线程先进来调用myLock方法自己持有锁5秒，B随后进来发现当前有线程持有锁，不是null，所以只能通过自旋等待，直到A释放锁后B随后抢到
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-15-15:46
  */
 public class SpinLockDemo {

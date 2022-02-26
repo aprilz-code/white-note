@@ -22,7 +22,7 @@ No mapping found for HTTP request with URI [/swagger-ui.html] in DispatcherServl
 
 ```java
 /**
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-06-14-21:55
  */
 @Configuration
@@ -51,7 +51,7 @@ public class InterceptorConfig implements WebMvcConfigurer {
 
 ```java
 /**
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-06-14-21:55
  */
 @Configuration

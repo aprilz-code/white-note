@@ -6,7 +6,7 @@ package com.atguigu.java.chapter05;
  * 何为线程安全？
  *    如果只有一个线程才可以操作此数据，则必是线程安全的
  *    如果有多个线程操作，则此数据是共享数据，如果不考虑共享机制，则为线程不安全
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-06-16:08
  */
 public class StringBuilderTest {

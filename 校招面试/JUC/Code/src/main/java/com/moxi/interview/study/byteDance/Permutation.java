@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * 字符串的排列
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-06-17-20:30
  */
 

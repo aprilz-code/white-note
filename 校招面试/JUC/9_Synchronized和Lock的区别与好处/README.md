@@ -124,7 +124,7 @@ private Condition condition3 = lock.newCondition();
 
 /**
  * Synchronized 和 Lock的区别
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-17-10:18
  */
 

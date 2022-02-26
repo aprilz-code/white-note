@@ -5,7 +5,7 @@ import java.util.concurrent.locks.AbstractQueuedSynchronizer;
 /**
  * AQS
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-17-19:56
  */
 public class Sync extends AbstractQueuedSynchronizer {

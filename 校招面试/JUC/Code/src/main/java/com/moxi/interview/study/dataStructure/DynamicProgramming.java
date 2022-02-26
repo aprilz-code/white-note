@@ -4,7 +4,7 @@ package com.moxi.interview.study.dataStructure;
  * 动态规划
  * 解决 0-1背包问题
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-04-18-15:00
  */
 public class DynamicProgramming {

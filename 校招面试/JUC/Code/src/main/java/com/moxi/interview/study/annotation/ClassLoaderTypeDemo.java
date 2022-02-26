@@ -3,7 +3,7 @@ package com.moxi.interview.study.annotation;
 /**
  * 类加载器的种类
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-29-11:51
  */
 public class ClassLoaderTypeDemo {

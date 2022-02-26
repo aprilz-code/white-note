@@ -6,7 +6,7 @@ import java.util.Set;
 /**
  * equals和等等的区别
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-04-03-8:50
  */
 public class EqualsDemo {

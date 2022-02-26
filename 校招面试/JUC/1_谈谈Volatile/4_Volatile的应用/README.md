@@ -8,7 +8,7 @@
 /**
  * SingletonDemo（单例模式）
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-10-16:40
  */
 public class SingletonDemo {
@@ -48,7 +48,7 @@ public class SingletonDemo {
 /**
  * SingletonDemo（单例模式）
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-10-16:40
  */
 public class SingletonDemo {
@@ -161,7 +161,7 @@ private static volatile SingletonDemo instance = null;
 /**
  * SingletonDemo（单例模式）
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-10-16:40
  */
 public class SingletonDemo {

@@ -70,7 +70,7 @@ int a,b,x,y = 0
 /**
  * ResortSeqDemo
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-10-16:08
  */
 public class ResortSeqDemo {

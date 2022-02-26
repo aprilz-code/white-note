@@ -18,7 +18,7 @@ package com.moxi.interview.study.byteDance;
  * 说明:
  *
  * 所有输入只包含小写字母 a-z 。
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-06-17-18:45
  */
 public class LongestCommonPrefix {

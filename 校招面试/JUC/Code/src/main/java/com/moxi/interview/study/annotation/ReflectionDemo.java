@@ -3,7 +3,7 @@ package com.moxi.interview.study.annotation;
 /**
  * 反射Demo
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-29-8:21
  */
 public class ReflectionDemo {

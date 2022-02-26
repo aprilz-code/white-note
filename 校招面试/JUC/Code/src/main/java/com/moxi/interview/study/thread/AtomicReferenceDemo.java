@@ -4,7 +4,7 @@ import java.util.concurrent.atomic.AtomicReference;
 
 /**
  * 原子引用
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-11-22:12
  */
 

@@ -7,7 +7,7 @@ import org.springframework.beans.factory.support.GenericBeanDefinition;
 
 /**
  * 扩展的BeanFactory
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-04-02-10:52
  */
 public class TestBeanFactoryPostProcessor implements BeanFactoryPostProcessor {

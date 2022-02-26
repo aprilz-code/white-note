@@ -40,7 +40,7 @@ IOC、AOP只是作为Spring Framework里面一部分，同时还有还有events�
 /**
  * 配置类
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-04-02-9:08
  */
 @Configuration
@@ -57,7 +57,7 @@ public class AppConfig {
 /**
  * Bean类
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-04-02-9:09
  */
 @Component
@@ -71,7 +71,7 @@ public class BeanTest {
 /**
  * Spring项目启动
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-04-02-9:07
  */
 public class Test {
@@ -181,7 +181,7 @@ invokeBeanFactoryPostProcessors() {
 
 /**
  * 扩展的BeanFactory
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-04-02-10:52
  */
 public class TestBeanFactoryPostProcessor implements BeanFactoryPostProcessor {

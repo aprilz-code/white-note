@@ -5,7 +5,7 @@ import java.util.concurrent.CountDownLatch;
 /**
  * 分布式锁
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-04-03-23:21
  */
 public class ZkDistributedLock extends ZkAbstractTemplateLock{

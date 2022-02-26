@@ -8,7 +8,7 @@ import java.util.function.Supplier;
 /**
  * 构造器引用
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-04-06-10:08
  */
 public class ConstructorReferenceDemo {

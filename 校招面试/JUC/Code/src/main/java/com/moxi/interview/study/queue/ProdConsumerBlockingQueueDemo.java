@@ -9,7 +9,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * 生产者消费者  阻塞队列版
  * 使用：volatile、CAS、atomicInteger、BlockQueue、线程交互、原子引用
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-17-11:13
  */
 

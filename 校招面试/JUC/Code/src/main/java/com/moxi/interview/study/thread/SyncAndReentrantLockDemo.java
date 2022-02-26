@@ -6,7 +6,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * Synchronized 和 Lock的区别
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-17-10:18
  */
 

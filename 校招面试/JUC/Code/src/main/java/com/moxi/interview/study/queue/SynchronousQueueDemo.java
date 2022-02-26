@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * 阻塞队列SynchronousQueueDemo
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-16-19:13
  */
 public class SynchronousQueueDemo {

@@ -4,7 +4,7 @@ import java.util.concurrent.*;
 
 /**
  * 第四种获取 / 使用 Java多线程的方式，通过线程池
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-17-15:59
  */
 public class MyThreadPoolDemo {

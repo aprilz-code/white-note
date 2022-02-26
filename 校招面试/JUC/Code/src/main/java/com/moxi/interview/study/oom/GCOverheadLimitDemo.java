@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * GC 回收超时
  * JVM参数配置: -Xms10m -Xmx10m -XX:+PrintGCDetails -XX:MaxDirectMemorySize=5m
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-24-15:14
  */
 public class GCOverheadLimitDemo {

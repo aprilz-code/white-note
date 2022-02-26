@@ -4,7 +4,7 @@ package com.moxi.interview.study.basic;
  * ZkLock抽象类
  * 这就是模板设计模式
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-04-03-23:06
  */
 public abstract class ZkAbstractTemplateLock implements ZkLock{

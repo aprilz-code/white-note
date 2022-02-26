@@ -6,7 +6,7 @@ import java.util.concurrent.atomic.AtomicStampedReference;
 
 /**
  * ABA问题的解决，AtomicStampedReference
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-12-15:34
  */
 public class ABADemo {

@@ -3,7 +3,7 @@ package com.moxi.interview.study.LeetCode;
 /**
  * 最大交换
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-06-30-8:59
  */
 public class MaximumSwap_670 {

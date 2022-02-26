@@ -4,7 +4,7 @@ package com.atguigu.java.chapter15;
  * 测试Object类中finalize()方法
  * 对象复活场景
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-12-11:06
  */
 public class CanReliveObj {

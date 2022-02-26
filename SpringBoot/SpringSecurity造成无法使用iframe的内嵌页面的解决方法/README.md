@@ -75,7 +75,7 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 /**
  * WebSecurityConfig
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2019-12-21-19:20
  */
 @Configuration

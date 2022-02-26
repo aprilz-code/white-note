@@ -9,7 +9,7 @@ import java.nio.channels.FileChannel;
 
 /**
  * 分散读取，聚集写入
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-27-17:54
  */
 public class ScatterAndGatherDemo {

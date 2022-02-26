@@ -5,7 +5,7 @@ package com.moxi.interview.study.Lock;
  * 死锁是指两个或多个以上的进程在执行过程中，
  * 因争夺资源而造成一种互相等待的现象，
  * 若无外力干涉那他们都将无法推进下去
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-18-17:58
  */
 

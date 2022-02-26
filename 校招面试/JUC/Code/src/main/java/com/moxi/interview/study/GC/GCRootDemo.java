@@ -6,7 +6,7 @@ package com.moxi.interview.study.GC;
  * - 方法区中的类静态属性引用的对象
  * - 方法区中常量引用的对象
  * - 本地方法栈中的JNI（Native方法）的引用对象
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-19-11:57
  */
 public class GCRootDemo {

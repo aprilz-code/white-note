@@ -3,7 +3,7 @@ package com.moxi.interview.study.LeetCode;
 /**
  * 二维数组中的查找
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-06-26-15:32
  */
 public class FindNumberIn2DArray_04 {

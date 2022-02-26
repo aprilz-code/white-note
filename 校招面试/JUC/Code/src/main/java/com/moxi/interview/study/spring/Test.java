@@ -5,7 +5,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 /**
  * Spring项目启动
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-04-02-9:07
  */
 public class Test {

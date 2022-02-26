@@ -3,7 +3,7 @@ package com.atguigu.java.chapter08;
 /**
  * 栈上分配
  * -Xmx1G -Xms1G -XX:-DoEscapeAnalysis -XX:+PrintGCDetails
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-07-20:23
  */
 class User {

@@ -9,7 +9,7 @@ import javax.annotation.PostConstruct;
 /**
  * 雪花算法
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-04-18-11:08
  */
 public class SnowFlakeDemo {

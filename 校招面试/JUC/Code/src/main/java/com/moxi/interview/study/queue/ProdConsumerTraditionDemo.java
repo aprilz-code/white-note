@@ -7,7 +7,7 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * 生产者消费者 传统版
  * 题目：一个初始值为0的变量，两个线程对其交替操作，一个加1，一个减1，来5轮
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-16-21:38
  */
 /**

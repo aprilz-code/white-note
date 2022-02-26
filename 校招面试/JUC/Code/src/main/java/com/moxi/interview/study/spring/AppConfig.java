@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * 配置类
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-04-02-9:08
  */
 @Configuration

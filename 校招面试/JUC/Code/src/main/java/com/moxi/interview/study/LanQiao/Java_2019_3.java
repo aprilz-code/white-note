@@ -10,7 +10,7 @@ import java.util.Set;
 
  给定数列 1, 1, 1, 3, 5, 9, 17, …，从第 4 项开始，每项都是前 3 项的和。求第 20190324 项的最后 4 位数字。
 
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-10-11-11:14
  */
 public class Java_2019_3 {

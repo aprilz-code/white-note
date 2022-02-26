@@ -39,7 +39,7 @@
 
 ```
 /**
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-19-12:14
  */
 public class HelloGC {
@@ -160,7 +160,7 @@ jinfo -flags ***
 
 ```
 /**
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-19-12:14
  */
 public class HelloGC {

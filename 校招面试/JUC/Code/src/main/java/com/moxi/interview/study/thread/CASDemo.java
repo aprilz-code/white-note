@@ -7,7 +7,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  *
  * 比较并交换：compareAndSet
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-10-19:46
  */
 public class CASDemo {

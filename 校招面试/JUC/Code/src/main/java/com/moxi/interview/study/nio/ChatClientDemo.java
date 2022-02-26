@@ -13,7 +13,7 @@ import java.util.Scanner;
 
 /**
  * 使用非阻塞IO制作聊天室  客户端
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-28-8:57
  */
 public class ChatClientDemo {

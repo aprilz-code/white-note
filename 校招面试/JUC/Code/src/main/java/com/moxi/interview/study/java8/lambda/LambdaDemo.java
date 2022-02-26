@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * Lambda表达式
  * 和匿名内部类比较
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-04-05-11:59
  */
 public class LambdaDemo {

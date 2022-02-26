@@ -33,7 +33,7 @@
 /**
  * 引用计数算法测试
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-12-10:26
  */
 public class RefCountGC {
@@ -209,7 +209,7 @@ finalize() 方法允许在子类中被重写，用于在对象被回收时进行
  * 测试Object类中finalize()方法
  * 对象复活场景
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-12-11:06
  */
 public class CanReliveObj {
@@ -309,7 +309,7 @@ MAT是基于Eclipse开发的，是一款免费的性能分析工具。
 /**
  * 内存溢出排查
  * -Xms8m -Xmx8m -XX:HeapDumpOnOutOfMemoryError
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-12-14:56
  */
 public class HeapOOM {

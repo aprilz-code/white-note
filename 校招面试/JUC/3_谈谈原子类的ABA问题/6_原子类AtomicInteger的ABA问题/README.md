@@ -35,7 +35,7 @@ CAS只管开头和结尾，也就是头和尾是一样，那就修改成功，�
 ```
 /**
  * 原子引用
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-11-22:12
  */
 
@@ -102,7 +102,7 @@ public class AtomicReferenceDemo {
 ```
 /**
  * ABA问题的解决，AtomicStampedReference
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-12-15:34
  */
 public class ABADemo {
@@ -156,7 +156,7 @@ T2：  100 1     101 2       100  3
 ```
 /**
  * ABA问题的解决，AtomicStampedReference
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-12-15:34
  */
 public class ABADemo {

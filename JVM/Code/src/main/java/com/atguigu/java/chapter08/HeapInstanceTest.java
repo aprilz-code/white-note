@@ -6,7 +6,7 @@ import java.util.Random;
 /**
  * 代码演示对象创建过程
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-07-9:16
  */
 public class HeapInstanceTest {

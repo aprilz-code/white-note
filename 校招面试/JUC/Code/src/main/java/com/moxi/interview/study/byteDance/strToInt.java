@@ -1,7 +1,7 @@
 package com.moxi.interview.study.byteDance;
 
 /**
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-06-24-16:49
  */
 public class strToInt {

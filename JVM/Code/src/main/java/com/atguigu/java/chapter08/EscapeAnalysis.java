@@ -3,7 +3,7 @@ package com.atguigu.java.chapter08;
 /**
  * 逃逸分析
  * 如何快速的判断是否发生了逃逸分析，大家就看new的对象是否在方法外被调用。
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-07-20:05
  */
 public class EscapeAnalysis {

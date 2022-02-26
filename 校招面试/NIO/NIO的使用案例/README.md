@@ -10,7 +10,7 @@
 /**
  * QQ客户端
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-28-11:09
  */
 public class QQClient {
@@ -26,7 +26,7 @@ public class QQClient {
 /**
  * QQ客户端
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-28-11:09
  */
 public class QQServer {
@@ -106,7 +106,7 @@ serverSocket.setConfig();
 /**
  * 单线程版服务器，NIO的伪代码
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-28-12:04
  */
 public class OneThreadServer {
@@ -210,7 +210,7 @@ serverSocketChannel.configureBlocking(false);
 /**
  * NIO版QQ服务器
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-28-12:16
  */
 public class QQServerByNIO {

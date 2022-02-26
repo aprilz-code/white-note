@@ -3,7 +3,7 @@ package com.atguigu.java.chapter13;
 /**
  * 字符串拼接
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-11-9:53
  */
 public class StringTest5 {

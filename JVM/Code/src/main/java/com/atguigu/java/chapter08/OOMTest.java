@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * OOM测试
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-06-21:11
  */
 public class OOMTest {

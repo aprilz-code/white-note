@@ -2,7 +2,7 @@ package com.atguigu.java.chapter08;
 
 /**
  *  -Xms10m  -Xmx10m
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-06-19:58
  */
 public class HeapDemo {

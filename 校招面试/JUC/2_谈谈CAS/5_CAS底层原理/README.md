@@ -37,7 +37,7 @@ atomicInteger.compareAndSet(5, 1024)
  *
  * 比较并交换：compareAndSet
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-10-19:46
  */
 public class CASDemo {
@@ -157,5 +157,5 @@ CAS是compareAndSwap，比较当前工作内存中的值和主物理内存中的
 
 ### CAS应用
 
-CAS有3个操作数，内存值V，旧的预期值A，要修改的更新值B。当且仅当预期值A和内存值V相同时，将内存值V修改为B，否者什么都不做
+CAS有3个操作数，内存值V，旧的预期值A，要修改的更新值B。当且仅当预期值A和内存值V相同时，将内存值V修改为B，否则什么都不做
 

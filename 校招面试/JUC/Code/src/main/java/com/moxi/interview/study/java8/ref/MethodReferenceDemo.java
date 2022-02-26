@@ -10,7 +10,7 @@ import java.util.function.Supplier;
 
 /**
  * 方法引用
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-04-06-9:37
  */
 public class MethodReferenceDemo {

@@ -8,7 +8,7 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-16-15:32
  */
 public class BlockingQueueDemo {

@@ -3,7 +3,7 @@ package com.moxi.interview.study.java8.lambda;
 /**
  * 员工类
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-04-05-12:13
  */
 public class Employee {

@@ -5,7 +5,7 @@ import java.lang.annotation.ElementType;
 /**
  * 获取Class的方式
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-29-10:16
  */
 public class GetClassDemo {

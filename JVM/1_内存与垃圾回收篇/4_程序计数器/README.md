@@ -28,7 +28,7 @@ PC寄存器用来存储指向下一条指令的地址，也即将要执行的指
 
 ```java
 /**程序计数器
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-05-16:01
  */
 public class PCRegisterTest {

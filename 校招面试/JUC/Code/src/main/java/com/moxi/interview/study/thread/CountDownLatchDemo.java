@@ -3,7 +3,7 @@ package com.moxi.interview.study.thread;
 import java.util.concurrent.CountDownLatch;
 
 /**
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-15-19:03
  */
 public class CountDownLatchDemo {

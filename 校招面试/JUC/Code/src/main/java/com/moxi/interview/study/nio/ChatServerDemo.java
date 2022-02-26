@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * 使用非阻塞IO制作聊天室  服务端
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-28-8:57
  */
 public class ChatServerDemo {

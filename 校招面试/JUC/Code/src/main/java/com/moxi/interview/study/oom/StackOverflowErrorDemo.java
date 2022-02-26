@@ -1,7 +1,7 @@
 package com.moxi.interview.study.oom;
 
 /**
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-24-14:42
  */
 public class StackOverflowErrorDemo {

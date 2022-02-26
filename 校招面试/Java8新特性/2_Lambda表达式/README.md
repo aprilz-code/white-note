@@ -48,7 +48,7 @@ Lambda表达式最先替代的就是匿名内部类，假设原来我们写一�
 /**
  * 员工类
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-04-05-12:13
  */
 public class Employee {
@@ -79,7 +79,7 @@ public interface MyPredicte<T> {
 /**
  * 按年龄过滤
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-04-05-12:23
  */
 public class FilterEmployeeByAge implements MyPredicte<Employee> {
@@ -122,7 +122,7 @@ public class FilterEmployeeByAge implements MyPredicte<Employee> {
 /**
  * 按薪资过滤
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-04-05-12:23
  */
 public class FilterEmployeeBySalary implements MyPredicte<Employee> {

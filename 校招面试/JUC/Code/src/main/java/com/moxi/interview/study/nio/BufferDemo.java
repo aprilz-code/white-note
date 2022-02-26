@@ -8,7 +8,7 @@ import java.nio.ByteBuffer;
  * 根据数据类型不同，提供相同类型的缓冲区（除了Boolean）
  * ByteBuffer
  * CharBuffer
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-27-14:48
  */
 public class BufferDemo {

@@ -2,7 +2,7 @@ package com.atguigu.java.chapter17;
 
 /**
  * GC垃圾收集过程
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-14-8:35
  */
 public class GCUseTest {

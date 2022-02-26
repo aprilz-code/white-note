@@ -3,7 +3,7 @@ package com.moxi.interview.study.java8.parallel;
 import java.util.concurrent.RecursiveTask;
 
 /**
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-04-06-12:27
  */
 public class ForkJoinCalculate extends RecursiveTask<Long> {

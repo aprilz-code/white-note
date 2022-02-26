@@ -9,7 +9,7 @@ import java.nio.channels.FileChannel;
 
 /**
  * 利用通道完成文件的复制（非直接缓冲区）
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-27-16:36
  */
 public class FileCopyDemo {

@@ -11,7 +11,7 @@ import java.nio.file.StandardOpenOption;
 
 /**
  * 利用通道完成文件的复制（直接缓冲区，内存映射）
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-27-16:36
  */
 public class FileCopyByDirectDemo {

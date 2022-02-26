@@ -3,7 +3,7 @@ package com.atguigu.java.chapter09;
 /**
  * non-final的类变量
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-08-16:54
  */
 public class MethodAreaTest {

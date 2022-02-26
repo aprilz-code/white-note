@@ -7,7 +7,7 @@ import java.util.concurrent.locks.Lock;
 /**
  * 自定义锁
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-17-17:06
  */
 public class MyLock implements Lock {

@@ -1,7 +1,7 @@
 package com.atguigu.java.chapter13;
 
 /**
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-07-11-11:16
  */
 public class StringIntern {

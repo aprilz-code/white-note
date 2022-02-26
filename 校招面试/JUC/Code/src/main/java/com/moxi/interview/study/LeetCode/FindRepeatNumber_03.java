@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  * 找出重复的数
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-06-26-15:17
  */
 public class FindRepeatNumber_03 {

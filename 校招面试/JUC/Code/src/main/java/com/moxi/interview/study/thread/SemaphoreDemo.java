@@ -5,7 +5,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * 信号量Demo
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-16-15:01
  */
 public class SemaphoreDemo {

@@ -7,7 +7,7 @@ package com.moxi.interview.study.thread;
  * 不保证原子性
  * 禁止指令重排
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-09-15:58
  */
 

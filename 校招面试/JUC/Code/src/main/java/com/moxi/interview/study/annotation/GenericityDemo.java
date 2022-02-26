@@ -9,7 +9,7 @@ import java.util.Map;
 /**
  * 通过反射获取泛型
  *
- * @author: 陌溪
+ *  @author: mx
  * @create: 2020-03-29-15:15
  */
 public class GenericityDemo {
