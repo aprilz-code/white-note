@@ -267,7 +267,7 @@ fastclass基本原理是，给每个方法编号，通过编号找到方法执�
 
 ## JDK动态代理和CGLIB的区别
 
-DK动态代理只能对实现了接口的类生成代理，而不能针对类。
+JDK动态代理只能对实现了接口的类生成代理，而不能针对类。
 
 CGLIB是针对类实现代理，主要是对指定的类生成一个子类，覆盖其中的方法，并覆盖其中方法实现增强，但是因为采用的是继承，所以该类或方法最好不要声明成final， 对于final类或方法，是无法继承的
 
@@ -308,3 +308,7 @@ CGLib必须依赖于CGLib的类库，但是它需要类来实现任何接口代�
 https://blog.csdn.net/yhl_jxy/article/details/80635012
 
 https://blog.csdn.net/flyfeifei66/article/details/81481222
+
+## 代码地址
+
+https://github.com/liushaohui1/springTest
