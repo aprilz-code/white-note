@@ -219,7 +219,7 @@
 
 - [Github学习](./校招面试/JUC/14_Github学习/README.md)
 - [乐观锁和悲观锁](./校招面试/JUC/15_乐观锁和悲观锁/README.md)
-- [sleep(),wait(),await(),yield()](./校招面试/JUC/16_谈谈sleep(),wait(),await()和yield())
+- [sleep(),wait(),await(),yield()](./校招面试/JUC/16_谈谈sleep()_wait()_await()和yield())
 - [源码](./校招面试/JUC/Code)
 
 ## Docker
