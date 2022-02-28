@@ -31,5 +31,5 @@
 - [垃圾回收器](http://www.moguit.cn/#/info?blogUid=0b5a41c33fcb1fac230f2684a3208eb0)
 - [Github学习](http://www.moguit.cn/#/info?blogUid=a31fc7326ace247a6540c482c58c7340)
 - [乐观锁和悲观锁](./15_乐观锁和悲观锁)
-- [sleep(),wait(),await(),yield()](./16_谈谈sleep()_wait()_await()和yield())
+- [sleep()_wait()_await()和yield()](./16_谈谈sleep()_wait()_await()和yield())
 - [源码](Code)

@@ -218,7 +218,7 @@
 - [垃圾回收器](./校招面试/JUC/12_JVM/JVM面试题汇总/5_垃圾回收器/README.md)
 - [Github学习](./校招面试/JUC/14_Github学习/README.md)
 - [乐观锁和悲观锁](./校招面试/JUC/15_乐观锁和悲观锁/README.md)
-- [sleep(),wait(),await(),yield()](./校招面试/JUC/16_谈谈sleep()_wait()_await()和yield())
+- [sleep()_wait()_await()和yield()](./校招面试/JUC/16_谈谈sleep()_wait()_await()和yield())
 - [源码](./校招面试/JUC/Code)
 
 ## Docker
