@@ -126,3 +126,5 @@ str1 == str2.intern()：true
 因此，对于任意两个字符串s和t，s.intern() == t.intern() 在且仅当 s.equals(t) 为 true时候,所有文字字符串和字符串值常量表达式都会被插入
 ```
 
+
+[关于重写equals的时候,为啥要重写hashcode](https://www.cnblogs.com/justdojava/p/11271438.html)
