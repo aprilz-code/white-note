@@ -219,7 +219,7 @@
 
 - [Github学习](./校招面试/JUC/14_Github学习/README.md)
 - [乐观锁和悲观锁](./校招面试/JUC/15_乐观锁和悲观锁/README.md)
-- [sleep()_wait()_await()和yield()](./校招面试/JUC/16_谈谈sleep()_wait()_await()和yield())
+- [sleep()_wait()_await()和yield()](./校招面试/JUC/16_谈谈sleep()_wait()_await()和yield()/README.md)
 - [源码](./校招面试/JUC/Code)
 
 ## Docker
@@ -481,6 +481,7 @@
 
 - [MyBatis常见面试题](./数据库/MyBatis常见面试题/README.md)
 - [MyBatis的缓存机制](./数据库/MyBatis的缓存机制/README.md)
+- [MySQL基础](./数据库/MySQL基础/README.md)
 - [MySQL优化](./数据库/MySQL优化/README.md)
 - [MySQL索引](./数据库/MySQL索引/README.md)
 
