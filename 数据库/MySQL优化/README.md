@@ -34,3 +34,20 @@ MySQL是一个经过互联网检验过的生产级别的成熟数据库，对于
   **rows**表示MySQL根据表统计信息及索引选用情况，估算的找到所需的记录所需要读取的行数   
   **Filtered**表示返回结果的行数占需读取行数的百分比 Filtered列的值越大越好 Filtered列的值依赖于统计信息
 - 使用show profile工具：是Mysql提供的查看SQL语句资源消耗情况的工具，可以用于SQL调优的测量。默认关闭，打开后会保存最近15次的运行结果，针对运行慢的SQL通过profile工具详细分析，可以得到SQL执行过程中所有资源的开销情况，如IO开销，CPU开销，内存开销等等。[profile开启方法](https://www.cnblogs.com/573734817pc/p/10766667.html)
+
+
+在两个表进行连接时，用小表来驱动大表可以提高系统的执行效率。
+ ```sql
+两表连接时，先执行的是两个表的笛卡尔积，接着是 on 的条件筛选，然后是 join 类型进行外部行的添加。
+
+如果是 inner join，没有什么差别；
+
+如果是 left join，就应该把大表放在后面；
+
+如果是 right join，就应该把大表放在前面。
+
+ 
+select * from A where id in(select id from b),
+
+当B表的数据集必须小于A表的数据集时，用in优于exists.
+```
