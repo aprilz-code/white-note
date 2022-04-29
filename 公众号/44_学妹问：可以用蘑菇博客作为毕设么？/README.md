@@ -1,4 +1,4 @@
-![](images/0.jpg)
+![](https://cdn.losey.top/blog/0.jpg)
 
 ​                                                                                                                                                                           作者：白
 
@@ -6,7 +6,7 @@
 
 最近有学妹咨询我，想用蘑菇博客作为毕业设计，有没有什么方法能够让远程可以访问本地运行的博客项目呢？
 
-![学妹的咨询](images/image-20210907091636837.png)
+![学妹的咨询](https://cdn.losey.top/blog/image-20210907091636837.png)
 
 首先白觉得，如果可以的话最好可以购买一台云服务器，毕竟如果在部署过程中，有任何问题都可以重置环境，然后重新部署。
 
@@ -25,13 +25,13 @@
 
 并且提供了免费的穿透服务
 
-![免费内网穿透](images/image-20200615185416454.png)
+![免费内网穿透](https://cdn.losey.top/blog/image-20200615185416454.png)
 
 下面我们进入到ngrok的官网，然后注册账号后登陆，选择 左侧开通隧道，然后移动到下方，选择免费的服务器。
 
 > 官网：http://www.ngrok.cc/
 
-![选择美国免费服务器](images/image-20200615185537696.png)
+![选择美国免费服务器](https://cdn.losey.top/blog/image-20200615185537696.png)
 
 然后就进入 **创建隧道** 的页面，在这里输入一些信息
 
@@ -39,41 +39,41 @@
 - 域名的前缀
 - 需要映射的端口号
 
-![配置映射端口](images/image-20200615185727793.png)
+![配置映射端口](https://cdn.losey.top/blog/image-20200615185727793.png)
 
 然后点击添加即可，在添加成功的页面，能够看到隧道 **id** 和 赠送域名，然后复制 **隧道id** 到后面使用。
 
-![得到隧道号](images/image-20200615191735760.png)
+![得到隧道号](https://cdn.losey.top/blog/image-20200615191735760.png)
 
 然后下载 **ngrok** 软件，选中 **Window64Bit** 版本下载
 
 > 下载：http://www.ngrok.cc/download.html
 
-![下载Windows工具](images/image-20200615190058228.png)
+![下载Windows工具](https://cdn.losey.top/blog/image-20200615190058228.png)
 
 下载解压后，点击 **bat** 文件运行软件
 
-![运行](images/image-20200615190201647.png)
+![运行](https://cdn.losey.top/blog/image-20200615190201647.png)
 
 这个时候，就需要在输入刚刚我们复制的 **隧道号** ，然后回车
 
-![输入隧道号信息](images/image-20200615190329039.png)
+![输入隧道号信息](https://cdn.losey.top/blog/image-20200615190329039.png)
 
 输入完成后，我们就看到已经成功映射到了我们的 **8603** 端口上了。
 
-![运行成功](images/image-20200615191411423.png)
+![运行成功](https://cdn.losey.top/blog/image-20200615191411423.png)
 
 首先先本地对 **8603** 端口号进行测试，输入下面的地址，打开 **Swagger** 页面。
 
 > http://localhost:8603/swagger-ui.html
 
-![本地测试](images/image-20200615191442854.png)
+![本地测试](https://cdn.losey.top/blog/image-20200615191442854.png)
 
 然后在打开 **ngrok** 进行测试，在浏览器输入下方地址，发现也可以成功的访问，这个时候我们就可以实现内网穿透啦
 
 >  http://demoweb.free.idcfengye.com/swagger-ui.html
 
-![内网穿透测试](images/image-20200615191348159.png)
+![内网穿透测试](https://cdn.losey.top/blog/image-20200615191348159.png)
 
 下面只需要把其它端口，也分别按照上述方法暴露出来，就可以实现远程访问了。
 

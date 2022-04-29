@@ -6,13 +6,13 @@
 
 地址：[Element](https://github.com/ElemeFE/element/issues/15036)
 
-![image-20200411115231912](images/image-20200411115231912.png)
+![image-20200411115231912](https://cdn.losey.top/blog/image-20200411115231912.png)
 
 上面也是提出了这个问题，就是希望能够合并请求提交，但是得到的官方回复却是：这个合并提交不在计划内，并不打算支持。
 
 
 
-![image-20200411115319703](images/image-20200411115319703.png)
+![image-20200411115319703](https://cdn.losey.top/blog/image-20200411115319703.png)
 
 
 
@@ -108,8 +108,8 @@
 
 最后我们查看请求，会同时携带多个文件
 
-![image-20200411172208388](images/image-20200411172208388.png)
+![image-20200411172208388](https://cdn.losey.top/blog/image-20200411172208388.png)
 
 并且返回多个上传成功的结果
 
-![image-20200411172255665](images/image-20200411172255665.png)
+![image-20200411172255665](https://cdn.losey.top/blog/image-20200411172255665.png)

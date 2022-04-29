@@ -12,13 +12,13 @@ Secret的主要作用就是加密数据，然后存在etcd里面，让Pod容器�
 echo -n 'admin' | base64
 ```
 
-![image-20201117212037668](images/image-20201117212037668.png)
+![image-20201117212037668](https://cdn.losey.top/blog/image-20201117212037668.png)
 
 ### 变量形式挂载到Pod
 
 - 创建secret加密数据的yaml文件    secret.yaml
 
-![image-20201117212124476](images/image-20201117212124476.png)
+![image-20201117212124476](https://cdn.losey.top/blog/image-20201117212124476.png)
 
 然后使用下面命令创建一个pod
 
@@ -32,7 +32,7 @@ kubectl create -f secret.yaml
 kubectl get pods
 ```
 
-![image-20201118084010980](images/image-20201118084010980.png)
+![image-20201118084010980](https://cdn.losey.top/blog/image-20201118084010980.png)
 
 然后我们通过下面的命令，进入到我们的容器内部
 
@@ -49,7 +49,7 @@ echo $SECRET_USERNAME
 echo $SECRET_PASSWORD
 ```
 
-![image-20201118084137942](images/image-20201118084137942.png)
+![image-20201118084137942](https://cdn.losey.top/blog/image-20201118084137942.png)
 
 最后如果我们要删除这个Pod，就可以使用这个命令
 
@@ -61,7 +61,7 @@ kubectl delete -f secret-val.yaml
 
 首先我们创建一个 secret-val.yaml 文件
 
-![image-20201118084321590](images/image-20201118084321590.png)
+![image-20201118084321590](https://cdn.losey.top/blog/image-20201118084321590.png)
 
 然后创建我们的 Pod
 
@@ -74,7 +74,7 @@ kubectl exec -it mypod bash
 ls /etc/foo
 ```
 
-![image-20201118084707478](images/image-20201118084707478.png)
+![image-20201118084707478](https://cdn.losey.top/blog/image-20201118084707478.png)
 
 ## ConfigMap
 
@@ -106,13 +106,13 @@ kubectl create configmap redis-config --from-file=redis.properties
 kubectl describe cm redis-config
 ```
 
-![image-20201118085503534](images/image-20201118085503534.png)
+![image-20201118085503534](https://cdn.losey.top/blog/image-20201118085503534.png)
 
 ### Volume数据卷形式挂载
 
 首先我们需要创建一个 `cm.yaml`
 
-![image-20201118085847424](images/image-20201118085847424.png)
+![image-20201118085847424](https://cdn.losey.top/blog/image-20201118085847424.png)
 
 然后使用该yaml创建我们的pod
 
@@ -123,7 +123,7 @@ kubectl apply -f cm.yaml
 kubectl get pods
 ```
 
-![image-20201118090634869](images/image-20201118090634869.png)
+![image-20201118090634869](https://cdn.losey.top/blog/image-20201118090634869.png)
 
 最后我们通过命令就可以查看结果输出了
 
@@ -131,13 +131,13 @@ kubectl get pods
 kubectl logs mypod
 ```
 
-![image-20201118090712780](images/image-20201118090712780.png)
+![image-20201118090712780](https://cdn.losey.top/blog/image-20201118090712780.png)
 
 ### 以变量的形式挂载Pod
 
 首先我们也有一个 myconfig.yaml文件，声明变量信息，然后以configmap创建
 
-![image-20201118090911260](images/image-20201118090911260.png)
+![image-20201118090911260](https://cdn.losey.top/blog/image-20201118090911260.png)
 
 然后我们就可以创建我们的配置文件
 
@@ -148,11 +148,11 @@ kubectl apply -f myconfig.yaml
 kubectl get cm
 ```
 
-![image-20201118091042287](images/image-20201118091042287.png)
+![image-20201118091042287](https://cdn.losey.top/blog/image-20201118091042287.png)
 
 然后我们创建完该pod后，我们就需要在创建一个  config-var.yaml 来使用我们的配置信息
 
-![image-20201118091249520](images/image-20201118091249520.png)
+![image-20201118091249520](https://cdn.losey.top/blog/image-20201118091249520.png)
 
 最后我们查看输出
 
@@ -160,4 +160,4 @@ kubectl get cm
 kubectl logs mypod
 ```
 
-![image-20201118091448252](images/image-20201118091448252.png)
+![image-20201118091448252](https://cdn.losey.top/blog/image-20201118091448252.png)

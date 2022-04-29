@@ -341,15 +341,15 @@ https://ding-doc.dingtalk.com/doc#/serverapi2/qf2nxq
 
 1. 仅在pc端dingding客户端上能创建webhook
    在左上角处选择“机器人管理”-->“自定义”，“安全设置”选择“自定义关键词”，即包含该关键词才能发送报警，记住最终生成的webhook
-   ![image](images/1587988512682-beed08e0-a1f2-4809-bfab-98b5253610af.png)
-   ![image](images/1587988610421-81bd3819-5a3d-4f14-8f80-f1c8e5b90329.png)
-   ![image](images/1587988702278-175f3247-b5bd-4a40-834e-bfdfe4fba5d3.png)
-   ![image](images/1587988437050-b19bcf36-2577-45eb-96d2-d88fd65507fa.png)
+   ![image](https://cdn.losey.top/blog/1587988512682-beed08e0-a1f2-4809-bfab-98b5253610af.png)
+   ![image](https://cdn.losey.top/blog/1587988610421-81bd3819-5a3d-4f14-8f80-f1c8e5b90329.png)
+   ![image](https://cdn.losey.top/blog/1587988702278-175f3247-b5bd-4a40-834e-bfdfe4fba5d3.png)
+   ![image](https://cdn.losey.top/blog/1587988437050-b19bcf36-2577-45eb-96d2-d88fd65507fa.png)
 2. grafana配置报警
 
 1. 1. 配置全局的dingding报警，输入webhook
    2. 在具体的图表中配置报警选择已配置的dingding报警
-      ![image](images/1587989954726-3f5b6a7f-15cf-434a-b526-66522eaca98b.png)![image](images/1587990143702-1cefd6df-0f83-4e68-846e-cf8e4ebdb123.png)![image](images/1587990196040-4e320a97-10e1-4362-8dcf-efbf2ef6c3ff.png)![image](images/1587991013837-715ba47b-c043-4236-906b-6d1e406a162f.png)
+      ![image](https://cdn.losey.top/blog/1587989954726-3f5b6a7f-15cf-434a-b526-66522eaca98b.png)![image](https://cdn.losey.top/blog/1587990143702-1cefd6df-0f83-4e68-846e-cf8e4ebdb123.png)![image](https://cdn.losey.top/blog/1587990196040-4e320a97-10e1-4362-8dcf-efbf2ef6c3ff.png)![image](https://cdn.losey.top/blog/1587991013837-715ba47b-c043-4236-906b-6d1e406a162f.png)
 
 ### 1.6.2.dashboard template
 
@@ -357,7 +357,7 @@ https://grafana.com/grafana/dashboards?orderBy=name&direction=asc
 
 https://grafana.com/grafana/dashboards/11376
 
-![image](images/1587985751427-8e176c22-6bf1-410e-af31-4d36f2462c44.png)
+![image](https://cdn.losey.top/blog/1587985751427-8e176c22-6bf1-410e-af31-4d36f2462c44.png)
 
 
 
@@ -799,7 +799,7 @@ or https://www.jianshu.com/p/75af95641c91
 
 kubectl expose deployment [xxxxxxxx] --type=NodePort
 
-![image.png](images/1591921126800-ab6f34cf-78ec-40ce-a88f-9d6d2040b395.png)
+![image.png](https://cdn.losey.top/blog/1591921126800-ab6f34cf-78ec-40ce-a88f-9d6d2040b395.png)
 
 
 

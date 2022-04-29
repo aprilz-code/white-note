@@ -2,13 +2,13 @@
 
 最近群里的小伙伴在买完 **ipad** 后，没玩多久就放在边上吃灰了，在群里咨询有没有办法提高 **ipad** 生产力。
 
-![1618024227548](images/1618361129142.jpg)
+![1618024227548](https://cdn.losey.top/blog/1618361129142.jpg)
 
 其实白之前购买了一台 **ipad**，但是受限于没有**合适的编辑器**，因此想把 **ipad** 作为 **生产工具** 并做不到，只是用来看 **爱奇艺** 和 **Bilibili** 还挺香的，真是 **买前生产力，买后爱奇艺**。
 
 但是，最近白在 **Github** 网上冲浪的时候，发现 **vscode** 有 **browser** 版本，也就是浏览器版本，通过在自己服务器上进行配置，然后通过浏览器来来进行访问，突然发现打开新世界的大门。
 
-![image-20210414090311464](images/image-20210414090311464.png)
+![image-20210414090311464](https://cdn.losey.top/blog/image-20210414090311464.png)
 
 ## 安装
 
@@ -59,7 +59,7 @@ docker run --privileged -d -it -h vscodeServer --name vscodeServer -v /etc/local
 
 启动容器后，使用 **xshell** 工具进行连接，输入服务器的 **ip** 和连接端口 **11222** ，点击确定后，在输入账号和密码 **root**  **mogu2018**。
 
-![image-20210414092841514](images/image-20210414092841514.png)
+![image-20210414092841514](https://cdn.losey.top/blog/image-20210414092841514.png)
 
 ## 下载 vscode server
 
@@ -69,7 +69,7 @@ docker run --privileged -d -it -h vscodeServer --name vscodeServer -v /etc/local
 
 然后挑选合适的 **vscode server** 版本进行安装
 
-![image-20210414094747829](images/image-20210414094747829.png)
+![image-20210414094747829](https://cdn.losey.top/blog/image-20210414094747829.png)
 
 然后再到我们的服务器中解压，使用下列命令
 
@@ -91,11 +91,11 @@ cd code-server-3.9.3-linux-amd64
 
 下面是启动成功的截图
 
-![image-20210414095207942](images/image-20210414095207942.png)
+![image-20210414095207942](https://cdn.losey.top/blog/image-20210414095207942.png)
 
 启动成功后，输入 **ip** + **8443** 端口号，即可访问到 **vscode** 的浏览器版本了
 
-![image-20210414095119044](images/image-20210414095119044.png)
+![image-20210414095119044](https://cdn.losey.top/blog/image-20210414095119044.png)
 
 打开登录页面后，需要编辑下面文件进行密码的修改
 
@@ -114,7 +114,7 @@ cert: false
 
 再次输入密码，即可进入到 **vscode** 浏览器版本
 
-![image-20200524102450268](images/image-20200524102450268.png)
+![image-20200524102450268](https://cdn.losey.top/blog/image-20200524102450268.png)
 
 不过上面的启动方式存在一个问题，就是需要**独占**一个窗口，如果终端关闭的话，将不能继续运行。因此我们需要开启一个守护进程 **nohup**，执行如下脚本进行后台运行
 
@@ -126,11 +126,11 @@ nohup ./code-server --port 8443  --host 0.0.0.0  > catalina.out  2>&1 &
 
 把上述操作都完成后，在 **ipad** 上的 **Safari** 浏览器打开，输入对应的账号和密码，即可开启愉快的搬砖之旅~
 
-![image-20210414112641528](images/image-20210414112641528.png)
+![image-20210414112641528](https://cdn.losey.top/blog/image-20210414112641528.png)
 
 安装 **python** 扩展插件后，来个 **leetcode** 经典题目 **两数之和** 来练练手~。
 
-![image-20210414112743735](images/image-20210414112743735.png)
+![image-20210414112743735](https://cdn.losey.top/blog/image-20210414112743735.png)
 
 如果小伙伴想要扩展更多的功能的话（运行Java或者C语言），需要去安装更多的插件进行支持就行了。好了，本期的分享就介绍到这里了，我们下期再见~
 
@@ -145,4 +145,4 @@ nohup ./code-server --port 8443  --host 0.0.0.0  > catalina.out  2>&1 &
 
 **白**是一个从三本院校一路摸滚翻爬上来的互联网大厂程序员。独立做过几个开源项目，其中**蘑菇博客**在码云上有 **2K Star** 。目前就职于**字节跳动的Data广告部门**，是字节跳动全线产品的商业变现研发团队。本公众号将会持续性的输出很多原创小知识以及学习资源。如果你觉得本文对你有所帮助，麻烦给文章点个「赞」和「在看」。同时欢迎各位小伙伴关注白，让我们一起成长~
 
-![和白一起学编程](images/image-20210122092846701.png)
+![和白一起学编程](https://cdn.losey.top/blog/image-20210122092846701.png)

@@ -10,11 +10,11 @@
 
 如果是在阿里云购买的域名，我们首先搜索域名，进入后，点击解析
 
-![img](images/1578025441424.png)
+![img](https://cdn.losey.top/blog/1578025441424.png)
 
 我们配置好对应的二级域名
 
-![img](images/1578025464834.png)
+![img](https://cdn.losey.top/blog/1578025464834.png)
 
 这里我主要配置的二级域名有：
 
@@ -37,7 +37,7 @@ testpicture -> picture
 
 添加完成后，如下所示
 
-![image-20210102170608891](images/image-20210102170608891.png)
+![image-20210102170608891](https://cdn.losey.top/blog/image-20210102170608891.png)
 
 ## 修改Nginx配置
 
@@ -135,7 +135,7 @@ SEARCH_API=http://47.111.4.185:8607/mogu-searc
 
 我们首先进入到 **nacos** 管理页面
 
-![image-20210103155439135](images/image-20210103155439135.png)
+![image-20210103155439135](https://cdn.losey.top/blog/image-20210103155439135.png)
 
 将里面的 webSite修改成门户页面
 
@@ -168,8 +168,8 @@ http://testadmin.moguit.cn/#/
 
 门户页面
 
-![image-20210102171736829](images/image-20210102171736829.png)
+![image-20210102171736829](https://cdn.losey.top/blog/image-20210102171736829.png)
 
 后台页面
 
-![image-20210102171806029](images/image-20210102171806029.png)
+![image-20210102171806029](https://cdn.losey.top/blog/image-20210102171806029.png)

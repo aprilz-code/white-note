@@ -4,11 +4,11 @@
 
 同时，在小陈深入沟通得知，他是从今年三月份就开始重写蘑菇博客的后台的，中间也遇到过一些难题，差点想放弃，但是因为内心的执念，想不断的挑战自己，经历了半年的时间，终于把蘑菇的基础模块都完成了，并且能成功运行起来了。
 
-![image-20211031000009550](images/image-20211031000009550.png)
+![image-20211031000009550](https://cdn.losey.top/blog/image-20211031000009550.png)
 
 白也跑到小陈的 **Gitee** 主页上，能看到从今年的 **3** 月 **1** 号开始，一直到现在 **10** 月底，一直在保持对蘑菇的重构，直到前两天完善了博客的搭建文档，终于把它公布于众。
 
-![image-20211031000848836](images/image-20211031000848836.png)
+![image-20211031000848836](https://cdn.losey.top/blog/image-20211031000848836.png)
 
 > 小陈的主页：https://gitee.com/hrbust_cheny
 >
@@ -194,11 +194,11 @@
 
 联系方式单独做成了一个管理，这样就可以自定义的扩展不同的联系的方式，并且颜色和图标可以高度自定义。
 
-![关注我们](images/image-20211031192833586.png)
+![关注我们](https://cdn.losey.top/blog/image-20211031192833586.png)
 
 实现后的效果如下，在蘑菇原来的基础上添加了掘金和B站，与之前对比毫无违和感。
 
-![关注我效果图](images/image-20211031193040037.png)
+![关注我效果图](https://cdn.losey.top/blog/image-20211031193040037.png)
 
 ## 开发中遇到了哪些困难，有没有想过放弃
 
@@ -339,11 +339,11 @@ const giteeLogin = {
 
 执行成功后，会显示运行的端口号，表示 **node** 后端服务已经运行成功
 
-![启动后端项目](images/image-20211031111419525.png)
+![启动后端项目](https://cdn.losey.top/blog/image-20211031111419525.png)
 
 如果想检验的话，可以复制打开，看能否出现对应的 **Swagger** 接口文档
 
-![打开Swagger项目](images/image-20211031111752711.png)
+![打开Swagger项目](https://cdn.losey.top/blog/image-20211031111752711.png)
 
 ### 运行前端项目
 
@@ -358,7 +358,7 @@ npm run dev
 
 运行成功后的，会自动打开 http://localhost:20519/ 
 
-![后端页面](images/image-20211031145723002.png)
+![后端页面](https://cdn.losey.top/blog/image-20211031145723002.png)
 
 然后再运行管理端  **vue-blog-web**，到目录 **pupu_blog\vue-blog-admin** 下执行下面命令
 
@@ -371,7 +371,7 @@ npm run dev
 
 运行成功后，会打开  http://localhost:20518/
 
-![前端页面](images/image-20211031183015300.png)
+![前端页面](https://cdn.losey.top/blog/image-20211031183015300.png)
 
 ## 最后
 

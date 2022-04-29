@@ -123,11 +123,11 @@ https://gitee.com/moxi159753/mogu_blog_v2
 
 然后找到，docker-compose 目录
 
-![docker-compose脚本所在目录](images/3eebbd04b6594f1098530b44142cb76c)
+![docker-compose脚本所在目录](https://cdn.losey.top/blog/3eebbd04b6594f1098530b44142cb76c)
 
 首先我们来查看一下docker-compose的目录结构
 
-![docker-compose脚本目录结构](images/93219faa15224ea581f3b365e3cb2d5e)
+![docker-compose脚本目录结构](https://cdn.losey.top/blog/93219faa15224ea581f3b365e3cb2d5e)
 
 - bin：相关一键启动脚本的目录
 - config：存放配置文件
@@ -171,7 +171,7 @@ sh middleware.sh
 
 下面是安装过程，需要耐心等待
 
-![安装核心组件](images/image-20210103171207594.png)
+![安装核心组件](https://cdn.losey.top/blog/image-20210103171207594.png)
 
 在部署完中间件后，我们需要进行测试中间件安装是否成功。
 
@@ -185,11 +185,11 @@ sh middleware.sh
 >
 > MySQL密码：mogu2018
 
-![SQLyog连接界面](images/image-20210103171327116.png)
+![SQLyog连接界面](https://cdn.losey.top/blog/image-20210103171327116.png)
 
 连接后，即可看到我们安装好的蘑菇博客业务数据库
 
-![蘑菇博客业务数据库](images/image-20210103171603686.png)
+![蘑菇博客业务数据库](https://cdn.losey.top/blog/image-20210103171603686.png)
 
 ### Nacos
 
@@ -208,7 +208,7 @@ http://192.168.177.150:8848/nacos
 
 打开后，我们在配置列表即可看到我们的配置文件
 
-![配置文件所在地](images/image-20210104084259827.png)
+![配置文件所在地](https://cdn.losey.top/blog/image-20210104084259827.png)
 
 ### Redis
 
@@ -220,11 +220,11 @@ Redis使用 **RedisDesktopManager** 进行连接
 
 开始连接
 
-![RDM连接界面](images/image-20210103171808589.png)
+![RDM连接界面](https://cdn.losey.top/blog/image-20210103171808589.png)
 
 因为目前 **Redis** 还没有缓存数据，所以为空，以后有数据的话，将会使用 **db0** 数据库
 
-![Redis中的16个db](images/image-20210103171911067.png)
+![Redis中的16个db](https://cdn.losey.top/blog/image-20210103171911067.png)
 
 ### RabbitMQ
 
@@ -238,7 +238,7 @@ RabbitMQ是消息队列，我们可以访问其图形化界面
 
 然后即可进入到RabbitMQ的可视化页面
 
-![RabbitMQ可视化页面](images/image-20210103194818204.png)
+![RabbitMQ可视化页面](https://cdn.losey.top/blog/image-20210103194818204.png)
 
 
 
@@ -268,7 +268,7 @@ docker-compose -f zipkin.yml up -d
 
 脚本将会给我们拉取zipkin镜像，并进行启动
 
-![拉取Zipkin镜像](images/image-20210103195652668.png)
+![拉取Zipkin镜像](https://cdn.losey.top/blog/image-20210103195652668.png)
 
 启动完成后，我们访问下面 **URL** 进行测试
 
@@ -278,7 +278,7 @@ http://192.168.177.150:9411/zipkin/
 
 启动后的页面如下所示
 
-![Zipkin可视化页面](images/image-20210103195830492.png)
+![Zipkin可视化页面](https://cdn.losey.top/blog/image-20210103195830492.png)
 
 ### Sentinel
 
@@ -296,7 +296,7 @@ docker-compose -f sentinel.yml up -d
 
 脚本将会给我们拉取 sentinel 镜像，并进行启动
 
-![拉取Sentinel镜像](images/image-20210103201427604.png)
+![拉取Sentinel镜像](https://cdn.losey.top/blog/image-20210103201427604.png)
 
 启动完成后，我们访问下面 **URL** 进行测试
 
@@ -307,7 +307,7 @@ http://192.168.177.150:8070
 
 即可进入到sentinel后台管理，因为我们的微服务还没有启动，所以暂时还看不到任何东西
 
-![Sentinel后台页面](images/image-20210103201751979.png)
+![Sentinel后台页面](https://cdn.losey.top/blog/image-20210103201751979.png)
 
 
 
@@ -329,7 +329,7 @@ http://192.168.177.150:8070
 
 下载完成后解压，将其上传到 **CentOS** 服务器上，存放的目录为  **docker-compose/data/solr_data** 下
 
-![Solr数据所在目录](images/image-20210103220814298.png)
+![Solr数据所在目录](https://cdn.losey.top/blog/image-20210103220814298.png)
 
 然后在到 **docker-compose/yaml** ，执行下面脚本
 
@@ -345,7 +345,7 @@ http://192.168.177.150:8080/solr
 
 即可成功访问到 **Solr** 的图形化页面
 
-![Solr可视化页面](images/image-20210103215913091.png)
+![Solr可视化页面](https://cdn.losey.top/blog/image-20210103215913091.png)
 
 #### ElasticSearch
 
@@ -369,7 +369,7 @@ http://192.168.177.150:5601
 
 如果能出现下面的页面，说明已经成功安装了 ElasticSearch 和 Kibana，在这里kibana只是作为ElasticSearch的图形化显示工具，相当于原来的SolrAdmin页面一样。
 
-![Kibana可视化页面](images/image-20210104090555557.png)
+![Kibana可视化页面](https://cdn.losey.top/blog/image-20210104090555557.png)
 
 
 
@@ -377,7 +377,7 @@ http://192.168.177.150:5601
 
 在启动项目前，我们需要修改一下 **hosts** 文件
 
-![hosts所在目录](images/image-20210104171224254.png)
+![hosts所在目录](https://cdn.losey.top/blog/image-20210104171224254.png)
 
 然后加入如下配置 
 
@@ -405,7 +405,7 @@ http://192.168.177.150:5601
 
 本着让小伙伴们 **能不动手就不动手** 的原则，我写了个自动修改配置的脚本，在 **mogu_blog_v2/doc/yaml** 目录下
 
-![脚本所在目录](images/image-20210104165005358.png)
+![脚本所在目录](https://cdn.losey.top/blog/image-20210104165005358.png)
 
 这里里面有个两个 **windows bat** 
 
@@ -422,11 +422,11 @@ http://192.168.177.150:5601
 
 首先修改的是 **mogu_admin** 项目的 **application.yml**，将 **dev** 改成 **prod**
 
-![切换环境](images/image-20210103230005393.png)
+![切换环境](https://cdn.losey.top/blog/image-20210103230005393.png)
 
 然后修改 **bootstrap.yaml** ，将 **dev** 改成 **prod**，同时还需要修改 **nacos** 和 **sentinel** ，将 localhost改为对应的服务名称即可。
 
-![修改配置](images/image-20210103225924387.png)
+![修改配置](https://cdn.losey.top/blog/image-20210103225924387.png)
 
 我们重复上面操作，将  **mogu_web**、**mogu_sms**、**mogu_gateway**、**mogu_picture**、**mogu_montor** 等项目都进行修改。
 
@@ -440,7 +440,7 @@ mogu_admin、mogu_web、mogu_sms、mogu_picture、mogu_gateway
 
 下面是启动完成的图片，一共包含五个核心服务
 
-![项目启动](images/image-20210104151144113.png)
+![项目启动](https://cdn.losey.top/blog/image-20210104151144113.png)
 
 等服务器都启动完成后，下面我们验证一下后台是否正常启动，回到我们的Nacos管理界面
 
@@ -458,7 +458,7 @@ http://192.168.177.150:8848/nacos
 
 如果我们看到下面五个服务都注册到Nacos中，那说明启动成功
 
-![Nacos注册中心](images/4ca459f56aca4d07b262172d096bccf4)
+![Nacos注册中心](https://cdn.losey.top/blog/4ca459f56aca4d07b262172d096bccf4)
 
 在通过访问下列swagger接口，测试接口是否正常
 
@@ -475,19 +475,19 @@ http://localhost:8603/swagger-ui/index.html
 
 如果能够进入下面页面的话，说明后台是没有问题的了，下面我们可以验证一下接口
 
-![Swagger接口界面](images/f7aac7c1d46e41fb88cce5918318f509)
+![Swagger接口界面](https://cdn.losey.top/blog/f7aac7c1d46e41fb88cce5918318f509)
 
 验证登录
 
-![输入账号和密码](images/84ed060923214f7cb8df77f0b6bc512a)
+![输入账号和密码](https://cdn.losey.top/blog/84ed060923214f7cb8df77f0b6bc512a)
 
 然后执行完成后，复制到token
 
-![获取token令牌](images/ec60e235b7264864a404abc8cd24248f)
+![获取token令牌](https://cdn.losey.top/blog/ec60e235b7264864a404abc8cd24248f)
 
 然后在swagger页面的右上角，有一个authorize的按钮，点击后，将token粘贴进去，即可操作全部接口进行测试了~
 
-![输入token令牌](images/03c6697dfd3148888215e2f38e99b775)
+![输入token令牌](https://cdn.losey.top/blog/03c6697dfd3148888215e2f38e99b775)
 
 ## 启动前端项目
 
@@ -527,7 +527,7 @@ Windows 用户若安装不成功，很大概率是`node-sass`安装失败
 
 在启动项目成功后，会跳转到：**localhost:9528** ，我们输入账号密码： **admin**  **mogu2018** 访问即可
 
-![蘑菇博客登录页面](images/1562769468634.png)
+![蘑菇博客登录页面](https://cdn.losey.top/blog/1562769468634.png)
 
 ### 安装 vue_mogu_web依赖
 
@@ -548,7 +548,7 @@ npm run build
 
 下面是启动成功的界面，跳转到  **localhost:9527**
 
-![蘑菇博客门户页面](images/image-20210104171502876.png)
+![蘑菇博客门户页面](https://cdn.losey.top/blog/image-20210104171502876.png)
 
 ## 修改项目配置
 
@@ -558,7 +558,7 @@ npm run build
 
 我们进入到nacos配置文件管理界面，找到的 mogu_web_prod.yaml文件
 
-![Nacos配置文件](images/0a441f6bed6b40a9887656cab01e239b)
+![Nacos配置文件](https://cdn.losey.top/blog/0a441f6bed6b40a9887656cab01e239b)
 
 我们需要将下面的域名，改成自己的
 
@@ -600,7 +600,7 @@ justAuth:
 
 我们进入到nacos配置文件管理界面，找到的 mogu_sms_prod.yaml文件
 
-![Nacos配置文件](images/ce767802aeda40ce87add46999350e28)
+![Nacos配置文件](https://cdn.losey.top/blog/ce767802aeda40ce87add46999350e28)
 
 在mogu_sms中，主要修改的就是邮箱的配置，我们将发送邮件的信息改成自己的
 
@@ -613,7 +613,7 @@ mail:
 
 注意，上面的password是授权码，授权码不是密码，以163邮箱为例，我们需要开启SMTP服务，然后设置授权码
 
-![获取授权码](images/9e312c0c0c8a4893a17f36ec37f3ca49)
+![获取授权码](https://cdn.losey.top/blog/9e312c0c0c8a4893a17f36ec37f3ca49)
 
 ### 修改图片配置
 
@@ -629,21 +629,21 @@ mail:
 
 本文主要以本地文件存储为例，我们到系统配置，首先修改图片显示的本地域名
 
-![系统配置页面](images/4a6e7093040146168bc04d61b36d01bd)
+![系统配置页面](https://cdn.losey.top/blog/4a6e7093040146168bc04d61b36d01bd)
 
 修改完成后，进行保存，然后在图片管理上传新的图片
 
-![图片管理页面](images/2ec8b04d7d634c13a8c4b64967420e99)
+![图片管理页面](https://cdn.losey.top/blog/2ec8b04d7d634c13a8c4b64967420e99)
 
 > 要是图片无法正常显示，可以F12看看图片路径是否是修改后的IP，同时对应的 8600端口的防火墙是否开放
 
 最后到博客管理页面，编辑博客，然后选择图片插入即可~
 
-![博客编辑页面](images/2a4bc5b65899489fa4e86fff56207099)
+![博客编辑页面](https://cdn.losey.top/blog/2a4bc5b65899489fa4e86fff56207099)
 
 结语
 --
 
 **白**是一个从三本院校一路摸滚翻爬上来的互联网大厂程序员。独立做过几个开源项目，其中**蘑菇博客**在码云上有 **2K Star** 。目前就职于**字节跳动的Data广告部门**，是字节跳动全线产品的商业变现研发团队。本公众号将会持续性的输出很多原创小知识以及学习资源。如果你觉得本文对你有所帮助，麻烦给文章点个「赞」和「在看」。同时欢迎各位小伙伴关注白，让我们一起成长~
 
-![和白一起学编程](images/b463558e896d46779ffd38d7982d3da7.png)
+![和白一起学编程](https://cdn.losey.top/blog/b463558e896d46779ffd38d7982d3da7.png)

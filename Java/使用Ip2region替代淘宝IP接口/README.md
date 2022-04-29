@@ -4,11 +4,11 @@
 
 前段时间淘宝的IP接口宕机，导致无法直接获取到IP信息，同时调用淘宝的ip也返回缓慢，直接拖慢了系统的运行效率，导致我只能注释掉原来通过淘宝获取ip的接口。
 
-![image-20200531084039501](images/image-20200531084039501.png)
+![image-20200531084039501](https://cdn.losey.top/blog/image-20200531084039501.png)
 
 这段时间貌似淘宝的IP接口又悄悄的上线了
 
-![image-20200531084132125](images/image-20200531084132125.png)
+![image-20200531084132125](https://cdn.losey.top/blog/image-20200531084132125.png)
 
 但是通过观察我发现，貌似需要通过accessKey才能够继续访问了，然后我找了一段时间，也没有看到哪里能够申请访问的密钥，故此打算放弃淘宝IP接口了。
 
@@ -38,11 +38,11 @@ ip2region - 准确率99.9%的离线IP地址定位库，0.0x毫秒级查询，ip2
 
 然后我们再去[ip2region的官网](https://github.com/lionsoul2014/ip2region/tree/master/data)下载到ip数据库，也就是这个文件
 
-![image-20200531084709141](images/image-20200531084709141.png)
+![image-20200531084709141](https://cdn.losey.top/blog/image-20200531084709141.png)
 
 然后我们放在我们工具类的resource目录下，创建一个city文件夹存放
 
-![image-20200531084752121](images/image-20200531084752121.png)
+![image-20200531084752121](https://cdn.losey.top/blog/image-20200531084752121.png)
 
 然后在原来的IP工具类中，添加下面方法
 
@@ -116,7 +116,7 @@ ip2region - 准确率99.9%的离线IP地址定位库，0.0x毫秒级查询，ip2
 
 运行结果
 
-![image-20200531084854577](images/image-20200531084854577.png)
+![image-20200531084854577](https://cdn.losey.top/blog/image-20200531084854577.png)
 
 在上述方法中，还提供了三种查询的策略，具体介绍在上文已经说过
 
@@ -152,7 +152,7 @@ int algorithm = DbSearcher.BTREE_ALGORITHM;
 
 上面的操作在IDEA中运行是没有问题的，但是如果你打包成jar包，部署到服务器中！！！就会出错
 
-![image-20200531092458482](images/image-20200531092458482.png)
+![image-20200531092458482](https://cdn.losey.top/blog/image-20200531092458482.png)
 
 也就是打包后的jar包，无法获取到我们的 `ip2region.db` 文件，那么我们需要做的就是把文件内容重新创建一个目录，然后通过IO流进行读取，下次读取的时候，会判断文件是否存在，如果存在的话，那么就直接返回该路径
 
@@ -265,8 +265,8 @@ int algorithm = DbSearcher.BTREE_ALGORITHM;
 
 最后运行后，会发现在项目的根目录下，会创建一个temp目录，用于存放我们的`.db`文件
 
-![image-20200531095340010](images/image-20200531095340010.png)
+![image-20200531095340010](https://cdn.losey.top/blog/image-20200531095340010.png)
 
 我们再次打包部署服务器后，发现能够成功获取到IP城市信息了~
 
-![image-20200531100104493](images/image-20200531100104493.png)
+![image-20200531100104493](https://cdn.losey.top/blog/image-20200531100104493.png)

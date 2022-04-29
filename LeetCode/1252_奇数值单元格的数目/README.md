@@ -14,7 +14,7 @@ https://leetcode-cn.com/problems/cells-with-odd-values-in-a-matrix/
 
 请你在执行完所有 indices 指定的增量操作后，返回矩阵中 「奇数值单元格」 的数目。
 
-![image-20200703190036895](images/image-20200703190036895.png)
+![image-20200703190036895](https://cdn.losey.top/blog/image-20200703190036895.png)
 
 ```
 输入：n = 2, m = 3, indices = [[0,1],[1,1]]
@@ -26,7 +26,7 @@ https://leetcode-cn.com/problems/cells-with-odd-values-in-a-matrix/
 
 示例2：
 
-![image-20200703190100428](images/image-20200703190100428.png)
+![image-20200703190100428](https://cdn.losey.top/blog/image-20200703190100428.png)
 
 ```
 输入：n = 2, m = 2, indices = [[1,1],[0,0]]

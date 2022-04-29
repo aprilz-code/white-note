@@ -17,7 +17,7 @@ Stream是Java8中处理集合的关键抽象概念，它可以指定你希望对
 
 这里的中间操作可能是：切片，排序，筛选等
 
-![image-20200406105528445](images/image-20200406105528445.png)
+![image-20200406105528445](https://cdn.losey.top/blog/image-20200406105528445.png)
 
 ## 什么是Stream
 
@@ -71,7 +71,7 @@ Stream<Integer> stream4 = Stream.iterate(0, (x) -> x +2 );
 
 一个终止操作，执行中间操作链，并产生结果
 
-![image-20200406110230148](images/image-20200406110230148.png)
+![image-20200406110230148](https://cdn.losey.top/blog/image-20200406110230148.png)
 
 
 

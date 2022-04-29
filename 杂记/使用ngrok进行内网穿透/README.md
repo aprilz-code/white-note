@@ -17,41 +17,41 @@
 
 并且提供了免费的穿透服务
 
-![image-20200615185416454](images/image-20200615185416454.png)
+![image-20200615185416454](https://cdn.losey.top/blog/image-20200615185416454.png)
 
 下面我们进入到ngrok的官网：[点我传送](http://www.ngrok.cc/)，然后注册账号后登陆，选择 左侧开通隧道，然后移动到下方，选择免费的服务器。
 
-![image-20200615185537696](images/image-20200615185537696.png)
+![image-20200615185537696](https://cdn.losey.top/blog/image-20200615185537696.png)
 
 然后我们就进入创建隧道的页面
 
-![image-20200615185727793](images/image-20200615185727793.png)
+![image-20200615185727793](https://cdn.losey.top/blog/image-20200615185727793.png)
 
 然后点击添加即可，在添加成功的页面，我们能够看到隧道id 和 赠送域名。我们首先复制到隧道id
 
-![image-20200615191735760](images/image-20200615191735760.png)
+![image-20200615191735760](https://cdn.losey.top/blog/image-20200615191735760.png)
 
 然后下载ngrok软件：[点我传送](http://www.ngrok.cc/download.html)，选中window64Bit版本下载
 
-![image-20200615190058228](images/image-20200615190058228.png)
+![image-20200615190058228](https://cdn.losey.top/blog/image-20200615190058228.png)
 
 下载解压后，我们点击bat文件运行
 
-![image-20200615190201647](images/image-20200615190201647.png)
+![image-20200615190201647](https://cdn.losey.top/blog/image-20200615190201647.png)
 
 这个时候，我们就需要在输入刚刚我们复制的隧道号，然后回车
 
-![image-20200615190329039](images/image-20200615190329039.png)
+![image-20200615190329039](https://cdn.losey.top/blog/image-20200615190329039.png)
 
 输入完成后，我们就看到已经成功映射到了我们的8603端口上了。
 
-![image-20200615191411423](images/image-20200615191411423.png)
+![image-20200615191411423](https://cdn.losey.top/blog/image-20200615191411423.png)
 
 首先我们先本地对8603端口号进行测试，输入 http://localhost:8603/swagger-ui.html
 
-![image-20200615191442854](images/image-20200615191442854.png)
+![image-20200615191442854](https://cdn.losey.top/blog/image-20200615191442854.png)
 
 下面我们ngrok进行测试，在浏览器输入： http://demoweb.free.idcfengye.com/swagger-ui.html，发现能够成功进行内网穿透
 
-![image-20200615191348159](images/image-20200615191348159.png)
+![image-20200615191348159](https://cdn.losey.top/blog/image-20200615191348159.png)
 

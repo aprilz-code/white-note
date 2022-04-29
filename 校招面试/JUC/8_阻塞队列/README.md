@@ -10,7 +10,7 @@
 
 BlockingQueue   阻塞队列，排队拥堵，首先它是一个队列，而一个阻塞队列在数据结构中所起的作用大致如下图所示：
 
-![image-20200316152120272](images/image-20200316152120272.png)
+![image-20200316152120272](https://cdn.losey.top/blog/image-20200316152120272.png)
 
 线程1往阻塞队列中添加元素，而线程2从阻塞队列中移除元素
 
@@ -66,7 +66,7 @@ BlockingQueue阻塞队列是属于一个接口，底下有七个实现类
 
 ## BlockingQueue核心方法
 
-![image-20200316154442756](images/image-20200316154442756.png)
+![image-20200316154442756](https://cdn.losey.top/blog/image-20200316154442756.png)
 
 
 

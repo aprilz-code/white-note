@@ -34,7 +34,7 @@ authorities) {
 - boolean credentialsNonExpired 密码是否失效
 - boolean accountNonLocked 账户是否锁定
 
-![image-20200919214537040](images/image-20200919214537040.png)
+![image-20200919214537040](https://cdn.losey.top/blog/image-20200919214537040.png)
 
 在蘑菇博客中，就是这里进行定义的，然后在通过下面代码来进行判断该用户是否处于正常
 
@@ -73,21 +73,21 @@ authorities) {
 
 还记得前面咱们分析认证流程时，提到的记住我功能吗？现在继续跟踪找到AbstractRememberMeServices对象的loginSuccess方法：
 
-![image-20200919215441535](images/image-20200919215441535.png)
+![image-20200919215441535](https://cdn.losey.top/blog/image-20200919215441535.png)
 
 再点进去上面if判断中的rememberMeRequested方法，还在当前类中
 
-![image-20200919215510847](images/image-20200919215510847.png)![image-20200919215502008](images/image-20200919215502008.png)
+![image-20200919215510847](https://cdn.losey.top/blog/image-20200919215510847.png)![image-20200919215502008](https://cdn.losey.top/blog/image-20200919215502008.png)
 
 如果上面方法返回true，就表示页面勾选了记住我选项了。继续顺着调用的方法找到PersistentTokenBasedRememberMeServices的onLoginSuccess方法：
 
-![image-20200919215604473](images/image-20200919215604473.png)
+![image-20200919215604473](https://cdn.losey.top/blog/image-20200919215604473.png)
 
 ### 记住我功能页面代码
 
 注意name和value属性的值不要写错哦！
 
-![image-20200919215750642](images/image-20200919215750642.png)
+![image-20200919215750642](https://cdn.losey.top/blog/image-20200919215750642.png)
 
 先测试一下，认证通过后，关掉浏览器，再次打开页面，发现还要认证！为什么没有起作用呢？这是因为remember me功能使用的过滤器RememberMeAuthenticationFilter默认是不开启的！
 
@@ -142,7 +142,7 @@ token-validity-seconds="60" remember-me-parameter="remember-me"/>
 
 最后测试发现数据库中自动多了一条记录：
 
-![image-20200919220254094](images/image-20200919220254094.png)
+![image-20200919220254094](https://cdn.losey.top/blog/image-20200919220254094.png)
 
 ## 显示当前认证信息
 
@@ -162,29 +162,29 @@ token-validity-seconds="60" remember-me-parameter="remember-me"/>
 
 为了模拟授权操作，咱们临时编写两个业务功能：处理器代码：
 
-![image-20200920084345762](images/image-20200920084345762.png)
+![image-20200920084345762](https://cdn.losey.top/blog/image-20200920084345762.png)
 
 aside.jsp页面：
 
-![image-20200920084406261](images/image-20200920084406261.png)
+![image-20200920084406261](https://cdn.losey.top/blog/image-20200920084406261.png)
 
 ## 动态展示菜单
 
 在aside.jsp对每个菜单通过SpringSecurity标签库指定访问所需角色
 
-![image-20200920084933415](images/image-20200920084933415.png)
+![image-20200920084933415](https://cdn.losey.top/blog/image-20200920084933415.png)
 
-![image-20200920084945102](images/image-20200920084945102.png)
+![image-20200920084945102](https://cdn.losey.top/blog/image-20200920084945102.png)
 
-![image-20200920084959631](images/image-20200920084959631.png)
+![image-20200920084959631](https://cdn.losey.top/blog/image-20200920084959631.png)
 
 我们做个测试，xiaozhi这个用户现在只有普通用户角色ROLE_USER，用xiaozhi登录后，果然只看到了订单管理：
 
-![image-20200920085153413](images/image-20200920085153413.png)
+![image-20200920085153413](https://cdn.losey.top/blog/image-20200920085153413.png)
 
 那么问题来了，是不是现在已经授权成功了呢？答案是否定的！你可以试试直接去访问产品的http请求地址：
 
-![image-20200920085214629](images/image-20200920085214629.png)
+![image-20200920085214629](https://cdn.losey.top/blog/image-20200920085214629.png)
 
 我们发现xiaozhi其实是可以操作产品模块的，只是没有把产品功能展示给xiaozhi而已！
 
@@ -194,7 +194,7 @@ aside.jsp页面：
 
 ### IOC容器介绍
 
-![image-20200920092132700](images/image-20200920092132700.png)
+![image-20200920092132700](https://cdn.losey.top/blog/image-20200920092132700.png)
 
 从这里我们就可以知道，我们的spring-security.xml需要放到父容器中被保护起来，不能放到子容器中被直接访问
 
@@ -221,9 +221,9 @@ secured-annotations="enabled"/>
 
 ### 在注解支持对应类或者方法上添加注解
 
-![image-20200920093528937](images/image-20200920093528937.png)
+![image-20200920093528937](https://cdn.losey.top/blog/image-20200920093528937.png)
 
-![image-20200920093540583](images/image-20200920093540583.png)
+![image-20200920093540583](https://cdn.losey.top/blog/image-20200920093540583.png)
 
 我们也可以使用多种注解的方式
 
@@ -246,11 +246,11 @@ public class ProductController {
 
 大家也发现了，每次权限不足都出现403页面，着实难堪！体会一下：
 
-![image-20200920093821600](images/image-20200920093821600.png)
+![image-20200920093821600](https://cdn.losey.top/blog/image-20200920093821600.png)
 
 用户体验不是很好，现在我们立马消灭它！
 
-![image-20200920094756860](images/image-20200920094756860.png)
+![image-20200920094756860](https://cdn.losey.top/blog/image-20200920094756860.png)
 
 ### 方式一：在spring-security.xml配置文件中处理
 

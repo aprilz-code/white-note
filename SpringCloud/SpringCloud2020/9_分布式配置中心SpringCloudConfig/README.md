@@ -14,7 +14,7 @@ SpringCloud提供了ConfigServer来解决这个问题，原来四个微服务，
 
 SpringCloud Config为微服务架构中的微服务提供集中化的外部配置支持，配置服务器为各个不同微服务应用提供了一个中心化的外部配置。
 
-![image-20200411220940452](images/image-20200411220940452.png)
+![image-20200411220940452](https://cdn.losey.top/blog/image-20200411220940452.png)
 
 ### 怎么玩
 

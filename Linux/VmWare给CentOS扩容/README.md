@@ -8,7 +8,7 @@
 
 首先我们需要关闭我们正在运行的虚拟机，然后找到设置页面，新添加一个20G的硬盘
 
-![image-20201202214511360](images/image-20201202214511360.png)
+![image-20201202214511360](https://cdn.losey.top/blog/image-20201202214511360.png)
 
 ## 进入系统
 
@@ -19,7 +19,7 @@
 fdisk -l
 ```
 
-![image-20201202214713601](images/image-20201202214713601.png)
+![image-20201202214713601](https://cdn.losey.top/blog/image-20201202214713601.png)
 
 从上图可以看出，服务器的 /dev/vdb 42.9GB 此磁盘未挂载
 
@@ -31,7 +31,7 @@ fdisk -l
 >
 >sdb：sdb1 sdb2
 
-![image-20201202214846146](images/image-20201202214846146.png)
+![image-20201202214846146](https://cdn.losey.top/blog/image-20201202214846146.png)
 
 ## 磁盘分区
 
@@ -53,7 +53,7 @@ fdisk /dev/vdb
 > - 两个回车指是开始和结束的磁盘扇区大小
 > - w：写入磁盘
 
-![image-20201202215158513](images/image-20201202215158513.png)
+![image-20201202215158513](https://cdn.losey.top/blog/image-20201202215158513.png)
 
 此时虽然已经进行了分区，但是还没有文件系统，所以磁盘依然不能使用
 
@@ -68,7 +68,7 @@ mkfs.ext4 /dev/vdb1
 
 出现如下图这们的界面，就是格式化磁盘写入文件成功：
 
-![image-20201202215544386](images/image-20201202215544386.png)
+![image-20201202215544386](https://cdn.losey.top/blog/image-20201202215544386.png)
 
 ## 挂载新磁盘
 
@@ -81,13 +81,13 @@ mount /dev/vdb1  /huichengff
 
 如果挂载成功，会出现如下图这样的界面
 
-![image-20201202215838271](images/image-20201202215838271.png)
+![image-20201202215838271](https://cdn.losey.top/blog/image-20201202215838271.png)
 
 ## 查看磁盘信息
 
 当我们再来查所有分区时，用fdisk -l 命令就会多了一个主分区，/dev/vdb1；如下图：
 
-``![image-20201202215857121](images/image-20201202215857121.png)
+``![image-20201202215857121](https://cdn.losey.top/blog/image-20201202215857121.png)
 
 ## 开启自动挂载
 

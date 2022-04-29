@@ -35,7 +35,7 @@
 
 第一步，准备java项目，把java进行打包【jar包或者war包】
 
-![image-20201121213239222](images/image-20201121213239222.png)
+![image-20201121213239222](https://cdn.losey.top/blog/image-20201121213239222.png)
 
 ### 依赖环境
 
@@ -50,7 +50,7 @@
 mvn clean install
 ```
 
-![image-20201121213654216](images/image-20201121213654216.png)
+![image-20201121213654216](https://cdn.losey.top/blog/image-20201121213654216.png)
 
 ### 编写Dockerfile文件
 
@@ -69,7 +69,7 @@ ENTRYPOINT ["java","-jar","/demojenkins.jar", "&"]
 
 我们首先将我们的项目，放到我们的服务器上
 
-![image-20201121214251023](images/image-20201121214251023.png)
+![image-20201121214251023](https://cdn.losey.top/blog/image-20201121214251023.png)
 
 然后执行下面命令打包镜像
 
@@ -79,7 +79,7 @@ docker build -t java-demo-01:latest .
 
 等待一段后，即可制作完成我们的镜像
 
-![image-20201121214701015](images/image-20201121214701015.png)
+![image-20201121214701015](https://cdn.losey.top/blog/image-20201121214701015.png)
 
 最后通过下面命令，即可查看我们的镜像了
 
@@ -107,15 +107,15 @@ http://192.168.177.130:8111/user
 
 首先我们需要到 阿里云 [容器镜像服务](https://cr.console.aliyun.com/cn-hangzhou/instances/repositories)，然后开始创建镜像仓库
 
-![image-20201121223435851](images/image-20201121223435851.png)
+![image-20201121223435851](https://cdn.losey.top/blog/image-20201121223435851.png)
 
 然后选择本地仓库
 
-![image-20201121223516789](images/image-20201121223516789.png)
+![image-20201121223516789](https://cdn.losey.top/blog/image-20201121223516789.png)
 
 我们点击我们刚刚创建的镜像仓库，就能看到以下的信息
 
-![image-20201121224233092](images/image-20201121224233092.png)
+![image-20201121224233092](https://cdn.losey.top/blog/image-20201121224233092.png)
 
 #### 登录镜像服务器
 
@@ -141,7 +141,7 @@ docker tag 33f11349c27d registry.cn-shenzhen.aliyuncs.com/mogublog/java-project-
 
 操作完成后
 
-![image-20201121224609890](images/image-20201121224609890.png)
+![image-20201121224609890](https://cdn.losey.top/blog/image-20201121224609890.png)
 
 #### 推送镜像
 
@@ -151,11 +151,11 @@ docker tag 33f11349c27d registry.cn-shenzhen.aliyuncs.com/mogublog/java-project-
 docker push registry.cn-shenzhen.aliyuncs.com/mogublog/java-project-01:1.0.0
 ```
 
-![image-20201121224714068](images/image-20201121224714068.png)
+![image-20201121224714068](https://cdn.losey.top/blog/image-20201121224714068.png)
 
 操作完成后，我们在我们的阿里云镜像服务，就能看到推送上来的镜像了
 
-![image-20201121224858651](images/image-20201121224858651.png)
+![image-20201121224858651](https://cdn.losey.top/blog/image-20201121224858651.png)
 
 ### 控制器部署镜像
 
@@ -206,7 +206,7 @@ kubectl apply -f javademo1.yaml
 # 查看 pods
 ```
 
-![image-20201121225413122](images/image-20201121225413122.png)
+![image-20201121225413122](https://cdn.losey.top/blog/image-20201121225413122.png)
 
 或者我们可以进行扩容，多创建几个副本
 
@@ -214,7 +214,7 @@ kubectl apply -f javademo1.yaml
 kubectl scale deployment javademo1 --replicas=3
 ```
 
-![image-20201121225600554](images/image-20201121225600554.png)
+![image-20201121225600554](https://cdn.losey.top/blog/image-20201121225600554.png)
 
 然后我们还需要对外暴露端口【通过service 或者 Ingress】
 
@@ -225,7 +225,7 @@ kubectl expose deployment javademo1 --port=8111  --target-port=8111 --type=NodeP
 kubectl get svc
 ```
 
-![image-20201121225818003](images/image-20201121225818003.png)
+![image-20201121225818003](https://cdn.losey.top/blog/image-20201121225818003.png)
 
 然后通过下面的地址访问
 

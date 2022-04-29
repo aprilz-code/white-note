@@ -43,9 +43,9 @@ spring.devtools.restart.exclude: WEB-INF/**
 
 - File-Settings-Compiler-Build Project automatically
 
-  ![image-20200120095021685](images/image-20200120095021685.png)
+  ![image-20200120095021685](https://cdn.losey.top/blog/image-20200120095021685.png)
 
 - ctrl + shift + alt + /,选择Registry,勾上 compiler.automake.allow.when.app.running
 
-![image-20200120095107686](images/image-20200120095107686.png)
+![image-20200120095107686](https://cdn.losey.top/blog/image-20200120095107686.png)
 

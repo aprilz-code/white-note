@@ -2,7 +2,7 @@
 
 # 1、是什么 
 
-![img](images/image.png)
+![img](https://cdn.losey.top/blog/image.png)
 
 
 
@@ -39,7 +39,7 @@ Kubernetes **Cluster** **=** N **Master** Node **+** N **Worker** Node：N主节
 
 ## 2、组件架构
 
-![img](images/image-1636471368715.png)
+![img](https://cdn.losey.top/blog/image-1636471368715.png)
 
 ### 1、控制平面组件（Control Plane Components） 
 
@@ -114,11 +114,11 @@ kube-proxy 维护节点上的网络规则。这些网络规则允许从集群内
 
 如果操作系统提供了数据包过滤层并可用的话，kube-proxy 会通过它来实现网络规则。否则， kube-proxy 仅转发流量本身。
 
-![img](images/image.png)
+![img](https://cdn.losey.top/blog/image.png)
 
 ### 动态演示
 
-![image-20211110083453090](images/image-20211110083453090.png)
+![image-20211110083453090](https://cdn.losey.top/blog/image-20211110083453090.png)
 
 # 3、kubeadm创建集群
 
@@ -129,13 +129,13 @@ kube-proxy 维护节点上的网络规则。这些网络规则允许从集群内
   - 如 scheduler、kube-proxy、api-server、etcd、controller-managet
 - 然后另外的节点就需要加入到主节点中，通过 kubeadm join 命令
 
-![image-20211110083932498](images/image-20211110083932498.png)
+![image-20211110083932498](https://cdn.losey.top/blog/image-20211110083932498.png)
 
 
 
 
 
-![image-20211110085324658](images/image-20211110085324658.png)
+![image-20211110085324658](https://cdn.losey.top/blog/image-20211110085324658.png)
 
   
 
@@ -314,7 +314,7 @@ kubectl get pods -A
 
 master成功后提示如下：
 
-![img](images/image-1636471368714.png)
+![img](https://cdn.losey.top/blog/image-1636471368714.png)
 
 
 
@@ -749,4 +749,4 @@ eyJhbGciOiJSUzI1NiIsImtpZCI6InpXSkU0TjhCUmVKQzBJaC03Nk9ES2NMZ1daRTRmQ1FMZU9rRUJ3
 
 #### 5、界面
 
-![img](images/image-1636471368716.png)
+![img](https://cdn.losey.top/blog/image-1636471368716.png)

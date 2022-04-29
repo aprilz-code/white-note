@@ -83,7 +83,7 @@ https://github.com/docker/compose/releases
 
 然后选择Linux版本下载
 
-![image-20201127211547030](images/image-20201127211547030.png)
+![image-20201127211547030](https://cdn.losey.top/blog/image-20201127211547030.png)
 
 把下载到的文件使用Xftp工具，拷贝到 `/usr/local/bin/` 目录下
 
@@ -100,15 +100,15 @@ docker-compose -v
 
 下面我们需要将一些端口暴露到外网能够访问，所以需要开放的安全组，如果是使用阿里云的小伙伴，必须在 阿里云的官网，配置相应的安全组，不然外面是没办法访问的。关于安全组的配置，在云服务器ECS的管理页面
 
-![image-20201128205607264](images/image-20201128205607264.png)
+![image-20201128205607264](https://cdn.losey.top/blog/image-20201128205607264.png)
 
 在点击配置规则
 
-![image-20201128205621790](images/image-20201128205621790.png)
+![image-20201128205621790](https://cdn.losey.top/blog/image-20201128205621790.png)
 
 然后点击右上角按钮，把需要用到的端口号都填写进去
 
-![image-20201128205731724](images/image-20201128205731724.png)
+![image-20201128205731724](https://cdn.losey.top/blog/image-20201128205731724.png)
 
 【此处为了测试暴露了全部需要用到端口，后期小伙伴可以根据自己的需要进行端口的开放】
 
@@ -138,7 +138,7 @@ sentinel端口: 8070
 portainer端口：9000
 ```
 
-![image-20200209125938397](images/f9632cf3b2b9452194eaa5c7e0a3c0de)
+![image-20200209125938397](https://cdn.losey.top/blog/f9632cf3b2b9452194eaa5c7e0a3c0de)
 
 
 
@@ -156,11 +156,11 @@ docker network create mogu
 
 下面将源码中的 `docker-compose` 文件夹拷贝到我们的服务器中
 
-![image-20201128215644896](images/image-20201128215644896.png)
+![image-20201128215644896](https://cdn.losey.top/blog/image-20201128215644896.png)
 
 首先我们来查看一下docker-compose的目录结构
 
-![image-20201212095110226](images/image-20201212095110226.png)
+![image-20201212095110226](https://cdn.losey.top/blog/image-20201212095110226.png)
 
 - bin：相关一键启动脚本的目录
   - completeStartup.sh：完整版启动脚本
@@ -205,7 +205,7 @@ python2 replaceIp.py
 
 执行完后，将会修改我们配置文件中的ip地址
 
-![image-20210103150812306](images/image-20210103150812306.png)
+![image-20210103150812306](https://cdn.losey.top/blog/image-20210103150812306.png)
 
 tip：该脚本只能在云服务器上，才能获取到精确的外网地址，如果采用NAT网络模式的虚拟机，获取的IP会有问题，需要自己手动进行ip地址的修改~
 
@@ -256,7 +256,7 @@ sh kernShutdown.sh
 
 执行完成后，就会在我们的镜像仓库中拉取对应的镜像【如果本地没有的话】
 
-![image-20201128173111688](images/image-20201128173111688.png)
+![image-20201128173111688](https://cdn.losey.top/blog/image-20201128173111688.png)
 
 我们在一边拉取镜像的时候，我们可以看看镜像的拉取情况
 
@@ -264,7 +264,7 @@ sh kernShutdown.sh
 docker images;
 ```
 
-![image-20201128173252314](images/image-20201128173252314.png)
+![image-20201128173252314](https://cdn.losey.top/blog/image-20201128173252314.png)
 
 能够看到我们的镜像已经成功拉取下来了，接着我们看启动的情况
 
@@ -272,11 +272,11 @@ docker images;
 docker ps -a
 ```
 
-![image-20201128173343556](images/image-20201128173343556.png)
+![image-20201128173343556](https://cdn.losey.top/blog/image-20201128173343556.png)
 
 注意：如果我们通过命令查看，发现某个容器没有正常运行，如下图所示 【没有出错的，可以直接跳过】
 
-![image-20201212095820865](images/image-20201212095820865.png)
+![image-20201212095820865](https://cdn.losey.top/blog/image-20201212095820865.png)
 
 是 portainer 容器运行失败，我们就需要对该容器进行重启，可以使用下面命令【找到该容器的 yml脚本】
 
@@ -301,7 +301,7 @@ docker-compose -f yaml/portainer.yml up -d
 http://ip:9000
 ```
 
-![image-20201128210555720](images/image-20201128210555720.png)
+![image-20201128210555720](https://cdn.losey.top/blog/image-20201128210555720.png)
 
 ### 后台测试
 
@@ -312,7 +312,7 @@ http://ip:9000
 http://ip:8848/nacos
 ```
 
-![image-20201212152323674](images/image-20201212152323674.png)
+![image-20201212152323674](https://cdn.losey.top/blog/image-20201212152323674.png)
 
 > 如果还存在某些服务没有注册上来，那么就需要等待一会【因为后台启动需要时间】
 
@@ -327,15 +327,15 @@ http://your_ip:8603/swagger-ui/index.html
 
 如果能够进入下面页面的话，说明后台是没有问题的了，下面我们可以验证一下接口
 
-![img](images/f7aac7c1d46e41fb88cce5918318f509)
+![img](https://cdn.losey.top/blog/f7aac7c1d46e41fb88cce5918318f509)
 
 验证登录
 
-![img](images/84ed060923214f7cb8df77f0b6bc512a)
+![img](https://cdn.losey.top/blog/84ed060923214f7cb8df77f0b6bc512a)
 
 在swagger页面的右上角，有一个authorize的按钮，点击后，将token粘贴进去，即可操作全部接口进行测试了~
 
-![img](images/03c6697dfd3148888215e2f38e99b775)
+![img](https://cdn.losey.top/blog/03c6697dfd3148888215e2f38e99b775)
 
 ### 前台测试
 
@@ -350,11 +350,11 @@ http://ip:9528
 
 前端页面【没有图片，需要自己修改配置后手动上传，关于配置如何修改往下看~】
 
-![image-20201128211416521](images/image-20201128211416521.png)
+![image-20201128211416521](https://cdn.losey.top/blog/image-20201128211416521.png)
 
 后端页面【没有图片，需要自己修改配置后手动上传，关于配置如何修改往下看~】
 
-![image-20201128211427634](images/image-20201128211427634.png)
+![image-20201128211427634](https://cdn.losey.top/blog/image-20201128211427634.png)
 
 
 
@@ -366,7 +366,7 @@ http://ip:9528
 
 我们进入到nacos配置文件管理界面，找到的 mogu_web_prod.yaml文件
 
-![image-20200903164514073](images/95308e71b99846a5998efc4983fa2a9f)
+![image-20200903164514073](https://cdn.losey.top/blog/95308e71b99846a5998efc4983fa2a9f)
 
 我们需要将下面的域名，改成自己的
 
@@ -405,7 +405,7 @@ justAuth:
 
 我们进入到nacos配置文件管理界面，找到的 mogu_sms_prod.yaml文件
 
-![image-20200903164316451](images/4f8f8ad92d3b47f1b28768f02167a334)
+![image-20200903164316451](https://cdn.losey.top/blog/4f8f8ad92d3b47f1b28768f02167a334)
 
 在mogu_sms中，主要修改的就是邮箱的配置，我们将发送邮件的信息改成自己的
 
@@ -418,7 +418,7 @@ mail:
 
 注意，上面的password是授权码，授权码不是密码，以163邮箱为例，我们需要开启SMTP服务，然后设置授权码
 
-![image-20200722090457339](images/c1f29c98397442c385cfb151ae5a76fc)
+![image-20200722090457339](https://cdn.losey.top/blog/c1f29c98397442c385cfb151ae5a76fc)
 
 
 
@@ -431,14 +431,14 @@ mail:
 
 本文主要以本地文件存储为例，我们到系统配置，首先修改图片显示的本地域名
 
-![image-20201128212328950](images/image-20201128212328950.png)
+![image-20201128212328950](https://cdn.losey.top/blog/image-20201128212328950.png)
 
 修改完成后，进行保存，然后在图片管理上传新的图片
 
-![image-20201128212826334](images/image-20201128212826334.png)
+![image-20201128212826334](https://cdn.losey.top/blog/image-20201128212826334.png)
 
 >  要是图片无法正常显示，可以F12看看图片路径是否是修改后的IP，同时对应的 8600端口的 安全组是否开放
 
 最后到博客管理页面，编辑博客，然后选择图片插入即可~
 
-![image-20201128213307577](images/image-20201128213307577.png)
+![image-20201128213307577](https://cdn.losey.top/blog/image-20201128213307577.png)

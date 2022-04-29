@@ -17,7 +17,7 @@ SMOTE算法主要用于合成少数类样本，它是基于随机过采样算法
 - 对于每一个随机选出的近邻xn，分别与原样本按照如下的公式构建新的样本
   - $ x_{nex} = x + rand(0, 1) * (x^` - x)$
 
-![image-20201028220353900](images/image-20201028220353900.png)
+![image-20201028220353900](https://cdn.losey.top/blog/image-20201028220353900.png)
 
 ## SMOTE算法缺陷
 
@@ -71,7 +71,7 @@ drawDropout(y)
 
 能够看到，大概存在1:4的关系，貌似也不是很不平衡，我们就看看效果如何
 
-![image-20200527221056845](images/image-20200527221056845.png)
+![image-20200527221056845](https://cdn.losey.top/blog/image-20200527221056845.png)
 
 开始使用Kmeans-Smote算法进行平衡
 
@@ -102,4 +102,4 @@ Class 0 has 76517 instances after oversampling
 Class 1 has 76517 instances after oversampling
 ```
 
-![image-20200527221259769](images/image-20200527221259769.png)
+![image-20200527221259769](https://cdn.losey.top/blog/image-20200527221259769.png)

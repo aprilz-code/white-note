@@ -8,7 +8,7 @@
 
 我们可以通过找到安装JDK的目录
 
-![image-20200707081132456](images/image-20200707081132456.png)
+![image-20200707081132456](https://cdn.losey.top/blog/image-20200707081132456.png)
 
 或者使用cmd命令来打开图形化界面
 
@@ -18,7 +18,7 @@ jvisualvm
 
 启动完成后，会有这样一个界面
 
-![image-20200707081348427](images/image-20200707081348427.png)
+![image-20200707081348427](https://cdn.losey.top/blog/image-20200707081348427.png)
 
 这就代表Java VisualVM启动成功
 
@@ -32,11 +32,11 @@ VIsualGC插件，是能够让我们通过图形化的页面，来查看我们的
 
 比如我的是JDK1.8，那么我就选择这里
 
-![image-20200707081657123](images/image-20200707081657123.png)
+![image-20200707081657123](https://cdn.losey.top/blog/image-20200707081657123.png)
 
 然后在找到VisualGC插件
 
-![image-20200707081729473](images/image-20200707081729473.png)
+![image-20200707081729473](https://cdn.losey.top/blog/image-20200707081729473.png)
 
 下载完成后，我们把插件放在下面目录下
 
@@ -44,21 +44,21 @@ VIsualGC插件，是能够让我们通过图形化的页面，来查看我们的
 C:\Users\Administrator\AppData\Roaming\VisualVM
 ```
 
-![image-20200707081808350](images/image-20200707081808350.png)
+![image-20200707081808350](https://cdn.losey.top/blog/image-20200707081808350.png)
 
 ### 安装
 
 然后在到我们刚刚打开的Visual VM图形化页面，点击工具 -> 插件
 
-![image-20200707081904022](images/image-20200707081904022.png)
+![image-20200707081904022](https://cdn.losey.top/blog/image-20200707081904022.png)
 
 然后在点击已下载 -> 添加插件
 
-![image-20200707081952582](images/image-20200707081952582.png)
+![image-20200707081952582](https://cdn.losey.top/blog/image-20200707081952582.png)
 
 找到刚刚我们的这个文件，然后选择安装
 
-![image-20200707080814813](images/image-20200707080814813.png)
+![image-20200707080814813](https://cdn.losey.top/blog/image-20200707080814813.png)
 
 安装成功后，我们通过写一个代码来进行检测
 
@@ -88,8 +88,8 @@ public class OOMTest {
 
 最后点击Visual GC查看我们的堆内存情况
 
-![image-20200707082203000](images/image-20200707082203000.png)
+![image-20200707082203000](https://cdn.losey.top/blog/image-20200707082203000.png)
 
 等待一会后，我们发现S1区中，有了对象，说明JVM已经进行了第一次垃圾收集
 
-![image-20200707082406853](images/image-20200707082406853.png)
+![image-20200707082406853](https://cdn.losey.top/blog/image-20200707082406853.png)

@@ -16,11 +16,11 @@ XSS解决方案官网：[点我传送](https://jsxss.com/zh/index.html)
 
 这个时候评论就会出现一个超链接
 
-![image-20200430090311752](images/image-20200430090311752.png)
+![image-20200430090311752](https://cdn.losey.top/blog/image-20200430090311752.png)
 
 只要我们点击这个链接后，就会出现一个alert弹框
 
-![image-20200430090351946](images/image-20200430090351946.png)
+![image-20200430090351946](https://cdn.losey.top/blog/image-20200430090351946.png)
 
 上面代码因为写的的是循环10次后，alert消失，但是如果是`while(true)`，那么后果不堪设想，会进入无止无休的弹框
 
@@ -50,11 +50,11 @@ Object.defineProperty(Vue.prototype, '$xss', {
 
 我们在点击刚刚的页面，发现已经不会有弹框了，但是有出来了新的问题，就是我引入的标签也被过滤了
 
-![image-20200430092519608](images/image-20200430092519608.png)
+![image-20200430092519608](https://cdn.losey.top/blog/image-20200430092519608.png)
 
 引入xss后
 
-![image-20200430092619240](images/image-20200430092619240.png)
+![image-20200430092619240](https://cdn.losey.top/blog/image-20200430092619240.png)
 
 这个时候，我们就需要自定义拦截规则了，我们在data中添加如下配置，下面是自定义白名单，也就是什么标签以及标签的属性能够正常使用，其它的都会被拦截
 
@@ -80,4 +80,4 @@ Object.defineProperty(Vue.prototype, '$xss', {
 
 这个时候，表情已经成功显示了，并且原来的脚本攻击也不生效，达到了我们的目的~
 
-![image-20200430092858561](images/image-20200430092858561.png)
+![image-20200430092858561](https://cdn.losey.top/blog/image-20200430092858561.png)

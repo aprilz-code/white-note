@@ -6,7 +6,7 @@
 
 其实在蘑菇博客的使用的后台模板：[vue-template-admin](https://github.com/PanJiaChen/vue-admin-template) 也使用了一个的数字显示大大插件，也就是在首页显示的时候，如下图所示，当进入admin管理页面的时候
 
-![111](images/111.gif)
+![111](https://cdn.losey.top/blog/111.gif)
 
 能够看到数字是逐渐递增的，也能满足对应的要求，数字动态递增的效果是使用一款插件完成的：[vue-count-to](https://github.com/PanJiaChen/vue-countTo)
 
@@ -69,7 +69,7 @@ components: { countTo },
 
 完整demo如下所示：
 
-![countDemo](images/countDemo.gif)
+![countDemo](https://cdn.losey.top/blog/countDemo.gif)
 
 ## 配置
 

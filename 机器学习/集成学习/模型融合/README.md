@@ -4,7 +4,7 @@
 
 模型融合的主要目的是降低偏差和方差
 
-![image-20200501101658533](images/image-20200501101658533.png)
+![image-20200501101658533](https://cdn.losey.top/blog/image-20200501101658533.png)
 
 ## 集成学习
 
@@ -27,14 +27,14 @@
 
 投票机制
 
-![image-20200501095513508](images/image-20200501095513508.png)
+![image-20200501095513508](https://cdn.losey.top/blog/image-20200501095513508.png)
 
 ### Blending
 
-![image-20200501095550657](images/image-20200501095550657.png)
+![image-20200501095550657](https://cdn.losey.top/blog/image-20200501095550657.png)
 
 ## Stacking
 
 这个时候需要使用强模型，在做Stacking模型
 
-![image-20200501095646554](images/image-20200501095646554.png)
+![image-20200501095646554](https://cdn.losey.top/blog/image-20200501095646554.png)

@@ -25,4 +25,4 @@ const createLintingRule = () => ({
 
 使用 npm run dev命令，重新启动项目，能够发现原来的错误提示都没有了，瞬间感觉清爽了很多
 
-![image-20191231222806735](images/image-20191231222806735.png)
+![image-20191231222806735](https://cdn.losey.top/blog/image-20191231222806735.png)

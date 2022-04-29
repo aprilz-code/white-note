@@ -210,5 +210,5 @@ components: {
 
 最后我们看引入后的效果
 
-![image-20200830110212424](images/image-20200830110212424.png)
+![image-20200830110212424](https://cdn.losey.top/blog/image-20200830110212424.png)
 

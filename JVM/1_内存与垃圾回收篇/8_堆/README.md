@@ -4,7 +4,7 @@
 
 堆针对一个JVM进程来说是唯一的，也就是一个进程只有一个JVM，但是进程包含多个线程，他们是共享同一堆空间的。
 
-![image-20200706195127740](images/image-20200706195127740.png)
+![image-20200706195127740](https://cdn.losey.top/blog/image-20200706195127740.png)
 
 一个JVM实例只存在一个堆内存，堆也是Java内存管理的核心区域。
 
@@ -22,7 +22,7 @@ Java堆区在JVM启动的时候即被创建，其空间大小也就确定了。�
 
 下图就是使用：Java VisualVM查看堆空间的内容，通过 jdk bin提供的插件
 
-![image-20200706200739392](images/image-20200706200739392.png)
+![image-20200706200739392](https://cdn.losey.top/blog/image-20200706200739392.png)
 
 《Java虚拟机规范》中对Java堆的描述是：所有的对象实例以及数组都应当在运行时分配在堆上。（The heap is the run-time data area from which memory for all class instances and arrays is allocated）
 
@@ -39,7 +39,7 @@ Java堆区在JVM启动的时候即被创建，其空间大小也就确定了。�
 
 堆，是GC（Garbage Collection，垃圾收集器）执行垃圾回收的重点区域。
 
-![image-20200706201904057](images/image-20200706201904057.png)
+![image-20200706201904057](https://cdn.losey.top/blog/image-20200706201904057.png)
 
 ### 堆内存细分
 
@@ -56,11 +56,11 @@ Java 8及之后堆内存逻辑上分为三部分：新生区养老区+元空间
 
 约定：新生区 -> 新生代 -> 年轻代   、  养老区 -> 老年区 -> 老年代、 永久区 -> 永久代
 
-![image-20200706203419496](images/image-20200706203419496.png)
+![image-20200706203419496](https://cdn.losey.top/blog/image-20200706203419496.png)
 
 堆空间内部结构，JDK1.8之前从永久代  替换成 元空间
 
-![image-20200706203835403](images/image-20200706203835403.png)
+![image-20200706203835403](https://cdn.losey.top/blog/image-20200706203835403.png)
 
 
 
@@ -118,19 +118,19 @@ public class HeapSpaceInitial {
 jps  ->  jstat -gc 进程id
 ```
 
-![image-20200706205756045](images/image-20200706205756045.png)
+![image-20200706205756045](https://cdn.losey.top/blog/image-20200706205756045.png)
 
 ```
 -XX:+PrintGCDetails
 ```
 
-![image-20200706205821919](images/image-20200706205821919.png)
+![image-20200706205821919](https://cdn.losey.top/blog/image-20200706205821919.png)
 
 ### OutOfMemory举例
 
-![image-20200706205947535](images/image-20200706205947535.png)
+![image-20200706205947535](https://cdn.losey.top/blog/image-20200706205947535.png)
 
-![image-20200706210000461](images/image-20200706210000461.png)
+![image-20200706210000461](https://cdn.losey.top/blog/image-20200706210000461.png)
 
 我们简单的写一个OOM例子
 
@@ -160,7 +160,7 @@ public class OOMTest {
 
 运行后，就出现OOM了，那么我们可以通过 VisualVM这个工具查看具体是什么参数造成的OOM
 
-![image-20200706211652779](images/image-20200706211652779.png)
+![image-20200706211652779](https://cdn.losey.top/blog/image-20200706211652779.png)
 
 ## 年轻代与老年代
 
@@ -173,11 +173,11 @@ Java堆区进一步细分的话，可以划分为年轻代（YoungGen）和老�
 
 其中年轻代又可以划分为Eden空间、Survivor0空间和Survivor1空间（有时也叫做from区、to区）
 
-![image-20200707075847954](images/image-20200707075847954.png)
+![image-20200707075847954](https://cdn.losey.top/blog/image-20200707075847954.png)
 
 下面这参数开发中一般不会调：
 
-![image-20200707080154039](images/image-20200707080154039.png)
+![image-20200707080154039](https://cdn.losey.top/blog/image-20200707080154039.png)
 
 - Eden：From：to ->  8:1:1
 - 新生代：老年代  - >  1 : 2
@@ -200,7 +200,7 @@ Java堆区进一步细分的话，可以划分为年轻代（YoungGen）和老�
 >
 >这个参数一般使用默认值就可以了。
 
-![image-20200707084208115](images/image-20200707084208115.png)
+![image-20200707084208115](https://cdn.losey.top/blog/image-20200707084208115.png)
 
 ## 图解对象分配过程
 
@@ -223,17 +223,17 @@ Java堆区进一步细分的话，可以划分为年轻代（YoungGen）和老�
 
 我们创建的对象，一般都是存放在Eden区的，当我们Eden区满了后，就会触发GC操作，一般被称为 YGC / Minor GC操作
 
-![image-20200707084714886](images/image-20200707084714886.png)
+![image-20200707084714886](https://cdn.losey.top/blog/image-20200707084714886.png)
 
 当我们进行一次垃圾收集后，红色的将会被回收，而绿色的还会被占用着，存放在S0(Survivor From)区。同时我们给每个对象设置了一个年龄计数器，一次回收后就是1。
 
 同时Eden区继续存放对象，当Eden区再次存满的时候，又会触发一个MinorGC操作，此时GC将会把 Eden和Survivor From中的对象 进行一次收集，把存活的对象放到 Survivor To区，同时让年龄 + 1
 
-![image-20200707085232646](images/image-20200707085232646.png)
+![image-20200707085232646](https://cdn.losey.top/blog/image-20200707085232646.png)
 
 我们继续不断的进行对象生成 和 垃圾回收，当Survivor中的对象的年龄达到15的时候，将会触发一次 Promotion晋升的操作，也就是将年轻代中的对象  晋升到 老年代中
 
-![image-20200707085737207](images/image-20200707085737207.png)
+![image-20200707085737207](https://cdn.losey.top/blog/image-20200707085737207.png)
 
 ### 思考：幸存区区满了后？
 
@@ -247,7 +247,7 @@ Java堆区进一步细分的话，可以划分为年轻代（YoungGen）和老�
 
 ### 对象分配的特殊情况
 
-![image-20200707091058346](images/image-20200707091058346.png)
+![image-20200707091058346](https://cdn.losey.top/blog/image-20200707091058346.png)
 
 ### 代码演示对象分配过程
 
@@ -286,7 +286,7 @@ jvisualvm
 
 然后通过执行上面代码，通过VisualGC进行动态化查看
 
-![垃圾回收](images/垃圾回收.gif)
+![垃圾回收](https://cdn.losey.top/blog/垃圾回收.gif)
 
 最终，在老年代和新生代都满了，就出现OOM
 
@@ -346,7 +346,7 @@ Minor GC会引发STW，暂停其它用户的线程，等垃圾回收结束，用
 
 > STW：stop the word
 
-![image-20200707095606813](images/image-20200707095606813.png)
+![image-20200707095606813](https://cdn.losey.top/blog/image-20200707095606813.png)
 
 ### Major GC
 
@@ -441,11 +441,11 @@ Heap
 >新生代：有Eden、两块大小相同的survivor（又称为from/to，s0/s1）构成，to总为空。
 >老年代：存放新生代中经历多次GC仍然存活的对象。
 
-![image-20200707101511025](images/image-20200707101511025.png)
+![image-20200707101511025](https://cdn.losey.top/blog/image-20200707101511025.png)
 
 其实不分代完全可以，分代的唯一理由就是优化GC性能。如果没有分代，那所有的对象都在一块，就如同把一个学校的人都关在一个教室。GC的时候要找到哪些对象没用，这样就会对堆的所有区域进行扫描。而很多对象都是朝生夕死的，如果分代的话，把新创建的对象放到某一地方，当GC的时候先把这块存储“朝生夕死”对象的区域进行回收，这样就会腾出很大的空间出来。
 
-![image-20200707101543871](images/image-20200707101543871.png)
+![image-20200707101543871](https://cdn.losey.top/blog/image-20200707101543871.png)
 
 
 
@@ -493,7 +493,7 @@ TLAB：Thread Local Allocation Buffer，也就是为每个线程单独分配了�
 
 据我所知所有OpenJDK衍生出来的JVM都提供了TLAB的设计。
 
-![image-20200707103547712](images/image-20200707103547712.png)
+![image-20200707103547712](https://cdn.losey.top/blog/image-20200707103547712.png)
 
 尽管不是所有的对象实例都能够在TLAB中成功分配内存，但JVM确实是将TLAB作为内存分配的首选。
 
@@ -507,7 +507,7 @@ TLAB：Thread Local Allocation Buffer，也就是为每个线程单独分配了�
 
 对象首先是通过TLAB开辟空间，如果不能放入，那么需要通过Eden来进行分配
 
-![image-20200707104253530](images/image-20200707104253530.png)
+![image-20200707104253530](https://cdn.losey.top/blog/image-20200707104253530.png)
 
 ## 小结：堆空间的参数设置
 
@@ -714,7 +714,7 @@ public class StackAllocation {
 
 然后查看内存的情况，发现有大量的User存储在堆中
 
-![image-20200707203038615](images/image-20200707203038615.png)
+![image-20200707203038615](https://cdn.losey.top/blog/image-20200707203038615.png)
 
 
 
@@ -732,7 +732,7 @@ public class StackAllocation {
 
 在看内存情况，我们发现只有很少的User对象，说明User未发生逃逸，因为它存储在栈中，随着栈的销毁而消失
 
-![image-20200707203441718](images/image-20200707203441718.png)
+![image-20200707203441718](https://cdn.losey.top/blog/image-20200707203441718.png)
 
 
 
@@ -764,7 +764,7 @@ public void f() {
 
 我们将其转换成字节码
 
-![image-20200707205634266](images/image-20200707205634266.png)
+![image-20200707205634266](https://cdn.losey.top/blog/image-20200707205634266.png)
 
 ### 分离对象和标量替换
 

@@ -92,7 +92,7 @@ mvn docker:build
 
 在pom文件中，我们指定了Dockerfile文件路径，以及最后打包的镜像名称
 
-![image-20201126093440237](images/image-20201126093440237.png)
+![image-20201126093440237](https://cdn.losey.top/blog/image-20201126093440237.png)
 
 同时在Dockerfile文件中，主要定义的就是一些镜像相关的信息，主要包括依赖的java环境，启动时的JVM参数
 
@@ -176,7 +176,7 @@ ENTRYPOINT ["java","-Xms256m","-Xmx256m","-jar","/app.jar"]
 
 上面的一部分，使用到了Github的加密方式 Secrets，将我们项目中的敏感信息储存在secrets中，然后通过`${{ secrets.XX }}` 的方式获取，Secrets的存储在下图所示
 
-![image-20201126094625454](images/image-20201126094625454.png)
+![image-20201126094625454](https://cdn.losey.top/blog/image-20201126094625454.png)
 
 我们通过 new repository secret，给我们的项目添加密钥，这里主要是对DockerHub的用户名和密码加密，防止直接泄漏在我们的仓库中
 
@@ -196,7 +196,7 @@ ENTRYPOINT ["java","-Xms256m","-Xmx256m","-jar","/app.jar"]
 
 同时要求我们的镜像前缀为 `registry.cn-shenzhen.aliyuncs.com/mogublog` ，其中 mogublog 为我们阿里云容器镜像服务的命名空间
 
-![image-20201127172858624](images/image-20201127172858624.png)
+![image-20201127172858624](https://cdn.losey.top/blog/image-20201127172858624.png)
 
 最后我们在 maven打包的pom文件中，就需要修改我们的前缀了
 
@@ -388,7 +388,7 @@ jobs:
 
 执行完脚本后，进入到 [DockerHub](https://registry.hub.docker.com/) 中，发现已经成功提交到仓库了
 
-![image-20201202091107737](images/image-20201202091107737.png)
+![image-20201202091107737](https://cdn.losey.top/blog/image-20201202091107737.png)
 
 ### 阿里云容器镜像服务
 
@@ -555,6 +555,6 @@ jobs:
 
 执行完上述脚本后，我们发现已经成功提交到  [阿里云容器镜像服务](https://cr.console.aliyun.com/)
 
-![image-20201202091542735](images/image-20201202091542735.png)
+![image-20201202091542735](https://cdn.losey.top/blog/image-20201202091542735.png)
 
 到目前为止，自动化镜像制作已经完成了~

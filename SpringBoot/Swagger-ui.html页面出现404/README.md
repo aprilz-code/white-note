@@ -83,4 +83,4 @@ public class InterceptorConfig implements WebMvcConfigurer {
 
 我们在原来的配置类中，重写静态资源映射的代码，然后重启项目，发现Swagger-ui项目能够正常访问了~
 
-![image-20200704092918177](images/image-20200704092918177.png)
+![image-20200704092918177](https://cdn.losey.top/blog/image-20200704092918177.png)

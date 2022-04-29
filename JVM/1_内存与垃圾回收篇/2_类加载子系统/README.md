@@ -2,11 +2,11 @@
 ***
 ## 概述
 
-![image-20200705080719531](images/image-20200705080719531.png)
+![image-20200705080719531](https://cdn.losey.top/blog/image-20200705080719531.png)
 
 完整图如下
 
-![image-20200705080911284](images/image-20200705080911284.png)
+![image-20200705080911284](https://cdn.losey.top/blog/image-20200705080911284.png)
 
 如果自己想手写一个Java虚拟机的话，主要考虑哪些结构呢？
 
@@ -21,13 +21,13 @@ ClassLoader只负责class文件的加载，至于它是否可以运行，则由E
 
 加载的类信息存放于一块称为方法区的内存空间。除了类的信息外，方法区中还会存放运行时常量池信息，可能还包括字符串字面量和数字常量（这部分常量信息是Class文件中常量池部分的内存映射）
 
-![image-20200705081813409](images/image-20200705081813409.png)
+![image-20200705081813409](https://cdn.losey.top/blog/image-20200705081813409.png)
 
 - class file存在于本地硬盘上，可以理解为设计师画在纸上的模板，而最终这个模板在执行的时候是要加载到JVM当中来根据这个文件实例化出n个一模一样的实例。
 - class file加载到JVM中，被称为DNA元数据模板，放在方法区。
 - 在.class文件->JVM->最终成为元数据模板，此过程就要一个运输工具（类装载器Class Loader），扮演一个快递员的角色。
 
-![image-20200705081913538](images/image-20200705081913538.png)
+![image-20200705081913538](https://cdn.losey.top/blog/image-20200705081913538.png)
 
 ## 类的加载过程
 
@@ -48,11 +48,11 @@ public class HelloLoader {
 
 它的加载过程是怎么样的呢?
 
-![image-20200705082255746](images/image-20200705082255746.png)
+![image-20200705082255746](https://cdn.losey.top/blog/image-20200705082255746.png)
 
 完整的流程图如下所示
 
-![image-20200705082601441](images/image-20200705082601441.png)
+![image-20200705082601441](https://cdn.losey.top/blog/image-20200705082601441.png)
 
 ### 加载阶段
 
@@ -81,17 +81,17 @@ public class HelloLoader {
 
 > 工具：Binary Viewer查看
 
-![image-20200705084038680](images/image-20200705084038680.png)
+![image-20200705084038680](https://cdn.losey.top/blog/image-20200705084038680.png)
 
 如果出现不合法的字节码文件，那么将会验证不通过
 
 同时我们可以通过安装IDEA的插件，来查看我们的Class文件
 
-![image-20200705090237078](images/image-20200705090237078.png)
+![image-20200705090237078](https://cdn.losey.top/blog/image-20200705090237078.png)
 
 安装完成后，我们编译完一个class文件后，点击view即可显示我们安装的插件来查看字节码方法了
 
-![image-20200705090328171](images/image-20200705090328171.png)
+![image-20200705090328171](https://cdn.losey.top/blog/image-20200705090328171.png)
 
 ### 准备 Prepare
 
@@ -250,7 +250,7 @@ JVM支持两种类型的类加载器 。分别为引导类加载器（Bootstrap 
 
 无论类加载器的类型如何划分，在程序中我们最常见的类加载器始终只有3个，如下所示：
 
-![image-20200705094149223](images/image-20200705094149223.png)
+![image-20200705094149223](https://cdn.losey.top/blog/image-20200705094149223.png)
 
 这里的四者之间是包含关系，不是上层和下层，也不是子系统的继承关系。
 
@@ -381,11 +381,11 @@ null
 
 ClassLoader类，它是一个抽象类，其后所有的类加载器都继承自ClassLoader（不包括启动类加载器）
 
-![image-20200705103516138](images/image-20200705103516138.png)
+![image-20200705103516138](https://cdn.losey.top/blog/image-20200705103516138.png)
 
 sun.misc.Launcher 它是一个java虚拟机的入口应用
 
-![image-20200705103636003](images/image-20200705103636003.png)
+![image-20200705103636003](https://cdn.losey.top/blog/image-20200705103636003.png)
 
 获取ClassLoader的途径
 
@@ -404,13 +404,13 @@ Java虚拟机对class文件采用的是按需加载的方式，也就是说当�
 - 如果父类加载器还存在其父类加载器，则进一步向上委托，依次递归，请求最终将到达顶层的启动类加载器；
 - 如果父类加载器可以完成类加载任务，就成功返回，倘若父类加载器无法完成此加载任务，子加载器才会尝试自己去加载，这就是双亲委派模式。
 
-![image-20200705105151258](images/image-20200705105151258.png)
+![image-20200705105151258](https://cdn.losey.top/blog/image-20200705105151258.png)
 
 ### 双亲委派机制举例
 
 当我们加载jdbc.jar 用于实现数据库连接的时候，首先我们需要知道的是 jdbc.jar是基于SPI接口进行实现的，所以在加载的时候，会进行双亲委派，最终从根加载器中加载 SPI核心类，然后在加载SPI接口类，接着在进行反向委派，通过线程上下文类加载器进行实现类 jdbc.jar的加载。
 
-![image-20200705105810107](images/image-20200705105810107.png)
+![image-20200705105810107](https://cdn.losey.top/blog/image-20200705105810107.png)
 
 ### 沙箱安全机制
 

@@ -16,7 +16,7 @@ OCR（optical character recognition）文字识别是指电子设备（例如扫
 
 我最开始尝试了一些，页面比较简陋，而且功能不是特别完善，截图翻译的时候比较难受，特别是在双屏的环境下
 
-![image-20200528153423741](images/image-20200528153423741.png)
+![image-20200528153423741](https://cdn.losey.top/blog/image-20200528153423741.png)
 
 ## 雨梦OCR
 
@@ -24,7 +24,7 @@ OCR（optical character recognition）文字识别是指电子设备（例如扫
 
 官网地址：[点我传送](http://hanxinyumeng.cn/)
 
-![image-20200528153835250](images/image-20200528153835250.png)
+![image-20200528153835250](https://cdn.losey.top/blog/image-20200528153835250.png)
 
 这个比上面的树洞OCR操作起来就更友好了，因为我主要的用处是用于截屏翻译，这个在截屏翻译这块做的还可以，能满足需求，但是存在一个问题就是，雨梦OCR是收费版本的，还不是买断制，是需要1年19元的收费，但是每天会提供50次免费使用好像，如果对这个OCR使用不是特别频繁的话，是可以使用的。
 
@@ -36,17 +36,17 @@ OCR（optical character recognition）文字识别是指电子设备（例如扫
 
 我们选择release发行版，进行下载
 
-![image-20200528154455138](images/image-20200528154455138.png)
+![image-20200528154455138](https://cdn.losey.top/blog/image-20200528154455138.png)
 
 下面里面的zip文件
 
-![image-20200528154517106](images/image-20200528154517106.png)
+![image-20200528154517106](https://cdn.losey.top/blog/image-20200528154517106.png)
 
 然后运行里面的exe文件即可，运行后会创建一个状态栏图标，我们按F4即可截图
 
-![image-20200528154741103](images/image-20200528154741103.png)
+![image-20200528154741103](https://cdn.losey.top/blog/image-20200528154741103.png)
 
 界面还是挺美观的，而且功能也很强大，还支持请求的接口，所以目前来说 天若OCR是首选~
 
-![image-20200528154820325](images/image-20200528154820325.png)
+![image-20200528154820325](https://cdn.losey.top/blog/image-20200528154820325.png)
 

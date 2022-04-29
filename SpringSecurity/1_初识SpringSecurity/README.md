@@ -54,7 +54,7 @@ Spring Security主要jar包功能介绍
 
 最终依赖树
 
-![image-20200919183927385](images/image-20200919183927385.png)
+![image-20200919183927385](https://cdn.losey.top/blog/image-20200919183927385.png)
 
 ### 配置web.xml
 
@@ -199,15 +199,15 @@ SecurityContextRepository限制同一用户开启多个会话的数量
 我们在web.xml中配置了一个名称为springSecurityFilterChain的过滤器DelegatingFilterProxy，接下我直接对
 DelegatingFilterProxy源码里重要代码进行说明，其中删减掉了一些不重要的代码，大家注意我写的注释就行了！
 
-![image-20200919191221857](images/image-20200919191221857.png)
+![image-20200919191221857](https://cdn.losey.top/blog/image-20200919191221857.png)
 
-![image-20200919191241102](images/image-20200919191241102.png)
+![image-20200919191241102](https://cdn.losey.top/blog/image-20200919191241102.png)
 
-![image-20200919191302644](images/image-20200919191302644.png)
+![image-20200919191302644](https://cdn.losey.top/blog/image-20200919191302644.png)
 
 第二步debug结果如下
 
-![image-20200919191331949](images/image-20200919191331949.png)
+![image-20200919191331949](https://cdn.losey.top/blog/image-20200919191331949.png)
 
 由此可知，DelegatingFilterProxy通过springSecurityFilterChain这个名称，得到了一个FilterChainProxy过滤器，最终在第三步执行了这个过滤器。
 
@@ -215,15 +215,15 @@ DelegatingFilterProxy源码里重要代码进行说明，其中删减掉了一�
 
 注意代码注释！注意代码注释！注意代码注释！
 
-![image-20200919191609357](images/image-20200919191609357.png)
+![image-20200919191609357](https://cdn.losey.top/blog/image-20200919191609357.png)
 
-![image-20200919191701128](images/image-20200919191701128.png)
+![image-20200919191701128](https://cdn.losey.top/blog/image-20200919191701128.png)
 
-![image-20200919191724782](images/image-20200919191724782.png)
+![image-20200919191724782](https://cdn.losey.top/blog/image-20200919191724782.png)
 
 第二步debug结果如下图所示，惊不惊喜？十五个过滤器都在这里了！
 
-![image-20200919191746095](images/image-20200919191746095.png)
+![image-20200919191746095](https://cdn.losey.top/blog/image-20200919191746095.png)
 
 再看第三步，怀疑这么久！原来这些过滤器还真是都被封装进SecurityFilterChain中了。
 
@@ -231,9 +231,9 @@ DelegatingFilterProxy源码里重要代码进行说明，其中删减掉了一�
 
 最后看SecurityFilterChain，这是个接口，实现类也只有一个，这才是web.xml中配置的过滤器链对象！
 
-![image-20200919191830091](images/image-20200919191830091.png)
+![image-20200919191830091](https://cdn.losey.top/blog/image-20200919191830091.png)
 
-![image-20200919191841552](images/image-20200919191841552.png)
+![image-20200919191841552](https://cdn.losey.top/blog/image-20200919191841552.png)
 
 ### 总结
 
@@ -247,19 +247,19 @@ DelegatingFilterProxy源码里重要代码进行说明，其中删减掉了一�
 
 在SpringSecurity主配置文件中指定认证页面配置信息
 
-![image-20200919191951927](images/image-20200919191951927.png)
+![image-20200919191951927](https://cdn.losey.top/blog/image-20200919191951927.png)
 
 修改认证页面的请求地址
 
-![image-20200919192105365](images/image-20200919192105365.png)
+![image-20200919192105365](https://cdn.losey.top/blog/image-20200919192105365.png)
 
 再次启动项目后就可以看到自定义的酷炫认证页面了！
 
-![image-20200919192142213](images/image-20200919192142213.png)
+![image-20200919192142213](https://cdn.losey.top/blog/image-20200919192142213.png)
 
 然后你开开心心的输入了用户名user，密码user，就出现了如下的界面：
 
-![image-20200919192203613](images/image-20200919192203613.png)
+![image-20200919192203613](https://cdn.losey.top/blog/image-20200919192203613.png)
 
 403什么异常？这是SpringSecurity中的权限不足！这个异常怎么来的？还记得上面SpringSecurity内置认证页面源码中的那个_csrf隐藏input吗？问题就在这了！
 
@@ -339,9 +339,9 @@ CSRF（Cross-site request forgery）跨站请求伪造，是一种难以防范�
 
 SpringSecurity中CsrfFilter过滤器说明
 
-![image-20200919193139125](images/image-20200919193139125.png)
+![image-20200919193139125](https://cdn.losey.top/blog/image-20200919193139125.png)
 
-![image-20200919193203700](images/image-20200919193203700.png)
+![image-20200919193203700](https://cdn.losey.top/blog/image-20200919193203700.png)
 
 通过源码分析，我们明白了，自己的认证页面，请求方式为POST，但却没有携带token，所以才出现了403权限不
 足的异常。那么如何处理这个问题呢？
@@ -354,11 +354,11 @@ SpringSecurity中CsrfFilter过滤器说明
 
 在SpringSecurity主配置文件中添加禁用crsf防护的配置。
 
-![image-20200919194217293](images/image-20200919194217293.png)
+![image-20200919194217293](https://cdn.losey.top/blog/image-20200919194217293.png)
 
 ### 在认证页面携带token请求
 
-![image-20200919194236585](images/image-20200919194236585.png)
+![image-20200919194236585](https://cdn.losey.top/blog/image-20200919194236585.png)
 
 注：HttpSessionCsrfTokenRepository对象负责生成token并放入session域中。
 
@@ -368,9 +368,9 @@ SpringSecurity中CsrfFilter过滤器说明
 
 先看主要负责认证的过滤器UsernamePasswordAuthenticationFilter，有删减，注意注释。
 
-![image-20200919194541154](images/image-20200919194541154.png)
+![image-20200919194541154](https://cdn.losey.top/blog/image-20200919194541154.png)
 
-![image-20200919194554290](images/image-20200919194554290.png)
+![image-20200919194554290](https://cdn.losey.top/blog/image-20200919194554290.png)
 
 上面的过滤器的意思就是，我们发送的登录请求，请求地址需要是 /login，请求方法 post，然后用户名 username，密码为 password
 
@@ -378,36 +378,36 @@ SpringSecurity中CsrfFilter过滤器说明
 
 由上面源码得知，真正认证操作在AuthenticationManager里面！然后看AuthenticationManager的实现类ProviderManager：
 
-![image-20200919195156738](images/image-20200919195156738.png)
+![image-20200919195156738](https://cdn.losey.top/blog/image-20200919195156738.png)
 
-![image-20200919195209419](images/image-20200919195209419.png)
+![image-20200919195209419](https://cdn.losey.top/blog/image-20200919195209419.png)
 
 ### AbstractUserDetailsAuthenticationProvider
 
 咱们继续再找到AuthenticationProvider的实现类AbstractUserDetailsAuthenticationProvider
 
-![image-20200919195243996](images/image-20200919195243996.png)
+![image-20200919195243996](https://cdn.losey.top/blog/image-20200919195243996.png)
 
 ### AbstractUserDetailsAuthenticationProvider中authenticate返回值
 
 按理说到此已经知道自定义认证方法的怎么写了，但咱们把返回的流程也大概走一遍，上面不是说到返回了一个
 UserDetails对象对象吗？跟着它，就又回到了AbstractUserDetailsAuthenticationProvider对象中authenticate方法的最后一行了。
 
-![image-20200919195340553](images/image-20200919195340553.png)
+![image-20200919195340553](https://cdn.losey.top/blog/image-20200919195340553.png)
 
 ### UsernamePasswordAuthenticationToken
 
 来到UsernamePasswordAuthenticationToken对象发现里面有两个构造方法
 
-![image-20200919195400048](images/image-20200919195400048.png)
+![image-20200919195400048](https://cdn.losey.top/blog/image-20200919195400048.png)
 
-![image-20200919195407334](images/image-20200919195407334.png)
+![image-20200919195407334](https://cdn.losey.top/blog/image-20200919195407334.png)
 
 ### AbstractAuthenticationToken
 
 再点进去super(authorities)看看：
 
-![image-20200919195433849](images/image-20200919195433849.png)
+![image-20200919195433849](https://cdn.losey.top/blog/image-20200919195433849.png)
 
 由此，咱们需要牢记自定义认证业务逻辑返回的UserDetails对象中一定要放置权限信息啊！
 
@@ -422,9 +422,9 @@ UserDetails对象对象吗？跟着它，就又回到了AbstractUserDetailsAuthe
 
 点开AbstractAuthenticationProcessingFilter，删掉不必要的代码！
 
-![image-20200919195547370](images/image-20200919195547370.png)
+![image-20200919195547370](https://cdn.losey.top/blog/image-20200919195547370.png)
 
-![image-20200919195601300](images/image-20200919195601300.png)
+![image-20200919195601300](https://cdn.losey.top/blog/image-20200919195601300.png)
 
 可见AbstractAuthenticationProcessingFilter这个过滤器对于认证成功与否，做了两个分支，成功执行
 successfulAuthentication，失败执行unsuccessfulAuthentication。
@@ -539,4 +539,4 @@ public class UserServiceImpl implements UserService {
 
 ### 手动将数据库中用户密码改为加密后的密文
 
-![image-20200919202157273](images/image-20200919202157273.png)
+![image-20200919202157273](https://cdn.losey.top/blog/image-20200919202157273.png)

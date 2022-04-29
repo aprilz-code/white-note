@@ -31,11 +31,11 @@
 
 也就是用于替换我们启动时候的这个页面
 
-![image-20200107193657995](images/image-20200107193657995.png)
+![image-20200107193657995](https://cdn.losey.top/blog/image-20200107193657995.png)
 
 其实修改的方法也比较简单，只需要在resource目录下，放一个banner.txt文件即可，文件下面就存放我们需要显示的banner，那么在启动的时候，就会加载出对应的图像出来
 
-![image-20200107194508978](images/image-20200107194508978.png)
+![image-20200107194508978](https://cdn.losey.top/blog/image-20200107194508978.png)
 
 ## 制作Banner
 
@@ -45,7 +45,7 @@
 
 我们在上面输入我们需要显示的内容，然后复制里面的文本到banner.txt即可
 
-![image-20200107194722140](images/image-20200107194722140.png)
+![image-20200107194722140](https://cdn.losey.top/blog/image-20200107194722140.png)
 
 同时里面也是也可以设置颜色的
 
@@ -78,5 +78,5 @@ Spring Boot Version: ${spring-boot.version}${spring-boot.formatted-version}
 
 下面是我的启动页面，如下所示：
 
-![image-20200107195404379](images/image-20200107195404379.png)
+![image-20200107195404379](https://cdn.losey.top/blog/image-20200107195404379.png)
 

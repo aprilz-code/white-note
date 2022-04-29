@@ -24,7 +24,7 @@ docker run --privileged -d -it -h vscodeServer --name vscodeServer -v /etc/local
 
 进入docker容器内部后，去github上下载好[vscode server](https://github.com/cdr/code-server/releases)
 
-![image-20200524093951596](images/image-20200524093951596.png)
+![image-20200524093951596](https://cdn.losey.top/blog/image-20200524093951596.png)
 
 然后再到我们的服务器中解压，使用下列命令
 
@@ -34,7 +34,7 @@ tar -zxvf code-server-3.3.1-linux-x86_64.tar.gz
 
 解压完成后，如下图所示
 
-![image-20200524094032917](images/image-20200524094032917.png)
+![image-20200524094032917](https://cdn.losey.top/blog/image-20200524094032917.png)
 
 然后进入下列目录
 
@@ -48,7 +48,7 @@ cd code-server-3.3.1-linux-x86_64
 vi ~/.config/code-server/config.yaml
 ```
 
-![image-20200524102156946](images/image-20200524102156946.png)
+![image-20200524102156946](https://cdn.losey.top/blog/image-20200524102156946.png)
 
 使用命令启动，这个命令需要独占一个窗口
 
@@ -65,6 +65,6 @@ nohup ./code-server --port 8443  --host 0.0.0.0  > catalina.out  2>&1 &
 
 启动成功后，输入 ip + 8443端口号，即可访问到vs code的浏览器版本了
 
-![image-20200524102450268](images/image-20200524102450268.png)
+![image-20200524102450268](https://cdn.losey.top/blog/image-20200524102450268.png)
 
 下面就是我通过ipad打开code server了

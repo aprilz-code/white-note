@@ -12,7 +12,7 @@
 
 IOC、AOP只是作为Spring Framework里面一部分，同时还有还有events，resources，i18n，validation，data binding，type conversion，SpEL
 
-![image-20200402092317669](images/image-20200402092317669.png)
+![image-20200402092317669](https://cdn.losey.top/blog/image-20200402092317669.png)
 
 ## Spring上下文
 
@@ -86,7 +86,7 @@ public class Test {
 
 最后我们通过注解的方式，来获取Spring IOC扫描到的Bean，最后打印出来
 
-![image-20200402091642787](images/image-20200402091642787.png)
+![image-20200402091642787](https://cdn.losey.top/blog/image-20200402091642787.png)
 
 tip：IDEA点击进去的源码目录，其实是IDEA反编译得到的，和原来的源码会存在一些出入，是IDEA专门优化过的，因此如果你需要修改源码的话，还是需要在官网下载对应的源码包
 
@@ -114,11 +114,11 @@ AnnotationConfigApplicationContext annotationConfigApplicationContext = new Anno
 
 同时在这个方法的内部，使用了this()
 
-![image-20200402100813001](images/image-20200402100813001.png)
+![image-20200402100813001](https://cdn.losey.top/blog/image-20200402100813001.png)
 
 调用AnnotationConfigApplicationContext无参构造方法，同时因为该类又继承了一个父类 GenericApplicationContext，子类在初始化的时候，还会调用父类的无参构造方法，在父类中，我们能够看到它初始化了一个BeanFactory，这就是我们经常提到的Spring工厂
 
-![image-20200402100434794](images/image-20200402100434794.png)
+![image-20200402100434794](https://cdn.losey.top/blog/image-20200402100434794.png)
 
 这个工厂最重要的功能就是产生Bean
 
@@ -137,7 +137,7 @@ invokeBeanFactoryPostProcessors() {
 
 普通类的实例化，就是通过javac编译成xxx.class文件，然后某一天通过new关键字进行实例化，JVM就会把这个class类加载到JVM内存中，这里面就涉及到了方法区，堆栈存储等。
 
-![image-20200402101551621](images/image-20200402101551621.png)
+![image-20200402101551621](https://cdn.losey.top/blog/image-20200402101551621.png)
 
 ### Spring Bean实例化过程
 
@@ -161,15 +161,15 @@ invokeBeanFactoryPostProcessors() {
 
 
 
-![image-20200402102958645](images/image-20200402102958645.png)
+![image-20200402102958645](https://cdn.losey.top/blog/image-20200402102958645.png)
 
 - 最后我们将这个BeanDefinationMap放入了Spring单例池中
 
-![image-20200402104318234](images/image-20200402104318234.png)
+![image-20200402104318234](https://cdn.losey.top/blog/image-20200402104318234.png)
 
 完整的加载图，左边红色部分就是Spring的加载过程，然后开放的原则，它还提供了很多扩展接口，让你可以干扰到Sring的加载过程，使得
 
-![image-20200402104306006](images/image-20200402104306006.png)
+![image-20200402104306006](https://cdn.losey.top/blog/image-20200402104306006.png)
 
 
 

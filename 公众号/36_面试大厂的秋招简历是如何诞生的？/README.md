@@ -32,7 +32,7 @@
 
 下图是库森校招时使用的简历模板，是使用Markdown 书写的。
 
-![图片](images/640.webp)
+![图片](https://cdn.losey.top/blog/640.webp)
 
 ## 基本信息
 
@@ -142,4 +142,4 @@
 
 需要帮忙看简历的小伙伴，可扫码加我微信，帮给建议~
 
-![图片](images/640-1628327239681.webp)
+![图片](https://cdn.losey.top/blog/640-1628327239681.webp)

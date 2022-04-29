@@ -16,7 +16,7 @@ https://leetcode-cn.com/problems/minimum-time-visiting-all-points/
 
 示例 1：
 
-![image-20200703152246832](images/image-20200703152246832.png)
+![image-20200703152246832](https://cdn.losey.top/blog/image-20200703152246832.png)
 
 ```
 输入：points = [[1,1],[3,4],[-1,0]]

@@ -15,15 +15,15 @@
 
 首先是vue-image-crop-upload，我们能够发现其实这个截图有点类似于我们需要裁减头像的时候，才需要使用的，而针对于特定的矩形，可能没办法达到我们的效果
 
-![image-20200130092654523](images/image-20200130092654523.png)
+![image-20200130092654523](https://cdn.losey.top/blog/image-20200130092654523.png)
 
 其次我们再看 vue-cropper图片裁剪，它是可以根据我们的实际需求进行裁剪，所以综上可能下面这块比较适合现在的项目需求，但是我们也可以使用上面的这款作为头像裁剪的组件。
 
-![image-20200130093032885](images/image-20200130093032885.png)
+![image-20200130093032885](https://cdn.losey.top/blog/image-20200130093032885.png)
 
 裁剪后的效果：
 
-![image-20200130094010305](images/image-20200130094010305.png)
+![image-20200130094010305](https://cdn.losey.top/blog/image-20200130094010305.png)
 
 ## 引入Vue-cropper
 

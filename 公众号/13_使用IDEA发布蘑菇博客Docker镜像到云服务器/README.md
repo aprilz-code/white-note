@@ -6,11 +6,11 @@
 
 本文主要是为了解决蘑菇博客存在的一个问题，使用 **Github Actions** 在制作 **Docker** 镜像太慢的问题。在 [还在人肉运维？看看蘑菇博客是如何实现自动化部署](https://mp.weixin.qq.com/s/a6mFcvg_c1lgWzxt4ctsfQ) 这篇文章中，里面有关键的一个步骤就是将 **jar** 包从 **Github** 服务器提交到阿里云服务器，因为 **Github** 是托管在国外服务器上，而我的阿里云却在国内。所以因为网络问题，有时候完成一个  **Github Actions** 耗时长达 **3** 小时！
 
-![Github Actions任务完成截图](images/image-20210129210945526.png)
+![Github Actions任务完成截图](https://cdn.losey.top/blog/image-20210129210945526.png)
 
 很显然，如果我们打算马上进行线上测试，并且立即看到效果的话，用 **Github Actions**  显然是不能达到要求。经过白的一顿探索后，发现可以通过 **IDEA** 制作好 **Docker** 镜像，然后提交到服务器中。说干就干，下面开始对蘑菇博客进行改造。
 
-![1](images/1.jpg)
+![1](https://cdn.losey.top/blog/1.jpg)
 
 ## 云服务器安装Docker
 
@@ -87,7 +87,7 @@ netstat -tunlp
 
 我们能看到 **2375** 端口，已经成功启动 。
 
-![image-20210129234519713](images/image-20210129234519713.png)
+![image-20210129234519713](https://cdn.losey.top/blog/image-20210129234519713.png)
 
 注意，开放 **2375** 端口容易被端口扫描，当成肉鸡，因此还推荐配置**安全证书**来进行访问，参考博客
 
@@ -97,17 +97,17 @@ netstat -tunlp
 
 首先需要到 **IDEA** 插件市场，点击 **File** -> **Settings** -> **Plugins** 搜索 **Docker** 插件进行安装
 
-![IDEA插件市场](images/image-20210129231300700.png)
+![IDEA插件市场](https://cdn.losey.top/blog/image-20210129231300700.png)
 
 然后找到刚刚安装好的 **Docker** 插件，输入 **Docker** 的 **API** 地址，如果出现 **Connection Successful** 则表示成功
 
-![连接Docker成功](images/image-20210129234646824.png)
+![连接Docker成功](https://cdn.losey.top/blog/image-20210129234646824.png)
 
 ## 创建DockerFile文件
 
 下面我们需要在项目的 **resource** 目录，添加 **DockerFile** 文件，这里以 **mogu_admin** 为例
 
-![image-20210130195204603](images/image-20210130195204603.png)
+![image-20210130195204603](https://cdn.losey.top/blog/image-20210130195204603.png)
 
 然后添加如下内容
 
@@ -147,11 +147,11 @@ ENTRYPOINT ["java","-Xms256m","-Xmx256m","-jar","/app.jar"]
 
 下面我们选择 **Run** -> **Editor Configurations**，进行 **Docker** 信息的配置
 
-![image-20210130195719865](images/image-20210130195719865.png)
+![image-20210130195719865](https://cdn.losey.top/blog/image-20210130195719865.png)
 
 然后点击加号，选择 **DockerFile** 的方式构建
 
-![image-20210130195927594](images/image-20210130195927594.png)
+![image-20210130195927594](https://cdn.losey.top/blog/image-20210130195927594.png)
 
 然后输入如下内容
 
@@ -163,15 +163,15 @@ target目录: mogu_admin/target
 
 详情如下图所示，同时我们需要 不要勾选 **Run built image**，因为我们是用 **docker-compose** 进行管理。
 
-![image-20210130200150005](images/image-20210130200150005.png)
+![image-20210130200150005](https://cdn.losey.top/blog/image-20210130200150005.png)
 
 按照同样的步骤，我们将 **5** 个核心服务进行配置
 
-![image-20210130200405843](images/image-20210130200405843.png)
+![image-20210130200405843](https://cdn.losey.top/blog/image-20210130200405843.png)
 
 对于前端项目，**vue_mogu_admin**  和 **vue_mogu_web** 和后台项目有些许区别，主要在于 **Context folder** 文件夹直接选择对应的目录即可。
 
-![image-20210130200822368](images/image-20210130200822368.png)
+![image-20210130200822368](https://cdn.losey.top/blog/image-20210130200822368.png)
 
 ## 打包Docker镜像到服务器
 
@@ -179,27 +179,27 @@ target目录: mogu_admin/target
 
 在项目根目录，使用 `mvn clean install` 进行打包，操作完成后，即可看到 **BUILD SUCCESS**
 
-![image-20210205085824821](images/image-20210205085824821.png)
+![image-20210205085824821](https://cdn.losey.top/blog/image-20210205085824821.png)
 
 然后在到 **vue_mogu_admin** 和 **vue_mogu_web** 目录，使用 **npm run build** 命令进行打包，生成 **dist** 文件夹
 
-![image-20210205090503146](images/image-20210205090503146.png)
+![image-20210205090503146](https://cdn.losey.top/blog/image-20210205090503146.png)
 
 在我们完成所有的步骤后，回到 **IDEA** 中， 就可以点击 **运行**，开始打包镜像
 
-![image-20210130212721312](images/image-20210130212721312.png)
+![image-20210130212721312](https://cdn.losey.top/blog/image-20210130212721312.png)
 
 需要注意的是，我们需要将刚刚我们设置的 7 个配置都运行一次
 
-![image-20210130212829741](images/image-20210130212829741.png)
+![image-20210130212829741](https://cdn.losey.top/blog/image-20210130212829741.png)
 
 在我们执行完七个后，将会生成多个镜像文件到服务器中，可以在 **Images** 中看到
 
-![image-20210130212905202](images/image-20210130212905202.png)
+![image-20210130212905202](https://cdn.losey.top/blog/image-20210130212905202.png)
 
 也可以在服务器中，使用 **docker images** 命令镜像查看
 
-![image-20210130212957639](images/image-20210130212957639.png)
+![image-20210130212957639](https://cdn.losey.top/blog/image-20210130212957639.png)
 
 到这里为止，蘑菇博客的镜像就已经打包完毕了，当小伙伴们修改完蘑菇博客源代码后，就可以使用这种方式完成镜像的替换。好了，那我们下期再见~
 
@@ -207,4 +207,4 @@ target目录: mogu_admin/target
 
 **白**是一个从三本院校一路摸滚翻爬上来的互联网大厂程序员。独立做过几个开源项目，其中**蘑菇博客**在码云上有 **2K Star** 。目前就职于**字节跳动的Data广告部门**，是字节跳动全线产品的商业变现研发团队。本公众号将会持续性的输出很多原创小知识以及学习资源。如果你觉得本文对你有所帮助，麻烦给文章点个「赞」和「在看」。同时欢迎各位小伙伴关注白，让我们一起成长~
 
-![和白一起学编程](images/image-20210122092846701.png)
+![和白一起学编程](https://cdn.losey.top/blog/image-20210122092846701.png)

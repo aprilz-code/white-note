@@ -6,11 +6,11 @@
 
 在微服务框架中，一个由客户端发起的请求在后端系统中会经过多个不同的服务节点调用来协同产生最后的请求结果，每一个前端请求都会形成一条复杂的分布式服务调用链路，链路中的任何一环出现高延时或错误都会引起整个请求最后的失败。
 
-![image-20200414142800496](images/image-20200414142800496.png)
+![image-20200414142800496](https://cdn.losey.top/blog/image-20200414142800496.png)
 
 当链路特别多的时候
 
-![image-20200414142915202](images/image-20200414142915202.png)
+![image-20200414142915202](https://cdn.losey.top/blog/image-20200414142915202.png)
 
 就需要有一个用于调用链路的监控和服务跟踪的解决方案
 
@@ -43,15 +43,15 @@ http://localhost:9441/zipkin
 
 表示一请求链路， 一条链路通过Trace ID唯一标识，Span标识发起请求信息，各span通过parent id关联起来。
 
-![image-20200414152236173](images/image-20200414152236173.png)
+![image-20200414152236173](https://cdn.losey.top/blog/image-20200414152236173.png)
 
 一条链路通过Trace Id唯一标识，Span表示发起的请求信息，各span通过parent id关联起来
 
-![image-20200414152425574](images/image-20200414152425574.png)
+![image-20200414152425574](https://cdn.losey.top/blog/image-20200414152425574.png)
 
 整个链路的依赖关系如下：
 
-![image-20200414152440036](images/image-20200414152440036.png)
+![image-20200414152440036](https://cdn.losey.top/blog/image-20200414152440036.png)
 
 ### 引入依赖
 

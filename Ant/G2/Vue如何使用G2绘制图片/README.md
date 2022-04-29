@@ -135,5 +135,5 @@ export default {
 
 最后效果图：
 
-![image-20191222163912882](.\images\image-20191222163912882.png)
+![image-20191222163912882](https://cdn.losey.top/blog/image-20191222163912882.png)
 

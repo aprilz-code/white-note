@@ -15,7 +15,7 @@
 5. 消费者获得调用地址后，底层实际是利用HttpClient技术实现远程调用
 6. 消费者获取服务地址后会缓存在本地JVM内存中，默认每隔30秒更新一次服务调用地址
 
-![image-20200407214336639](images/image-20200407214336639.png)
+![image-20200407214336639](https://cdn.losey.top/blog/image-20200407214336639.png)
 
 微服务RPC远程调用最核心的就是：高可用
 
@@ -25,7 +25,7 @@
 
 互相注册，相互守望
 
-![image-20200407214903319](images/image-20200407214903319.png)
+![image-20200407214903319](https://cdn.losey.top/blog/image-20200407214903319.png)
 
 ## 搭建集群
 
@@ -82,11 +82,11 @@ eureka:
 
 启动后，我们能发现，在eureka7001上，能看到7002注册上去了
 
-![image-20200407215956351](images/image-20200407215956351.png)
+![image-20200407215956351](https://cdn.losey.top/blog/image-20200407215956351.png)
 
 同时在eureka7002上，能看到7001，这个时候说明我们的eureka集群已经搭建完毕
 
-![image-20200407220030972](images/image-20200407220030972.png)
+![image-20200407220030972](https://cdn.losey.top/blog/image-20200407220030972.png)
 
 
 
@@ -200,7 +200,7 @@ spring:
 
 启动后，我们发现CLOUD-PAYMENT_SERVICE上有两个服务提供者了，分别为：8001和8002
 
-![image-20200407223634503](images/image-20200407223634503.png)
+![image-20200407223634503](https://cdn.losey.top/blog/image-20200407223634503.png)
 
 同时我们需要服务名进行调用
 
@@ -318,7 +318,7 @@ instances.get(0).getUrl();
 
 如果在Eureka Server的首页看到以下这段提示，说明Eureka进入了保护模式
 
-![image-20200407230432953](images/image-20200407230432953.png)
+![image-20200407230432953](https://cdn.losey.top/blog/image-20200407230432953.png)
 
 
 
@@ -330,11 +330,11 @@ instances.get(0).getUrl();
 
 默认情况下，如果EurekaServer在一定时间内没有接收到某个微服务实例的心跳，EurekaServer将会注销该实例，默认90秒。但是当网络分区故障发生（延时，卡顿，拥挤）时，微服务与EurekaServer之间无法正常通信，以上行为可能变得非常危险了- 因为微服务本身其实是健康的，此时不应该注销这个微服务，Eureka通过 自我保护模式 来解决这个问题，当EurekaServer节点在短时间丢失过多客户端，那么这个节点就会进入自我保护模式
 
-![image-20200407230731783](images/image-20200407230731783.png)
+![image-20200407230731783](https://cdn.losey.top/blog/image-20200407230731783.png)
 
 这是一种高可用的机制
 
-![image-20200407231058929](images/image-20200407231058929.png)
+![image-20200407231058929](https://cdn.losey.top/blog/image-20200407231058929.png)
 
 在自我保护模式下，Eureka Server会保护服务注册表中的信息，不在注销任何服务实例
 

@@ -185,7 +185,7 @@ public class MyDemo01 {
 
 这里们先构建一个简单的转账场景：有一个数据表account，里面有两个用户 jack 和 Rose，用户Jack给用户Rose转账。案例的实现主要是用mysql数据库，JDBC和C3P0框架，以下是详细代码
 
-![image-20200710204941153](images/image-20200710204941153.png)
+![image-20200710204941153](https://cdn.losey.top/blog/image-20200710204941153.png)
 
 ### 引入事务
 
@@ -241,7 +241,7 @@ JDBC中关于事务操作的API
 
 这个时候就可以通过ThreadLocal和当前线程进行绑定，来降低代码之间的耦合
 
-![image-20200710212423494](images/image-20200710212423494.png)
+![image-20200710212423494](https://cdn.losey.top/blog/image-20200710212423494.png)
 
 ### 使用ThreadLocal解决
 
@@ -279,7 +279,7 @@ public static Connection getConnection() {
 
 如果我们不去看源代码的话，可能会猜测 ThreadLocal 是这样子设计的：每个ThreadLocal都创建一个Map，然后用线程作为Map的key，要存储的局部变量作为Map的value，这样就能达到各个线程的局部变量隔离的效果。这是最简单的设计方法，JDK最早期的ThreadLocal确实是这样设计的，但现在早已不是了。
 
-![image-20200710214857638](images/image-20200710214857638.png)
+![image-20200710214857638](https://cdn.losey.top/blog/image-20200710214857638.png)
 
 ### 现在的设计
 
@@ -290,11 +290,11 @@ public static Connection getConnection() {
 - Thread内部的Map是由ThreadLocal维护的，由ThreadLocal负责向map获取和设置线程的变量值。
 - 对于不同的线程，每次获取副本值时，别的线程并不能获取到当前线程的副本值，形成了副本的隔离，互不干扰。
 
-![image-20200710215038748](images/image-20200710215038748.png)
+![image-20200710215038748](https://cdn.losey.top/blog/image-20200710215038748.png)
 
 ### 对比
 
-![image-20200710215128743](images/image-20200710215128743.png)
+![image-20200710215128743](https://cdn.losey.top/blog/image-20200710215128743.png)
 
 从上面变成JDK8的设计有什么好处？
 
@@ -318,9 +318,9 @@ public static Connection getConnection() {
 
 ### set方法
 
-![image-20200710215706026](images/image-20200710215706026.png)
+![image-20200710215706026](https://cdn.losey.top/blog/image-20200710215706026.png)
 
-![image-20200710215827494](images/image-20200710215827494.png)
+![image-20200710215827494](https://cdn.losey.top/blog/image-20200710215827494.png)
 
 代码流程
 
@@ -330,9 +330,9 @@ public static Connection getConnection() {
 
 ### get方法
 
-![image-20200710220037887](images/image-20200710220037887.png)
+![image-20200710220037887](https://cdn.losey.top/blog/image-20200710220037887.png)
 
-![image-20200710220201472](images/image-20200710220201472.png)
+![image-20200710220201472](https://cdn.losey.top/blog/image-20200710220201472.png)
 
 代码执行流程
 
@@ -345,7 +345,7 @@ public static Connection getConnection() {
 
 ### remove方法
 
-![image-20200710220519229](images/image-20200710220519229.png)
+![image-20200710220519229](https://cdn.losey.top/blog/image-20200710220519229.png)
 
 代码执行流程
 
@@ -354,7 +354,7 @@ public static Connection getConnection() {
 
 ### initialValue方法
 
-![image-20200710220639455](images/image-20200710220639455.png)
+![image-20200710220639455](https://cdn.losey.top/blog/image-20200710220639455.png)
 
 此方法的作用是返回该线程局部变量的初始值。
 
@@ -371,7 +371,7 @@ ThreadLocalMap的源码相对比较复杂，我们从以下三个方面进行讨
 
 ThreadLocalMap是ThreadLocal的内部类，没有实现Map接口，用独立的方式实现了Map的功能，其内部的Entry也是独立实现。
 
-![image-20200710220856315](images/image-20200710220856315.png)
+![image-20200710220856315](https://cdn.losey.top/blog/image-20200710220856315.png)
 
 #### 成员变量
 
@@ -445,7 +445,7 @@ Java中的引用有4种类型：强、软、弱、虚。当前这个问题主要
 
 此时ThreadLocal的内存图（实线表示强引用）如下：
 
-![image-20200710222559109](images/image-20200710222559109.png)
+![image-20200710222559109](https://cdn.losey.top/blog/image-20200710222559109.png)
 
 - 假设在业务代码中使用完ThreadLocal，threadLocal Ref被回收了
 - 但是因为threadLocalMap的Entry强引用了threadLocal，造成threadLocal无法被回收。
@@ -455,7 +455,7 @@ Java中的引用有4种类型：强、软、弱、虚。当前这个问题主要
 
 ### 如果key使用弱引用，那么会出现内存泄漏？
 
-![image-20200710222847567](images/image-20200710222847567.png)
+![image-20200710222847567](https://cdn.losey.top/blog/image-20200710222847567.png)
 
 - 同样假设在业务代码中使用完ThreadLocal，threadLocal Ref被回收了。
 - 由于ThreadLocalMap只持有ThreadLocal的弱引用，没有任何强引用指向threadlocal实例，所以threadloca就可以顺利被gc回收，此时Entry中的key=null。
@@ -534,7 +534,7 @@ t.threadlocals=new ThreadLocal.ThreadtocalMap(this，firstValue);
 
 ThreadLocalMap(ThreadLocal<?> firstKey, Object firstValue)
 
-![image-20200710224030132](images/image-20200710224030132.png)
+![image-20200710224030132](https://cdn.losey.top/blog/image-20200710224030132.png)
 
 构造函数首先创建一个长度为16的Entry数组，然后计算出firstKey对应的索引，然后存储到table中，并设置size和threshold。
 
@@ -542,7 +542,7 @@ ThreadLocalMap(ThreadLocal<?> firstKey, Object firstValue)
 
 **关于：threadLocalHashCode** 
 
-![image-20200710224257493](images/image-20200710224257493.png)
+![image-20200710224257493](https://cdn.losey.top/blog/image-20200710224257493.png)
 
 这里定义了一个Atomiclnteger类型，每次获取当前值并加上HASHINCREMENT，HASH_INCREMENT =
 0x61c88647，这个值跟斐波那契数列（黄金分割数）有关，其主要目的就是为了让哈希码能均匀的分布在2的n次方的数组里，也就是EntryI table中，这样做可以尽量避免hash冲突。
@@ -553,9 +553,9 @@ ThreadLocalMap(ThreadLocal<?> firstKey, Object firstValue)
 
 ### Get方法
 
-![image-20200710224609317](images/image-20200710224609317.png)
+![image-20200710224609317](https://cdn.losey.top/blog/image-20200710224609317.png)
 
-![image-20200710224724127](images/image-20200710224724127.png)
+![image-20200710224724127](https://cdn.losey.top/blog/image-20200710224724127.png)
 
 代码执行流程
 

@@ -114,7 +114,7 @@ docker pull moxi/mogu_blog_nacos
 docker images
 ```
 
-![image-20200903160432721](images/image-20200903160432721.png)
+![image-20200903160432721](https://cdn.losey.top/blog/image-20200903160432721.png)
 
 好了，能看到刚刚拉取的镜像，大概有3.97G，因为这里面包含了项目完整的运行环境。
 
@@ -132,15 +132,15 @@ docker run --privileged -d -it -h mogu_blog_2 --name mogu_blog_2 -v /etc/localti
 
 关于安全组的配置，在云服务器ECS的管理页面
 
-![image-20200209125847329](images/image-20200209125847329.png)
+![image-20200209125847329](https://cdn.losey.top/blog/image-20200209125847329.png)
 
 在点击配置规则
 
-![image-20200209125905430](images/image-20200209125905430.png)
+![image-20200209125905430](https://cdn.losey.top/blog/image-20200209125905430.png)
 
 然后点击右上角按钮，把需要用到的端口号都导入进去
 
-![image-20200209125919324](images/image-20200209125919324.png)
+![image-20200209125919324](https://cdn.losey.top/blog/image-20200209125919324.png)
 
 安装下面的规则，把每一个添加进去即可, 需要添加的端口号有：
 
@@ -168,7 +168,7 @@ nacos端口: 8848
 sentinel端口: 8070
 ```
 
-![image-20200209125938397](images/image-20200209125938397.png)
+![image-20200209125938397](https://cdn.losey.top/blog/image-20200209125938397.png)
 
 ## 查看容器状态
 
@@ -179,21 +179,21 @@ sentinel端口: 8070
 docker ps -a
 ```
 
-![image-20200209125953803](images/image-20200209125953803.png)
+![image-20200209125953803](https://cdn.losey.top/blog/image-20200209125953803.png)
 
 
 
 ## 打开XShell，连接
 
-![image-20200209130011043](images/image-20200209130011043.png)
+![image-20200209130011043](https://cdn.losey.top/blog/image-20200209130011043.png)
 
 输入用户名： root
 
-![image-20200209130023427](images/image-20200209130023427.png)
+![image-20200209130023427](https://cdn.losey.top/blog/image-20200209130023427.png)
 
 输入密码：mogu2018
 
-![image-20200209130036402](images/image-20200209130036402.png)
+![image-20200209130036402](https://cdn.losey.top/blog/image-20200209130036402.png)
 
 成功进入系统，下面我们就需要把对应的服务都开启
 
@@ -217,7 +217,7 @@ cd /soft/nginx/sbin/
 
 好吧，启动报错
 
-![image-20200209130104979](images/image-20200209130104979.png)
+![image-20200209130104979](https://cdn.losey.top/blog/image-20200209130104979.png)
 
 看问题需要创建一个目录，那么就开始创建吧
 
@@ -227,7 +227,7 @@ mkdir -p /var/run/nginx
 
 再次使用启动命令，启动成功
 
-![image-20200209130124155](images/image-20200209130124155.png)
+![image-20200209130124155](https://cdn.losey.top/blog/image-20200209130124155.png)
 
 我们在使用命令 ，查看已经启动的端口号
 
@@ -237,7 +237,7 @@ netstat -tunlp
 
 我们已经看到了，现在已经开机自启了 RabbitMQ的 5672 15672 ， mysql的 3306， 其他的一些就是项目的端口，现在我们还需要启动 redis的 6379 和 tomcat的 8080
 
-![image-20200209130139403](images/image-20200209130139403.png)
+![image-20200209130139403](https://cdn.losey.top/blog/image-20200209130139403.png)
 
 注意：如果我们查看端口号没有RabbitMQ，我们需要手动启动对应的服务
 
@@ -263,7 +263,7 @@ netstat -tunlp
 
  我们看到redis已经正常启动了
 
-![image-20200209130156442](images/image-20200209130156442.png)
+![image-20200209130156442](https://cdn.losey.top/blog/image-20200209130156442.png)
 
 ### 启动tomcat中的solr【非必须】
 
@@ -302,11 +302,11 @@ cd /soft/nacos/bin
 
 启动后，会有如下提示
 
-![image-20200903161239748](images/image-20200903161239748.png)
+![image-20200903161239748](https://cdn.losey.top/blog/image-20200903161239748.png)
 
 我们可以通过查看日志进行判断nacos是否启动成功
 
-![image-20200903161406977](images/image-20200903161406977.png)
+![image-20200903161406977](https://cdn.losey.top/blog/image-20200903161406977.png)
 
 如果没有报错信息，说明Nacos已经启动成功了，下面我们可以进入到Nacos的图形化管理页面
 
@@ -316,7 +316,7 @@ http://your_ip:8848/nacos
 
 打开后，输入默认账号密码：nacos  nacos，即可进入系统，查看到项目的配置
 
-![image-20200903161619843](images/image-20200903161619843.png)
+![image-20200903161619843](https://cdn.losey.top/blog/image-20200903161619843.png)
 
 如果需要更改配置，以后到这里完成就可以了，修改配置后，重启服务即可生效
 
@@ -345,7 +345,7 @@ http://your_ip:8070
 
 输入默认账号密码：sentinel  sentinel，进入到管理界面，更多关于Sentinel的操作，可以查看[这篇博客](http://moguit.cn/#/info?blogUid=408e9c889ebf96a66af2adfdc258ba5f)
 
-![image-20200903162631281](images/image-20200903162631281.png)
+![image-20200903162631281](https://cdn.losey.top/blog/image-20200903162631281.png)
 
 ### 启动微服务
 
@@ -358,7 +358,7 @@ cd /home/mogu_blog
 
 我们查看项目结构，有以下几个文件夹
 
-![image-20200903163514966](images/image-20200903163514966-1599124136538.png)
+![image-20200903163514966](https://cdn.losey.top/blog/image-20200903163514966-1599124136538.png)
 
 下面说明每个文件夹的作用
 
@@ -380,7 +380,7 @@ vue_mogu_web：VUE的门户网站
 
 我们查看一下目录结构
 
-![image-20200209130224724](images/image-20200209130224724-1599124105899.png)
+![image-20200209130224724](https://cdn.losey.top/blog/image-20200209130224724-1599124105899.png)
 
 ```
 ./startup.sh  #启动脚本
@@ -405,7 +405,7 @@ cd mogu_admin
 
 我们进入到nacos配置文件管理界面，找到的 mogu_web_prod.yaml文件
 
-![image-20200903164514073](images/image-20200903164514073-1599124105900.png)
+![image-20200903164514073](https://cdn.losey.top/blog/image-20200903164514073-1599124105900.png)
 
 我们需要将下面的域名，改成自己的
 
@@ -448,7 +448,7 @@ cd mogu_web
 
 我们进入到nacos配置文件管理界面，找到的 mogu_sms_prod.yaml文件
 
-![image-20200903164316451](images/image-20200903164316451-1599124105900.png)
+![image-20200903164316451](https://cdn.losey.top/blog/image-20200903164316451-1599124105900.png)
 
 在mogu_sms中，主要修改的就是邮箱的配置，我们将发送邮件的信息改成自己的
 
@@ -461,7 +461,7 @@ mail:
 
 注意，上面的password是授权码，授权码不是密码，以163邮箱为例，我们需要开启SMTP服务，然后设置授权码
 
-![image-20200722090457339](images/image-20200722090457339-1599124105900.png)
+![image-20200722090457339](https://cdn.losey.top/blog/image-20200722090457339-1599124105900.png)
 
 
 
@@ -491,7 +491,7 @@ http://your_ip:8848/nacos
 
 如下图所示
 
-![image-20201212144805069](images/image-20201212144805069.png)
+![image-20201212144805069](https://cdn.losey.top/blog/image-20201212144805069.png)
 
 我们在通过访问下列swagger接口，测试接口是否正常
 
@@ -502,25 +502,25 @@ http://your_ip:8603/swagger-ui/index.html
 
 如果能够进入下面页面的话，说明后台是没有问题的了，下面我们可以验证一下接口
 
-![img](images/f7aac7c1d46e41fb88cce5918318f509)
+![img](https://cdn.losey.top/blog/f7aac7c1d46e41fb88cce5918318f509)
 
 验证登录
 
-![img](images/84ed060923214f7cb8df77f0b6bc512a)
+![img](https://cdn.losey.top/blog/84ed060923214f7cb8df77f0b6bc512a)
 
 然后执行完成后，复制到token
 
-![img](images/ec60e235b7264864a404abc8cd24248f)
+![img](https://cdn.losey.top/blog/ec60e235b7264864a404abc8cd24248f)
 
 然后在swagger页面的右上角，有一个authorize的按钮，点击后，将token粘贴进去，即可操作全部接口进行测试了~
 
-![img](images/03c6697dfd3148888215e2f38e99b775)
+![img](https://cdn.losey.top/blog/03c6697dfd3148888215e2f38e99b775)
 
 ## 修改前端项目配置
 
 下面我们需要修改前端地址，如果不修改的话，默认是请求的是蘑菇演示环境的后台接口【！！所以这里切记】
 
-![image-20201130110943750](images/image-20201130110943750.png)
+![image-20201130110943750](https://cdn.losey.top/blog/image-20201130110943750.png)
 
 我们现在需要修改两个地方的配置，分别是：vue_mogu_admin 和 vue_mogu_web 目录下
 
@@ -537,7 +537,7 @@ vim index.html
 
 > 文件是被压缩的，可以使用在线格式化工具：[html在线格式化](https://tool.oschina.net/codeformat/html/)，优化后在进行编辑
 
-![image-20201130105850074](images/image-20201130105850074.png)
+![image-20201130105850074](https://cdn.losey.top/blog/image-20201130105850074.png)
 
 注意，上面 `BLOG_WEB_URL` 地址的修改的时候，如果你拥有域名的话，就不要使用IP了
 
@@ -563,7 +563,7 @@ vim index.html
 
 然后把里面的ip地址，改成自己的 ip 即可
 
-![image-20201130110112326](images/image-20201130110112326.png)
+![image-20201130110112326](https://cdn.losey.top/blog/image-20201130110112326.png)
 
 注意，上面 `VUE_MOGU_WEB` 地址的修改的时候，如果你拥有域名的话，就不要使用IP了
 
@@ -582,19 +582,19 @@ vim index.html
 
 例如： http://youip:9527 
 
-![image-20201110155005003](images/image-20201110155005003.png)
+![image-20201110155005003](https://cdn.losey.top/blog/image-20201110155005003.png)
 
 tip：需要注意的是，如果图片无法正常显示，请先登录后台管理页面，然后修改对应的域名
 
 关于具体的配置，参考这篇博客：[蘑菇博客配置七牛云存储](http://www.moguit.cn/#/info?blogUid=735ed389c4ad1efd321fed9ac58e646b)
 
-![image-20200903170244575](images/image-20200903170244575-1599124105901.png)
+![image-20200903170244575](https://cdn.losey.top/blog/image-20200903170244575-1599124105901.png)
 
 ### 访问后端项目
 
 120.78.126.96:9528       用户名和密码是： admin mogu2018 【如果登录不进去，请F12检查，请求的IP地址是否是自己的服务器，如果不是，那么参考前面修改前端项目配置，改成自己的服务器IP】
 
-![image-20200209130547785](images/image-20200209130547785-1599124105901.png)
+![image-20200209130547785](https://cdn.losey.top/blog/image-20200209130547785-1599124105901.png)
 
 ## 总结
 

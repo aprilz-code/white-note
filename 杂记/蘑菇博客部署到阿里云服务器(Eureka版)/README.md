@@ -29,7 +29,7 @@ git branch
 
 这里显示的是目前在Nacos分支，所以我们需要切换到Eureka分支
 
-![image-20201110090336834](images/image-20201110090336834.png)
+![image-20201110090336834](https://cdn.losey.top/blog/image-20201110090336834.png)
 
 使用下面命令切换分支
 
@@ -38,7 +38,7 @@ git branch
 git checkout Eureka
 ```
 
-![image-20201110090632776](images/image-20201110090632776.png)
+![image-20201110090632776](https://cdn.losey.top/blog/image-20201110090632776.png)
 
 切换好分支后，后面我们就可以进行 maven依赖安装了
 
@@ -63,7 +63,7 @@ nacos_config.sql：表示Nacos配置脚本【仅用于Nacos分支】
 
 每次更新的时间，在mogu_*_update.sql 表里都有体现，只需要进去查看即可 ，然后找到对应访问内的，增量更新即可
 
-![img](images/caa45bc804224c9c9441f270c36d6f75)
+![img](https://cdn.losey.top/blog/caa45bc804224c9c9441f270c36d6f75)
 
 ## SpringBoot项目打包
 
@@ -80,7 +80,7 @@ mvn clean install
 
 完成上面操作后，能看到下面的图，说明已经成功打包了
 
-![image-20200101130036478](images/image-20200101130036478.png)
+![image-20200101130036478](https://cdn.losey.top/blog/image-20200101130036478.png)
 
 下面我们需要进入下列的目录，把对应的jar上传到我们之前制作的docker容器中
 
@@ -91,7 +91,7 @@ cd mogu_eureka\target
 
 我们把下面的jar包复制
 
-![image-20200101131008048](images/image-20200101131008048.png)
+![image-20200101131008048](https://cdn.losey.top/blog/image-20200101131008048.png)
 
 然后通过xftp工具，把jar复制到Docker容器的/home/mogu_blog/mogu_eureka目录，替换里面的jar包
 
@@ -99,7 +99,7 @@ cd mogu_eureka\target
 cd /home/mogu_blog/mogu_eureka
 ```
 
-![image-20200101131046409](images/image-20200101131046409.png)
+![image-20200101131046409](https://cdn.losey.top/blog/image-20200101131046409.png)
 
 里面的结构有：
 
@@ -237,7 +237,7 @@ netstat -tunlp
 
 能够发现5个服务已经成功启动了
 
-![image-20200101131754872](images/image-20200101131754872.png)
+![image-20200101131754872](https://cdn.losey.top/blog/image-20200101131754872.png)
 
 到目前为止已经启动了对应的端口了
 
@@ -281,7 +281,7 @@ eureka:
 
 如果出现下面的页面，说明已经成功启动
 
-![image-20200103100004362](images/image-20200103100004362.png)
+![image-20200103100004362](https://cdn.losey.top/blog/image-20200103100004362.png)
 
 
 
@@ -300,15 +300,15 @@ http://your_ip:8603/swagger-ui.html
 
 进入 admin接口是这样的
 
-![image-20200103101522521](images/image-20200103101522521.png)
+![image-20200103101522521](https://cdn.losey.top/blog/image-20200103101522521.png)
 
 选择LoginRestApi，验证登录，输入默认用户名和密码：admin  mogu2018
 
-![image-20200103101627025](images/image-20200103101627025.png)
+![image-20200103101627025](https://cdn.losey.top/blog/image-20200103101627025.png)
 
 登录功能正常使用，我们把token复制到来，然后在swagger页面的右上角，有一个authorize的按钮，点击后，将token粘贴进去，即可操作全部接口进行测试了~
 
-![image-20200103101654027](images/image-20200103101654027.png)
+![image-20200103101654027](https://cdn.losey.top/blog/image-20200103101654027.png)
 
 ## Vue项目打包
 
@@ -344,11 +344,11 @@ npm run build
 
 打包完成后，会生成一个dist目录，我们将整个dist目录，压缩成 zip格式
 
-![img](images/1574822138267.png)
+![img](https://cdn.losey.top/blog/1574822138267.png)
 
 然后使用xftp工具，丢入到我们的前端目录下，目录在 /home/mogu_blog/vue_mogu_web
 
-![image-20200103103853899](images/image-20200103103853899.png)
+![image-20200103103853899](https://cdn.losey.top/blog/image-20200103103853899.png)
 
 注意：如果该文件夹下存在 dist文件夹，我们需要将其删除，然后在解压，然后使用下面命令进行解压
 
@@ -404,7 +404,7 @@ npm run build
 
 我们在按上述操作，把dist压缩，然后放到/home/mogu_blog/vue_mogu_admin文件夹下
 
-![img](images/1574822290047.png)
+![img](https://cdn.losey.top/blog/1574822290047.png)
 
 然后解压
 

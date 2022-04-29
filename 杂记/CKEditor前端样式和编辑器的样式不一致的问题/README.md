@@ -4,11 +4,11 @@
 
 这样子在使用CKEditor里面的快引用的功能，但是发现编辑器里面的快引用和我们前端页面显示的样式不一致，下图是我们编辑器里的样式
 
-![image-20200214115214777](images/image-20200214115214777.png)
+![image-20200214115214777](https://cdn.losey.top/blog/image-20200214115214777.png)
 
 然后下图是我们页面中的样式，发现CKEditor里的快引用是无法正常显示的
 
-![image-20200214115331509](images/image-20200214115331509.png)
+![image-20200214115331509](https://cdn.losey.top/blog/image-20200214115331509.png)
 
 后面通过查阅官方文档：[传送门](https://ckeditor.com/docs/ckeditor5/latest/builds/guides/integration/content-styles.html)
 
@@ -395,4 +395,4 @@
 
 添加进去后，我们就能够看到快引用已经能够正常的显示了
 
-![image-20200214115849197](images/image-20200214115849197.png)
+![image-20200214115849197](https://cdn.losey.top/blog/image-20200214115849197.png)

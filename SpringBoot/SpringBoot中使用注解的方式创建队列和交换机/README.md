@@ -105,7 +105,7 @@ public Binding BINDING_QUEUE_INFORM_SMS(@Qualifier(MOGU_SMS) Queue queue, @Quali
 
 下面我们把之前手动创建的Exchange和Queue删除后，然后重新运行mogu_sms项目，发现已经能够通过注解的方式成功创建队列和交换机了，并且如下图所示，成功绑定了起来
 
-![image-20200219213834138](images/image-20200219213834138.png)
+![image-20200219213834138](https://cdn.losey.top/blog/image-20200219213834138.png)
 
 ## 完整代码
 

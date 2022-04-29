@@ -54,7 +54,7 @@ docker system df
 
 看到这里，瞬间就得出答案了，果然是因为运行的容器而造成空间不够了
 
-![image-20200107220623904](images/image-20200107220623904.png)
+![image-20200107220623904](https://cdn.losey.top/blog/image-20200107220623904.png)
 
 因为一个容器就占用了29.03GB的容量，下面我们就需要进入容器里面看看，到底是什么东西，占用了这么多内存了，我们使用du命令，查看占用空间，这篇博客讲了一些常用的命令：[Linux下查看文件和文件夹占用空间大小](http://moguit.cn/#/info?blogUid=511728a04972c18865dc4b7a52feddd0)
 
@@ -62,7 +62,7 @@ docker system df
 du -h --max-depth=1 /
 ```
 
-![image-20200107220734387](images/image-20200107220734387.png)
+![image-20200107220734387](https://cdn.losey.top/blog/image-20200107220734387.png)
 
 我们发现是 /home目录里面的内容，占用了27G的空间，我们接着深入的查看
 
@@ -72,7 +72,7 @@ du -h --max-depth=1 /home/mogu_blog/
 
 到这里就明白了，是因为mogu_sms项目，占用了27G的空间
 
-![image-20200107221131603](images/image-20200107221131603.png)
+![image-20200107221131603](https://cdn.losey.top/blog/image-20200107221131603.png)
 
 通过排查，是一个日志文件而造成的，想着可能是因为这个日志文件不断输出错误，而造成空间不够用的问题，所以我们现在需要解决这个错误后，然后把对应的日志输出文件给删除
 
@@ -82,10 +82,10 @@ rm -rf catalina.out
 
 再次查看，恢复正常了
 
-![image-20200107221812359](images/image-20200107221812359.png)
+![image-20200107221812359](https://cdn.losey.top/blog/image-20200107221812359.png)
 
 我们回到宿主机，继续查看，空间也已经变成了1G了
 
-![image-20200107221950421](images/image-20200107221950421.png)
+![image-20200107221950421](https://cdn.losey.top/blog/image-20200107221950421.png)
 
 我们再次启动项目，发现可以查看日志

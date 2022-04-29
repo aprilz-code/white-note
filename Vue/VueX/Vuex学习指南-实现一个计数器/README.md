@@ -265,7 +265,7 @@ mapState 和 mapMutations 就相当于把刚刚我们在main.js页面中创建�
 
 安装完成后，重启浏览器，然后F12后，能在调试页面就能够看到vue这个选项卡了，下面看demo运行的结果：
 
-![](./images/111.gif)
+![](https://cdn.losey.top/blog/111.gif)
 
 ### 小结
 
@@ -477,7 +477,7 @@ App.vue代码如下：
 
 我们再次查看运行结果：
 
-![](./images/222.gif)
+![](https://cdn.losey.top/blog/222.gif)
 
 ### 将main.js中的store提取出来
 

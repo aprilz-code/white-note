@@ -10,49 +10,49 @@
 
 本着能不花钱就不花钱的态度，我们来到了 [腾讯云SSL证书](https://cloud.tencent.com/product/ssl) （ps：阿里云免费的证书找了一阵子没找到）
 
-![image-20200806143806254](images/image-20200806143806254.png)
+![image-20200806143806254](https://cdn.losey.top/blog/image-20200806143806254.png)
 
 我们点击立即选购按钮，来到了我们的购买页面
 
-![image-20200806143919814](images/image-20200806143919814.png)
+![image-20200806143919814](https://cdn.losey.top/blog/image-20200806143919814.png)
 
 需要注意的是，免费型的域名证书，只能支持单个域名，也就是如果我们多个域名需要绑定SSL的话，那么就需要购买多个证书，下面就是填写我们哪个域名需要用到https，这是我是图片服务用到了，所以就填写图片服务器
 
-![image-20200806144401828](images/image-20200806144401828.png)
+![image-20200806144401828](https://cdn.losey.top/blog/image-20200806144401828.png)
 
 然后我们选择手动DNS验证，然后确认
 
-![image-20200806144507660](images/image-20200806144507660.png)
+![image-20200806144507660](https://cdn.losey.top/blog/image-20200806144507660.png)
 
 确认后，我们就需要到我们的域名管理添加一条解析
 
-![image-20200806144529801](images/image-20200806144529801.png)
+![image-20200806144529801](https://cdn.losey.top/blog/image-20200806144529801.png)
 
-![image-20200806144615582](images/image-20200806144615582.png)
+![image-20200806144615582](https://cdn.losey.top/blog/image-20200806144615582.png)
 
 因为我的域名是在阿里云购买的，所以我需要到阿里云的域名解析处进行配置，添加上述的记录到阿里云解析中
 
-![image-20200806144844883](images/image-20200806144844883.png)
+![image-20200806144844883](https://cdn.losey.top/blog/image-20200806144844883.png)
 
 然后点击确定
 
-![image-20200806145000357](images/image-20200806145000357.png)
+![image-20200806145000357](https://cdn.losey.top/blog/image-20200806145000357.png)
 
 同时我们还需要让域名解析到我们的服务器上，我们在添加一条记录，指向的是我们的服务器（ipv4地址）
 
-![image-20201107214047644](images/image-20201107214047644.png)
+![image-20201107214047644](https://cdn.losey.top/blog/image-20201107214047644.png)
 
 添加完成后的效果
 
-![image-20201107214125370](images/image-20201107214125370.png)
+![image-20201107214125370](https://cdn.losey.top/blog/image-20201107214125370.png)
 
 然后在等待一段时间后，即可完成证书域名证书的认证
 
-![image-20200806150616092](images/image-20200806150616092.png)
+![image-20200806150616092](https://cdn.losey.top/blog/image-20200806150616092.png)
 
 认证完成后，我们需要下载我们的证书，点击右侧的下载按钮，下载完成后，有多个方式的配置，我们进入nginx文件夹
 
-![image-20200806145932184](images/image-20200806145932184.png)
+![image-20200806145932184](https://cdn.losey.top/blog/image-20200806145932184.png)
 
 然后把里面的内容拷贝到我们的服务器上，首先我们先到服务器中，创建一个目录
 

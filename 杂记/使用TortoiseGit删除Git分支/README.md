@@ -10,22 +10,22 @@
 
 其实我们可以通过TortoiseGit管理工具来进行删除的，首先 选择 Switch / Checkout
 
-![image-20201212111913183](images/image-20201212111913183.png)
+![image-20201212111913183](https://cdn.losey.top/blog/image-20201212111913183.png)
 
 假设我们现在要删除gateway分支，首先我们需要切换到其它的分支上，这里切换到Nacos分支
 
-![image-20201212112048316](images/image-20201212112048316.png)
+![image-20201212112048316](https://cdn.losey.top/blog/image-20201212112048316.png)
 
 切换完成后，我们点击 右边的按钮
 
-![image-20201212112101603](images/image-20201212112101603.png)
+![image-20201212112101603](https://cdn.losey.top/blog/image-20201212112101603.png)
 
 然后选择 gateway 分支，右键 选择 Delete Branch
 
-![image-20201212112140237](images/image-20201212112140237.png)
+![image-20201212112140237](https://cdn.losey.top/blog/image-20201212112140237.png)
 
 即可删除我们本地的分支，如果我们要删除远程的分支的话，那么就要在右侧进行选择
 
-![image-20201212112728070](images/image-20201212112728070.png)
+![image-20201212112728070](https://cdn.losey.top/blog/image-20201212112728070.png)
 
 然后在进行删除操作，删除完提交代码即可

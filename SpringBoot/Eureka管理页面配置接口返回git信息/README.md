@@ -4,7 +4,7 @@
 
 这阵子在弄监控页面，我点击eureka里面的地址
 
-![image-20200107213729955](images/image-20200107213729955.png)
+![image-20200107213729955](https://cdn.losey.top/blog/image-20200107213729955.png)
 
 发现进去的页面没有 任何内容显示，后面想想可能是没有什么东西没有配置而引起的
 
@@ -40,11 +40,11 @@
 
 添加完成后，我们查看IDEA的Maven，能够发现多出了一个 git-commit-id:revision
 
-![image-20200107214012195](images/image-20200107214012195.png)
+![image-20200107214012195](https://cdn.losey.top/blog/image-20200107214012195.png)
 
 我们点击后，在`target/classes`目录下，我们可以发现产生了一个`git.properties`配置信息：
 
-![image-20200107214404474](images/image-20200107214404474.png)
+![image-20200107214404474](https://cdn.losey.top/blog/image-20200107214404474.png)
 
 里面的内容就是当前项目的git信息：
 
@@ -76,4 +76,4 @@ git.commit.user.name=白_
 
 然后启动eureka页面，在点击刚刚的a标签，发现能够成功获取到git信息了
 
-![image-20200107214142962](images/image-20200107214142962.png)
+![image-20200107214142962](https://cdn.losey.top/blog/image-20200107214142962.png)

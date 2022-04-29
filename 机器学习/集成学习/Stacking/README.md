@@ -4,7 +4,7 @@
 
 stacking 就是当用初始训练数据学习出若干个基学习器后，将这几个学习器的预测结果作为新的训练集，来学习一个新的学习器。
 
-![image-20200430150603850](images/image-20200430150603850.png)
+![image-20200430150603850](https://cdn.losey.top/blog/image-20200430150603850.png)
 
 
 
@@ -39,11 +39,11 @@ blend_test = np.zeros((X_test.shape[0], len(clfs))) # Number of testing data x N
 
 按照上面说的，blend_train基于下面的方法得到，注意，下图是对于一个分类器来说的，所以每个分类器得到的blend_train的行数与用于训练的数据一样多，所以blend_train的shape为X_dev.shape[0]*len(clfs)，即训练集长度 * 基分类器个数：
 
-![image-20200430150946784](images/image-20200430150946784.png)
+![image-20200430150946784](https://cdn.losey.top/blog/image-20200430150946784.png)
 
 而对于第二轮的测试集blend_test来说，由于每次交叉验证的过程中都要进行一次预测，假设我们是5折交叉验证，那么对于每个分类器来说，得到的blend_test的shape是测试集行数 * 交叉验证折数，此时的做法是，对axis=1方向取平均值，以得到测试集行数 * 1 的测试数据，所以总的blend_test就是测试集行数 * 基分类器个数，可以跟blend_train保持一致：
 
-![image-20200430151036967](images/image-20200430151036967.png)
+![image-20200430151036967](https://cdn.losey.top/blog/image-20200430151036967.png)
 
 得到blend_train 和 blend_test的代码如下：
 

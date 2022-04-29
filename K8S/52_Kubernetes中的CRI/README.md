@@ -24,7 +24,7 @@ kubectl create -f nginx.yml
 
 其次，当我们在构建 **k8s** 集群的时候，默认每个节点都会初始化创建一个 **kubectl** 进程，**kubectl** 进程会  **watch etcd** 中 **pod** 的变化，当 **kubectl** 进程监听到 **pod** 的 **bind** 的更新操作，并且 **bind** 的节点是本节点时，它会接管接下来的所有事情，如镜像下载，创建容器等。
 
-![img](images/595328-20190924154453278-2062939099.jpg)
+![img](https://cdn.losey.top/blog/595328-20190924154453278-2062939099.jpg)
 
 ## k8s默认容器运行时架构
 
@@ -42,7 +42,7 @@ kubectl create -f nginx.yml
 - 而 **containerd-shim** 在这一步需要调用 **runC** 这个命令行工具，来启动容器，**runC** 是 **OCI** (Open Container Initiative， 开放标准协议) 的一个参考实现。主要用来设置 **namespaces** 和 **cgroups**，挂载 root filesystem等操作。
 - **runC** 启动完容器后，本身会直接退出。**containerd-shim** 则会成为容器进程的父进程，负责收集容器进程的状态，上报给 **containerd**，并在容器中的 **pid** 为 **1** 的进程退出后接管容器中的子进程进行清理，确保不会出现僵尸进程 (关闭进程描述符)。
 
-![img](images/595328-20190924162334102-1814702716.png)
+![img](https://cdn.losey.top/blog/595328-20190924162334102-1814702716.png)
 
 ## 容器与容器编排背景
 

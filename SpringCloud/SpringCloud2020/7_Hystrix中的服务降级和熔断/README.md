@@ -8,7 +8,7 @@ Hystrix官宣停更，官方推荐使用：resilence4j替换，同时国内Sprin
 
 复杂分布式体系结构中的应用程序有数十个依赖关系，每个依赖关系在某些时候将不可避免地失败（网络卡顿，网络超时）
 
-![image-20200408192644381](images/image-20200408192644381.png)
+![image-20200408192644381](https://cdn.losey.top/blog/image-20200408192644381.png)
 
 ### 服务雪崩
 
@@ -169,11 +169,11 @@ Jmeter高并发测试
 
 我们创建20000个线程去访问
 
-![image-20200408202319733](images/image-20200408202319733.png)
+![image-20200408202319733](https://cdn.losey.top/blog/image-20200408202319733.png)
 
 访问刚刚我们写的两个 延时接口
 
-![image-20200408202400666](images/image-20200408202400666.png)
+![image-20200408202400666](https://cdn.losey.top/blog/image-20200408202400666.png)
 
 我们会发现当线程多的时候，会直接卡死，甚至把其它正常的接口都已经拖累
 
@@ -469,7 +469,7 @@ public class PaymentFallbackService implements PaymentHystrixService {
 
 >这个简单的断路器避免了在电路打开时进行保护调用，但是当情况恢复正常时需要外部干预来重置它。对于建筑物中的断路器，这是一种合理的方法，但是对于软件断路器，我们可以让断路器本身检测底层调用是否再次工作。我们可以通过在适当的间隔之后再次尝试protected调用来实现这种自重置行为，并在断路器成功时重置它
 
-![image-20200409095855788](images/image-20200409095855788.png)
+![image-20200409095855788](https://cdn.losey.top/blog/image-20200409095855788.png)
 
 熔断器的三种状态：打开，关闭，半开
 
@@ -532,7 +532,7 @@ public class PaymentFallbackService implements PaymentHystrixService {
 
 #### 断路器启动条件
 
-![image-20200409114527145](images/image-20200409114527145.png)
+![image-20200409114527145](https://cdn.losey.top/blog/image-20200409114527145.png)
 
 涉及到断路器的三个重要参数：快照时间窗，请求总阈值，错误百分比阈值
 
@@ -562,7 +562,7 @@ public class PaymentFallbackService implements PaymentHystrixService {
 
 ## Hystrix工作流程
 
-![image-20200409120112552](images/image-20200409120112552.png)
+![image-20200409120112552](https://cdn.losey.top/blog/image-20200409120112552.png)
 
 蓝色：调用路径
 
@@ -672,13 +672,13 @@ public class PaymentHystrixMain8001 {
 http://localhost:9001/hystrix
 ```
 
-![image-20200409121425718](images/image-20200409121425718.png)
+![image-20200409121425718](https://cdn.losey.top/blog/image-20200409121425718.png)
 
 ### 使用监控
 
 我们需要使用当前hystrix需要监控的端口号，也就是使用 9001 去监控 8001，即使用hystrix dashboard去监控服务提供者的端口号
 
-![image-20200409122102137](images/image-20200409122102137.png)
+![image-20200409122102137](https://cdn.losey.top/blog/image-20200409122102137.png)
 
 然后我们运行
 
@@ -688,7 +688,7 @@ http://localhost:8001/payment/circuit/31
 
 就能够发现Hystrix Dashboard能够检测到我们的请求
 
-![image-20200409122312059](images/image-20200409122312059.png)
+![image-20200409122312059](https://cdn.losey.top/blog/image-20200409122312059.png)
 
 假设我们访问错误的方法后
 
@@ -698,17 +698,17 @@ http://localhost:8001/payment/circuit/-31
 
 我们能够发现，此时断路器处于开启状态，并且错误率百分100
 
-![image-20200409122448651](images/image-20200409122448651.png)
+![image-20200409122448651](https://cdn.losey.top/blog/image-20200409122448651.png)
 
 如何看懂图
 
 首先是七种颜色
 
-![image-20200409122754448](images/image-20200409122754448.png)
+![image-20200409122754448](https://cdn.losey.top/blog/image-20200409122754448.png)
 
 每个颜色都对应的一种结果
 
-![image-20200409122820328](images/image-20200409122820328.png)
+![image-20200409122820328](https://cdn.losey.top/blog/image-20200409122820328.png)
 
 然后是里面的圆
 
@@ -720,4 +720,4 @@ http://localhost:8001/payment/circuit/-31
 
 曲线：用于记录2分钟内流量的相对变化，可以通过它来观察到流量的上升和下降趋势
 
-![image-20200409123214743](images/image-20200409123214743.png)
+![image-20200409123214743](https://cdn.losey.top/blog/image-20200409123214743.png)

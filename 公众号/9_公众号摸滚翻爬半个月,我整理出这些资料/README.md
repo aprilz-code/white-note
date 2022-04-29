@@ -4,7 +4,7 @@
 
 其实之前我是一直有写技术类文章的习惯，因为我这几年一直在参与**蘑菇博客**项目的维护，在开发新功能或解决 **BUG** 的时候，就肯定会遇到各种各样的问题，每当我遇到问题的时候，我都会把它用笔记的方式记录下来。
 
-![蘑菇博客后台文章记录数](images/image-20201220220645445.png)
+![蘑菇博客后台文章记录数](https://cdn.losey.top/blog/image-20201220220645445.png)
 
 可以看到蘑菇博客在这几年的时间里，已经写了 **400** 篇的文章了....，哈哈，当然这些文章都是非常水的文章了，大部分是**遇到问题时的记录**以及最后**问题的解决方案**，或者是在学习**某门技术时候的学习笔记**。
 
@@ -29,11 +29,11 @@
 
 本地存储就是将图片存储在当前目录下，然后地址连接改成**相对地址**，如下所示 **images** 文件夹存储的就是我这篇博客的图片，我是将每篇博客下的图片都存储在当前目录下，这样以后需要修改的时候也是特别方便的。
 
-![](images/image-20210111230351280.png)
+![](https://cdn.losey.top/blog/image-20210111230351280.png)
 
 我们只需要在 **Typora** 打开 **文件** -> **偏好设置**，然后填写如下信息即可
 
-![Typora偏好设置](images/image-20210111230551218.png)
+![Typora偏好设置](https://cdn.losey.top/blog/image-20210111230551218.png)
 
 以后我们在复制**网络图片**或者**截图**，都会自动存放在当前文件夹的 **images** 目录下。
 
@@ -41,15 +41,15 @@
 
 如果小伙伴部署了蘑菇博客，那么这一步是非常的方便，我们可以直接使用蘑菇博客提供的**本地博客上传**的功能。首先到**博客管理**，然后选择**本地上传**，然后上传我们的**图片**和 **md** 文件
 
-![蘑菇博客导入文章](images/image-20210111231420961.png)
+![蘑菇博客导入文章](https://cdn.losey.top/blog/image-20210111231420961.png)
 
 上传完成后，我们在选中该文章，然后导出文章即可
 
-![蘑菇博客导出文章](images/image-20210111232325277.png)
+![蘑菇博客导出文章](https://cdn.losey.top/blog/image-20210111232325277.png)
 
 我们再次查看导出的文章，图片地址已经成功被替换成**线上地址**，到这里我们就可以拿着**导出的文章**进行**排版**。
 
-![Typora中查看图片路径](images/image-20210111232439935.png)
+![Typora中查看图片路径](https://cdn.losey.top/blog/image-20210111232439935.png)
 
 ### 使用Gitee图床
 
@@ -57,7 +57,7 @@
 
 下图就是我上传后的笔记，我们需要将 **Gitee** 中的图片路径给复制下来。
 
-![Gitee上传后的效果](images/image-20210111234029199.png)
+![Gitee上传后的效果](https://cdn.losey.top/blog/image-20210111234029199.png)
 
 如下所示，我们得到了图片的地址如下所示，中间为了方便显示，我使用了 ** 代替
 
@@ -82,7 +82,7 @@ https://gitee.com/moxi159753/LearningNotes/raw/master/**/images/
 
 下面的图片就是最终被替换后的样子，我们将**本地路径**成功替换成**线上的路径** (需要保证提前上传文章和图片到Gitee)
 
-![替换后的图片](images/image-20210112085940787.png)
+![替换后的图片](https://cdn.losey.top/blog/image-20210112085940787.png)
 
 ### 使用PicGo+Gitee
 
@@ -104,39 +104,39 @@ https://gitee.com/moxi159753/LearningNotes/raw/master/**/images/
 
 然后选择 **Windows** 的 **.exe** 文件
 
-![下载PicGo](images/image-20210112093433310.png)
+![下载PicGo](https://cdn.losey.top/blog/image-20210112093433310.png)
 
 下载完成后，点击安装即可，下面是 **PicGo** 安装完成的截图
 
-![PicGo截图](images/image-20210112093628826.png)
+![PicGo截图](https://cdn.losey.top/blog/image-20210112093628826.png)
 
 因为官方没有默认支持 **Gitee** 作为图床，不过有小伙伴编写了 **Gitee** 上传插件，选择 **插件设置** 搜索 **Gitee**，然后选择 **gitee-uploader** 插件进行安装
 
-![搜索Gitee插件](images/image-20210112094008992.png)
+![搜索Gitee插件](https://cdn.losey.top/blog/image-20210112094008992.png)
 
 这里我们需要首先在 **Gitee** 创建一个仓库 **wx_picture**，然后在创建一个文件夹 **picture**，如下所示
 
-![创建的Gitee仓库](images/image-20210112095031629.png)
+![创建的Gitee仓库](https://cdn.losey.top/blog/image-20210112095031629.png)
 
 然后到**图床设置**选择 **gitee**
 
-![设置Gitee图床信息](images/image-20210112094145804.png)
+![设置Gitee图床信息](https://cdn.losey.top/blog/image-20210112094145804.png)
 
 然后设置 **repo** ，这里其实就是 用户名 + 仓库名。
 
-![设置repo](images/image-20210112100228353.png)
+![设置repo](https://cdn.losey.top/blog/image-20210112100228353.png)
 
 这里还需要注意的就是 **token** 的获取。点击 **Gitee** 头像，打开设置，选择**私人令牌**然后创建
 
-![获取私人令牌](images/image-20210112101005506.png) 
+![获取私人令牌](https://cdn.losey.top/blog/image-20210112101005506.png) 
 
 然后复制生成的 token，粘贴到 **PicGo** 即可。下面我们就可以在 **Typora** 中配置 **PicGo** 的路径即可
 
-![设置PicGo目录](images/image-20210112101902306.png)
+![设置PicGo目录](https://cdn.losey.top/blog/image-20210112101902306.png)
 
 下次我们上传图片的时候，将会自动通过 **PicGo** 提交到 **Gitee** 仓库中，如下图所示 **URL** 地址也已经成功切换成了Gitee 上的图床地址。
 
-![替换后的效果](images/image-20210112102351032.png)
+![替换后的效果](https://cdn.losey.top/blog/image-20210112102351032.png)
 
 到目前为止，我们的前置工作已经完成，小伙伴可以根据自己的情况**选择其中一种**即可。
 
@@ -150,23 +150,23 @@ https://gitee.com/moxi159753/LearningNotes/raw/master/**/images/
 
 我目前使用的是 **md2all** 进行排版，首先将写好的文章上传到网站左侧 **Markdown** 区域，右边即可看到我们排版后的效果
 
-![md2all页面](images/image-20210112104533947.png)
+![md2all页面](https://cdn.losey.top/blog/image-20210112104533947.png)
 
 同时还支持多种排版样式，点击顶部的**一键排版**，然后选择排版样式，挑选出自己喜欢的一款即可，白用的是 **综合示例** 。
 
-![一键排版页面](images/image-20210112105119512.png)
+![一键排版页面](https://cdn.losey.top/blog/image-20210112105119512.png)
 
 同时如果熟悉 **CSS** 样式的小伙伴，也可以修改这里的样式表，做出一份属于自己独一无二的样式。
 
 在小伙伴排完版后，我们就可以点击顶部的 **复制** 按钮，然后粘贴到微信公众平台了。
 
-![公众平台上显示的效果](images/image-20210112110438081.png)
+![公众平台上显示的效果](https://cdn.losey.top/blog/image-20210112110438081.png)
 
 ## 制作标题图
 
 **白教你学编程**发布的文章，都是我给每篇文章单独制作的封面，效果图如下
 
-![公众号封面图](images/image-20210112110546217.png)
+![公众号封面图](https://cdn.losey.top/blog/image-20210112110546217.png)
 
 这里我推荐的是 **Canva** 在线平面设计，当然小伙伴也可以使用 **ppt** 制作封面
 
@@ -174,11 +174,11 @@ https://gitee.com/moxi159753/LearningNotes/raw/master/**/images/
 
 然后选择**微信公众号封面图**中的**科技微信公众号封面模板**
 
-![微信公众号模板](images/image-20210112111851347.png)
+![微信公众号模板](https://cdn.losey.top/blog/image-20210112111851347.png)
 
 然后挑选一款自己喜欢的模板，进行编辑。这里需要注意的是，可能有些字体是收费的，这里我使用的是免费字体 **思源宋体**，在我们编辑好后下载即可。
 
-![编辑页面](images/image-20210112112239072.png)
+![编辑页面](https://cdn.losey.top/blog/image-20210112112239072.png)
 
 ## 留言功能
 
@@ -195,39 +195,39 @@ https://gitee.com/moxi159753/LearningNotes/raw/master/**/images/
 
 然后登录后，选择留言板
 
-![选择留言板](images/image-20210112114428015.png)
+![选择留言板](https://cdn.losey.top/blog/image-20210112114428015.png)
 
 然后选择**新增留言板**，因为白之前创建过一些，所以下面有好几篇文章的留言板。
 
-![留言板页面](images/image-20210112114624721.png)
+![留言板页面](https://cdn.losey.top/blog/image-20210112114624721.png)
 
 这里只需要输入**留言板名称**，这里最好和文章名一致。其它选项保持默认即可，也可以根据兴趣选择是否开启
 
-![创建留言板](images/image-20210112114748806.png)
+![创建留言板](https://cdn.losey.top/blog/image-20210112114748806.png)
 
 创建成功后，我们复制小程序的路径
 
-![复制小程序路径](images/image-20210112115450791.png)
+![复制小程序路径](https://cdn.losey.top/blog/image-20210112115450791.png)
 
 然后回到微信公众号的**文章编辑**页面，选择插入**小程序**
 
-![插入小程序](images/image-20210112115615002.png)
+![插入小程序](https://cdn.losey.top/blog/image-20210112115615002.png)
 
 然后搜索**小互动助手**，点击下一步
 
-![搜索小程序](images/image-20210112191626792.png)
+![搜索小程序](https://cdn.losey.top/blog/image-20210112191626792.png)
 
 把刚刚复制的**小程序路径**粘贴，同时加入文字：**点击进入留言板**
 
-![加入留言功能](images/image-20210112115944034.png)
+![加入留言功能](https://cdn.losey.top/blog/image-20210112115944034.png)
 
 最后的效果图如下所示
 
-![点击进入留言板](images/image-20210112113619290.png)
+![点击进入留言板](https://cdn.losey.top/blog/image-20210112113619290.png)
 
 文章发表后，点击刚刚的添加的文字，即可进入到留言板开启留言之旅
 
-![留言板留言](images/image-20210112120831666.png)
+![留言板留言](https://cdn.losey.top/blog/image-20210112120831666.png)
 
 
 
@@ -239,29 +239,29 @@ https://gitee.com/moxi159753/LearningNotes/raw/master/**/images/
 
 然后输入手机号，开始注册，然后进入运营方式选择：**自主管理**
 
-![image-20201218164322622](images/image-20201218164322622.png)
+![image-20201218164322622](https://cdn.losey.top/blog/image-20201218164322622.png)
 
 然后开始给小冰进行微信公众号授权
 
-![image-20201218164507143](images/image-20201218164507143.png)
+![image-20201218164507143](https://cdn.losey.top/blog/image-20201218164507143.png)
 
 授权完成后，选择行业
 
-![行业选择](images/image-20201218164451154.png)
+![行业选择](https://cdn.losey.top/blog/image-20201218164451154.png)
 
 然后选择聊天风格和文章推荐
 
-![聊天风格](images/image-20201218165018916.png)
+![聊天风格](https://cdn.losey.top/blog/image-20201218165018916.png)
 
-![推荐级别](images/image-20201218164852523.png)
+![推荐级别](https://cdn.losey.top/blog/image-20201218164852523.png)
 
 完成后，到达首页
 
-![image-20201218164822888](images/image-20201218164822888.png)
+![image-20201218164822888](https://cdn.losey.top/blog/image-20201218164822888.png)
 
 里面还有更多的功能等待你的挖掘，下面是接入小冰后的公众号~
 
-![image-20201218170222106](images/image-20201218170222106.png)
+![image-20201218170222106](https://cdn.losey.top/blog/image-20201218170222106.png)
 
 到此为止，公众号的**入门学习**已经完成，下面我们就可以开启愉快的**写作之旅**了~
 

@@ -59,7 +59,7 @@ public class SecurityApplication {
 
 使用SpringBoot内置tomcat启动项目，即可访问处理器。
 
-![image-20200920192128613](images/image-20200920192128613.png)
+![image-20200920192128613](https://cdn.losey.top/blog/image-20200920192128613.png)
 
 ### 加入SpringSecurity的jar包
 
@@ -74,17 +74,17 @@ public class SecurityApplication {
 
 SpringBoot已经为SpringSecurity提供了默认配置，默认所有资源都必须认证通过才能访问。
 
-![image-20200920192210458](images/image-20200920192210458.png)
+![image-20200920192210458](https://cdn.losey.top/blog/image-20200920192210458.png)
 
 那么问题来了！此刻并没有连接数据库，也并未在内存中指定认证用户，如何认证呢？
 
 其实SpringBoot已经提供了默认用户名user，密码在项目启动时随机生成，如图：
 
-![image-20200920192235998](images/image-20200920192235998.png)
+![image-20200920192235998](https://cdn.losey.top/blog/image-20200920192235998.png)
 
 认证通过后可以继续访问处理器资源：
 
-![image-20200920192255766](images/image-20200920192255766.png)
+![image-20200920192255766](https://cdn.losey.top/blog/image-20200920192255766.png)
 
 ## 整合认证第二版
 
@@ -115,27 +115,27 @@ SpringBoot官方是不推荐在SpringBoot中使用jsp的，那么到底可以使
 
 在src/main目录下创建webapp目录
 
-![image-20200920192528568](images/image-20200920192528568.png)
+![image-20200920192528568](https://cdn.losey.top/blog/image-20200920192528568.png)
 
 这时webapp目录并不能正常使用，因为只有web工程才有webapp目录，在pom文件中修改项目为web工程
 
-![image-20200920192549742](images/image-20200920192549742.png)
+![image-20200920192549742](https://cdn.losey.top/blog/image-20200920192549742.png)
 
 这时webapp目录，可以正常使用了！
 
-![image-20200920192656366](images/image-20200920192656366.png)
+![image-20200920192656366](https://cdn.losey.top/blog/image-20200920192656366.png)
 
 导入第一天案例中静态资源，注意WEB-INF就不用了哈！
 
-![image-20200920192716037](images/image-20200920192716037.png)
+![image-20200920192716037](https://cdn.losey.top/blog/image-20200920192716037.png)
 
 修改login.jsp中认证的url地址
 
-![image-20200920192740415](images/image-20200920192740415.png)
+![image-20200920192740415](https://cdn.losey.top/blog/image-20200920192740415.png)
 
 修改header.jsp中退出登录的url地址
 
-![image-20200920192756254](images/image-20200920192756254.png)
+![image-20200920192756254](https://cdn.losey.top/blog/image-20200920192756254.png)
 
 ### 提供SpringSecurity配置类
 
@@ -198,21 +198,21 @@ public class ProductController {
 
 ### 配置视图解析器
 
-![image-20200920194505651](images/image-20200920194505651.png)
+![image-20200920194505651](https://cdn.losey.top/blog/image-20200920194505651.png)
 
 ### 使用tomcat插件启动项目
 
-![image-20200920194522836](images/image-20200920194522836.png)
+![image-20200920194522836](https://cdn.losey.top/blog/image-20200920194522836.png)
 
 ### 测试效果
 
 自定义的认证页面
 
-![image-20200920194537008](images/image-20200920194537008.png)
+![image-20200920194537008](https://cdn.losey.top/blog/image-20200920194537008.png)
 
 认证成功页面
 
-![image-20200920194548999](images/image-20200920194548999.png)
+![image-20200920194548999](https://cdn.losey.top/blog/image-20200920194548999.png)
 
 ## 整合认证第三版【数据库认证】
 
@@ -245,11 +245,11 @@ public class ProductController {
 
 ### 在配置文件中添加数据库操作相关配置
 
-![image-20200920194644145](images/image-20200920194644145.png)
+![image-20200920194644145](https://cdn.losey.top/blog/image-20200920194644145.png)
 
 ### 在启动类上添加扫描dao接口包注解
 
-![image-20200920194847462](images/image-20200920194847462.png)
+![image-20200920194847462](https://cdn.losey.top/blog/image-20200920194847462.png)
 
 ### 创建用户pojo对象
 
@@ -432,19 +432,19 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 在启动类上添加开启方法级的授权注解
 
-![image-20200920201619857](images/image-20200920201619857.png)
+![image-20200920201619857](https://cdn.losey.top/blog/image-20200920201619857.png)
 
 ### 在产品处理器类上添加注解
 
 要求产品列表功能必须具有ROLE_ADMIN角色才能访问！
 
-![image-20200920201804274](images/image-20200920201804274.png)
+![image-20200920201804274](https://cdn.losey.top/blog/image-20200920201804274.png)
 
 ### 重启项目测试
 
 再次访问产品列表发现权限不足
 
-![image-20200920202057441](images/image-20200920202057441.png)
+![image-20200920202057441](https://cdn.losey.top/blog/image-20200920202057441.png)
 
 ### 指定自定义异常页面
 
@@ -467,4 +467,4 @@ public class HandleControllerException {
 
 再次测试产品列表就可以到自定义异常页面了
 
-![image-20200920202215597](images/image-20200920202215597.png)
+![image-20200920202215597](https://cdn.losey.top/blog/image-20200920202215597.png)

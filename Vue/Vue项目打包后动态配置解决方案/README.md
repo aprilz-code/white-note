@@ -12,7 +12,7 @@
 
 这里主要列举出需要修改的文件，下面可以对照着进行添加和修改
 
-![image-20201127101522742](images/image-20201127101522742.png)
+![image-20201127101522742](https://cdn.losey.top/blog/image-20201127101522742.png)
 
 ## 添加.env文件
 
@@ -563,7 +563,7 @@ docker push moxi/vue_mogu_web
 
 最后在DockerHub就能看到我们刚刚构建的镜像
 
-![image-20201127094131535](images/image-20201127094131535.png)
+![image-20201127094131535](https://cdn.losey.top/blog/image-20201127094131535.png)
 
 ## 测试
 
@@ -575,11 +575,11 @@ docker push moxi/vue_mogu_web
 docker run --name vue_mogu_web -d  -it  -p 9527:80 moxi/vue_mogu_web
 ```
 
-![image-20201127094356561](images/image-20201127094356561.png)
+![image-20201127094356561](https://cdn.losey.top/blog/image-20201127094356561.png)
 
 能看到下面的请求的IP如下所示
 
-![image-20201127094603395](images/image-20201127094603395.png)
+![image-20201127094603395](https://cdn.losey.top/blog/image-20201127094603395.png)
 
 ### 动态配置
 
@@ -597,10 +597,10 @@ docker run --name vue_mogu_web -d  -it \
 
 执行完成后，我们再次打开页面，发现已经变成了蘑菇博客的线上环境了~
 
-![image-20201127101103543](images/image-20201127101103543.png)
+![image-20201127101103543](https://cdn.losey.top/blog/image-20201127101103543.png)
 
 打开F12，查看请求端口，发现ip地址已经成功修改了
 
-![image-20201127101152897](images/image-20201127101152897.png)
+![image-20201127101152897](https://cdn.losey.top/blog/image-20201127101152897.png)
 
 到此为止，动态配置解决方案已经完成 ~

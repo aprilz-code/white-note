@@ -93,7 +93,7 @@ public class OrderFeignController {
 
 服务提供者需要超过3秒才能返回数据，但是服务调用者默认只等待1秒，这就会出现超时问题。
 
-![image-20200408191254551](images/image-20200408191254551.png)
+![image-20200408191254551](https://cdn.losey.top/blog/image-20200408191254551.png)
 
 这是因为默认Feign客户端只等待一秒钟，但是服务端处理需要超过3秒钟，导致Feign客户端不想等待了，直接返回报错，这个时候，消费方的OpenFeign就需要增大超时时间
 

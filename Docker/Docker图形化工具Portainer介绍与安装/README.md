@@ -10,7 +10,7 @@
 - 用户名：admin
 - 密码：tryportainer
 
-![image-20201125165926451](images/image-20201125165926451.png)
+![image-20201125165926451](https://cdn.losey.top/blog/image-20201125165926451.png)
 
 ## Docker方式安装
 
@@ -36,7 +36,7 @@ http://ip:9000
 
 然后我们输入自定义的密码，进入下面页面
 
-![image-20201125170935817](images/image-20201125170935817.png)
+![image-20201125170935817](https://cdn.losey.top/blog/image-20201125170935817.png)
 
 这里是选择我们通过portainer管理哪里的Docker
 
@@ -100,11 +100,11 @@ http://ip:9000
 
 即可看到我们的图形化页面了【首次登录需要填写默认密码】
 
-![image-20201125170457260](images/image-20201125170457260.png)
+![image-20201125170457260](https://cdn.losey.top/blog/image-20201125170457260.png)
 
 登录后，即可看到我们的容器信息
 
-![image-20201125170509940](images/image-20201125170509940.png)
+![image-20201125170509940](https://cdn.losey.top/blog/image-20201125170509940.png)
 
 
 
@@ -128,19 +128,19 @@ vim /etc/docker/daemon.json
 
 然后选择 **端点** 的 **添加端点**
 
-![image-20201125171521404](images/image-20201125171521404.png)
+![image-20201125171521404](https://cdn.losey.top/blog/image-20201125171521404.png)
 
 然后选择Docker环境
 
-![image-20201125171656316](images/image-20201125171656316.png)
+![image-20201125171656316](https://cdn.losey.top/blog/image-20201125171656316.png)
 
 最后添加端点完后，就能看到我们刚刚添加的节点了
 
-![image-20201125171714621](images/image-20201125171714621.png)
+![image-20201125171714621](https://cdn.losey.top/blog/image-20201125171714621.png)
 
 我们回到首页，即可看到我们的两台Docker服务了
 
-![image-20201125171745766](images/image-20201125171745766.png)
+![image-20201125171745766](https://cdn.losey.top/blog/image-20201125171745766.png)
 
 
 
@@ -150,21 +150,21 @@ vim /etc/docker/daemon.json
 
 首先，我们选择 192.168.119.148 这台主机
 
-![image-20201125171940237](images/image-20201125171940237.png)
+![image-20201125171940237](https://cdn.losey.top/blog/image-20201125171940237.png)
 
 然后选择镜像，输入 nginx，点击拉取镜像
 
-![image-20201125172117416](images/image-20201125172117416.png)
+![image-20201125172117416](https://cdn.losey.top/blog/image-20201125172117416.png)
 
 然后就会去拉取到我们的nginx镜像了，下面我们就可以使用这个拉取的镜像来创建容器
 
 我们输入一些基本信息后，点击创建
 
-![image-20201125172337667](images/image-20201125172337667.png)
+![image-20201125172337667](https://cdn.losey.top/blog/image-20201125172337667.png)
 
 完成后，即可看到 nginx的端口号已经对外发布
 
-![image-20201125172622053](images/image-20201125172622053.png)
+![image-20201125172622053](https://cdn.losey.top/blog/image-20201125172622053.png)
 
 我们输入下面的地址
 
@@ -174,4 +174,4 @@ http://ip:32768
 
 即可看到，nginx已经成功安装
 
-![image-20201125172719198](images/image-20201125172719198.png)
+![image-20201125172719198](https://cdn.losey.top/blog/image-20201125172719198.png)

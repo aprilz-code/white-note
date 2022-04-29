@@ -4,7 +4,7 @@
 
 ## 流程说明
 
-![image-20200925083514711](images/image-20200925083514711.png)
+![image-20200925083514711](https://cdn.losey.top/blog/image-20200925083514711.png)
 
 - 应用APP生产日志，用来记录用户的操作
   - [INFO] 2019-03-15 22:55:20 [Main] - DAU|5206|使用优惠券|2019-03-15 03:37:20
@@ -77,7 +77,7 @@ mvn clean install
 
 打包完成后，到target目录下，能够看到我们生成的jar包
 
-![image-20200925092119075](images/image-20200925092119075.png)
+![image-20200925092119075](https://cdn.losey.top/blog/image-20200925092119075.png)
 
 我们将其复制到我们的服务器上，然后创建一个启动的脚本 startup.sh
 
@@ -150,7 +150,7 @@ output {
 
 启动logstash完成后，我们需要再次启动filebeat，回到上面的启动步骤，然后就能看到logstash输出我们的日志
 
-![image-20200925095319950](images/image-20200925095319950.png)
+![image-20200925095319950](https://cdn.losey.top/blog/image-20200925095319950.png)
 
 ### 配置Logstash连接ElasticSearch
 
@@ -210,7 +210,7 @@ output {
 
 其实能够看到，我们原来的数据，就经过了处理了，产生了新的字段
 
-![image-20200925095824693](images/image-20200925095824693.png)
+![image-20200925095824693](https://cdn.losey.top/blog/image-20200925095824693.png)
 
 同时我们还可以对我们的数据，进行类型转换，为了方便我们的下游进行处理
 
@@ -294,39 +294,39 @@ http://202.193.56.222:5601/app/kibana
 http://202.193.56.222:5601/app/management/kibana/indexPatterns/create
 ```
 
-![image-20200925112345791](images/image-20200925112345791.png)
+![image-20200925112345791](https://cdn.losey.top/blog/image-20200925112345791.png)
 
 输入我们的匹配规则，然后匹配到logstash，然后选择时间字段后创建
 
-![image-20200925112534588](images/image-20200925112534588.png)
+![image-20200925112534588](https://cdn.losey.top/blog/image-20200925112534588.png)
 
 ### 创建柱形图
 
 我们点击右侧Visualizations，然后开始创建图标
 
-![image-20200925112621210](images/image-20200925112621210.png)
+![image-20200925112621210](https://cdn.losey.top/blog/image-20200925112621210.png)
 
 然后选择柱形图
 
-![image-20200925112705557](images/image-20200925112705557.png)
+![image-20200925112705557](https://cdn.losey.top/blog/image-20200925112705557.png)
 
 在选择我们的索引
 
-![image-20200925112758534](images/image-20200925112758534.png)
+![image-20200925112758534](https://cdn.losey.top/blog/image-20200925112758534.png)
 
 
 
 最后我们定义我们的X轴，选择按照时间进行添加
 
-![image-20200925113054316](images/image-20200925113054316.png)
+![image-20200925113054316](https://cdn.losey.top/blog/image-20200925113054316.png)
 
 最后更新我们的页面，然后在选择最近的30分钟
 
-![image-20200925113133267](images/image-20200925113133267.png)
+![image-20200925113133267](https://cdn.losey.top/blog/image-20200925113133267.png)
 
 就能够看到我们的日志在源源不断的生成了，同时我们可以对我们的这个图表进行保存
 
-![image-20200925113154752](images/image-20200925113154752.png)
+![image-20200925113154752](https://cdn.losey.top/blog/image-20200925113154752.png)
 
 
 
@@ -334,40 +334,40 @@ http://202.193.56.222:5601/app/management/kibana/indexPatterns/create
 
 我们继续选择饼图
 
-![image-20200925144902642](images/image-20200925144902642.png)
+![image-20200925144902642](https://cdn.losey.top/blog/image-20200925144902642.png)
 
 然后选择我们的索引
 
-![image-20200925144939062](images/image-20200925144939062.png)
+![image-20200925144939062](https://cdn.losey.top/blog/image-20200925144939062.png)
 
 添加完成后，我们就看到这样一个页面了
 
-![image-20200925145116116](images/image-20200925145116116.png)
+![image-20200925145116116](https://cdn.losey.top/blog/image-20200925145116116.png)
 
 但是这样还不死很直观，所以我们还需要做处理，找到右侧的Buckets，然后选择Split Slices，然后把我们的每个字段都添加上去，其中visit指的是我们es中的属性
 
-![image-20200925145451255](images/image-20200925145451255.png)
+![image-20200925145451255](https://cdn.losey.top/blog/image-20200925145451255.png)
 
 
 
 最后选择update，得到的效果如下所示
 
-![image-20200925145553509](images/image-20200925145553509.png)
+![image-20200925145553509](https://cdn.losey.top/blog/image-20200925145553509.png)
 
 我们还可以继续给每个字段都添加label标签
 
-![image-20200925145747292](images/image-20200925145747292.png)
+![image-20200925145747292](https://cdn.losey.top/blog/image-20200925145747292.png)
 
 添加完成后，更新页面，就得到非常不错的效果了~
 
-![image-20200925145807688](images/image-20200925145807688.png)
+![image-20200925145807688](https://cdn.losey.top/blog/image-20200925145807688.png)
 
 ### 数据表格
 
 在图标中，选择我们需要显示的字段即可
 
-![image-20200925150415045](images/image-20200925150415045.png)
+![image-20200925150415045](https://cdn.losey.top/blog/image-20200925150415045.png)
 
 ## 制作Dashboard
 
-![image-20200925151827734](images/image-20200925151827734.png)
+![image-20200925151827734](https://cdn.losey.top/blog/image-20200925151827734.png)

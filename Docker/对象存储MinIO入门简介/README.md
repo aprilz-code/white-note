@@ -70,7 +70,7 @@ minio/minio server /data
 
 运行成功后，我们就能看到我们下面的提示信息
 
-![image-20201015150408263](images/image-20201015150408263.png)
+![image-20201015150408263](https://cdn.losey.top/blog/image-20201015150408263.png)
 
 如果需要后台运行，使用这条语句
 
@@ -92,11 +92,11 @@ minio/minio server /data
 http://192.168.1.101:9000
 ```
 
-![image-20201015150747476](images/image-20201015150747476.png)
+![image-20201015150747476](https://cdn.losey.top/blog/image-20201015150747476.png)
 
 会有一个不错的登录页面，我们输入刚刚配置的账号和密码  mogu2018  mogu2018 即可进入
 
-![image-20201015150824563](images/image-20201015150824563.png)
+![image-20201015150824563](https://cdn.losey.top/blog/image-20201015150824563.png)
 
 
 
@@ -106,13 +106,13 @@ http://192.168.1.101:9000
 
 我们创建一个叫 mogublog 的桶，创建完成后，在侧边栏就能够看到我们刚刚创建的了
 
-![image-20201015151202753](images/image-20201015151202753.png)
+![image-20201015151202753](https://cdn.losey.top/blog/image-20201015151202753.png)
 
 ## 上传文件
 
 然后我们选中我们的桶，在点击加号，选择 upload file进行文件上传
 
-![image-20201015151340507](images/image-20201015151340507.png)
+![image-20201015151340507](https://cdn.losey.top/blog/image-20201015151340507.png)
 
 上传成功后，即可看到我们刚刚上传的文件列表了~
 
@@ -124,7 +124,7 @@ http://192.168.1.101:9000
 
 如果要使用SDK，比如Java客户端来操作我们的minio的话，那么我们还需要修改一下我们的bucket权限
 
-![image-20201015151639447](images/image-20201015151639447.png)
+![image-20201015151639447](https://cdn.losey.top/blog/image-20201015151639447.png)
 
 首先点击我们的mogublog的右边区域，点击Edit policy，然后添加我们的权限为 可读可写，保存即可
 
@@ -225,15 +225,15 @@ Content-Type  multipart/form-data
 
 
 
-![image-20201018222200593](images/image-20201018222200593.png)
+![image-20201018222200593](https://cdn.losey.top/blog/image-20201018222200593.png)
 
 然后在选择我们的图片上传
 
-![image-20201018222251132](images/image-20201018222251132.png)
+![image-20201018222251132](https://cdn.losey.top/blog/image-20201018222251132.png)
 
 最后在刷新MinIO，就能够看到我们刚刚上传的文件了
 
-![img](images/Q041@R@}5GDOIN_Y$BUTY]X.png)
+![img](https://cdn.losey.top/blog/Q041@R@}5GDOIN_Y$BUTY]X.png)
 
 我们可以通过下面的地址直接访问我们的图片
 
@@ -247,7 +247,7 @@ http://192.168.1.101:9000/mogublog/1578926382309.jpg
 
 例如：我在上面已经部署了 http://101.132.122.175:8080 的Minio服务【按照你部署的ip和端口填写】
 
-![image-20201024085505782](images/image-20201024085505782.png)
+![image-20201024085505782](https://cdn.losey.top/blog/image-20201024085505782.png)
 
 这里有5个内容需要我们填写的
 
@@ -265,25 +265,25 @@ http://101.132.122.175:8080
 
 输入账号和密码，然后选择 Create Bucket
 
-![image-20201024090123987](images/image-20201024090123987.png)
+![image-20201024090123987](https://cdn.losey.top/blog/image-20201024090123987.png)
 
 还需要修改一下我们的bucket权限，允许读写权限
 
-![image-20201015151639447](images/image-20201015151639447.png)
+![image-20201015151639447](https://cdn.losey.top/blog/image-20201015151639447.png)
 
 最后在回到我们的系统配置，开启Minio上传功能，同时在开启Minio的图片显示
 
-![image-20201024090404973](images/image-20201024090404973.png)
+![image-20201024090404973](https://cdn.losey.top/blog/image-20201024090404973.png)
 
 我们可以上传图片进行测试，打开博客管理，添加博客后进行图片上传测试
 
-![image-20201024090500799](images/image-20201024090500799.png)
+![image-20201024090500799](https://cdn.losey.top/blog/image-20201024090500799.png)
 
 通过上图发现，能够成功的访问到我们的图片了~，我们再到 minio后台管理查看
 
-![image-20201024090556372](images/image-20201024090556372.png)
+![image-20201024090556372](https://cdn.losey.top/blog/image-20201024090556372.png)
 
 也能够看到我们刚刚上传的文件了~
 
-![image-20201024090606824](images/image-20201024090606824.png)
+![image-20201024090606824](https://cdn.losey.top/blog/image-20201024090606824.png)
 

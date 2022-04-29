@@ -8,13 +8,13 @@
 
 Bus支持两种消息代理：RabbitMQ和Kafka
 
-![image-20200413234036665](images/image-20200413234036665.png)
+![image-20200413234036665](https://cdn.losey.top/blog/image-20200413234036665.png)
 
 SpringCloudBus是用来将分布式系统的节点与轻量级消息系统链接起来的框架，它整合了Java的事件处理机制和消息中间件的功能。
 
 SpringCloudBus能管理和传播分布式系统的消息，就像一个分布式执行器，可用于广播状态更改，事件推送等，也可以当做微服务的通信通道。
 
-![image-20200413234506046](images/image-20200413234506046.png)
+![image-20200413234506046](https://cdn.losey.top/blog/image-20200413234506046.png)
 
 ### 什么是总线
 
@@ -24,7 +24,7 @@ SpringCloudBus能管理和传播分布式系统的消息，就像一个分布式
 
 ConfigClient实例都监听MQ中同一个topic（默认是SpringCloudBus），但一个服务刷新数据的时候，它会被这个消息放到Topic中，这样其它监听同一个Topic的服务就能够得到通知，然后去更新自身的配置
 
-![image-20200414085203534](images/image-20200414085203534.png)
+![image-20200414085203534](https://cdn.losey.top/blog/image-20200414085203534.png)
 
 通过topic进行广播通知
 
@@ -71,11 +71,11 @@ spring:
 
 - 利用消息总线触发一个客户端/bus/refresh，而刷新所有客户端配置
 
-![image-20200413235715876](images/image-20200413235715876.png)
+![image-20200413235715876](https://cdn.losey.top/blog/image-20200413235715876.png)
 
 - 利用消息总线出发一个服务端ConfigServer的/bus/refresh断点，而刷新所有客户端的配置
 
-![image-20200413235736633](images/image-20200413235736633.png)
+![image-20200413235736633](https://cdn.losey.top/blog/image-20200413235736633.png)
 
 - 图二的架构更加适合，图一不适合的原因有
   - 图一打破了微服务的职责单一性，因为微服务本身是业务模块，他不应该承担配置刷新的之职责
@@ -200,5 +200,5 @@ curl -X POST "http://localhsot:33444/actuator/bus-refresh/config-client:3355"
 
 
 
-![image-20200414085924123](images/image-20200414085924123.png)
+![image-20200414085924123](https://cdn.losey.top/blog/image-20200414085924123.png)
 

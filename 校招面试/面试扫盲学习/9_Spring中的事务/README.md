@@ -21,7 +21,7 @@
 
 从上面的例子的任何步骤一旦出现问题，都会导致事务回滚。
 
-![image-20200503101957103](images/image-20200503101957103.png)
+![image-20200503101957103](https://cdn.losey.top/blog/image-20200503101957103.png)
 
 从搭讪到结婚就是事务提交，女方要求男方重新追求她一次就是事务回滚~
 
@@ -92,7 +92,7 @@ MySQL的默认隔离级别是Repeatable Read
 
 事务A读取了事务B中尚未提交的数据，如果事务B回滚，则A读取使用了错误的数据
 
-![image-20200503111507422](images/image-20200503111507422.png)
+![image-20200503111507422](https://cdn.losey.top/blog/image-20200503111507422.png)
 
 #### 不可重复读
 
@@ -100,7 +100,7 @@ MySQL的默认隔离级别是Repeatable Read
 
 不可重复读是指对于数据库中某个数据，一个事务范围内多次查询却反悔不同的数值，这是由于在查询间隔，被另一个事务修改并提交了
 
-![image-20200503114507968](images/image-20200503114507968.png)
+![image-20200503114507968](https://cdn.losey.top/blog/image-20200503114507968.png)
 
 解决不可重复读的一个解决方案，就是调整隔离级别。
 
@@ -110,7 +110,7 @@ MySQL的默认隔离级别是Repeatable Read
 
 在事务A多次读取构成中，事务B对数据进行了新增操作，导致事务A多次读取的数据不一致
 
-![image-20200503114709457](images/image-20200503114709457.png)
+![image-20200503114709457](https://cdn.losey.top/blog/image-20200503114709457.png)
 
 对于幻读的另外一个理解，可以为：
 
@@ -133,7 +133,7 @@ MySQL的默认隔离级别是Repeatable Read
 
 对于第一类事务丢失，就是比如A和B同时在执行一个数据，然后B事务已经提交了，然后A事务回滚了，这样B事务的操作就因A事务回滚而丢失了。
 
-![image-20200503115622743](images/image-20200503115622743.png)
+![image-20200503115622743](https://cdn.losey.top/blog/image-20200503115622743.png)
 
 ### 第二类事务丢失
 
@@ -141,7 +141,7 @@ MySQL的默认隔离级别是Repeatable Read
 
 对于第二类事务丢失，也称为覆盖丢失，就是A和B一起执行一个数据，两个同时取到一个数据，然后B事务首先提交，但是A事务接下来又提交，这样就覆盖了B事务
 
-![image-20200503121151996](images/image-20200503121151996.png)
+![image-20200503121151996](https://cdn.losey.top/blog/image-20200503121151996.png)
 
 ## Spring怎么配置事务
 
@@ -149,7 +149,7 @@ MySQL的默认隔离级别是Repeatable Read
 
 准备数据表：
 
-![image-20200503212336011](images/image-20200503212336011.png)
+![image-20200503212336011](https://cdn.losey.top/blog/image-20200503212336011.png)
 
 实体类：
 
@@ -163,11 +163,11 @@ public class User {
 
 Dao：
 
-![image-20200503213406622](images/image-20200503213406622.png)
+![image-20200503213406622](https://cdn.losey.top/blog/image-20200503213406622.png)
 
 Service：默认一个出错的场景
 
-![image-20200503221133377](images/image-20200503221133377.png)
+![image-20200503221133377](https://cdn.losey.top/blog/image-20200503221133377.png)
 
 
 
@@ -175,11 +175,11 @@ Service：默认一个出错的场景
 
 XML配置事务：在applicationContext.xml中添加事务管理器和事务管理器模板的配置
 
-![image-20200503222130639](images/image-20200503222130639.png)
+![image-20200503222130639](https://cdn.losey.top/blog/image-20200503222130639.png)
 
 注解方式配置事务管理器和事务管理器模板
 
-![image-20200503222459984](images/image-20200503222459984.png)
+![image-20200503222459984](https://cdn.losey.top/blog/image-20200503222459984.png)
 
 ### 声明式事务
 

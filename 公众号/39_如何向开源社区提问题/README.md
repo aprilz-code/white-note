@@ -6,11 +6,11 @@
 
 白先来说，这是我之前在做蘑菇博客侧边栏的时候，向 **vue-side-catalog** 开源项目作者提出的一个 **BUG**，就是当页面的标题过多的时候，侧边栏无法展示全部内容的 **BUG**，同时还在 **Codesanbox** 复现了代码
 
-![白提问步骤](images/image-20210817084727628.png)
+![白提问步骤](https://cdn.losey.top/blog/image-20210817084727628.png)
 
 同时也贴上了但是蘑菇博客出现 **BUG** 的那篇文章
 
-![出现BUG的文章](images/image-20210817085212647.png)
+![出现BUG的文章](https://cdn.losey.top/blog/image-20210817085212647.png)
 
 作者很快就对问题做出来回应，修复了这个问题，所以对我来说这就是一次很不错的提问经历，同时也帮助作者完善了自己做的开源项目。
 
@@ -18,19 +18,19 @@
 
 白遇到最多的问题就是，蘑菇博客启动后，出现 **500** 错误，然后跳转到这个 **500** 页面。然后问：**为啥启动不了**？
 
-![500错误页](images/image-20210817085602647.png)
+![500错误页](https://cdn.losey.top/blog/image-20210817085602647.png)
 
 其实看到这个页面，就应该知道肯定是 **500** 错误，为啥呢？因为页面都被重定向到 **500** 页面了 
 
-![域名跳转到500](images/image-20210817090030628.png)
+![域名跳转到500](https://cdn.losey.top/blog/image-20210817090030628.png)
 
 所以第一步肯定是通过 **F12** 看 **Network**，然后看接口的请求情况
 
-![F12查看请求](images/image-20210817090219280.png)
+![F12查看请求](https://cdn.losey.top/blog/image-20210817090219280.png)
 
 发现有三个接口出现了问题，那就点击启动一个，查看情况
 
-![定位问题](images/image-20210817090339858.png)
+![定位问题](https://cdn.losey.top/blog/image-20210817090339858.png)
 
 看到这里，其实就明白了，是 **mogu-picture** 项目启动，需要自行重启即可，到后台执行
 
@@ -40,7 +40,7 @@ docker-compose -f yaml/mogu_picture.yml up -d
 
 重启完成后，在刷新页面，其实这个问题就已经解决了
 
-![问题解决](images/image-20210817090632336.png)
+![问题解决](https://cdn.losey.top/blog/image-20210817090632336.png)
 
 从发现问题，到解决问题，其实也没用多少时间。所以希望各位小伙伴们，在对开源项目提问前，能够有一些自己的工作，而不是单纯的依靠他人。
 
@@ -55,13 +55,13 @@ docker-compose -f yaml/mogu_picture.yml up -d
 
 开源项目的 **README**，往往就是开源项目的导航目录，在这里能够快速的了解到很多信息。
 
-![蘑菇博客README](images/image-20210817130004081.png)
+![蘑菇博客README](https://cdn.losey.top/blog/image-20210817130004081.png)
 
 举个例子，白被问的最多的一个问题就是：**项目账号和密码是啥**？**什么样的配置的服务器可以运行本项目**？
 
 其实，如果你把项目的 **README** 看完后...
 
-![蘑菇博客README](images/image-20210817130217058.png)
+![蘑菇博客README](https://cdn.losey.top/blog/image-20210817130217058.png)
 
 那这个问题就是游刃而解了
 
@@ -69,7 +69,7 @@ docker-compose -f yaml/mogu_picture.yml up -d
 
 对于任何项目中遇到的问题，你遇到的问题，很可能别人也遇到过。这个时候，你只需要把错误信息拷贝，然后复制到百度搜索，可以帮你快速定位并解决问题。
 
-![百度一下，你就知道](images/006APoFYly1g5do7bl9ksj306o05taa1.jpg)
+![百度一下，你就知道](https://cdn.losey.top/blog/006APoFYly1g5do7bl9ksj306o05taa1.jpg)
 
 > 永远记住，地球上的你并不孤单，包括你遇到的问题。
 
@@ -77,31 +77,31 @@ docker-compose -f yaml/mogu_picture.yml up -d
 
 开源软件一般都会有自己的 **Bug** 管理方案，比如 **Github** 的 **issue**，在遇到问题的时候，都可以去哪里搜索一下，没准你的问题别人也已经提过了，并且在 **issue** 上也给出了解答。
 
-![开源项目issue](images/image-20210817233152602.png)
+![开源项目issue](https://cdn.losey.top/blog/image-20210817233152602.png)
 
 例如，之前白在安装 **vue** 项目的时候，一直出现 **node-sass** 下载失败的问题，通过百度也没有解决这个问题，后面白通过搜索项目仓库的 **issue**，找到了解决方法。
 
-![通过issue寻找解决方案](images/image-20210817234019022.png)
+![通过issue寻找解决方案](https://cdn.losey.top/blog/image-20210817234019022.png)
 
 对于活跃社区来说，这一招经常很管用，一个运作良好的开源项目，你可以在 **Issues** 中找到很多信息，同时也能发现巨大的宝藏，小伙伴们没事的时候，可以去别人的 **issue** 下学习~
 
 记得上次，**Nacos 1.4** 以下版本出现的重大安全事故，差点让蘑菇博客被删库。白和群里小伙伴们，就是在 **Nacos** 的 **issue** 进行围观了一波，同时也紧急的修复了 **BUG**。
 
-![issue上关于nacos的重大事故](images/07b9e435659e4f43bde09b958a256cd7)
+![issue上关于nacos的重大事故](https://cdn.losey.top/blog/07b9e435659e4f43bde09b958a256cd7)
 
 当时 **BUG** 的缘由就是：用户发现通过设置请求头：**User-Agent: Nacos-Server**，就可以绕过 **Nacos** 的权限校验，而直接获取到项目的所有配置文件信息，建议 **Nacos** 官方立即对这个问题进行修复。
 
 后 **Nacos** 项目的开发者认为，这不是一个 **安全漏洞**，并且认为通过设置 **User-Agent** 就相当于开启了白名单，那么就可以忽略鉴权。
 
-![开发人员的答复](images/ea7202d6467c445fb75ac42e05b5d95a)
+![开发人员的答复](https://cdn.losey.top/blog/ea7202d6467c445fb75ac42e05b5d95a)
 
 开发人员的答复马上就获得了 **300** 多人的反对意见。认为开发者将 **Nacos** 默认密码和本次**安全漏洞**说成是一个问题。
 
-![社区小伙伴的修复建议](images/b4fd0ff1b83d4a2c8b64845b28851d9b)
+![社区小伙伴的修复建议](https://cdn.losey.top/blog/b4fd0ff1b83d4a2c8b64845b28851d9b)
 
 最后社区小伙伴们，踊跃的提出了自己的修改意见，后面开发者决定通过增加自定义 **Key Value** 键值对对来解决，只有通过设置**正确的键值**对才能**获取配置**。
 
-![修复建议](images/015322c074db4bcf82ed87d72fabc71e)
+![修复建议](https://cdn.losey.top/blog/015322c074db4bcf82ed87d72fabc71e)
 
 想要围观那次事故的小伙伴，可以移步到白之前写过的一篇文章：[Nacos出现重大安全漏洞,开源项目险遭脱库](https://mp.weixin.qq.com/s/8DtVEtJZU47Ugr802l9ZWg)
 
@@ -200,7 +200,7 @@ docker-compose -f yaml/mogu_picture.yml up -d
 
 反例：就是下面这个，直接复制报错的信息，也没有任何错误描述，也没有进行代码排版。
 
-![错误的示范](images/image-20210818084737633.png)
+![错误的示范](https://cdn.losey.top/blog/image-20210818084737633.png)
 
 ### 描述事实、而不是猜测
 

@@ -125,19 +125,19 @@ public class VolatileDemo {
 
 第一次：
 
-![image-20200309172900462](images/image-20200309172900462.png)
+![image-20200309172900462](https://cdn.losey.top/blog/image-20200309172900462.png)
 
 第二次：
 
-![image-20200309172919295](images/image-20200309172919295.png)
+![image-20200309172919295](https://cdn.losey.top/blog/image-20200309172919295.png)
 
 第三次：
 
-![image-20200309172929820](images/image-20200309172929820.png)
+![image-20200309172929820](https://cdn.losey.top/blog/image-20200309172929820.png)
 
 ## 为什么出现数值丢失
 
-![image-20200309174220675](images/image-20200309174220675.png)
+![image-20200309174220675](https://cdn.losey.top/blog/image-20200309174220675.png)
 
 各自线程在写入主内存的时候，出现了数据的丢失，而引起的数值缺失的问题
 
@@ -183,11 +183,11 @@ public class com.moxi.interview.study.thread.T1 {
 
 我们首先，使用IDEA提供的External Tools，来扩展javap命令
 
-![image-20200309183026329](images/image-20200309183026329.png)
+![image-20200309183026329](https://cdn.losey.top/blog/image-20200309183026329.png)
 
 完成上述操作后，我们在需要查看字节码的文件下，右键选择 External Tools即可
 
-![image-20200309183115613](images/image-20200309183115613.png)
+![image-20200309183115613](https://cdn.losey.top/blog/image-20200309183115613.png)
 
 如果出现了找不到指定类，那是因为我们创建的是spring boot的maven项目，我们之前需要执行mvn package命令，进行打包操作，将其编译成class文件
 
@@ -229,7 +229,7 @@ public class com.moxi.interview.study.thread.T1 {
 
 运行结果：
 
-![image-20200309173315294](images/image-20200309173315294.png)
+![image-20200309173315294](https://cdn.losey.top/blog/image-20200309173315294.png)
 
 我们能够发现引入synchronized关键字后，保证了该方法每次只能够一个线程进行访问和操作，最终输出的结果也就为20000
 
@@ -276,7 +276,7 @@ public class com.moxi.interview.study.thread.T1 {
 
 下面的结果，一个是引入synchronized，一个是使用了原子包装类AtomicInteger
 
-![image-20200309205242622](images/image-20200309205242622.png)
+![image-20200309205242622](https://cdn.losey.top/blog/image-20200309205242622.png)
 
 
 

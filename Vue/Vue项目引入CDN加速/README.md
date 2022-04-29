@@ -53,11 +53,11 @@
 
 BootCDN 是 [Bootstrap 中文网](https://www.bootcss.com/)支持并维护的前端开源项目免费 CDN 服务，致力于为 Bootstrap、jQuery、Angular、Vuejs 一样优秀的前端开源项目提供稳定、快速的免费 CDN 加速服务。BootCDN 所收录的开源项目主要同步于 [cdnjs](https://github.com/cdnjs/cdnjs) 仓库。
 
-![image-20200419154459550](images/image-20200419154459550.png)
+![image-20200419154459550](https://cdn.losey.top/blog/image-20200419154459550.png)
 
 然后在package.json找到我们的版本号
 
-![image-20200419154536899](images/image-20200419154536899.png)
+![image-20200419154536899](https://cdn.losey.top/blog/image-20200419154536899.png)
 
 选择对应的版本，引入即可
 

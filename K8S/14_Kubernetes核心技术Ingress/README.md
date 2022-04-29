@@ -18,7 +18,7 @@
 
 pod 和 ingress 是通过service进行关联的，而ingress作为统一入口，由service关联一组pod中
 
-![image-20201118102637839](images/image-20201118102637839.png)
+![image-20201118102637839](https://cdn.losey.top/blog/image-20201118102637839.png)
 
 - 首先service就是关联我们的pod
 - 然后ingress作为入口，首先需要到service，然后发现一组pod
@@ -30,7 +30,7 @@ pod 和 ingress 是通过service进行关联的，而ingress作为统一入口�
 
 然后不同的域名对应的不同的Service，然后service管理不同的pod
 
-![image-20201118102858617](images/image-20201118102858617.png)
+![image-20201118102858617](https://cdn.losey.top/blog/image-20201118102858617.png)
 
 需要注意，ingress不是内置的组件，需要我们单独的安装
 
@@ -62,7 +62,7 @@ kubectl expose deployment web --port=80 --target-port=80 --type:NodePort
 
 下面我们来通过yaml的方式，部署我们的ingress，配置文件如下所示
 
-![image-20201118105427248](images/image-20201118105427248.png)
+![image-20201118105427248](https://cdn.losey.top/blog/image-20201118105427248.png)
 
 这个文件里面，需要注意的是 hostNetwork: true，改成ture是为了让后面访问到
 
@@ -76,7 +76,7 @@ kubectl apply -f ingress-con.yaml
 kubectl apply -f ingress-con.yaml
 ```
 
-![image-20201118111256631](images/image-20201118111256631.png)
+![image-20201118111256631](https://cdn.losey.top/blog/image-20201118111256631.png)
 
 最后通过下面命令，查看是否成功部署 ingress
 
@@ -84,20 +84,20 @@ kubectl apply -f ingress-con.yaml
 kubectl get pods -n ingress-nginx
 ```
 
-![image-20201118111424735](images/image-20201118111424735.png)
+![image-20201118111424735](https://cdn.losey.top/blog/image-20201118111424735.png)
 
 ### 创建ingress规则文件
 
 创建ingress规则文件，ingress-h.yaml
 
-![image-20201118111700534](images/image-20201118111700534.png)
+![image-20201118111700534](https://cdn.losey.top/blog/image-20201118111700534.png)
 
 ### 添加域名访问规则
 
 在windows 的 hosts文件，添加域名访问规则【因为我们没有域名解析，所以只能这样做】
 
-![image-20201118112029820](images/image-20201118112029820.png)
+![image-20201118112029820](https://cdn.losey.top/blog/image-20201118112029820.png)
 
 最后通过域名就能访问
 
-![image-20201118112212519](images/image-20201118112212519.png)
+![image-20201118112212519](https://cdn.losey.top/blog/image-20201118112212519.png)

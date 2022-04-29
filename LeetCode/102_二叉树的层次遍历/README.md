@@ -8,7 +8,7 @@ https://leetcode-cn.com/problems/binary-tree-level-order-traversal/
 
 给你一个二叉树，请你返回其按 层次遍历 得到的节点值（即逐层地，从做到右访问所有节点）
 
-![image-20200715210522932](images/image-20200715210522932.png)
+![image-20200715210522932](https://cdn.losey.top/blog/image-20200715210522932.png)
 
 ## 代码
 

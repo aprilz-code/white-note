@@ -13,7 +13,7 @@ docker run -d -p 80:80 -p 443:443 rancher/rancher:v2.0.0
 docker ps -a
 ```
 
-![image-20201123160929063](images/image-20201123160929063.png)
+![image-20201123160929063](https://cdn.losey.top/blog/image-20201123160929063.png)
 
 我们可以来查看我们的日志
 
@@ -27,11 +27,11 @@ docker logs  eloquent_curie
 https://192.168.177.150/
 ```
 
-![image-20201123161958206](images/image-20201123161958206.png)
+![image-20201123161958206](https://cdn.losey.top/blog/image-20201123161958206.png)
 
 第一次登录，需要我们填写密码，我们自己的密码后，点击下一步，完成后即可进入到我们的控制台
 
-![image-20201123180845117](images/image-20201123180845117.png)
+![image-20201123180845117](https://cdn.losey.top/blog/image-20201123180845117.png)
 
 ## 导入K8S集群
 
@@ -39,11 +39,11 @@ https://192.168.177.150/
 
 首先我们点击 Add Cluster ，然后选择 IMPORT 导入我们的集群
 
-![image-20201123194902242](images/image-20201123194902242.png)
+![image-20201123194902242](https://cdn.losey.top/blog/image-20201123194902242.png)
 
 然后会有Add Cluster页面，下面我们通过命令来添加
 
-![image-20201123194958021](images/image-20201123194958021.png)
+![image-20201123194958021](https://cdn.losey.top/blog/image-20201123194958021.png)
 
 我们首先选择上面这条，在我们的master节点上执行，将我们的集群被Rancher接管
 
@@ -57,13 +57,13 @@ kubectl apply -f https://192.168.177.130/v3/import/6pqf9w75fmx4pt94tpbpklxd2t5qk
 kubectl apply -f rancher.yaml
  ```
 
-![image-20201123200210728](images/image-20201123200210728.png)
+![image-20201123200210728](https://cdn.losey.top/blog/image-20201123200210728.png)
 
 在执行上述命令，可能会出现这个问题，我们只需要把里面的 extensions/v1beta1 修改成  apps/v1 即可
 
 修改完成后，再次执行即可
 
-![image-20201123200337426](images/image-20201123200337426.png)
+![image-20201123200337426](https://cdn.losey.top/blog/image-20201123200337426.png)
 
 我们通过下面命令，查看我们创建的pods
 
@@ -71,8 +71,8 @@ kubectl apply -f rancher.yaml
 kubectl get pods  -n cattle-system
 ```
 
-![image-20201123200558313](images/image-20201123200558313.png)
+![image-20201123200558313](https://cdn.losey.top/blog/image-20201123200558313.png)
 
 执行完上述操作后，我们到Rancher的UI界面，点击Done，即可看到我们的集群被成功导入
 
-![image-20201123200834363](images/image-20201123200834363.png)
+![image-20201123200834363](https://cdn.losey.top/blog/image-20201123200834363.png)

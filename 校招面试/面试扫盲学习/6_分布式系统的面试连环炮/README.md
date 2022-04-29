@@ -22,7 +22,7 @@
 
 单体架构与分布式架构：
 
-![01_什么是最简单的分布式系统](images/01_什么是最简单的分布式系统.png)
+![01_什么是最简单的分布式系统](https://cdn.losey.top/blog/01_什么是最简单的分布式系统.png)
 
 
 
@@ -94,7 +94,7 @@
 
 ### 工作原理
 
-![01_dubbo的工作原理](images/01_dubbo的工作原理.png)
+![01_dubbo的工作原理](https://cdn.losey.top/blog/01_dubbo的工作原理.png)
 
 - 第一层：service层，接口层，给服务提供者和消费者来实现的
 - 第二层：config层，配置层，主要是对dubbo进行各种配置的
@@ -120,7 +120,7 @@
 
 ## Dubbo支持哪些通信协议？支持哪些序列化协议？
 
-![01_dubbo的网络通信协议](images/01_dubbo的网络通信协议.png)
+![01_dubbo的网络通信协议](https://cdn.losey.top/blog/01_dubbo的网络通信协议.png)
 
 ### Dubbo通信协议
 
@@ -160,7 +160,7 @@ dubbo://192.168.0.1:20188
 
 ## dubbo负载均衡策略和集群容错策略都有哪些？
 
-![01_dubbo负载均衡](images/01_dubbo负载均衡.png)
+![01_dubbo负载均衡](https://cdn.losey.top/blog/01_dubbo负载均衡.png)
 
 ### dubbo负载均衡策略
 
@@ -218,7 +218,7 @@ dubbo://192.168.0.1:20188
 
 ## Dubbo的SPI思想是什么？
 
-![01_dubbo的SPI原理](images/01_dubbo的SPI原理.png)
+![01_dubbo的SPI原理](https://cdn.losey.top/blog/01_dubbo的SPI原理.png)
 
 spi，简单来说，就是service provider interface，说白了是什么意思呢，比如你有个接口，现在这个接口有3个实现类，那么在系统运行的时候对这个接口到底选择哪个实现类呢？这就需要spi了，需要根据指定的配置或者是默认的配置，去找到对应的实现类加载进来，然后用这个实现类的实例对象。
 

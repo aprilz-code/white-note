@@ -2,7 +2,7 @@
 ***
 ## 什么是Session
 
-![01_分布式会话是什么](images/01_分布式会话是什么.png)
+![01_分布式会话是什么](https://cdn.losey.top/blog/01_分布式会话是什么.png)
 
 session是啥？浏览器有个cookie，在一段时间内这个cookie都存在，然后每次发请求过来都带上一个特殊的jsessionid cookie，就根据这个东西，在服务端可以维护一个对应的session域，里面可以放点儿数据。
 

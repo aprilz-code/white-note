@@ -25,13 +25,13 @@ centos              latest        8efe422e6104      210 MB
 
 Alpine操作系统主要是面向安全的轻量级Linux发行版，它和其它的发行版不同之处在于，Alpine采用了musllibc 和 busybox以减少系统体积和运行时资源消耗，但功能上比busybox又完善的多 ，因此越来越得到开源社区的青睐。在保持瘦身的同时，Alpine还提供了自己的包管理工具【CentOS是yum，ubuntu是 apt-get】，可以通过 [Alpine包查询网站](https://pkgs.alpinelinux.org/packages) ，来进行查看，例如下图所示，搜索自己需要安装的包进行查看
 
-![image-20201206093447554](images/image-20201206093447554.png)
+![image-20201206093447554](https://cdn.losey.top/blog/image-20201206093447554.png)
 
 然后通过 apk add vim 来进行安装即可。
 
 Alpine Docker镜像也继承了Alpine Linux发行版的优势，相比于其它的Docker镜像，它的容量体积非常小，仅仅只有5MB，我们通过打开 DockerHub中 [Alpine的官网](https://registry.hub.docker.com/_/alpine)
 
-![image-20201206093922397](images/image-20201206093922397.png)
+![image-20201206093922397](https://cdn.losey.top/blog/image-20201206093922397.png)
 
 可以发现，它提供了只有5MB的系统镜像可供我们进行下载使用
 
@@ -42,7 +42,7 @@ docker pull alpine
 
 同时，它还列举了一个例子 【通过制作一个mysql镜像】
 
-![image-20201206094302242](images/image-20201206094302242.png)
+![image-20201206094302242](https://cdn.losey.top/blog/image-20201206094302242.png)
 
 使用Alpine 和 Ubuntu 制作出来的镜像一个是 36.8MB 一个是 145MB，相差4倍多
 
@@ -56,7 +56,7 @@ docker pull alpine
 docker run alpine echo "hello alpine"
 ```
 
-![image-20201206094817959](images/image-20201206094817959.png)
+![image-20201206094817959](https://cdn.losey.top/blog/image-20201206094817959.png)
 
 ## 迁移至Alpine
 
@@ -64,7 +64,7 @@ docker run alpine echo "hello alpine"
 
 例如，通过Nginx的 [官方DockerHub地址](https://registry.hub.docker.com/_/nginx)，我们可以看到，也专门有 alpine稳定版本
 
-![image-20201206095346672](images/image-20201206095346672.png)
+![image-20201206095346672](https://cdn.losey.top/blog/image-20201206095346672.png)
 
 还有其它一些官方镜像也都提供了alpine版本，我们可以在
 

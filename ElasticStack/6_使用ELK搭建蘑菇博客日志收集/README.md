@@ -26,7 +26,7 @@ docker images;
 
 拉取完成后，查看我们的镜像信息，容量大概在4.16G左右
 
-![image-20200925203411844](images/image-20200925203411844.png)
+![image-20200925203411844](https://cdn.losey.top/blog/image-20200925203411844.png)
 
 ## 制作容器
 
@@ -45,11 +45,11 @@ docker run --privileged -d -it -h elastic_stack --name elastic_stack -v /etc/loc
 
 执行完上面的命令后，如果没有错误，那么就代表执行成功
 
-![image-20200925204214191](images/image-20200925204214191.png)
+![image-20200925204214191](https://cdn.losey.top/blog/image-20200925204214191.png)
 
 然后我们就可以通过在启动一个xshell窗口，连接我们的容器了
 
-![image-20200925204336586](images/image-20200925204336586.png)
+![image-20200925204336586](https://cdn.losey.top/blog/image-20200925204336586.png)
 
 输入你服务器的ip地址，以及端口号为 11122，然后点击确定，然后在输入服务器的账号和密码
 
@@ -58,7 +58,7 @@ docker run --privileged -d -it -h elastic_stack --name elastic_stack -v /etc/loc
 
 即可进入到我们的容器内部，我们到/soft目录下，能看到里面安装的软件
 
-![image-20200930092513748](images/image-20200930092513748.png)
+![image-20200930092513748](https://cdn.losey.top/blog/image-20200930092513748.png)
 
 
 
@@ -100,7 +100,7 @@ cd elsearch
 
 启动完成后，我们就可以看到ElasticSearch运行在9200端口上
 
-![image-20200925205336945](images/image-20200925205336945.png)
+![image-20200925205336945](https://cdn.losey.top/blog/image-20200925205336945.png)
 
 我们输入下面的地址到浏览器中访问
 
@@ -110,7 +110,7 @@ http://your_ip:9200/
 
 如果出现下面的内容，表示ElasticSearch服务已经正常启动~
 
-![image-20200925205443777](images/image-20200925205443777.png)
+![image-20200925205443777](https://cdn.losey.top/blog/image-20200925205443777.png)
 
 ## 启动Logstash
 
@@ -203,7 +203,7 @@ output {
 
 > 我们可以通过获取到传递过来的from字段，就是在filebeat时候指定的 一个字段，代表是这条日志属于哪个模块的，然后在根据logstash的if判断，然后生成不同的ElasticSearch索引
 
-![image-20200927144647484](images/image-20200927144647484.png)
+![image-20200927144647484](https://cdn.losey.top/blog/image-20200927144647484.png)
 
 下面，我们指定该配置文件后，然后启动项目
 
@@ -217,7 +217,7 @@ nohup ./bin/logstash -f ./mogu-dashboard.conf  > catalina.out  2>&1 &
 
 注意：logstash的启动可能会比较慢，需要耐心的等待一会~
 
-![image-20200925210154370](images/image-20200925210154370.png)
+![image-20200925210154370](https://cdn.losey.top/blog/image-20200925210154370.png)
 
 启动完成后，会占用9600端口~，同时经过logstash的数据都会发送到ElasticSearch中
 
@@ -229,7 +229,7 @@ filebeat是一个轻量级的日志文件收集器，主要用于收集我们的
 
 > 需要注意，Beats不在我们ELK服务器上进行启动了，我们需要到部署蘑菇博客的服务器上，然后找到Beats目录
 
-![image-20200930092617884](images/image-20200930092617884.png)
+![image-20200930092617884](https://cdn.losey.top/blog/image-20200930092617884.png)
 
 我们首先需要到我们应用服务器中，然后启动filebeats 【如果你的目录下没有，可以参考 [Beats入门简介](../2_Beats入门简介/README.md) 安装】
 
@@ -299,7 +299,7 @@ nohup ./filebeat -e -c mogu-dashboard.yml > catalina.out  2>&1 &
 
 启动完成后，我们能够看到日志文件已经被加载
 
-![image-20200927144808408](images/image-20200927144808408.png)
+![image-20200927144808408](https://cdn.losey.top/blog/image-20200927144808408.png)
 
 ## 启动Kibana
 
@@ -324,7 +324,7 @@ su elsearch
 
 查看启动信息，我们发现Kibana启动在5601端口号
 
-![image-20200925210626499](images/image-20200925210626499.png)
+![image-20200925210626499](https://cdn.losey.top/blog/image-20200925210626499.png)
 
 启动后，我们在浏览器中访问我们的地址
 
@@ -332,12 +332,12 @@ su elsearch
 http://your_ip:5601
 ```
 
-![image-20200925210805478](images/image-20200925210805478.png)
+![image-20200925210805478](https://cdn.losey.top/blog/image-20200925210805478.png)
 
 
 
 我们找到dashboard就可以看到蘑菇博客的日志记录了
 
-![image-20200927145854642](images/image-20200927145854642.png)
+![image-20200927145854642](https://cdn.losey.top/blog/image-20200927145854642.png)
 
 > tip：这里就只介绍了ElasticStack的日志收集，关于更多的Kibana图形化页面，小伙伴可以参考其它文件进行配置，这里就不列举出来啦~

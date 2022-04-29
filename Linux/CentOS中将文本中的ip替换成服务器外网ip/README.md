@@ -26,7 +26,7 @@ http://ip.42.pl/raw
 
 然后就会返回本机器的外网地址
 
-![image-20201214214902884](images/image-20201214214902884.png)
+![image-20201214214902884](https://cdn.losey.top/blog/image-20201214214902884.png)
 
 最后用变量保存即可
 
@@ -114,7 +114,7 @@ ELASTIC_SEARCH=http://127.0.0.1:5601
 python2 replaceIp.py
 ```
 
-![image-20201214215614127](images/image-20201214215614127.png)
+![image-20201214215614127](https://cdn.losey.top/blog/image-20201214215614127.png)
 
 最后我们再次查看 `vue_mogu_admin.env`  文件
 

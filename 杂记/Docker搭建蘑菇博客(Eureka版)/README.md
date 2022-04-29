@@ -90,7 +90,7 @@ docker pull moxi/mogu_blog
 
 因为镜像有点大，所以拉取的话，可能会有点慢，所以耐下等待下
 
-![image-20200209122416398](images/image-20200209122416398.png)
+![image-20200209122416398](https://cdn.losey.top/blog/image-20200209122416398.png)
 
 如果拉取失败，或者出现超时的情况、或者拉取过慢，可以尝试使用下面的方法： [CentOS7中Docker拉取镜像失败的解决方法](http://www.moguit.cn/#/info?blogUid=5296cfe28b35caa808a5387ff95734c7)
 
@@ -104,7 +104,7 @@ docker pull moxi/mogu_blog
 docker images
 ```
 
-![image-20200209122441971](images/image-20200209122441971.png)
+![image-20200209122441971](https://cdn.losey.top/blog/image-20200209122441971.png)
 
 好了，能看到刚刚拉取的镜像，大概有4.75G大（ps.. 现在因为装了很多东西..已经10多G了），因为这里面包含了需要图片资源和项目的一些安装包。
 
@@ -120,15 +120,15 @@ docker run --privileged -d -it -h mogu_blog_2 --name mogu_blog_2 -v /etc/localti
 
 关于安全组的配置，在云服务器ECS的管理页面
 
-![image-20200209125847329](images/image-20200209125847329.png)
+![image-20200209125847329](https://cdn.losey.top/blog/image-20200209125847329.png)
 
 在点击配置规则
 
-![image-20200209125905430](images/image-20200209125905430.png)
+![image-20200209125905430](https://cdn.losey.top/blog/image-20200209125905430.png)
 
 然后点击右上角按钮，把需要用到的端口号都导入进去
 
-![image-20200209125919324](images/image-20200209125919324.png)
+![image-20200209125919324](https://cdn.losey.top/blog/image-20200209125919324.png)
 
 安装下面的规则，把每一个添加进去即可, 需要添加的端口号有：
 
@@ -155,7 +155,7 @@ mogu_gateway端口：8607
 mogu_eureka端口：8761
 ```
 
-![image-20200209125938397](images/image-20200209125938397.png)
+![image-20200209125938397](https://cdn.losey.top/blog/image-20200209125938397.png)
 
 ## 查看容器状态
 
@@ -166,21 +166,21 @@ mogu_eureka端口：8761
 docker ps -a
 ```
 
-![image-20200209125953803](images/image-20200209125953803.png)
+![image-20200209125953803](https://cdn.losey.top/blog/image-20200209125953803.png)
 
 
 
 ## 打开XShell，连接
 
-![image-20200209130011043](images/image-20200209130011043.png)
+![image-20200209130011043](https://cdn.losey.top/blog/image-20200209130011043.png)
 
 输入用户名： root
 
-![image-20200209130023427](images/image-20200209130023427.png)
+![image-20200209130023427](https://cdn.losey.top/blog/image-20200209130023427.png)
 
 输入密码：mogu2018
 
-![image-20200209130036402](images/image-20200209130036402.png)
+![image-20200209130036402](https://cdn.losey.top/blog/image-20200209130036402.png)
 
 成功进入系统，下面我们就需要把对应的服务都开启
 
@@ -204,7 +204,7 @@ cd /soft/nginx/sbin/
 
 好吧，启动报错
 
-![image-20200209130104979](images/image-20200209130104979.png)
+![image-20200209130104979](https://cdn.losey.top/blog/image-20200209130104979.png)
 
 看问题需要创建一个目录，那么就开始创建吧
 
@@ -214,7 +214,7 @@ mkdir -p /var/run/nginx
 
 再次使用启动命令，启动成功
 
-![image-20200209130124155](images/image-20200209130124155.png)
+![image-20200209130124155](https://cdn.losey.top/blog/image-20200209130124155.png)
 
 我们在使用命令 ，查看已经启动的端口号
 
@@ -226,7 +226,7 @@ netstat -tunlp
 
 我们已经看到了，现在已经开机自启了 RabbitMQ的 5672 15672 ， mysql的 3306， 其他的一些就是项目的端口，现在我们还需要启动 redis的 6379 和 tomcat的 8080
 
-![image-20200209130139403](images/image-20200209130139403.png)
+![image-20200209130139403](https://cdn.losey.top/blog/image-20200209130139403.png)
 
 注意：如果我们查看端口号没有RabbitMQ，我们需要手动启动对应的服务
 
@@ -252,7 +252,7 @@ netstat -tunlp
 
  我们看到redis已经正常启动了
 
-![image-20200209130156442](images/image-20200209130156442.png)
+![image-20200209130156442](https://cdn.losey.top/blog/image-20200209130156442.png)
 
 ### 启动tomcat中的solr
 
@@ -280,7 +280,7 @@ cd /home/mogu_blog
 
 我们查看项目结构，有以下几个文件夹
 
-![image-20200209130210835](images/image-20200209130210835.png)
+![image-20200209130210835](https://cdn.losey.top/blog/image-20200209130210835.png)
 
 下面说明每个文件夹的作用
 
@@ -301,7 +301,7 @@ vue_mogu_web：VUE的门户网站
 
 我们查看一下目录结构
 
-![image-20200209130224724](images/image-20200209130224724.png)
+![image-20200209130224724](https://cdn.losey.top/blog/image-20200209130224724.png)
 
 ```
 ./startup.sh  #启动脚本
@@ -397,7 +397,7 @@ mail:
 
 注意，上面的password是授权码，授权码不是密码，以163邮箱为例，我们需要开启SMTP服务，然后设置授权码
 
-![image-20200722090457339](images/image-20200722090457339.png)
+![image-20200722090457339](https://cdn.losey.top/blog/image-20200722090457339.png)
 
 
 
@@ -421,7 +421,7 @@ http://your_ip:8761
 
 如果我们看到下面四个服务都注册到eureka中，那说明启动成功
 
-![image-20200209130259959](images/image-20200209130259959.png)
+![image-20200209130259959](https://cdn.losey.top/blog/image-20200209130259959.png)
 
 我们在通过访问下列swagger接口，测试接口是否正常
 
@@ -432,15 +432,15 @@ http://your_ip:8603/swagger-ui.html
 
 如果能够进入下面页面的话，说明后台是没有问题的了，下面我们可以验证一下接口
 
-![image-20200209130313977](images/image-20200209130313977.png)
+![image-20200209130313977](https://cdn.losey.top/blog/image-20200209130313977.png)
 
 验证登录
 
-![image-20200209130324333](images/image-20200209130324333.png)
+![image-20200209130324333](https://cdn.losey.top/blog/image-20200209130324333.png)
 
 登录功能正常使用，我们把token复制到来，然后在swagger页面的右上角，有一个authorize的按钮，点击后，将token粘贴进去，即可操作全部接口进行测试了~
 
-![image-20200209130336478](images/image-20200209130336478.png)
+![image-20200209130336478](https://cdn.losey.top/blog/image-20200209130336478.png)
 
 ## 修改前端项目配置
 
@@ -448,7 +448,7 @@ http://your_ip:8603/swagger-ui.html
 
 下面我们到 vue_mogu_web/config/目录下，修改prod.env.js文件
 
-![image-20200209130347971](images/image-20200209130347971.png)
+![image-20200209130347971](https://cdn.losey.top/blog/image-20200209130347971.png)
 
 把里面的ip地址换成你主机的地址即可
 
@@ -459,7 +459,7 @@ PICTURE_HOST: '"http://your_ip:8600"',
 
 同理，在修改 vue_mogu_admin下的地址，把里面的ip地址，换成你服务器的ip即可
 
-![image-20200209130403916](images/image-20200209130403916.png)
+![image-20200209130403916](https://cdn.losey.top/blog/image-20200209130403916.png)
 
 修改完成后，需要进行重新编译~ 打包~ 部署~
 
@@ -475,11 +475,11 @@ npm run build
 
 打包完成后，会生成一个dist目录，我们将整个dist目录，压缩成 zip格式
 
-![image-20200209130425874](images/image-20200209130425874.png)
+![image-20200209130425874](https://cdn.losey.top/blog/image-20200209130425874.png)
 
 然后使用xftp工具，丢入到我们的前端目录下，目录在 /home/mogu_blog/vue_mogu_admin
 
-![image-20200209130438506](images/image-20200209130438506.png)
+![image-20200209130438506](https://cdn.losey.top/blog/image-20200209130438506.png)
 
 注意：如果该文件夹下存在 dist文件夹，我们需要将其删除，然后在解压
 
@@ -497,13 +497,13 @@ unzip dist.zip
 
 例如： 192.168.1.101:9527 
 
-![image-20200209130524162](images/image-20200209130524162.png)
+![image-20200209130524162](https://cdn.losey.top/blog/image-20200209130524162.png)
 
 ### 访问后端项目
 
  ip地址:9528  用户名和密码是： admin mogu2018
 
-![image-20200209130547785](images/image-20200209130547785.png)
+![image-20200209130547785](https://cdn.losey.top/blog/image-20200209130547785.png)
 
 ## 总结：
 

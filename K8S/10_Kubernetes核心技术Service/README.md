@@ -14,7 +14,7 @@
 
 因为Pod每次创建都对应一个IP地址，而这个IP地址是短暂的，每次随着Pod的更新都会变化，假设当我们的前端页面有多个Pod时候，同时后端也多个Pod，这个时候，他们之间的相互访问，就需要通过注册中心，拿到Pod的IP地址，然后去访问对应的Pod
 
-![image-20201117093606710](images/image-20201117093606710.png)
+![image-20201117093606710](https://cdn.losey.top/blog/image-20201117093606710.png)
 
 ### 定义Pod访问策略【负载均衡】
 
@@ -24,13 +24,13 @@
 - 轮询
 - 响应比
 
-![image-20201117093902459](images/image-20201117093902459.png)
+![image-20201117093902459](https://cdn.losey.top/blog/image-20201117093902459.png)
 
 ## Pod和Service的关系
 
 这里Pod 和 Service 之间还是根据 label 和 selector 建立关联的 【和Controller一样】
 
-![image-20201117094142491](images/image-20201117094142491.png)
+![image-20201117094142491](https://cdn.losey.top/blog/image-20201117094142491.png)
 
 我们在访问service的时候，其实也是需要有一个ip地址，这个ip肯定不是pod的ip地址，而是 虚拟IP `vip` 
 

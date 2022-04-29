@@ -117,11 +117,11 @@ https://gitee.com/moxi159753/mogu_blog_v2
 
 然后找到，docker-compose 目录
 
-![image-20201128215644896](images/3eebbd04b6594f1098530b44142cb76c)
+![image-20201128215644896](https://cdn.losey.top/blog/3eebbd04b6594f1098530b44142cb76c)
 
 首先我们来查看一下docker-compose的目录结构
 
-![img](images/93219faa15224ea581f3b365e3cb2d5e)
+![img](https://cdn.losey.top/blog/93219faa15224ea581f3b365e3cb2d5e)
 
 - bin：相关一键启动脚本的目录
 - config：存放配置文件
@@ -165,7 +165,7 @@ sh middleware.sh
 
 下面是安装过程，需要耐心等待
 
-![image-20210103171207594](images/image-20210103171207594.png)
+![image-20210103171207594](https://cdn.losey.top/blog/image-20210103171207594.png)
 
 在部署完中间件后，我们需要进行测试中间件安装是否成功。
 
@@ -179,11 +179,11 @@ sh middleware.sh
 >
 > MySQL密码：mogu2018
 
-![image-20210103171327116](images/image-20210103171327116.png)
+![image-20210103171327116](https://cdn.losey.top/blog/image-20210103171327116.png)
 
 连接后，即可看到我们安装好的蘑菇博客业务数据库
 
-![image-20210103171603686](images/image-20210103171603686.png)
+![image-20210103171603686](https://cdn.losey.top/blog/image-20210103171603686.png)
 
 ### Nacos
 
@@ -200,7 +200,7 @@ http://192.168.177.150:8848/nacos
 
 打开后，我们在配置列表即可看到我们的配置文件
 
-![image-20210104084259827](images/image-20210104084259827.png)
+![image-20210104084259827](https://cdn.losey.top/blog/image-20210104084259827.png)
 
 ### Redis
 
@@ -212,11 +212,11 @@ Redis使用 **RedisDesktopManager** 进行连接
 
 开始连接
 
-![image-20210103171808589](images/image-20210103171808589.png)
+![image-20210103171808589](https://cdn.losey.top/blog/image-20210103171808589.png)
 
 因为目前 **Redis** 还没有缓存数据，所以为空，以后有数据的话，将会使用 **db0** 数据库
 
-![image-20210103171911067](images/image-20210103171911067.png)
+![image-20210103171911067](https://cdn.losey.top/blog/image-20210103171911067.png)
 
 ### RabbitMQ
 
@@ -230,7 +230,7 @@ RabbitMQ是消息队列，我们可以访问其图形化界面
 
 然后即可进入到RabbitMQ的可视化页面
 
-![image-20210103194818204](images/image-20210103194818204.png)
+![image-20210103194818204](https://cdn.losey.top/blog/image-20210103194818204.png)
 
 
 
@@ -256,7 +256,7 @@ docker-compose -f zipkin.yml up -d
 
 脚本将会给我们拉取zipkin镜像，并进行启动
 
-![image-20210103195652668](images/image-20210103195652668.png)
+![image-20210103195652668](https://cdn.losey.top/blog/image-20210103195652668.png)
 
 启动完成后，我们访问下面 **URL** 进行测试
 
@@ -266,7 +266,7 @@ http://192.168.177.150:9411/zipkin/
 
 启动后的页面如下所示
 
-![image-20210103195830492](images/image-20210103195830492.png)
+![image-20210103195830492](https://cdn.losey.top/blog/image-20210103195830492.png)
 
 ### Sentinel
 
@@ -282,7 +282,7 @@ docker-compose -f sentinel.yml up -d
 
 脚本将会给我们拉取 sentinel 镜像，并进行启动
 
-![image-20210103201427604](images/image-20210103201427604.png)
+![image-20210103201427604](https://cdn.losey.top/blog/image-20210103201427604.png)
 
 启动完成后，我们访问下面 **URL** 进行测试
 
@@ -293,7 +293,7 @@ http://192.168.177.150:8070
 
 即可进入到sentinel后台管理，因为我们的微服务还没有启动，所以暂时还看不到任何东西
 
-![image-20210103201751979](images/image-20210103201751979.png)
+![image-20210103201751979](https://cdn.losey.top/blog/image-20210103201751979.png)
 
 
 
@@ -311,7 +311,7 @@ http://192.168.177.150:8070
 
 下载完成后解压，将其上传到 **CentOS** 服务器上，存放的目录为  **docker-compose/data/solr_data** 下
 
-![image-20210103220814298](images/image-20210103220814298.png)
+![image-20210103220814298](https://cdn.losey.top/blog/image-20210103220814298.png)
 
 然后在到 **docker-compose/yaml** ，执行下面脚本
 
@@ -327,7 +327,7 @@ http://192.168.177.150:8080/solr
 
 即可成功访问到 **Solr** 的图形化页面
 
-![image-20210103215913091](images/image-20210103215913091.png)
+![image-20210103215913091](https://cdn.losey.top/blog/image-20210103215913091.png)
 
 #### ElasticSearch
 
@@ -347,7 +347,7 @@ http://192.168.177.150:5601
 
 如果能出现下面的页面，说明已经成功安装了 ElasticSearch 和 Kibana，在这里kibana只是作为ElasticSearch的图形化显示工具，相当于原来的SolrAdmin页面一样。
 
-![image-20210104090555557](images/image-20210104090555557.png)
+![image-20210104090555557](https://cdn.losey.top/blog/image-20210104090555557.png)
 
 
 
@@ -355,7 +355,7 @@ http://192.168.177.150:5601
 
 在启动项目前，我们需要修改一下 **hosts** 文件
 
-![image-20210104171224254](images/image-20210104171224254.png)
+![image-20210104171224254](https://cdn.losey.top/blog/image-20210104171224254.png)
 
 然后加入如下配置 
 
@@ -383,7 +383,7 @@ http://192.168.177.150:5601
 
 本着让小伙伴们 **能不动手就不动手** 的原则，我写了个自动修改配置的脚本，在 **mogu_blog_v2/doc/yaml** 目录下
 
-![image-20210104165005358](images/image-20210104165005358.png)
+![image-20210104165005358](https://cdn.losey.top/blog/image-20210104165005358.png)
 
 这里里面有个两个 **windows bat** 
 
@@ -400,11 +400,11 @@ http://192.168.177.150:5601
 
 首先修改的是 **mogu_admin** 项目的 **application.yml**，将 **dev** 改成 **prod**
 
-![image-20210103230005393](images/image-20210103230005393.png)
+![image-20210103230005393](https://cdn.losey.top/blog/image-20210103230005393.png)
 
 然后修改 **bootstrap.yaml** ，将 **dev** 改成 **prod**，同时还需要修改 **nacos** 和 **sentinel** ，将 localhost改为对应的服务名称即可。
 
-![image-20210103225924387](images/image-20210103225924387.png)
+![image-20210103225924387](https://cdn.losey.top/blog/image-20210103225924387.png)
 
 我们重复上面操作，将  **mogu_web**、**mogu_sms**、**mogu_gateway**、**mogu_picture**、**mogu_montor** 等项目都进行修改。
 
@@ -418,7 +418,7 @@ mogu_admin、mogu_web、mogu_sms、mogu_picture、mogu_gateway
 
 下面是启动完成的图片，一共包含五个核心服务
 
-![image-20210104151144113](images/image-20210104151144113.png)
+![image-20210104151144113](https://cdn.losey.top/blog/image-20210104151144113.png)
 
 等服务器都启动完成后，下面我们验证一下后台是否正常启动，回到我们的Nacos管理界面
 
@@ -436,7 +436,7 @@ http://192.168.177.150:8848/nacos
 
 如果我们看到下面五个服务都注册到Nacos中，那说明启动成功
 
-![img](images/4ca459f56aca4d07b262172d096bccf4)
+![img](https://cdn.losey.top/blog/4ca459f56aca4d07b262172d096bccf4)
 
 在通过访问下列swagger接口，测试接口是否正常
 
@@ -453,19 +453,19 @@ http://localhost:8603/swagger-ui/index.html
 
 如果能够进入下面页面的话，说明后台是没有问题的了，下面我们可以验证一下接口
 
-![img](images/f7aac7c1d46e41fb88cce5918318f509)
+![img](https://cdn.losey.top/blog/f7aac7c1d46e41fb88cce5918318f509)
 
 验证登录
 
-![img](images/84ed060923214f7cb8df77f0b6bc512a)
+![img](https://cdn.losey.top/blog/84ed060923214f7cb8df77f0b6bc512a)
 
 然后执行完成后，复制到token
 
-![img](images/ec60e235b7264864a404abc8cd24248f)
+![img](https://cdn.losey.top/blog/ec60e235b7264864a404abc8cd24248f)
 
 然后在swagger页面的右上角，有一个authorize的按钮，点击后，将token粘贴进去，即可操作全部接口进行测试了~
 
-![img](images/03c6697dfd3148888215e2f38e99b775)
+![img](https://cdn.losey.top/blog/03c6697dfd3148888215e2f38e99b775)
 
 ## 启动前端项目
 
@@ -503,7 +503,7 @@ Windows 用户若安装不成功，很大概率是`node-sass`安装失败，[解
 
 在启动项目成功后，会跳转到：**localhost:9528** ，我们输入账号密码： **admin**  **mogu2018** 访问即可
 
-![img](images/1562769468634.png)
+![img](https://cdn.losey.top/blog/1562769468634.png)
 
 ### 安装 vue_mogu_web依赖
 
@@ -524,7 +524,7 @@ npm run build
 
 下面是启动成功的界面，跳转到  **localhost:9527**
 
-![image-20210104171502876](images/image-20210104171502876.png)
+![image-20210104171502876](https://cdn.losey.top/blog/image-20210104171502876.png)
 
 ## 修改项目配置
 
@@ -534,7 +534,7 @@ npm run build
 
 我们进入到nacos配置文件管理界面，找到的 mogu_web_prod.yaml文件
 
-![image-20200903164514073](images/0a441f6bed6b40a9887656cab01e239b)
+![image-20200903164514073](https://cdn.losey.top/blog/0a441f6bed6b40a9887656cab01e239b)
 
 我们需要将下面的域名，改成自己的
 
@@ -571,7 +571,7 @@ justAuth:
 
 我们进入到nacos配置文件管理界面，找到的 mogu_sms_prod.yaml文件
 
-![image-20200903164316451](images/ce767802aeda40ce87add46999350e28)
+![image-20200903164316451](https://cdn.losey.top/blog/ce767802aeda40ce87add46999350e28)
 
 在mogu_sms中，主要修改的就是邮箱的配置，我们将发送邮件的信息改成自己的
 
@@ -584,7 +584,7 @@ mail:
 
 注意，上面的password是授权码，授权码不是密码，以163邮箱为例，我们需要开启SMTP服务，然后设置授权码
 
-![image-20200722090457339](images/9e312c0c0c8a4893a17f36ec37f3ca49)
+![image-20200722090457339](https://cdn.losey.top/blog/9e312c0c0c8a4893a17f36ec37f3ca49)
 
 ### 修改图片配置
 
@@ -595,14 +595,14 @@ mail:
 
 本文主要以本地文件存储为例，我们到系统配置，首先修改图片显示的本地域名
 
-![image-20201128212328950](images/4a6e7093040146168bc04d61b36d01bd)
+![image-20201128212328950](https://cdn.losey.top/blog/4a6e7093040146168bc04d61b36d01bd)
 
 修改完成后，进行保存，然后在图片管理上传新的图片
 
-![image-20201128212826334](images/2ec8b04d7d634c13a8c4b64967420e99)
+![image-20201128212826334](https://cdn.losey.top/blog/2ec8b04d7d634c13a8c4b64967420e99)
 
 > 要是图片无法正常显示，可以F12看看图片路径是否是修改后的IP，同时对应的 8600端口的防火墙是否开放
 
 最后到博客管理页面，编辑博客，然后选择图片插入即可~
 
-![image-20201128213307577](images/2a4bc5b65899489fa4e86fff56207099)
+![image-20201128213307577](https://cdn.losey.top/blog/2a4bc5b65899489fa4e86fff56207099)

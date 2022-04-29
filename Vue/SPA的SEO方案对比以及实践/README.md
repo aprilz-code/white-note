@@ -11,7 +11,7 @@
 
 ## 一、客户端渲染（CSR）方案
 
-[![img](images/p2DkVy-V5a10pn.png)](https://content.markdowner.net/pub/p2DkVy-V5a10pn)
+[![img](https://cdn.losey.top/blog/p2DkVy-V5a10pn.png)](https://content.markdowner.net/pub/p2DkVy-V5a10pn)
 
 React开发的SPA就是一种CSR方案，如图所示，在到达浏览器之前的html页面是没有内容的，要等到浏览器执行相应异步请求获取数据填充后才显示界面。
 
@@ -26,7 +26,7 @@ React开发的SPA就是一种CSR方案，如图所示，在到达浏览器之前
 
 ## 二、服务端渲染 （SSR）方案
 
-[![img](images/WDEPGk-V389w79.png)](https://content.markdowner.net/pub/WDEPGk-V389w79)**基本原理：** 在服务端起一个node应用，浏览器到来时，先拦截执行部分 js 异步请求，提前将数据填充到 html 页面中返回浏览器。这样爬虫抓取到的页面就是带数据的，有利于SEO
+[![img](https://cdn.losey.top/blog/WDEPGk-V389w79.png)](https://content.markdowner.net/pub/WDEPGk-V389w79)**基本原理：** 在服务端起一个node应用，浏览器到来时，先拦截执行部分 js 异步请求，提前将数据填充到 html 页面中返回浏览器。这样爬虫抓取到的页面就是带数据的，有利于SEO
 
 **需解决问题：**
 
@@ -75,7 +75,7 @@ React开发的SPA就是一种CSR方案，如图所示，在到达浏览器之前
 
 ## 四、服务端动态渲染（利用user-agent）
 
-[![img](images/4Vmk3n-aon3eGQ.png)](https://content.markdowner.net/pub/4Vmk3n-aon3eGQ)
+[![img](https://cdn.losey.top/blog/4Vmk3n-aon3eGQ.png)](https://content.markdowner.net/pub/4Vmk3n-aon3eGQ)
 
 回归到原始需求，为了提高用户体验我们用了SPA技术、为了SEO 我们用了 SSR、预渲染等技术。不同技术方案有一定差距，不能兼顾优点。但仔细想，需要这些技术优点的“用户”，其实时不一样的，SPA 针对的是浏览器普通用户、SSR 针对的是网页爬虫，如 googlebot、baiduspider 等，那为什么我们不能给不同“用户”不同的页面呢，服务端动态渲染就是这种方案。
 
@@ -107,7 +107,7 @@ Google 给了[回复](https://developers.google.com/search/docs/guides/dynamic-r
 
 ## 实现细节
 
-[![img](images/1qa8x4-V1bWyeo.png)](https://content.markdowner.net/pub/1qa8x4-V1bWyeo)
+[![img](https://cdn.losey.top/blog/1qa8x4-V1bWyeo.png)](https://content.markdowner.net/pub/1qa8x4-V1bWyeo)
 
 上图为最终实现。（存在优化点：右边CDN整合、可以考虑使用Node替代nginx部分功能，简化架构）
 

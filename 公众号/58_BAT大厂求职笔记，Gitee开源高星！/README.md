@@ -4,11 +4,11 @@
 
 **Gitee** 开源地址：https://gitee.com/moxi159753/LearningNotes （建议 **Star** 收藏）
 
-![image-20211125223705599](images/image-20211125223705599.png)
+![image-20211125223705599](https://cdn.losey.top/blog/image-20211125223705599.png)
 
 白出身三本院校，也深知只有通过自己的不断努力才有机会上岸。在为了准备大厂校招面试，我准备了一年的时间，把学习的知识点都整理成了这份**学习笔记**，现在我把它制作成了 **PDF**，**免费分享给学弟和学妹们！**
 
-![image-20211125224340581](images/image-20211125224340581.png)
+![image-20211125224340581](https://cdn.losey.top/blog/image-20211125224340581.png)
 
 有很多小伙伴顺利进入了 **BAT** 大厂，来找白报喜。同时，在蘑菇群里还有**两位学弟**进入字节，一起做同事。
 
@@ -29,19 +29,19 @@
 
 **JVM学习**
 
-![image-20211125230242826](images/image-20211125230242826.png)
+![image-20211125230242826](https://cdn.losey.top/blog/image-20211125230242826.png)
 
 **大厂面试突击**
 
-![image-20211125230106518](images/image-20211125230106518.png)
+![image-20211125230106518](https://cdn.losey.top/blog/image-20211125230106518.png)
 
 **大厂面试宝典**
 
-![image-20211125230325346](images/image-20211125230325346.png)
+![image-20211125230325346](https://cdn.losey.top/blog/image-20211125230325346.png)
 
 **微服务学习**
 
-![image-20211125230424222](images/image-20211125230424222.png)
+![image-20211125230424222](https://cdn.losey.top/blog/image-20211125230424222.png)
 
 还有更多的笔记内容，就不列举出来了
 

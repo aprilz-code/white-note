@@ -14,11 +14,11 @@
 
 如果懂 **html** 和 **js** 的小伙伴，应该能看到这其实是一个带有点击事件的 **a** 标签。输入完毕后，这个时候评论就会出现一个超链接。
 
-![伪装隐蔽的xss脚本攻击](images/image-20200430090311752.png)
+![伪装隐蔽的xss脚本攻击](https://cdn.losey.top/blog/image-20200430090311752.png)
 
 只要我们点击这个链接后，就会出现一个**alert** 弹框
 
-![点击后出现弹框](images/image-20200430090351946.png)
+![点击后出现弹框](https://cdn.losey.top/blog/image-20200430090351946.png)
 
 上面代码因为写的的是循环 **10** 次后，alert 弹框就消失，但是如果是 **while(true)**，那么后果不堪设想，会进入无止无休的弹框。
 
@@ -57,11 +57,11 @@ Object.defineProperty(Vue.prototype, '$xss', {
 
 如下图所示，这是没有使用 **XSS** 解决方案
 
-![未使用XSS解决方案](images/image-20200430092519608.png)
+![未使用XSS解决方案](https://cdn.losey.top/blog/image-20200430092519608.png)
 
 引入**xss** 解决方案后，我们的表情包也被转换成了字符串了！
 
-![使用XSS解决方案](images/image-20200430092619240.png)
+![使用XSS解决方案](https://cdn.losey.top/blog/image-20200430092619240.png)
 
 这个时候，我们就需要自定义拦截规则了，我们在 **data** 中添加如下配置，下面是自定义白名单，也就是什么标签以及标签的属性能够正常使用，其它的都会被拦截，对于一些无害的标签和属性，我们可以放入到白名单中。
 
@@ -87,6 +87,6 @@ Object.defineProperty(Vue.prototype, '$xss', {
 
 这个时候，表情已经成功显示了，并且原来的脚本攻击也不生效，达到了我们的目的~
 
-![](images/image-20200430092858561.png)
+![](https://cdn.losey.top/blog/image-20200430092858561.png)
 
 我是白，我们下期再见~

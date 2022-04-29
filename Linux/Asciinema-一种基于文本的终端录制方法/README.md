@@ -66,15 +66,15 @@ asciinema play demo.cast
 
 但是只是在终端上查看，还是不能分享给其它的小伙伴们，所以我们需要将我们录制的内容上传Asciinema官网，首先需要注册账号：[点我传送](https://asciinema.org/)
 
-![image-20201215153055937](images/image-20201215153055937.png)
+![image-20201215153055937](https://cdn.losey.top/blog/image-20201215153055937.png)
 
 我第一打开这个页面，没有找到注册的地方？？，根据边上的英语提示，告诉我们第一次过来的话，只需要输入你的邮箱，然后系统就会向该邮箱输入一串验证信息，然后点击该链接即可完成注册~
 
-![image-20201215153221416](images/image-20201215153221416.png)
+![image-20201215153221416](https://cdn.losey.top/blog/image-20201215153221416.png)
 
 以后登录的话，操作也是一样的，输入邮箱号码，然后到邮箱的邮件点击登录即可
 
-![image-20201215153315794](images/image-20201215153315794.png)
+![image-20201215153315794](https://cdn.losey.top/blog/image-20201215153315794.png)
 
 我们需要在我们终端输入下面的命令，给我们账号进行绑定
 
@@ -84,11 +84,11 @@ asciinema auth
 
 然后会得到一个地址
 
-![image-20201215153458086](images/image-20201215153458086.png)
+![image-20201215153458086](https://cdn.losey.top/blog/image-20201215153458086.png)
 
 我们把地址复制到浏览器上打开即可
 
-![image-20201215153018756](images/image-20201215153018756.png)
+![image-20201215153018756](https://cdn.losey.top/blog/image-20201215153018756.png)
 
 绑定账号完成后，下面我们可以按照操作开始录制终端命令
 
@@ -99,7 +99,7 @@ asciinema rec
 exit
 ```
 
-![image-20201215153727952](images/image-20201215153727952.png)
+![image-20201215153727952](https://cdn.losey.top/blog/image-20201215153727952.png)
 
 下面访问这个地址，即可看到我们的内容了
 
@@ -107,7 +107,7 @@ exit
 https://asciinema.org/a/7IvnEDLigSVLr0So5lGyNtT7V
 ```
 
-[![asciicast](images/KwyQLaLd99P6SjdytFpisci31.svg)](https://asciinema.org/a/KwyQLaLd99P6SjdytFpisci31)
+[![asciicast](https://cdn.losey.top/blog/KwyQLaLd99P6SjdytFpisci31.svg)](https://asciinema.org/a/KwyQLaLd99P6SjdytFpisci31)
 
 ## Asciinema常见命令
 

@@ -56,7 +56,7 @@ git push -u origin main
 
 此时，即可看到我们的备份脚本已经成功被成功上传上来了
 
-![image-20211201092929686](images/image-20211201092929686.png)
+![image-20211201092929686](https://cdn.losey.top/blog/image-20211201092929686.png)
 
 
 

@@ -23,13 +23,13 @@ OAuth2.0是OAuth协议的延续版本，但不向前兼容(即完全废止了OAu
 
 总结一句：SpringSecurity的OAuth2可以做服务之间资源共享，也可以实现单点登录！
 
-![image-20200920215239045](images/image-20200920215239045.png)
+![image-20200920215239045](https://cdn.losey.top/blog/image-20200920215239045.png)
 
 ## OAuth2.0中四种授权方式
 
 为了说明四种模式先准备一张图
 
-![image-20200920215356835](images/image-20200920215356835.png)
+![image-20200920215356835](https://cdn.losey.top/blog/image-20200920215356835.png)
 
 ### 授权码模式（authorization code）
 
@@ -132,22 +132,22 @@ https://github.com/spring-projects/spring-security-oauth/blob/master/spring-secu
 该表用于在客户端系统中存储从服务端获取的token数据, 在spring-oauth-server项目中未使用到.。对
 oauth_client_token表的主要操作在JdbcClientTokenServices.java类中, 更多的细节请参考该类.
 
-![image-20200921082500716](images/image-20200921082500716.png)
+![image-20200921082500716](https://cdn.losey.top/blog/image-20200921082500716.png)
 
 ### oauth_access_token
 
-![image-20200921082705037](images/image-20200921082705037.png)
+![image-20200921082705037](https://cdn.losey.top/blog/image-20200921082705037.png)
 
 ### oauth_refresh_token
 
-![image-20200921083037635](images/image-20200921083037635.png)
+![image-20200921083037635](https://cdn.losey.top/blog/image-20200921083037635.png)
 
 在项目中,主要操作oauth_refresh_token表的对象是JdbcTokenStore.java. (与操作oauth_access_token表的对象
 一样);更多的细节请参考该类. 如果客户端的grant_type不支持refresh_token,则不会使用该表.
 
 ### oauth_code
 
-![image-20200921083115098](images/image-20200921083115098.png)
+![image-20200921083115098](https://cdn.losey.top/blog/image-20200921083115098.png)
 
 在项目中,主要操作oauth_code表的对象是JdbcAuthorizationCodeServices.java. 更多的细节请参考该类。 只有当grant_type为"authorization_code"时,该表中才会有数据产生; 其他的grant_type没有使用该表。
 
@@ -324,13 +324,13 @@ public class ProductController {
 由于此刻，项目中添加的有SpringBoot的Security包，默认不通过认证是无法访问处理器的，这个结果咱们在第三
 天都已经知道了！那么如何解决呢？第三天我们是采用单点登录的方式解决了这个问题，那么今天我们把这个资源交给OAuth2来管理，使用通行的token来访问资源!
 
-![image-20200921084540341](images/image-20200921084540341.png)
+![image-20200921084540341](https://cdn.losey.top/blog/image-20200921084540341.png)
 
 #### 将访问资源作为OAuth2的资源来管理
 
 复制昨天项目中用户和角色对象，即便是用OAuth2管理资源，也一样需要认证，这两个对象还是需要的。
 
-![image-20200921084613952](images/image-20200921084613952.png)
+![image-20200921084613952](https://cdn.losey.top/blog/image-20200921084613952.png)
 
 #### SysRole.java
 
@@ -495,7 +495,7 @@ public class OauthServerApplication {
 
 #### 将之前所有认证的代码复制进来
 
-![image-20200921091407835](images/image-20200921091407835.png)
+![image-20200921091407835](https://cdn.losey.top/blog/image-20200921091407835.png)
 
 #### 提供SpringSecurity配置类
 
@@ -627,25 +627,25 @@ INSERT INTO `oauth_client_details` (`client_id`,`resource_ids`,`client_secret`,`
 在地址栏访问地址 http://localhost:9001/oauth/authorize?response_type=code&client_id=heima_one
 跳转到SpringSecurity默认认证页面，提示用户登录个人账户【这里是sys_user表中的数据】
 
-![image-20200921100523431](images/image-20200921100523431.png)
+![image-20200921100523431](https://cdn.losey.top/blog/image-20200921100523431.png)
 
 登录成功后询问用户是否给予操作资源的权限，具体给什么权限。Approve是授权，Deny是拒绝。这里我们选择read和write都给予Approve
 
-![image-20200921100715530](images/image-20200921100715530.png)
+![image-20200921100715530](https://cdn.losey.top/blog/image-20200921100715530.png)
 
 点击Authorize后跳转到回调地址并获取授权码
 
-![image-20200921101629786](images/image-20200921101629786.png)
+![image-20200921101629786](https://cdn.losey.top/blog/image-20200921101629786.png)
 
 使用授权码到服务器申请通行令牌token
 
-![image-20200921101642658](images/image-20200921101642658.png)
+![image-20200921101642658](https://cdn.losey.top/blog/image-20200921101642658.png)
 
-![image-20200921101650225](images/image-20200921101650225.png)
+![image-20200921101650225](https://cdn.losey.top/blog/image-20200921101650225.png)
 
 重启资源服务器，然后携带通行令牌再次去访问资源服务器，大功告成！
 
-![image-20200921101856898](images/image-20200921101856898.png)
+![image-20200921101856898](https://cdn.losey.top/blog/image-20200921101856898.png)
 
 ### 简化模式测试
 
@@ -653,38 +653,38 @@ INSERT INTO `oauth_client_details` (`client_id`,`resource_ids`,`client_secret`,`
 http://localhost:9001/oauth/authorize?response_type=token&client_id=heima_one
 由于上面用户已经登录过了，所以无需再次登录，其实和上面是有登录步骤的，这时，浏览器直接返回了token
 
-![image-20200921102043081](images/image-20200921102043081.png)
+![image-20200921102043081](https://cdn.losey.top/blog/image-20200921102043081.png)
 
 直接访问资源服务器
 
-![image-20200921102116171](images/image-20200921102116171.png)
+![image-20200921102116171](https://cdn.losey.top/blog/image-20200921102116171.png)
 
 ### 密码模式测试
 
 申请token
 
-![image-20200921102249250](images/image-20200921102249250.png)
+![image-20200921102249250](https://cdn.losey.top/blog/image-20200921102249250.png)
 
-![image-20200921102256833](images/image-20200921102256833.png)
+![image-20200921102256833](https://cdn.losey.top/blog/image-20200921102256833.png)
 
 访问资源服务器
 
-![image-20200921102306256](images/image-20200921102306256.png)
+![image-20200921102306256](https://cdn.losey.top/blog/image-20200921102306256.png)
 
 ### 客户端模式测试
 
 申请token
 
-![image-20200921102459088](images/image-20200921102459088.png)
+![image-20200921102459088](https://cdn.losey.top/blog/image-20200921102459088.png)
 
-![image-20200921102511728](images/image-20200921102511728.png)
+![image-20200921102511728](https://cdn.losey.top/blog/image-20200921102511728.png)
 
 访问资源服务
 
-![image-20200921102530258](images/image-20200921102530258.png)
+![image-20200921102530258](https://cdn.losey.top/blog/image-20200921102530258.png)
 
 ### 刷新Token
 
 前面三种模式中都会返回刷新token，因此我们如果想要刷新token 的时候，就需要携带对应的字段请求即可
 
-![image-20200921102905852](images/image-20200921102905852.png)
+![image-20200921102905852](https://cdn.losey.top/blog/image-20200921102905852.png)

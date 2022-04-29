@@ -12,7 +12,7 @@
 
 因为考虑到 **Jenkins** + **Gitlab** 需要我们在自己的服务器安装 **Jenkins** 和 **Gitlab** 私有库，这样就会比较消耗**我们服务器的资源**，因为白用的都是学生机，对，没错，就是 **1** 核 **2G** 的那种。
 
-![](images/1.jpg)
+![](https://cdn.losey.top/blog/1.jpg)
 
 **Github** 提供的 **Actions** 服务，慷慨的给 **Actions** 提供了计算资源，也就是说我们可以在 **Github** 提供的一个独立容器中，给我们的项目进行构建，最后在通过 **Scp** 和 **SSH** 等 **Linux** 命令，分发到我们的服务器上，最后启动项目。
 
@@ -20,7 +20,7 @@
 
 综上，白最终选定**Github Actions** 作为**蘑菇博客**持续集成方案，下面我就开门见山，展示一下最终结果。
 
-![蘑菇博客CI/CD](images/1578308489729.gif)
+![蘑菇博客CI/CD](https://cdn.losey.top/blog/1578308489729.gif)
 
 当我们提交代码时，会自动执行对应的 **actions**，开始运行脚本，自动完成项目的编译、打包、部署。
 
@@ -38,7 +38,7 @@
 
 我们通过一系列的 **Action** 组合，在加上自己部分业务逻辑的脚本，就组合成了一个 **Actions** ，我们称这个**Actions** 为持续集成，这就是 **Github Actions** 的特别之处，同时 **Github** 有专门一个 **Action** 仓库，我们通过在里面**挑选合适的脚本**进行组合，即可完成自己的持**续集成方案**了。
 
-![优秀的Action仓库](images/1578308512973.png)
+![优秀的Action仓库](https://cdn.losey.top/blog/1578308512973.png)
 
 > Github Actions传送门：
 >
@@ -166,11 +166,11 @@ steps字段指定了每个 **job** 的运行步骤，可以包含多个步骤，
 
 关于**Github Actions** 前置知识我们已经有了初步的学习和了解，下面就可以开始编写自己的 **Actions** 了。
 
-![](images/2.jfif)
+![](https://cdn.losey.top/blog/2.jfif)
 
 我们进入我们的 **Github** 项目，然后点击 **Actions**，然后选择 **Maven** 项目
 
-![Actions页面](images/1578308656798.png)
+![Actions页面](https://cdn.losey.top/blog/1578308656798.png)
 
 这时候会自动创建一个 **maven.yml**
 
@@ -220,15 +220,15 @@ steps:
 
 因为**蘑菇博客**需要在编译的时候**获取线上环境**的配置环境，而线上环境的配置环境有很多**服务器密码**等信息，不利于**开源公开**，不然可能就被人发现后**删库跑路**了，因此需要创建一个**私有仓库**来存放这些信息。
 
-![](images/3.jfif)
+![](https://cdn.losey.top/blog/3.jfif)
 
 下面我创建了一个私有仓库：**mogu_prod_configuration**，里面主要存放**线上环境**，以及**测试环境**的配置文件
 
-![私有配置文件信息](images/1578308701560.png)
+![私有配置文件信息](https://cdn.losey.top/blog/1578308701560.png)
 
 里面目录结构如下所示：
 
-![img](images/1578308715990.png)
+![img](https://cdn.losey.top/blog/1578308715990.png)
 
 每个项目里面存放了对应的配置文件，如 **mogu_admin**、**mogu_eureka**、**mogu_picture**、**mogu_sms**、**mogu_web** ，存储的的是各自的 **application.yml** 文件
 
@@ -244,15 +244,15 @@ ssh-keygen -t rsa
 
 地址：**Settings** -> **Deploy keys**
 
-![Github中的Deploy keys](images/1578308780423.png)
+![Github中的Deploy keys](https://cdn.losey.top/blog/1578308780423.png)
 
 将 **id_rsa** 中的内容写入蘑菇博客项目的 **Secrets** 中，这样我们就可以在 **Actions** 中引入该私钥而不会暴露出来。在 **Actions** 中写入该步骤，实现 **Actions** 提供的服务器可以访问私有库
 
-![](images/1578308804722.png)
+![](https://cdn.losey.top/blog/1578308804722.png)
 
 然后进行密钥添加
 
-![](images/1578308818590.png)
+![](https://cdn.losey.top/blog/1578308818590.png)
 
 注意每次添加完后，要是想修改的话，只能够重新删除后再添加。这里主要添加的几个 **Secrets** 有：
 
@@ -289,7 +289,7 @@ ID_RSA_PUB：公钥
 
 下面我们就需要使用 **git clone** 命令下载我们的配置文件了，在下载之前，我们首先需要配置好 **ssh** 免密登录
 
-![使用SSH拉取项目](images/1578308868450.png)
+![使用SSH拉取项目](https://cdn.losey.top/blog/1578308868450.png)
 
 拉取脚本如下
 
@@ -488,7 +488,7 @@ mv /home/transfer_files/mogu_admin-0.0.1-SNAPSHOT.jar /home/mogu_blog/mogu_admin
 
 **白**是一个从三本院校一路摸滚翻爬上来的互联网大厂程序员。独立做过几个开源项目，其中**蘑菇博客**在码云上有 **2K Star** 。目前就职于**字节跳动的Data广告部门**，是字节跳动全线产品的商业变现研发团队。本公众号将会持续性的输出很多原创小知识以及学习资源。如果你觉得本文对你有所帮助，麻烦给文章点个「赞」和「在看」。同时欢迎各位小伙伴关注白，让我们一起成长~
 
-![和白一起学编程](images/image-20210122092846701.png)
+![和白一起学编程](https://cdn.losey.top/blog/image-20210122092846701.png)
 
 ## 参考
 

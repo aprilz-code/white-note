@@ -49,7 +49,7 @@ Helm是Kubernetes的包管理器。包管理器类似于我们在 **Ubuntu** 中
 kubectl get storageclass
 ```
 
-![image-20201123094120860](images/image-20201123094120860.png)
+![image-20201123094120860](https://cdn.losey.top/blog/image-20201123094120860.png)
 
 如果没有默认存储类，那么就需要安装默认的存储类，参考博客：[Kubernetes配置默认存储类](http://moguit.cn/#/info?blogOid=575)
 
@@ -95,7 +95,7 @@ kubectl get pod -n kubesphere-system
 
 能够发现，我们还有两个容器正在创建
 
-![image-20210110104812804](images/image-20210110104812804.png)
+![image-20210110104812804](https://cdn.losey.top/blog/image-20210110104812804.png)
 
 使用 `kubectl get pod --all-namespaces` 查看所有 Pod 是否在 KubeSphere 的相关命名空间中正常运行。
 
@@ -105,7 +105,7 @@ kubectl get pods --all-namespaces
 
 能够发现所有的节点已经成功运行
 
-![image-20210113102423851](images/image-20210113102423851.png)
+![image-20210113102423851](https://cdn.losey.top/blog/image-20210113102423851.png)
 
 如果是，请通过以下命令检查控制台的端口：
 
@@ -115,7 +115,7 @@ kubectl get svc/ks-console -n kubesphere-system
 
 能够看到我们的服务确保在安全组中打开了端口 30880，并通过 NodePort（IP：30880）
 
-![image-20201123152147871](images/image-20201123152147871.png)
+![image-20201123152147871](https://cdn.losey.top/blog/image-20201123152147871.png)
 
 使用默认帐户和密码（admin/P@88w0rd）访问 Web 控制台。
 
@@ -126,7 +126,7 @@ http://192.168.177.130:30880/
 
 登录控制台后，您可以在组件中检查不同组件的状态。如果要使用相关服务，可能需要等待某些组件启动并运行。
 
-![components](images/kubesphere-components-zh.png)
+![components](https://cdn.losey.top/blog/kubesphere-components-zh.png)
 
 
 
@@ -136,7 +136,7 @@ http://192.168.177.130:30880/
 
 kubesphere无法登录，提示 account is not active
 
-![image-20210110110018004](images/image-20210110110018004.png)
+![image-20210110110018004](https://cdn.losey.top/blog/image-20210110110018004.png)
 
 kubesphere 安装完成后会创建默认账户admin/P@88w0rd，待ks-controller-manager启动就绪，user controller 会将 user CRD中定义的password加密，user会被转换为active状态，至此账户才可以正常登录。
 

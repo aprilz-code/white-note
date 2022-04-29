@@ -185,7 +185,7 @@ public class MyDemo01 {
 
 这里们先构建一个简单的转账场景：有一个数据表 **account** ，里面有两个用户 **jack** 和 **Rose**，用户 **Jack** 给用户**Rose** 转账。案例的实现主要是用 **mysql** 数据库，**JDBC** 和 **C3P0** 框架，以下是详细代码
 
-![image-20200710204941153](images/image-20200710204941153.png)
+![image-20200710204941153](https://cdn.losey.top/blog/image-20200710204941153.png)
 
 ### 引入事务
 
@@ -243,7 +243,7 @@ public class AccountService {
 
 这个时候就可以通过 **ThreadLocal** 和当前线程进行绑定，来降低代码之间的耦合
 
-![image-20200710212423494](images/image-20200710212423494.png)
+![image-20200710212423494](https://cdn.losey.top/blog/image-20200710212423494.png)
 
 ### 使用ThreadLocal解决
 
@@ -281,7 +281,7 @@ public static Connection getConnection() {
 
 如果我们不去看源代码的话，可能会猜测 **ThreadLocal** 是这样子设计的：每个 **ThreadLocal** 都创建一个 **Map**，然后用线程作为 **Map** 的 **key**，要存储的局部变量作为 **Map** 的 **value**，这样就能达到各个线程的局部变量隔离的效果。这是最简单的设计方法，JDK最早期的 **ThreadLocal** 确实是这样设计的，但现在早已不是了。
 
-![image-20200710214857638](images/image-20200710214857638.png)
+![image-20200710214857638](https://cdn.losey.top/blog/image-20200710214857638.png)
 
 ### 现在的设计
 
@@ -292,11 +292,11 @@ public static Connection getConnection() {
 - **Thread** 内部的 **Map** 是由 **ThreadLocal** 维护的，由 **ThreadLocal** 负责向 **map** 获取和设置线程的变量值。
 - 对于不同的线程，每次获取副本值时，别的线程并不能获取到当前线程的副本值，形成了副本的隔离，互不干扰。
 
-![image-20200710215038748](images/image-20200710215038748.png)
+![image-20200710215038748](https://cdn.losey.top/blog/image-20200710215038748.png)
 
 ### 对比
 
-![image-20200710215128743](images/image-20200710215128743.png)
+![image-20200710215128743](https://cdn.losey.top/blog/image-20200710215128743.png)
 
 从上面变成 **JDK8** 的设计有什么好处？
 
@@ -312,7 +312,7 @@ public static Connection getConnection() {
 
 **ThreadLocalMap** 是 **ThreadLocal** 的内部类，没有实现 **Map** 接口，用独立的方式实现了 **Map** 的功能，其内部的 **Entry** 也是独立实现。
 
-![image-20200710220856315](images/image-20200710220856315.png)
+![image-20200710220856315](https://cdn.losey.top/blog/image-20200710220856315.png)
 
 #### 成员变量
 
@@ -386,7 +386,7 @@ Java中的引用有4种类型：强、软、弱、虚。当前这个问题主要
 
 此时 **ThreadLocal** 的内存图（实线表示强引用）如下：
 
-![image-20200710222559109](images/image-20200710222559109.png)
+![image-20200710222559109](https://cdn.losey.top/blog/image-20200710222559109.png)
 
 - 假设在业务代码中使用完 **ThreadLocal**，**threadLocal Ref**被回收了
 - 但是因为 **threadLocalMap** 的 **Entry** 强引用了 **threadLocal**，造成 **threadLocal** 无法被回收。
@@ -396,7 +396,7 @@ Java中的引用有4种类型：强、软、弱、虚。当前这个问题主要
 
 ### 如果key使用弱引用，那么会出现内存泄漏？
 
-![image-20200710222847567](images/image-20200710222847567.png)
+![image-20200710222847567](https://cdn.losey.top/blog/image-20200710222847567.png)
 
 - 同样假设在业务代码中使用完 **ThreadLocal** ，**threadLocal Ref** 被回收了。
 - 由于 **ThreadLocalMap** 只持有 **ThreadLocal** 的弱引用，没有任何强引用指向 **threadlocal** 实例，所以**threadlocal** 就可以顺利被 **gc** 回收，此时 **Entry** 中的 **key=null** 。
@@ -449,11 +449,11 @@ Java中的引用有4种类型：强、软、弱、虚。当前这个问题主要
 
 应各位小伙伴们的需求，白已经把 **学习笔记** 已经整理成 **PDF** 版本啦，方便大家在手机或者电脑上阅读。以下笔记仓库的部分 **PDF** 文件 ~
 
-![周阳老师大厂面试第二季](images/image-20210523171559176.png)
+![周阳老师大厂面试第二季](https://cdn.losey.top/blog/image-20210523171559176.png)
 
-![中华石杉老师Java面试突击](images/image-20210523171833579.png)
+![中华石杉老师Java面试突击](https://cdn.losey.top/blog/image-20210523171833579.png)
 
-![宋红康老师JVM笔记](images/image-20210523172056549.png)
+![宋红康老师JVM笔记](https://cdn.losey.top/blog/image-20210523172056549.png)
 
 如果有需要离线阅读的小伙伴可以到公众号回复 **PDF** ，即可获取下载地址~
 

@@ -4,13 +4,13 @@
 
 一直想着重写蘑菇博客的评论功能，但是一直之前一直没有头绪，最比较让人头疼的是前端的样式问题，最近在看蚂蚁的UI框架的时候，偶然看到了评论组件：[点我传送](https://www.antdv.com/components/comment-cn/)
 
-![image-20200103210924666](images/image-20200103210924666.png)
+![image-20200103210924666](https://cdn.losey.top/blog/image-20200103210924666.png)
 
 瞬间感觉发现了新大陆，但是相对来说功能还有些简单，无法满足博客的要求，所以想办法改造一下，下面看最终封装好的组件为： 
 
 源码地址为：https://gitee.com/moxi159753/Vue_Comment_Component
 
-![111](images/111-1578139983946.gif)
+![111](https://cdn.losey.top/blog/111-1578139983946.gif)
 
 ## 封装CommentList组件
 
@@ -190,7 +190,7 @@ comments: [
 
 到目前为止，我们渲染出来的评论模块已经具备层次关系了
 
-![image-20200103215015767](images/image-20200103215015767.png)
+![image-20200103215015767](https://cdn.losey.top/blog/image-20200103215015767.png)
 
 下面我们需要做的就是引入回复模块
 
@@ -198,7 +198,7 @@ comments: [
 
 ant design也提供了回复框，如下所示
 
-![image-20200103215133593](images/image-20200103215133593.png)
+![image-20200103215133593](https://cdn.losey.top/blog/image-20200103215133593.png)
 
 我们将其封装成对应的组件 CommentBox
 
@@ -298,7 +298,7 @@ replyTo: function (uid) {
 
 运行效果如下所示：
 
- ![111](images/111.gif)
+ ![111](https://cdn.losey.top/blog/111.gif)
 
 ## 引入Vuex
 
@@ -308,7 +308,7 @@ replyTo: function (uid) {
 
 首先创建如下文件：
 
-![image-20200104151042434](images/image-20200104151042434.png)
+![image-20200104151042434](https://cdn.losey.top/blog/image-20200104151042434.png)
 
 app.js文件内容如下，该文件主要是编写操作store的一些方法
 

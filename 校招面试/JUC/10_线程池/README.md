@@ -76,7 +76,7 @@ System.out.println("result FutureTask " + futureTask.get());
 
 最后需要注意的是 要求获得Callable线程的计算结果，如果没有计算完成就要去强求，会导致阻塞，直到计算完成
 
-![image-20200317152541284](images/image-20200317152541284.png)
+![image-20200317152541284](https://cdn.losey.top/blog/image-20200317152541284.png)
 
 也就是说 futureTask.get() 需要放在最后执行，这样不会导致主线程阻塞
 
@@ -139,9 +139,9 @@ new Thread(futureTask2, "BBB").start();
 
 Java中线程池是通过Executor框架实现的，该框架中用到了Executor，Executors（代表工具类），ExecutorService，ThreadPoolExecutor这几个类。
 
-![image-20200317175202647](images/image-20200317175202647.png)
+![image-20200317175202647](https://cdn.losey.top/blog/image-20200317175202647.png)
 
-![image-20200317175241007](images/image-20200317175241007.png)
+![image-20200317175241007](https://cdn.losey.top/blog/image-20200317175241007.png)
 
 
 
@@ -319,7 +319,7 @@ public ScheduledThreadPoolExecutor(int corePoolSize) {
 
 我们通过查看源码，点击了Executors.newSingleThreadExecutor 和 Executors.newFixedThreadPool能够发现底层都是使用了ThreadPoolExecutor
 
-![image-20200317182004293](images/image-20200317182004293.png)
+![image-20200317182004293](https://cdn.losey.top/blog/image-20200317182004293.png)
 
 我们可以看到线程池的内部，还使用到了LinkedBlockingQueue 链表阻塞队列
 
@@ -327,13 +327,13 @@ public ScheduledThreadPoolExecutor(int corePoolSize) {
 
 最后查看一下，完整的三个创建线程的方法
 
-![image-20200317183202992](images/image-20200317183202992.png)
+![image-20200317183202992](https://cdn.losey.top/blog/image-20200317183202992.png)
 
 
 
 ## 线程池的重要参数
 
-![image-20200317183600957](images/image-20200317183600957.png)
+![image-20200317183600957](https://cdn.losey.top/blog/image-20200317183600957.png)
 
 线程池在创建的时候，一共有7大参数
 
@@ -354,7 +354,7 @@ public ScheduledThreadPoolExecutor(int corePoolSize) {
 
 当营业窗口和阻塞队列中都满了时候，就需要设置拒绝策略
 
-![image-20200317201150197](images/image-20200317201150197.png)
+![image-20200317201150197](https://cdn.losey.top/blog/image-20200317201150197.png)
 
 
 
@@ -371,7 +371,7 @@ public ScheduledThreadPoolExecutor(int corePoolSize) {
 
 ### 线程池运行架构图
 
-![image-20200318154414717](images/image-20200318154414717.png)
+![image-20200318154414717](https://cdn.losey.top/blog/image-20200318154414717.png)
 
 文字说明
 

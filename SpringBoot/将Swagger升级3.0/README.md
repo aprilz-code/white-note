@@ -83,7 +83,7 @@ http://localhost:8601/swagger-ui/index.html
 
 就能看到最新版的页面了
 
-![image-20200907160008613](images/image-20200907160008613.png)
+![image-20200907160008613](https://cdn.losey.top/blog/image-20200907160008613.png)
 
 但是我们有些接口还需要授权，因此我们还要配置携带token进行访问，因此我们还需要修改一下配置信息
 
@@ -138,11 +138,11 @@ class Swagger3Config {
 
 修改完成后，即可进行授权的安全验证了
 
-![image-20200907164308978](images/image-20200907164308978.png)
+![image-20200907164308978](https://cdn.losey.top/blog/image-20200907164308978.png)
 
 点击按钮，添加对应的token，然后我们在请求接口的时候，就会携带对应的请求头信息了
 
-![image-20200907164332769](images/image-20200907164332769.png)
+![image-20200907164332769](https://cdn.losey.top/blog/image-20200907164332769.png)
 
 ## 参考
 

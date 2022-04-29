@@ -576,8 +576,8 @@ ABCDE
 
 因为他们对于参数的参入有局限性
 
-![image-20200406093105110](images/image-20200406093105110.png)
+![image-20200406093105110](https://cdn.losey.top/blog/image-20200406093105110.png)
 
 同时后面针对这样的情况，后面也使用子接口，进行了解决
 
-![image-20200406093204147](images/image-20200406093204147.png)
+![image-20200406093204147](https://cdn.losey.top/blog/image-20200406093204147.png)

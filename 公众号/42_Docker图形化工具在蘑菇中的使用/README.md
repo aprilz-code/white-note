@@ -1,4 +1,4 @@
-![](images/0.jpg)
+![](https://cdn.losey.top/blog/0.jpg)
 
 ​                                                                                                                                                                           作者：白
 
@@ -6,7 +6,7 @@
 
 今天给大家带来的是蘑菇博客中管理微服务组件，一款 **Docker** 可视化工具 **Portainer**。
 
-![Portainer管理蘑菇服务](images/45d918729d2f4f24b8acc1cea8153b5f)
+![Portainer管理蘑菇服务](https://cdn.losey.top/blog/45d918729d2f4f24b8acc1cea8153b5f)
 
 **Portainer** 是一款轻量级的图形化管理工具，通过它我们可以轻松管理不同的 **Docker** 环境。**Portainer** 部署和使用都非常简单，它提供一个可以运行在任何 **Docker** 引擎上的容器组成。**Portainer** 提供管理 **Docker** 的**container**、**images**、**volumes**、**networks** 等等。它兼容独立的 **Docker** 环境和 **swarm** 集群模式。基本满足中小型单位对 **Docker** 容器的管理工作。
 
@@ -16,7 +16,7 @@
 - 用户名：admin
 - 密码：tryportainer
 
-![演示地址](images/image-20201125165926451.png)
+![演示地址](https://cdn.losey.top/blog/image-20201125165926451.png)
 
 ## Docker方式安装
 
@@ -42,7 +42,7 @@ http://ip:9000
 
 然后我们输入自定义的密码，进入下面页面，选择 **Local** 管理本地 **Docker** 镜像
 
-![选择Docker环境](images/image-20201125170935817.png)
+![选择Docker环境](https://cdn.losey.top/blog/image-20201125170935817.png)
 
 这里是选择我们通过 **Portainer** 管理哪里的 **Docker**
 
@@ -114,11 +114,11 @@ http://ip:9000
 
 即可看到我们的图形化页面了【首次登录需要填写默认密码】
 
-![登录页](images/image-20201125170457260.png)
+![登录页](https://cdn.losey.top/blog/image-20201125170457260.png)
 
 登录后，即可看到我们的容器信息
 
-![容器信息](images/image-20201125170509940.png)
+![容器信息](https://cdn.losey.top/blog/image-20201125170509940.png)
 
 ## 使用Portainer管理其它主机
 
@@ -140,19 +140,19 @@ vim /etc/docker/daemon.json
 
 然后选择 **端点** 的 **添加端点**
 
-![添加端点](images/image-20201125171521404.png)
+![添加端点](https://cdn.losey.top/blog/image-20201125171521404.png)
 
 然后选择Docker环境
 
-![选择环境](images/image-20201125171656316.png)
+![选择环境](https://cdn.losey.top/blog/image-20201125171656316.png)
 
 最后添加端点完后，就能看到我们刚刚添加的节点了
 
-![添加多个docker服务](images/image-20201125171714621.png)
+![添加多个docker服务](https://cdn.losey.top/blog/image-20201125171714621.png)
 
 我们回到首页，即可看到我们的两台Docker服务了
 
-![添加多个docker服务](images/image-20201125171745766.png)
+![添加多个docker服务](https://cdn.losey.top/blog/image-20201125171745766.png)
 
 
 
@@ -162,21 +162,21 @@ vim /etc/docker/daemon.json
 
 首先，我们选择 **192.168.119.148** 这台主机
 
-![](images/image-20201125171940237.png)
+![](https://cdn.losey.top/blog/image-20201125171940237.png)
 
 然后选择镜像，输入 **nginx**，点击拉取镜像
 
-![拉取镜像](images/image-20201125172117416.png)
+![拉取镜像](https://cdn.losey.top/blog/image-20201125172117416.png)
 
 然后就会去拉取到我们的 **nginx** 镜像了，下面我们就可以使用这个拉取的镜像来创建容器
 
 输入一些基本信息后，点击创建
 
-![创建](images/image-20201125172337667.png)
+![创建](https://cdn.losey.top/blog/image-20201125172337667.png)
 
 完成后，即可看到 **nginx** 的端口号已经对外发布
 
-![发布](images/image-20201125172622053.png)
+![发布](https://cdn.losey.top/blog/image-20201125172622053.png)
 
 我们输入下面的地址
 
@@ -186,4 +186,4 @@ http://ip:32768
 
 即可看到，**nginx** 已经成功安装
 
-![安装完成](images/image-20201125172719198.png)
+![安装完成](https://cdn.losey.top/blog/image-20201125172719198.png)

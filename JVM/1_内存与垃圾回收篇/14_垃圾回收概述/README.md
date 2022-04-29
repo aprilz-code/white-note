@@ -4,13 +4,13 @@
 
 这次我们主要关注的是黄色部分，内存的分配与回收
 
-![image-20200712084539884](images/image-20200712084539884.png)
+![image-20200712084539884](https://cdn.losey.top/blog/image-20200712084539884.png)
 
 ## 什么是垃圾
 
 在提到什么是垃圾之前，我们先看下面一张图
 
-![image-20200712085456113](images/image-20200712085456113.png)
+![image-20200712085456113](https://cdn.losey.top/blog/image-20200712085456113.png)
 
 从上图我们可以很明确的知道，Java 和 C++语言的区别，就在于垃圾收集技术和内存动态分配上，C语言没有垃圾收集技术，需要我们手动的收集。
 
@@ -33,7 +33,7 @@
 
 机械硬盘需要进行磁盘整理，同时还有坏道
 
-![image-20200712090848669](images/image-20200712090848669.png)
+![image-20200712090848669](https://cdn.losey.top/blog/image-20200712090848669.png)
 
 ### 大厂面试题
 
@@ -134,7 +134,7 @@ https://docs.oracle.com/javase/8/docs/technotes/guides/vm/gctuning/toc.html
 
 GC主要关注于 方法区 和堆中的垃圾收集
 
-![image-20200712092427246](images/image-20200712092427246.png)
+![image-20200712092427246](https://cdn.losey.top/blog/image-20200712092427246.png)
 
 垃圾收集器可以对年轻代回收，也可以对老年代回收，甚至是全栈和方法区的回收
 

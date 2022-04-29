@@ -149,5 +149,5 @@ git clone git@github.com:xxxx/xxxx_config.git
 
 ## 7.最终效果
 
-![image-20200106102921524](images/image-20200106102921524.png)
+![image-20200106102921524](https://cdn.losey.top/blog/image-20200106102921524.png)
 

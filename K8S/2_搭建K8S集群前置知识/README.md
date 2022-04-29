@@ -6,7 +6,7 @@
 
 单个master节点，然后管理多个node节点
 
-![image-20200928110456495](images/image-20200928110456495.png)
+![image-20200928110456495](https://cdn.losey.top/blog/image-20200928110456495.png)
 
 
 
@@ -14,7 +14,7 @@
 
 多个master节点，管理多个node节点，同时中间多了一个负载均衡的过程
 
-![image-20200928110543829](images/image-20200928110543829.png)
+![image-20200928110543829](https://cdn.losey.top/blog/image-20200928110543829.png)
 
 ## 服务器硬件配置要求
 

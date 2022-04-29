@@ -1,4 +1,4 @@
-![](images/0.jpg)
+![](https://cdn.losey.top/blog/0.jpg)
 
 ​                                                                                                                                                                           作者：白
 
@@ -14,7 +14,7 @@
 
 所以大多数小伙伴还是更希望使用功能更强大的 **企业付费版** 来进行开发，但 **企业付费版** 的正版价格是 **499$** ，约等于人民币 **3000** 元，还是非常昂贵的价格， 因此就会寻找和谐破解版本的 **IDEA** 来进行开发。
 
-![Jetbrains全家桶价格](images/image-20210812083517216.png)
+![Jetbrains全家桶价格](https://cdn.losey.top/blog/image-20210812083517216.png)
 
 后面白通过开源社区了解到 **JetBrains** 公司为了表达对开源社区的支持 ，使用满足条件的 **开源项目** 就可以去申请正版的 **JetBrains** 全家桶 **1** 年使用权限，同时如果版本到期了，并且你还在继续参与开源项目的贡献，那么还可以继续申请。
 
@@ -41,39 +41,39 @@
 >
 > https://www.jetbrains.com/shop/eform/opensource
 
-![申请表单](images/image-20210812085820497.png)
+![申请表单](https://cdn.losey.top/blog/image-20210812085820497.png)
 
 把信息填写完成后提交即可，然后就会收到来自 **JetBrains** 的官方邮件
 
-![耐心等待](images/image-20210812090528249.png)
+![耐心等待](https://cdn.losey.top/blog/image-20210812090528249.png)
 
 大概的意思就是他们将在接下来的1到2周内评估我的项目，并将通过电子邮件通知是否发放开源的 **License**。
 
 然后没过几天，就收到邮件了，我还以为是 **激活码** 已经发放下来了，点开邮件一看。。
 
-![修改信息](images/image-20210812090633768.png)
+![修改信息](https://cdn.losey.top/blog/image-20210812090633768.png)
 
 原来是我的邮箱填错了，我在 **Github** 写的是**163** 邮箱，但是在申请的时候用的是 **QQ** 邮箱，所以让我在 **Github**上添加 **QQ** 邮箱
 
-![修改Email](images/image-20210812091103473.png)
+![修改Email](https://cdn.losey.top/blog/image-20210812091103473.png)
 
 下面只需要在 **Setting** 添加一下我们的 QQ 邮箱即可
 
-![修改Email](images/image-20210812091404395.png)
+![修改Email](https://cdn.losey.top/blog/image-20210812091404395.png)
 
 然后在切换到首页，把邮箱换成我们新添加的 **QQ** 邮箱
 
-![](images/image-20210812091531709.png)
+![](https://cdn.losey.top/blog/image-20210812091531709.png)
 
 然后在用 **蹩脚 ** 英文水平，在配合 **Google** 翻译的强大加持，回复了一下邮件
 
-![配合工作](images/image-20210812091710778.png)
+![配合工作](https://cdn.losey.top/blog/image-20210812091710778.png)
 
 大概意思就是，我已经按照修改好啦，速速发码~
 
 然后没过多久，就回复了一封邮件，同时携带了对应的 **License**，点击下载对应的 **PDF** 文件
 
-![喜获License](images/image-20210812091809459.png)
+![喜获License](https://cdn.losey.top/blog/image-20210812091809459.png)
 
 下载完成后，即可看到一些 **License** 信息，因为蘑菇之前的活跃用户贡献者有两个，所以就申请了两份 **License**
 
@@ -81,19 +81,19 @@
 
 然后点击链接，完成激活
 
-![License文件](images/image-20210813085026729.png)
+![License文件](https://cdn.losey.top/blog/image-20210813085026729.png)
 
 打开页面后，会进入到 **Jetbrains** 官网，同时需要登录账号，因为每一份 **License** 是和账号绑定的
 
-![账号绑定](images/image-20210813085341939.png)
+![账号绑定](https://cdn.losey.top/blog/image-20210813085341939.png)
 
 完成激活后，下次使用对应的账号登录，即可体验正版的  **IDEA** 了~ 
 
-![激活成功](images/image-20210813085920272.png)
+![激活成功](https://cdn.losey.top/blog/image-20210813085920272.png)
 
 同时对于 **JetBrains** 全家桶的软件，都可以免费使用啦，白平时写 **Go** 用的就是 **Goland**，写 **Python** 用的 **Pycharm**，写前端用的就是 **WebStorm** 。
 
-![白使用的Jetbrains产品](images/image-20210813090012442.png)
+![白使用的Jetbrains产品](https://cdn.losey.top/blog/image-20210813090012442.png)
 
 好啦，本期就到这里，我是白，我们下期再见~
 

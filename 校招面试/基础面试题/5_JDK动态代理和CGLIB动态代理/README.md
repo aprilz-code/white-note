@@ -193,7 +193,7 @@ static
 
 jdk动态代理类图如下
 
-![image-20200429101023902](images/image-20200429101023902.png)
+![image-20200429101023902](https://cdn.losey.top/blog/image-20200429101023902.png)
 
 ## CGLIB动态代理
 

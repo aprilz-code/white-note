@@ -4,11 +4,11 @@
 
 今天在配置Kubesphere的时候，出现了下面的错误
 
-![image-20201123095552088](images/image-20201123095552088.png)
+![image-20201123095552088](https://cdn.losey.top/blog/image-20201123095552088.png)
 
 经过排查，发现是这个原因
 
-![image-20201123095637801](images/image-20201123095637801.png)
+![image-20201123095637801](https://cdn.losey.top/blog/image-20201123095637801.png)
 
 我通过下面命令，查看Kubernetes集群中的默认存储类
 
@@ -205,7 +205,7 @@ kubectl get pods
 kubectl get storageclass
 ```
 
-![image-20201123104358758](images/image-20201123104358758.png)
+![image-20201123104358758](https://cdn.losey.top/blog/image-20201123104358758.png)
 
 我们可以设置这个 course-nfs-storage 的 StorageClass 为 Kubernetes 的默认存储后端，我们可以用 kubectl patch 命令来更新
 

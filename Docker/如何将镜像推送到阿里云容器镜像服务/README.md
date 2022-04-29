@@ -8,11 +8,11 @@
 
 首先我们需要开通 [阿里云容器镜像服务](https://cr.console.aliyun.com/cn-qingdao/instances/repositories) ，然后创建命名空间
 
-![image-20201130101950767](images/image-20201130101950767.png)
+![image-20201130101950767](https://cdn.losey.top/blog/image-20201130101950767.png)
 
 这里我已经创建了一个 `mogublog`，创建完成后，我们需要到访问凭证设置我们的密码，然后复制 登录脚本
 
-![image-20201130102300039](images/image-20201130102300039.png)
+![image-20201130102300039](https://cdn.losey.top/blog/image-20201130102300039.png)
 
 然后在我们的服务器登录docker进行测试
 
@@ -23,13 +23,13 @@ docker login --username=moxi****@163.com registry.cn-shenzhen.aliyuncs.com
 
 登录成功
 
-![image-20201130102403332](images/image-20201130102403332.png)
+![image-20201130102403332](https://cdn.losey.top/blog/image-20201130102403332.png)
 
 ## 提交镜像
 
 登录后，首先可以查看目前已经存在的镜像有哪些
 
-![image-20201130103411570](images/image-20201130103411570.png)
+![image-20201130103411570](https://cdn.losey.top/blog/image-20201130103411570.png)
 
 我们就可以开始给镜像打tag了 【针对已经制作好的镜像打TAG】
 
@@ -55,7 +55,7 @@ docker commit -m "制作镜像" 容器ID registry.cn-shenzhen.aliyuncs.com/mogub
 docker images;
 ```
 
-![image-20201130103608482](images/image-20201130103608482.png)
+![image-20201130103608482](https://cdn.losey.top/blog/image-20201130103608482.png)
 
 下面我们就可以提交到我们的阿里云仓库
 
@@ -63,7 +63,7 @@ docker images;
 docker push registry.cn-shenzhen.aliyuncs.com/mogublog/mogu_blog_nacos:latest
 ```
 
-![image-20201130104229395](images/image-20201130104229395.png)
+![image-20201130104229395](https://cdn.losey.top/blog/image-20201130104229395.png)
 
 推送完成后，我们到阿里云容器服务仓库，即可看到我们刚刚提交的了
 

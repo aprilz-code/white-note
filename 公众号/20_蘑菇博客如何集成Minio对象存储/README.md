@@ -2,7 +2,7 @@
 
 今天我们来讲讲蘑菇博客中的文件存储，蘑菇博客目前使用了：本地文件存储，七牛云存储和Minio存储，下面是每种存储服务之间的优缺点，让我们一起来康康吧
 
-![让我康康](images/src=http___wx4.sinaimg.cn_large_b64da6adly1g95mgn8rajj20j60j676b.jpg&refer=http___wx4.sinaimg.jfif)
+![让我康康](https://cdn.losey.top/blog/src=http___wx4.sinaimg.cn_large_b64da6adly1g95mgn8rajj20j60j676b.jpg&refer=http___wx4.sinaimg.jfif)
 
 第一种方式：直接将图片保存到服务的硬盘（例如使用 **Nginx** 做静态资源映射）
 
@@ -29,7 +29,7 @@
 
 通过上面的分析，我们发现每种方式都存在一定的优缺点，那么有没有一个 开发便捷，成本低，扩容简单的文件系统呢？
 
-![](images/src=http___attach.bbs.miui.com_forum_201805_14_172335cwwwpa340iw195vw.jpg&refer=http___attach.bbs.miui.jfif)
+![](https://cdn.losey.top/blog/src=http___attach.bbs.miui.com_forum_201805_14_172335cwwwpa340iw195vw.jpg&refer=http___attach.bbs.miui.jfif)
 
 ## 对象存储MinIO
 
@@ -75,7 +75,7 @@ minio/minio server /data
 
 运行成功后，我们就能看到我们下面的提示信息
 
-![MinIO运行成功](images/image-20201015150408263.png)
+![MinIO运行成功](https://cdn.losey.top/blog/image-20201015150408263.png)
 
 如果需要后台运行，使用这条语句
 
@@ -97,11 +97,11 @@ minio/minio server /data
 http://192.168.1.101:9000
 ```
 
-![MinIO登录页面](images/image-20201015150747476.png)
+![MinIO登录页面](https://cdn.losey.top/blog/image-20201015150747476.png)
 
 会有一个不错的登录页面，我们输入刚刚配置的账号和密码  mogu2018  mogu2018 即可进入
 
-![登录成功后](images/image-20201015150824563.png)
+![登录成功后](https://cdn.losey.top/blog/image-20201015150824563.png)
 
 ### 创建bucket
 
@@ -109,13 +109,13 @@ http://192.168.1.101:9000
 
 我们创建一个叫 **mogublog** 的桶，创建完成后，在侧边栏就能够看到我们刚刚创建的了
 
-![创建桶](images/image-20201015151202753.png)
+![创建桶](https://cdn.losey.top/blog/image-20201015151202753.png)
 
 ### 上传文件
 
 然后我们选中我们的桶，在点击加号，选择 **upload file** 进行文件上传
 
-![image-20201015151340507](images/image-20201015151340507.png)
+![image-20201015151340507](https://cdn.losey.top/blog/image-20201015151340507.png)
 
 上传成功后，即可看到我们刚刚上传的文件列表了~
 
@@ -125,7 +125,7 @@ http://192.168.1.101:9000
 
 如果要使用 **SDK**，比如 **Java** 客户端来操作我们的minio的话，那么我们还需要修改一下我们的 **bucket** 权限
 
-![修改权限](images/image-20201015151639447.png)
+![修改权限](https://cdn.losey.top/blog/image-20201015151639447.png)
 
 首先点击我们的 **mogublog** 的右边区域，点击 **Edit policy**，然后添加我们的权限为 可读可写，保存即可
 
@@ -225,15 +225,15 @@ Content-Type  multipart/form-data
 
 如下所示
 
-![](images/image-20201018222200593.png)
+![](https://cdn.losey.top/blog/image-20201018222200593.png)
 
 然后在选择我们的图片上传
 
-![测试上传](images/image-20201018222251132.png)
+![测试上传](https://cdn.losey.top/blog/image-20201018222251132.png)
 
 最后在刷新MinIO，就能够看到我们刚刚上传的文件了
 
-![上传成功](images/Q041@R@}5GDOIN_Y$BUTY]X.png)
+![上传成功](https://cdn.losey.top/blog/Q041@R@}5GDOIN_Y$BUTY]X.png)
 
 我们可以通过下面的地址直接访问我们的图片
 
@@ -247,7 +247,7 @@ http://192.168.1.101:9000/mogublog/1578926382309.jpg
 
 例如：我在上面已经部署了  http://101.132.122.175:8080 的 **Minio** 服务【按照你部署的 **ip** 和端口填写】
 
-![蘑菇博客配置Minio](images/image-20201024085505782.png)
+![蘑菇博客配置Minio](https://cdn.losey.top/blog/image-20201024085505782.png)
 
 这里有5个内容需要我们填写的
 
@@ -265,27 +265,27 @@ http://101.132.122.175:8080
 
 输入账号和密码，然后选择 **Create Bucket**
 
-![创建桶](images/image-20201024090123987.png)
+![创建桶](https://cdn.losey.top/blog/image-20201024090123987.png)
 
 还需要修改一下我们的 **bucket** 权限，允许读写权限
 
-![修改权限](images/image-20201015151639447.png)
+![修改权限](https://cdn.losey.top/blog/image-20201015151639447.png)
 
 最后在回到我们的系统配置，开启 **Minio** 上传功能，同时在开启 **Minio** 的图片显示
 
-![开启Minio对象存储](images/image-20201024090404973.png)
+![开启Minio对象存储](https://cdn.losey.top/blog/image-20201024090404973.png)
 
 我们可以上传图片进行测试，打开博客管理，添加博客后进行图片上传测试
 
-![富文本编辑器测试上传](images/image-20201024090500799.png)
+![富文本编辑器测试上传](https://cdn.losey.top/blog/image-20201024090500799.png)
 
 通过上图发现，能够成功的访问到我们的图片了~，我们再到 **minio** 后台管理查看
 
-![查看图片](images/image-20201024090556372.png)
+![查看图片](https://cdn.losey.top/blog/image-20201024090556372.png)
 
 也能够看到我们刚刚上传的文件了~
 
-![上传成功](images/image-20201024090606824.png)
+![上传成功](https://cdn.losey.top/blog/image-20201024090606824.png)
 
 ## 往期推荐
 
@@ -298,4 +298,4 @@ http://101.132.122.175:8080
 
 **白**是一个从三本院校一路摸滚翻爬上来的互联网大厂程序员。独立做过几个开源项目，其中**蘑菇博客**在码云上有 **2K Star** 。目前就职于**字节跳动的Data广告部门**，是字节跳动全线产品的商业变现研发团队。本公众号将会持续性的输出很多原创小知识以及学习资源。如果你觉得本文对你有所帮助，麻烦给文章点个「赞」和「在看」。同时欢迎各位小伙伴关注白，让我们一起成长~
 
-![和白一起学编程](images/image-20210122092846701.png)
+![和白一起学编程](https://cdn.losey.top/blog/image-20210122092846701.png)

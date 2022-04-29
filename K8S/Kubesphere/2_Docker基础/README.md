@@ -38,7 +38,7 @@
 - 启动速度慢
 - 移植与分享不方便
 
-![image-20211107221144406](images/image-20211107221144406.png)
+![image-20211107221144406](https://cdn.losey.top/blog/image-20211107221144406.png)
 
 ### 容器化技术
 
@@ -50,7 +50,7 @@
 - 启动速度秒级
 - 移植与分享方便
 
-![image-20211107221052435](images/image-20211107221052435.png)
+![image-20211107221052435](https://cdn.losey.top/blog/image-20211107221052435.png)
 
 ## 2、资源隔离
 
@@ -66,7 +66,7 @@
 
 # 2、架构
 
-![img](images/architecture.svg)
+![img](https://cdn.losey.top/blog/architecture.svg)
 
 - Docker_Host：
 
@@ -180,7 +180,7 @@ sudo systemctl restart docker
 
 # 常用命令 
 
-![img](images/image.png)
+![img](https://cdn.losey.top/blog/image.png)
 
 
 
@@ -265,7 +265,7 @@ nginx
 
 将容器内部的端口号映射出来
 
-![image-20211107233847964](images/image-20211107233847964.png)
+![image-20211107233847964](https://cdn.losey.top/blog/image-20211107233847964.png)
 
 
 
@@ -454,4 +454,4 @@ redis:latest  redis-server /etc/redis/redis.conf
 
 需要将redis的配置文件和数据挂载出来
 
-![image-20211108085600489](images/image-20211108085600489.png)
+![image-20211108085600489](https://cdn.losey.top/blog/image-20211108085600489.png)

@@ -293,7 +293,7 @@
 
 下面是运行后的结果如下所示
 
-![登录框](images/1577773839268.png)
+![登录框](https://cdn.losey.top/blog/1577773839268.png)
 
 下面是第三方登录的请求接口
 
@@ -479,19 +479,19 @@ justAuth:
 在码云中：我们首先进入设置页面，然后选择第三方应用，然后创建应用
 
 
-![创建应用](images/1577774049160.png)
+![创建应用](https://cdn.losey.top/blog/1577774049160.png)
 
 然后开始填写对应的内容
 
-![填写回调地址](images/1577774070401.png)
+![填写回调地址](https://cdn.losey.top/blog/1577774070401.png)
 
 重新点击第三方应用，获取到对应的 **ClientID** 和 **Client Secret**
 
-![获取密钥](images/1577774097799.png)
+![获取密钥](https://cdn.losey.top/blog/1577774097799.png)
 
 **Github**上的操作同理，我们需要设置 **setting**，然后选择 **Developer settings**，**OAuth Apps**：创建一个新的
 
-![创建应用](images/1577774134599.png)
+![创建应用](https://cdn.losey.top/blog/1577774134599.png)
 
 这里填写的信息和刚刚码云上差不多，最后一个 **Authorization callback URL** 需要改成 **Github** 的回调地址
 
@@ -501,11 +501,11 @@ http://127.0.0.1:8603/oauth/callback/github
 
 页面如下所示
 
-![填写回调地址](images/1577774162993.png)
+![填写回调地址](https://cdn.losey.top/blog/1577774162993.png)
 
 然后最后在创建成功后复制对应的 **ClientID** 和 **Client Secret** 即可：
 
-![获取Github密钥](images/1577774183497.png)
+![获取Github密钥](https://cdn.losey.top/blog/1577774183497.png)
 
 ## 关于AuthRestApi中方法的作用
 
@@ -533,7 +533,7 @@ http://127.0.0.1:8603/oauth/callback/github
 
 **vue** 代码，就是通过 **source** 判断用户点击的按钮，如果是 **github**，那么 **source** 为  **github** ，然后调用后台的登录方法，通过传递的 **source** ，生成一个授权页面 **url**，最后我们通过 **window.location.href** 跳转到授权页面：
 
-![授权登录](images/1577774935816.png)
+![授权登录](https://cdn.losey.top/blog/1577774935816.png)
 
 回调的接口如下所示：
 
@@ -608,7 +608,7 @@ http://127.0.0.1:8603/oauth/callback/github
 
 如果有，那么就通过 **token** 获取用户信息，登录完成后，就能够看到头像回显了：
 
-![显示用户信息](images/1577775104658.png)
+![显示用户信息](https://cdn.losey.top/blog/1577775104658.png)
 
 本文只介绍了 **Gitee** 的登录流程，如果想要集成 **QQ** 登录或者 **微信** 登录可以参考 **JustAuth** 文档，或者直接查看**蘑菇博客**源码，里面实现了更多的登录方式。
 
@@ -630,4 +630,4 @@ http://127.0.0.1:8603/oauth/callback/github
 
 **白**是一个从三本院校一路摸滚翻爬上来的互联网大厂程序员。独立做过几个开源项目，其中**蘑菇博客**在码云上有 **2K Star** 。目前就职于**字节跳动的Data广告部门**，是字节跳动全线产品的商业变现研发团队。本公众号将会持续性的输出很多原创小知识以及学习资源。如果你觉得本文对你有所帮助，麻烦给文章点个「赞」和「在看」。同时欢迎各位小伙伴关注白，让我们一起成长~
 
-![和白一起学编程](images/image-20210122092846701.png)
+![和白一起学编程](https://cdn.losey.top/blog/image-20210122092846701.png)

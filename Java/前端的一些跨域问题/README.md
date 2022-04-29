@@ -6,21 +6,21 @@
 
 作为前后端分离的项目，经常会遇到跨域问题，例如下面这样的
 
-![image-20200612112134628](images/image-20200612112134628.png)
+![image-20200612112134628](https://cdn.losey.top/blog/image-20200612112134628.png)
 
 因为使用vue启动的前端项目运行在 9528端口，而后台项目运行在8601端口，这样因为不同端口的原因就造成了跨域请求。
 
 同时及时在相同的域名或者端口上，也有可能会遇到跨域问题，例如下面这个
 
-![image-20200612112305182](images/image-20200612112305182.png)
+![image-20200612112305182](https://cdn.losey.top/blog/image-20200612112305182.png)
 
 这是是因为在请求图片的时候遇到的一个跨域问题，但是这个图片只有在使用nginx静态代理到服务器上的图片时才会遇到，如果使用的是七牛云图片则不会出现问题。问题具体的场景是在图片裁剪的时候出现的。
 
-![image-20200612112448397](images/image-20200612112448397.png)
+![image-20200612112448397](https://cdn.losey.top/blog/image-20200612112448397.png)
 
 点击裁剪后，无法正常的显示图片
 
-![image-20200612112437488](images/image-20200612112437488.png)
+![image-20200612112437488](https://cdn.losey.top/blog/image-20200612112437488.png)
 
 ## 关于跨域
 
@@ -152,7 +152,7 @@ const service = axios.create({
 
 但是如果我使用的是第二种解决跨域的方法，那么在我将这个值设置成true的时候，将无法进行登录，还是出现如下的问题，最后通过查阅资料，发现设置了第一种解决跨域的方法，能成功将token传递到前端，并且存入到Application 的 Cookie中。
 
-![image-20200612152510503](images/image-20200612152510503.png)
+![image-20200612152510503](https://cdn.losey.top/blog/image-20200612152510503.png)
 
 ## 图片跨域问题
 
@@ -172,8 +172,8 @@ const service = axios.create({
 
 例如，我在 demoadmin.moguit.cn 和 demopicture.moguit.cn的nginx中的配置
 
-![image-20200612151605982](images/image-20200612151605982.png)
+![image-20200612151605982](https://cdn.losey.top/blog/image-20200612151605982.png)
 
 添加完成后，我们重启nginx，然后等待一段时间后，即可正常显示图片了~
 
-![image-20200612151912943](images/image-20200612151912943.png)
+![image-20200612151912943](https://cdn.losey.top/blog/image-20200612151912943.png)

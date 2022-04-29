@@ -8,11 +8,11 @@
 
 如果是在阿里云购买的域名，我们首先搜索域名，进入后，点击解析
 
-![image-20200103110106147](images/image-20200103110106147.png)
+![image-20200103110106147](https://cdn.losey.top/blog/image-20200103110106147.png)
 
 我们配置好对应的二级域名
 
-![image-20200103110223167](images/image-20200103110223167.png)
+![image-20200103110223167](https://cdn.losey.top/blog/image-20200103110223167.png)
 
 这里我主要配置的二级域名有：
 
@@ -27,13 +27,13 @@ picture.moguit.cn
 
 添加完成后，如下所示
 
-![image-20200103110352675](images/image-20200103110352675.png)
+![image-20200103110352675](https://cdn.losey.top/blog/image-20200103110352675.png)
 
 ## 修改nginx配置
 
 因为我们把3个域名都同时解析到了同一个服务器下，那这里我们就需要用到nginx的另外一个功能了：反向代理
 
-![image-20200103110552672](images/image-20200103110552672.png)
+![image-20200103110552672](https://cdn.losey.top/blog/image-20200103110552672.png)
 
 我们将请求都发送到nginx服务器，然后nginx在通过不同的域名，转发到对应服务器或者目录下
 

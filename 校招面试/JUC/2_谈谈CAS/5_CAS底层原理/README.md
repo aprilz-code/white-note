@@ -58,11 +58,11 @@ public class CASDemo {
 
 上面代码的执行结果为
 
-![image-20200310201327734](images/image-20200310201327734.png)
+![image-20200310201327734](https://cdn.losey.top/blog/image-20200310201327734.png)
 
 这是因为我们执行第一个的时候，期望值和原本值是满足的，因此修改成功，但是第二次后，主内存的值已经修改成了2019，不满足期望值，因此返回了false，本次写入失败
 
-![image-20200310201311367](images/image-20200310201311367.png)
+![image-20200310201311367](https://cdn.losey.top/blog/image-20200310201311367.png)
 
 这个就类似于SVN或者Git的版本号，如果没有人更改过，就能够正常提交，否者需要先将代码pull下来，合并代码后，然后提交
 
@@ -70,13 +70,13 @@ public class CASDemo {
 
 首先我们先看看 atomicInteger.getAndIncrement()方法的源码
 
-![image-20200310203030720](images/image-20200310203030720.png)
+![image-20200310203030720](https://cdn.losey.top/blog/image-20200310203030720.png)
 
 从这里能够看到，底层又调用了一个unsafe类的getAndAddInt方法
 
 ### 1、unsafe类
 
-![image-20200310203350122](images/image-20200310203350122.png)
+![image-20200310203350122](https://cdn.losey.top/blog/image-20200310203350122.png)
 
 Unsafe是CAS的核心类，由于Java方法无法直接访问底层系统，需要通过本地（Native）方法来访问，Unsafe相当于一个后门，基于该类可以直接操作特定的内存数据。Unsafe类存在sun.misc包中，其内部方法操作可以像C的指针一样直接操作内存，因为Java中的CAS操作的执行依赖于Unsafe类的方法。
 
@@ -88,7 +88,7 @@ Unsafe是CAS的核心类，由于Java方法无法直接访问底层系统，需�
 
 表示该变量值在内存中的偏移地址，因为Unsafe就是根据内存偏移地址获取数据的。
 
-![image-20200310203030720](images/image-20200310203030720.png)
+![image-20200310203030720](https://cdn.losey.top/blog/image-20200310203030720.png)
 
 从这里我们能够看到，通过valueOffset，直接通过内存地址，获取到值，然后进行加1的操作
 
@@ -96,7 +96,7 @@ Unsafe是CAS的核心类，由于Java方法无法直接访问底层系统，需�
 
 保证了多线程之间的内存可见性
 
-![image-20200310210701761](images/image-20200310210701761.png)
+![image-20200310210701761](https://cdn.losey.top/blog/image-20200310210701761.png)
 
 var5：就是我们从主内存中拷贝到工作内存中的值(每次都要从主内存拿到最新的值到自己的本地内存，然后执行compareAndSwapInt()在再和主内存的值进行比较。因为线程不可以直接越过高速缓存，直接操作主内存，所以执行上述方法需要比较一次，在执行加1操作)
 

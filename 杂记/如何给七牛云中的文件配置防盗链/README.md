@@ -10,15 +10,15 @@
 
 如果还没有提前配置好七牛云的加速域名的，可以参考这篇博客：[蘑菇博客配置七牛云存储](http://moguit.cn/#/info?blogUid=735ed389c4ad1efd321fed9ac58e646b)
 
-![image-20200427232714941](images/image-20200427232714941.png)
+![image-20200427232714941](https://cdn.losey.top/blog/image-20200427232714941.png)
 
 然后我们找到防盗链，添加我们的网站信息
 
-![image-20200427233258924](images/image-20200427233258924.png)
+![image-20200427233258924](https://cdn.losey.top/blog/image-20200427233258924.png)
 
 然后进行修改
 
-![image-20200427233354440](images/image-20200427233354440.png)
+![image-20200427233354440](https://cdn.losey.top/blog/image-20200427233354440.png)
 
 修改完成后，我们需要等待一段时间，大概是一两个小时左右，会有邮件发送到邮箱，表示修改成功
 

@@ -22,7 +22,7 @@ git clone https://gitee.com/moxi159753/mogu-go-v2.git
 
 下图是拉取仓库后的样子
 
-![image-20210323185800186](images/image-20210323185800186.png)
+![image-20210323185800186](https://cdn.losey.top/blog/image-20210323185800186.png)
 
 ## 修改配置
 
@@ -49,7 +49,7 @@ data_web_url=http://localhost:8607
 
 同时还需要到 **mogu-go-v2/doc/SQL** 目录下，导入 **MySQL** 数据库脚本
 
-![image-20210323185538642](images/image-20210323185538642.png)
+![image-20210323185538642](https://cdn.losey.top/blog/image-20210323185538642.png)
 
 ## 后台项目启动
 
@@ -74,7 +74,7 @@ go run main.go
 
 运行的过程中，即会进行依赖的安装，项目启动完成后运行在 **8607** 端口，如下图所示
 
-![image-20210323194121102](images/image-20210323194121102.png)
+![image-20210323194121102](https://cdn.losey.top/blog/image-20210323194121102.png)
 
 ## 前台项目启动
 
@@ -88,7 +88,7 @@ go run main.go
 
 查看是否安装成功： **npm -v**
 
-![img](images/1562769208770.png)
+![img](https://cdn.losey.top/blog/1562769208770.png)
 
 ### 拉取代码
 
@@ -146,7 +146,7 @@ npm run build
 
 下面是启动成功的界面，跳转到：http://localhost:9527
 
-![img](images/1562769602284.png)
+![img](https://cdn.losey.top/blog/1562769602284.png)
 
 注意，如果登录后没有图片显示，那么我们需要进入到后台管理，配置一下**七牛云**文件存储，参考下面博客
 
@@ -154,7 +154,7 @@ npm run build
 
 目前暂不支持 本地存储和 Minio存储
 
-![image-20210323195931423](images/image-20210323195931423.png)
+![image-20210323195931423](https://cdn.losey.top/blog/image-20210323195931423.png)
 
 配置完成后，我们到图片管理上传对应的图片即可~
 
@@ -173,4 +173,4 @@ npm run build
 
 **白**是一个从三本院校一路摸滚翻爬上来的互联网大厂程序员。独立做过几个开源项目，其中**蘑菇博客**在码云上有 **2K Star** 。目前就职于**字节跳动的Data广告部门**，是字节跳动全线产品的商业变现研发团队。本公众号将会持续性的输出很多原创小知识以及学习资源。如果你觉得本文对你有所帮助，麻烦给文章点个「赞」和「在看」。同时欢迎各位小伙伴关注白，让我们一起成长~
 
-![和白一起学编程](images/image-20210122092846701.png)
+![和白一起学编程](https://cdn.losey.top/blog/image-20210122092846701.png)

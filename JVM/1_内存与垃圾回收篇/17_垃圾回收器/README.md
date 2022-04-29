@@ -20,7 +20,7 @@
 
 **按线程数分**（垃圾回收线程数），可以分为串行垃圾回收器和并行垃圾回收器。
 
-![image-20200713083030867](images/image-20200713083030867.png)
+![image-20200713083030867](https://cdn.losey.top/blog/image-20200713083030867.png)
 
 串行回收指的是在同一时间段内只允许有一个CPU用于执行垃圾回收操作，此时工作线程被暂停，直至垃圾收集工作结束。
 
@@ -36,7 +36,7 @@
 - 并发式垃圾回收器与应用程序线程交替工作，以尽可能减少应用程序的停顿时间。
 - 独占式垃圾回收器（Stop the world）一旦运行，就停止应用程序中的所有用户线程，直到垃圾回收过程完全结束。
 
-![image-20200713083443486](images/image-20200713083443486.png)
+![image-20200713083443486](https://cdn.losey.top/blog/image-20200713083443486.png)
 
 #### 按碎片处理方式分
 
@@ -76,7 +76,7 @@
 
 吞吐量优先，意味着在单位时间内，STW的时间最短：0.2+0.2=e.4
 
-![image-20200713084726176](images/image-20200713084726176.png)
+![image-20200713084726176](https://cdn.losey.top/blog/image-20200713084726176.png)
 
 ### 性能指标：暂停时间
 
@@ -84,7 +84,7 @@
 
 例如，GC期间1ee毫秒的暂停时间意味着在这1e0毫秒期间内没有应用程序线程是活动的。暂停时间优先，意味着尽可能让单次STW的时间最短：0.1+0.1 + 0.1+ 0.1+ 0.1=0.5
 
-![image-20200713085306400](images/image-20200713085306400.png)
+![image-20200713085306400](https://cdn.losey.top/blog/image-20200713085306400.png)
 
 ### 吞吐量vs暂停时间
 
@@ -130,11 +130,11 @@
 - 并行回收器：ParNew、Parallel Scavenge、Parallel old
 - 并发回收器：CMS、G11
 
-![image-20200713093551365](images/image-20200713093551365.png)
+![image-20200713093551365](https://cdn.losey.top/blog/image-20200713093551365.png)
 
 ### 7款经典收集器与垃圾分代之间的关系
 
-![image-20200713093757644](images/image-20200713093757644.png)
+![image-20200713093757644](https://cdn.losey.top/blog/image-20200713093757644.png)
 
 新生代收集器：Serial、ParNew、Paralle1 Scavenge；
 
@@ -144,7 +144,7 @@
 
 ### 垃圾收集器的组合关系
 
-![image-20200713094745366](images/image-20200713094745366.png)
+![image-20200713094745366](https://cdn.losey.top/blog/image-20200713094745366.png)
 
 - 两个收集器间有连线，表明它们可以搭配使用：Serial/Serial old、Serial/CMS、ParNew/Serial old、ParNew/CMS、Parallel Scavenge/Serial 0ld、Parallel Scavenge/Parallel 01d、G1；
 - 其中Serial o1d作为CMs出现"Concurrent Mode Failure"失败的后备预案。
@@ -177,7 +177,7 @@ Serial收集器采用复制算法、串行回收和"stop-the-World"机制的方�
   - 与新生代的Parallel scavenge配合使用
   - 作为老年代CMS收集器的后备垃圾收集方案
 
-![image-20200713100703799](images/image-20200713100703799.png)
+![image-20200713100703799](https://cdn.losey.top/blog/image-20200713100703799.png)
 
 这个收集器是一个单线程的收集器，但它的“单线程”的意义并不仅仅说明它只会使用一个CPU或一条收集线程去完成垃圾收集工作，更重要的是在它进行垃圾收集时，必须暂停其他所有的工作线程，直到它收集结束（Stop The World）
 
@@ -207,7 +207,7 @@ ParNew 收集器除了采用并行回收的方式执行内存回收外，两款�
 
 ParNew 是很多JVM运行在Server模式下新生代的默认垃圾收集器。
 
-![image-20200713102030127](images/image-20200713102030127.png)
+![image-20200713102030127](https://cdn.losey.top/blog/image-20200713102030127.png)
 
 - 对于新生代，回收次数频繁，使用并行方式高效。
 - 对于老年代，回收次数少，使用串行方式节省资源。（CPU并行需要切换线程，串行可以省去切换线程的资源）
@@ -237,7 +237,7 @@ Paralle1收集器在JDK1.6时提供了用于执行老年代垃圾收集的Parall
 
 Parallel old收集器采用了标记-压缩算法，但同样也是基于并行回收和"stop-the-World"机制。
 
-![image-20200713110359441](images/image-20200713110359441.png)
+![image-20200713110359441](https://cdn.losey.top/blog/image-20200713110359441.png)
 
 在程序吞吐量优先的应用场景中，IParalle1收集器和Parallel old收集器的组合，在server模式下的内存回收性能很不错。在Java8中，默认是此垃圾收集器。
 
@@ -287,7 +287,7 @@ CMS的垃圾收集算法采用标记-清除算法，并且也会"stop-the-world"
 
 在G1出现之前，CMS使用还是非常广泛的。一直到今天，仍然有很多系统使用CMS GC。
 
-![image-20200713205154007](images/image-20200713205154007.png)
+![image-20200713205154007](https://cdn.losey.top/blog/image-20200713205154007.png)
 
 CMS整个过程比之前的收集器要复杂，整个过程分为4个主要阶段，即初始标记阶段、并发标记阶段、重新标记阶段和并发清除阶段。(涉及STW的阶段主要是：初始标记 和 重新标记)
 
@@ -305,7 +305,7 @@ CMS整个过程比之前的收集器要复杂，整个过程分为4个主要阶�
 
 CMS收集器的垃圾收集算法采用的是**标记清除算法**，这意味着每次执行完内存回收后，由于被执行内存回收的无用对象所占用的内存空间极有可能是不连续的一些内存块，不可避免地将会产生一些内存碎片。那么CMS在为新对象分配内存空间时，将无法使用指针碰撞（Bump the Pointer）技术，而只能够选择空闲列表（Free List）执行内存分配。
 
-![image-20200713212230352](images/image-20200713212230352.png)
+![image-20200713212230352](https://cdn.losey.top/blog/image-20200713212230352.png)
 
 ### CMS为什么不使用标记整理算法？
 
@@ -405,11 +405,11 @@ G1（Garbage-First）是一款面向服务端应用的垃圾收集器，主要�
 
 G1所谓的分代，已经不是下面这样的了
 
-![image-20200713215105293](images/image-20200713215105293.png)
+![image-20200713215105293](https://cdn.losey.top/blog/image-20200713215105293.png)
 
 而是这样的一个区域
 
-![image-20200713215133839](images/image-20200713215133839.png)
+![image-20200713215133839](https://cdn.losey.top/blog/image-20200713215133839.png)
 
 **空间整合**
 
@@ -471,7 +471,7 @@ XX:G1HeapRegionsize设定。所有的Region大小相同，且在JVM生命周期�
 
 虽然还保留有新生代和老年代的概念，但新生代和老年代不再是物理隔离的了，它们都是一部分Region（不需要连续）的集合。通过Region的动态分配方式实现逻辑上的连续。
 
-![image-20200713223244886](images/image-20200713223244886.png)
+![image-20200713223244886](https://cdn.losey.top/blog/image-20200713223244886.png)
 
 一个region有可能属于Eden，Survivor或者old/Tenured内存区域。但是一个region只可能属于一个角色。图中的E表示该region属于Eden内存区域，s表示属于survivor内存区域，o表示属于01d内存区域。图中空白的表示未使用的内存空间。
 
@@ -481,7 +481,7 @@ G1垃圾收集器还增加了一种新的内存区域，叫做Humongous内存区
 
 每个Region都是通过指针碰撞来分配空间
 
-![image-20200713223509993](images/image-20200713223509993.png)
+![image-20200713223509993](https://cdn.losey.top/blog/image-20200713223509993.png)
 
 ### G1垃圾回收器的回收过程
 
@@ -493,7 +493,7 @@ G1GC的垃圾回收过程主要包括如下三个环节：
 
 （如果需要，单线程、独占式、高强度的Fu11GC还是继续存在的。它针对GC的评估失败提供了一种失败保护机制，即强力回收。）
 
-![image-20200713224113996](images/image-20200713224113996.png)
+![image-20200713224113996](https://cdn.losey.top/blog/image-20200713224113996.png)
 
 顺时针，young gc->young gc+concurrent mark->Mixed GC顺序，进行垃圾回收。
 
@@ -521,7 +521,7 @@ G1GC的垃圾回收过程主要包括如下三个环节：
 
 然后检查将要写入的引用指向的对象是否和该Reference类型数据在不同的Region（其他收集器：检查老年代对象是否引用了新生代对象）；如果不同，通过cardTable把相关引用信息记录到引用指向对象的所在Region对应的Remembered Set中；当进行垃圾收集时，在GC根节点的枚举范围加入Remembered Set；就可以保证不进行全局扫描，也不会有遗漏。
 
-![image-20200713224716715](images/image-20200713224716715.png)
+![image-20200713224716715](https://cdn.losey.top/blog/image-20200713224716715.png)
 
 ### G1回收过程-年轻代GC
 
@@ -529,7 +529,7 @@ JVM启动时，G1先准备好Eden区，程序在运行过程中不断创建对�
 
 YGC时，首先G1停止应用程序的执行（stop-The-Wor1d），G1创建回收集（Collection Set），回收集是指需要被回收的内存分段的集合，年轻代回收过程的回收集包含年轻代Eden区和Survivor区所有的内存分段。
 
-![image-20200713225100632](images/image-20200713225100632.png)
+![image-20200713225100632](https://cdn.losey.top/blog/image-20200713225100632.png)
 
 然后开始如下回收过程：
 
@@ -566,7 +566,7 @@ YGC时，首先G1停止应用程序的执行（stop-The-Wor1d），G1创建回�
 
 当越来越多的对象晋升到老年代o1d region时，为了避免堆内存被耗尽，虚拟机会触发一个混合的垃圾收集器，即Mixed GC，该算法并不是一个old GC，除了回收整个Young Region，还会回收一部分的old Region。这里需要注意：**是一部分老年代，而不是全部老年代**。可以选择哪些o1d Region进行收集，从而可以对垃圾回收的耗时时间进行控制。也要注意的是Mixed GC并不是Full GC。
 
-![image-20200713225810871](images/image-20200713225810871.png)
+![image-20200713225810871](https://cdn.losey.top/blog/image-20200713225810871.png)
 
 并发标记结束以后，老年代中百分百为垃圾的内存分段被回收了，部分为垃圾的内存分段被计算了出来。默认情况下，这些老年代的内存分段会分8次（可以通过-XX:G1MixedGCCountTarget设置）被回收
 
@@ -606,13 +606,13 @@ G1的初衷就是要避免Fu11GC的出现。但是如果上述方式不能正常
 
 截止JDK1.8，一共有7款不同的垃圾收集器。每一款的垃圾收集器都有不同的特点，在具体使用的时候，需要根据具体的情况选用不同的垃圾收集器。
 
-![image-20200714075738203](images/image-20200714075738203.png)
+![image-20200714075738203](https://cdn.losey.top/blog/image-20200714075738203.png)
 
 GC发展阶段：Seria l=> Parallel（并行）=> CMS（并发）=> G1 => ZGC
 
 不同厂商、不同版本的虚拟机实现差距比较大。HotSpot虚拟机在JDK7/8后所有收集器及组合如下图
 
-![image-20200714080151020](images/image-20200714080151020.png)
+![image-20200714080151020](https://cdn.losey.top/blog/image-20200714080151020.png)
 
 ### 怎么选择垃圾回收器
 
@@ -663,11 +663,11 @@ Java垃圾收集器的配置对于JVM优化来说是一个很重要的选择，�
 
 这个只会显示总的GC堆的变化，如下：
 
-![image-20200714081610474](images/image-20200714081610474.png)
+![image-20200714081610474](https://cdn.losey.top/blog/image-20200714081610474.png)
 
 参数解析
 
-![image-20200714081622526](images/image-20200714081622526.png)
+![image-20200714081622526](https://cdn.losey.top/blog/image-20200714081622526.png)
 
 ### PrintGCDetails
 
@@ -679,11 +679,11 @@ Java垃圾收集器的配置对于JVM优化来说是一个很重要的选择，�
 
 输入信息如下
 
-![image-20200714081909309](images/image-20200714081909309.png)
+![image-20200714081909309](https://cdn.losey.top/blog/image-20200714081909309.png)
 
 参数解析
 
-![image-20200714081925767](images/image-20200714081925767.png)
+![image-20200714081925767](https://cdn.losey.top/blog/image-20200714081925767.png)
 
 ### 补充
 
@@ -702,11 +702,11 @@ user代表用户态回收耗时，sys内核态回收耗时，rea实际耗时。�
 
 ### Young GC图片
 
-![image-20200714082555688](images/image-20200714082555688.png)
+![image-20200714082555688](https://cdn.losey.top/blog/image-20200714082555688.png)
 
 ### FullGC图片、
 
-![image-20200714082714690](images/image-20200714082714690.png)
+![image-20200714082714690](https://cdn.losey.top/blog/image-20200714082714690.png)
 
 ### GC回收举例
 
@@ -738,11 +738,11 @@ public class GCUseTest {
 
 首先我们会将3个2M的数组存放到Eden区，然后后面4M的数组来了后，将无法存储，因为Eden区只剩下2M的剩余空间了，那么将会进行一次Young GC操作，将原来Eden区的内容，存放到Survivor区，但是Survivor区也存放不下，那么就会直接晋级存入Old 区
 
-![image-20200714083332238](images/image-20200714083332238.png)
+![image-20200714083332238](https://cdn.losey.top/blog/image-20200714083332238.png)
 
 然后我们将4M对象存入到Eden区中
 
-![image-20200714083526790](images/image-20200714083526790.png)
+![image-20200714083526790](https://cdn.losey.top/blog/image-20200714083526790.png)
 
 可以用一些工具去分析这些GC日志
 
@@ -750,11 +750,11 @@ public class GCUseTest {
 
 **GCViewer**
 
-![image-20200714084921184](images/image-20200714084921184.png)
+![image-20200714084921184](https://cdn.losey.top/blog/image-20200714084921184.png)
 
 **GC easy**
 
-![image-20200714084726824](images/image-20200714084726824.png)
+![image-20200714084726824](https://cdn.losey.top/blog/image-20200714084726824.png)
 
 
 
@@ -784,7 +784,7 @@ Shenandoah垃圾回收器最初由RedHat进行的一项垃圾收集器研究项�
 
 Red Hat研发Shenandoah团队对外宣称，Shenandoah垃圾回收器的暂停时间与堆大小无关，这意味着无论将堆设置为200MB还是200GB，99.9%的目标都可以把垃圾收集的停顿时间限制在十毫秒以内。不过实际使用性能将取决于实际工作堆的大小和工作负载。
 
-![image-20200714090608807](images/image-20200714090608807.png)
+![image-20200714090608807](https://cdn.losey.top/blog/image-20200714090608807.png)
 
 这是RedHat在2016年发表的论文数据，测试内容是使用Es对200GB的维基百科数据进行索引。从结果看：
 >停顿时间比其他几款收集器确实有了质的飞跃，但也未实现最大停顿时间控制在十毫秒以内的目标。
@@ -805,16 +805,16 @@ ZGC的工作过程可以分为4个阶段：**并发标记 - 并发预备重分�
 
 ZGC几乎在所有地方并发执行的，除了初始标记的是STw的。所以停顿时间几乎就耗费在初始标记上，这部分的实际时间是非常少的。
 
-![image-20200714091201073](images/image-20200714091201073.png)
+![image-20200714091201073](https://cdn.losey.top/blog/image-20200714091201073.png)
 
 停顿时间对比
 
-![image-20200714091401511](images/image-20200714091401511.png)
+![image-20200714091401511](https://cdn.losey.top/blog/image-20200714091401511.png)
 
 虽然ZGC还在试验状态，没有完成所有特性，但此时性能已经相当亮眼，用“令人震惊、革命性”来形容，不为过。
 未来将在服务端、大内存、低延迟应用的首选垃圾收集器。
 
-![image-20200714093243028](images/image-20200714093243028.png)
+![image-20200714093243028](https://cdn.losey.top/blog/image-20200714093243028.png)
 
 JDK14之前，2GC仅Linux才支持。
 
@@ -830,6 +830,6 @@ JDK14之前，2GC仅Linux才支持。
 
 AliGC是阿里巴巴JVM团队基于G1算法，面向大堆（LargeHeap）应用场景。指定场景下的对比：
 
-![image-20200714093604012](images/image-20200714093604012.png)
+![image-20200714093604012](https://cdn.losey.top/blog/image-20200714093604012.png)
 
 当然，其它厂商也提供了各种别具一格的GC实现，例如比较有名的低延迟GC Zing

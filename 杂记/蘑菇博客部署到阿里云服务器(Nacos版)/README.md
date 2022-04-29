@@ -27,7 +27,7 @@ git branch
 
 这里显示的是目前在Nacos分支，那我们就无需切换
 
-![image-20201110090336834](images/image-20201110090336834.png)
+![image-20201110090336834](https://cdn.losey.top/blog/image-20201110090336834.png)
 
 如果不在Nacos分支，使用下面命令切换分支
 
@@ -57,7 +57,7 @@ nacos_config.sql：表示Nacos配置脚本（仅用于Nacos分支）
 
 每次更新的时间，在mogu_*_update.sql 表里都有体现，只需要进去查看即可 ，然后找到对应访问内的，增量更新即可
 
-![img](images/0065b6c10d584aca9dfc31472a2d2d12)
+![img](https://cdn.losey.top/blog/0065b6c10d584aca9dfc31472a2d2d12)
 
 注意：我们在导入nacos_config.sql的时候，可能会遇到下面的错误
 
@@ -92,7 +92,7 @@ http://your_ip:8848/nacos
 
 打开后，选中我们的配置列表， prod环境
 
-![image-20201110095729364](images/image-20201110095729364.png)
+![image-20201110095729364](https://cdn.losey.top/blog/image-20201110095729364.png)
 
 然后我们就开始修改我们的一些配置信息了，关于修改哪些配置，这里不再重复，参考这篇博客
 
@@ -100,7 +100,7 @@ http://your_ip:8848/nacos
 
 然后找到这一节的内容进行修改
 
-![image-20201110100148643](images/image-20201110100148643.png)
+![image-20201110100148643](https://cdn.losey.top/blog/image-20201110100148643.png)
 
 ## SpringBoot项目打包
 
@@ -115,7 +115,7 @@ mvn clean install
 
 完成上面操作后，能看到下面的图，说明已经成功打包了
 
-![image-20201110095324397](images/image-20201110095324397.png)
+![image-20201110095324397](https://cdn.losey.top/blog/image-20201110095324397.png)
 
 下面我们需要进入下列的目录，把对应的 jar上传到我们之前制作的docker容器中
 
@@ -126,7 +126,7 @@ cd mogu_sms\target
 
 我们把下面的jar包复制我服务器中
 
-![image-20201110095349465](images/image-20201110095349465.png)
+![image-20201110095349465](https://cdn.losey.top/blog/image-20201110095349465.png)
 
 然后通过xftp工具，把jar复制到Docker容器的/home/mogu_blog/mogu_sms目录，替换里面的jar包
 
@@ -134,7 +134,7 @@ cd mogu_sms\target
 cd /home/mogu_blog/mogu_sms
 ```
 
-![image-20201110095521307](images/image-20201110095521307.png)
+![image-20201110095521307](https://cdn.losey.top/blog/image-20201110095521307.png)
 
 里面的结构有：
 
@@ -198,7 +198,7 @@ netstat -tunlp
 - mogu_web：8603
 - mogu_gateway：8607
 
-![image-20200101131754872](images/image-20200101131754872.png)
+![image-20200101131754872](https://cdn.losey.top/blog/image-20200101131754872.png)
 
 到目前为止已经启动了对应的端口了
 
@@ -219,7 +219,7 @@ http://your_ip:8848/nacos
 
 如果我们看到下面五个服务都注册到Nacos中，那说明启动成功
 
-![image-20201212145951100](images/image-20201212145951100.png)
+![image-20201212145951100](https://cdn.losey.top/blog/image-20201212145951100.png)
 
 ### 查看swagger-ui页面
 
@@ -236,19 +236,19 @@ http://your_ip:8603/swagger-ui/index.html
 
 进入 admin接口是这样的
 
-![image-20201110100642821](images/image-20201110100642821.png)
+![image-20201110100642821](https://cdn.losey.top/blog/image-20201110100642821.png)
 
 选择LoginRestApi，验证登录，输入默认用户名和密码：admin  mogu2018，同时选择记住账号密码  true
 
-![image-20201212151219659](images/image-20201212151219659.png)
+![image-20201212151219659](https://cdn.losey.top/blog/image-20201212151219659.png)
 
 登录成功后，复制我们的token
 
-![image-20201110103543712](images/image-20201110103543712.png)
+![image-20201110103543712](https://cdn.losey.top/blog/image-20201110103543712.png)
 
 然后在swagger页面的右上角，有一个authorize的按钮，点击后，将token粘贴进去，然后所有接口都可测试~
 
-![image-20201110104018600](images/image-20201110104018600.png)
+![image-20201110104018600](https://cdn.losey.top/blog/image-20201110104018600.png)
 
 ## Vue项目打包
 
@@ -258,7 +258,7 @@ http://your_ip:8603/swagger-ui/index.html
 
 下面我们到 vue_mogu_web目录下【在windows下】
 
-![image-20201212150424856](images/image-20201212150424856.png)
+![image-20201212150424856](https://cdn.losey.top/blog/image-20201212150424856.png)
 
 然后修改.env文件，把里面的ip地址，改成自己的
 
@@ -288,11 +288,11 @@ npm run build
 
 打包完成后，会生成一个dist目录，我们将整个dist目录，压缩成 zip格式
 
-![img](images/1574822138267.png)
+![img](https://cdn.losey.top/blog/1574822138267.png)
 
 然后使用xftp工具，丢入到我们的前端目录下，目录在 /home/mogu_blog/vue_mogu_web
 
-![image-20200103103853899](images/image-20200103103853899.png)
+![image-20200103103853899](https://cdn.losey.top/blog/image-20200103103853899.png)
 
 注意：如果该文件夹下存在 dist文件夹，我们需要将其删除，然后在解压，然后使用下面命令进行解压
 
@@ -304,7 +304,7 @@ unzip dist.zip
 
 前台admin项目，修改配置的方式基本类似，我们到 vue_mogu_admin目录下，修改.env文件
 
-![image-20201212150503542](images/image-20201212150503542.png)
+![image-20201212150503542](https://cdn.losey.top/blog/image-20201212150503542.png)
 
 然后把里面的ip地址，改成你对应服务器的即可
 
@@ -338,7 +338,7 @@ npm run build
 
 我们在按上述操作，把 **dist** 压缩，然后放到/home/mogu_blog/vue_mogu_admin文件夹下
 
-![img](images/1574822290047.png)
+![img](https://cdn.losey.top/blog/1574822290047.png)
 
 然后解压
 

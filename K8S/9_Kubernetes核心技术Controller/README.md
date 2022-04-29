@@ -20,7 +20,7 @@ Pod是通过Controller实现应用的运维，比如弹性伸缩，滚动升级�
 
 Pod 和 Controller之间是通过label标签来建立关系，同时Controller又被称为控制器工作负载
 
-![image-20201116092431237](images/image-20201116092431237.png)
+![image-20201116092431237](https://cdn.losey.top/blog/image-20201116092431237.png)
 
 ## Deployment控制器应用
 
@@ -80,7 +80,7 @@ status: {}
 
 我们看到的 selector 和 label 就是我们Pod 和 Controller之间建立关系的桥梁
 
-![image-20201116093638951](images/image-20201116093638951.png)
+![image-20201116093638951](https://cdn.losey.top/blog/image-20201116093638951.png)
 
 ### 使用YAML创建Pod
 
@@ -90,7 +90,7 @@ status: {}
 kubectl apply -f nginx.yaml
 ```
 
-![image-20201116094046007](images/image-20201116094046007.png)
+![image-20201116094046007](https://cdn.losey.top/blog/image-20201116094046007.png)
 
 但是因为这个方式创建的，我们只能在集群内部进行访问，所以我们还需要对外暴露端口
 
@@ -172,11 +172,11 @@ status:
 kubectl get pods,svc
 ```
 
-![image-20201116104021357](images/image-20201116104021357.png)
+![image-20201116104021357](https://cdn.losey.top/blog/image-20201116104021357.png)
 
 然后我们访问对应的url，即可看到 nginx了 `http://192.168.177.130:32639/`
 
-![image-20201116104131968](images/image-20201116104131968.png)
+![image-20201116104131968](https://cdn.losey.top/blog/image-20201116104131968.png)
 
 ## 升级回滚和弹性伸缩
 
@@ -223,7 +223,7 @@ kubectl apply -f nginx.yaml
 
 同时，我们使用docker images命令，就能看到我们成功拉取到了一个 1.14版本的镜像
 
-![image-20201116105710966](images/image-20201116105710966.png)
+![image-20201116105710966](https://cdn.losey.top/blog/image-20201116105710966.png)
 
 我们使用下面的命令，可以将nginx从 1.14 升级到 1.15
 
@@ -233,7 +233,7 @@ kubectl set image deployment web nginx=nginx:1.15
 
 在我们执行完命令后，能看到升级的过程
 
-![image-20201116105847069](images/image-20201116105847069.png)
+![image-20201116105847069](https://cdn.losey.top/blog/image-20201116105847069.png)
 
 - 首先是开始的nginx 1.14版本的Pod在运行，然后 1.15版本的在创建
 - 然后在1.15版本创建完成后，就会暂停1.14版本
@@ -241,11 +241,11 @@ kubectl set image deployment web nginx=nginx:1.15
 
 我们在下载 1.15版本，容器就处于ContainerCreating状态，然后下载完成后，就用 1.15版本去替换1.14版本了，这么做的好处就是：升级可以保证服务不中断
 
-![image-20201116111614085](images/image-20201116111614085.png)
+![image-20201116111614085](https://cdn.losey.top/blog/image-20201116111614085.png)
 
 我们到我们的node2节点上，查看我们的 docker images;
 
-![image-20201116111315000](images/image-20201116111315000.png)
+![image-20201116111315000](https://cdn.losey.top/blog/image-20201116111315000.png)
 
 能够看到，我们已经成功拉取到了 1.15版本的nginx了
 
@@ -257,7 +257,7 @@ kubectl set image deployment web nginx=nginx:1.15
 kubectl rollout status deployment web
 ```
 
-![image-20201116112139645](images/image-20201116112139645.png)
+![image-20201116112139645](https://cdn.losey.top/blog/image-20201116112139645.png)
 
 #### 查看历史版本
 
@@ -281,7 +281,7 @@ kubectl rollout undo deployment web
 kubectl rollout status deployment web
 ```
 
-![image-20201116112524601](images/image-20201116112524601.png)
+![image-20201116112524601](https://cdn.losey.top/blog/image-20201116112524601.png)
 
 同时我们还可以回滚到指定版本
 
@@ -299,4 +299,4 @@ kubectl scale deployment web --replicas=10
 
 能够清晰看到，我们一下创建了10个副本
 
-![image-20201117092841865](images/image-20201117092841865.png)
+![image-20201117092841865](https://cdn.losey.top/blog/image-20201117092841865.png)

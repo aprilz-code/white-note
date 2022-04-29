@@ -29,13 +29,13 @@
 
 Redis在单机架构下的瓶颈：master节点的数据和slave节点的数据量一样，也就是master容纳多少，slave也只能容纳多少，如果需要放1T数据，在缓存中，那么就遇到的性能瓶颈了。
 
-![redis单master架构的容量的瓶颈问题](images/redis单master架构的容量的瓶颈问题.png)
+![redis单master架构的容量的瓶颈问题](https://cdn.losey.top/blog/redis单master架构的容量的瓶颈问题.png)
 
 ### 集群模式
 
 支撑N个redis master node，每个master node都可以挂载多个slave node，读写分离的架构，对于每个master来说，写就写到master，然后读就从mater对应的slave去读，高可用，因为每个master都有salve节点，那么如果mater挂掉，redis cluster这套机制，就会自动将某个slave切换成master，redis cluster（多master + 读写分离 + 高可用），我们只要基于redis cluster去搭建redis集群即可，不需要手工去搭建replication复制+主从架构+读写分离+哨兵集群+高可用
 
-![redis如何通过master横向扩容支撑1T+数据量](images/redis如何通过master横向扩容支撑1T+数据量.png)
+![redis如何通过master横向扩容支撑1T+数据量](https://cdn.losey.top/blog/redis如何通过master横向扩容支撑1T+数据量.png)
 
 ### Redis cluster  和 Replication + sentinel
 
@@ -68,13 +68,13 @@ hash算法  ->  一致性hash算法（memcached） ->  redis cluster，hash slot
 
 但是如果某一台master宕机了，会导致 1/3的数据全部失效，从而大量的数据将会进入MySQL
 
-![最老土的hash算法以及弊端](images/最老土的hash算法以及弊端.png)
+![最老土的hash算法以及弊端](https://cdn.losey.top/blog/最老土的hash算法以及弊端.png)
 
 ### 一致性Hash算法
 
 Memcache中使用的是一致性Hash算法
 
-![一致性hash算法的讲解和优点](images/一致性hash算法的讲解和优点.png)
+![一致性hash算法的讲解和优点](https://cdn.losey.top/blog/一致性hash算法的讲解和优点.png)
 
 ### 缓存热点问题
 
@@ -82,7 +82,7 @@ Memcache中使用的是一致性Hash算法
 
 这个时候就引入了虚拟环（虚拟节点）的概念，目的是为了让每个master都做了均匀分布，这样每个区间内的数据都能够 均衡的分布到不同的节点中，而不是按照顺时针去查找，从而造成涌入一个master上的问题。
 
-![一致性hash算法的虚拟节点实现负载均衡](images/一致性hash算法的虚拟节点实现负载均衡.png)
+![一致性hash算法的虚拟节点实现负载均衡](https://cdn.losey.top/blog/一致性hash算法的虚拟节点实现负载均衡.png)
 
 ### Redis Cluster
 
@@ -90,11 +90,11 @@ Redis Cluster有固定的16384个Hash slot，对每个key计算CRC16值，然后
 
 如果有一台master宕机了，其它节点上的缓存几乎不受影响，因为它取模运算是根据 Hash slot来的，也就是 16384，而不是根据Redis的机器数。
 
-![redis cluster hash slot算法](images/redis cluster hash slot算法.png)
+![redis cluster hash slot算法](https://cdn.losey.top/blog/redis cluster hash slot算法.png)
 
 ### Redis Cluster节点通信
 
-![集中式的集群元数据存储和维护](images/集中式的集群元数据存储和维护.png)
+![集中式的集群元数据存储和维护](https://cdn.losey.top/blog/集中式的集群元数据存储和维护.png)
 
 #### 基础通信原理
 
@@ -110,7 +110,7 @@ gossip：好处在于，元数据的更新比较分散，不是集中在一个�
 
 我们刚才做reshard，去做另外一个操作，会发现说，configuration error，达成一致
 
-![gossip协议维护集群元数据](images/gossip协议维护集群元数据.png)
+![gossip协议维护集群元数据](https://cdn.losey.top/blog/gossip协议维护集群元数据.png)
 
 （2）10000端口
 
@@ -250,7 +250,7 @@ redis cluster的高可用的原理，几乎跟哨兵是类似的
 
 因为缓存宕机，大量的请求打入数据库，导致整个系统宕机
 
-![01_缓存雪崩现象](images/01_缓存雪崩现象.png)
+![01_缓存雪崩现象](https://cdn.losey.top/blog/01_缓存雪崩现象.png)
 
 ### 如何解决缓存雪崩
 
@@ -262,7 +262,7 @@ redis cluster的高可用的原理，几乎跟哨兵是类似的
 
 事后：redis持久化，快速恢复缓存数据，一般重启，自动从磁盘上加载数据恢复内存中的数据。
 
- ![02_如何解决缓存雪崩](images/02_如何解决缓存雪崩.png)
+ ![02_如何解决缓存雪崩](https://cdn.losey.top/blog/02_如何解决缓存雪崩.png)
 
 
 
@@ -270,7 +270,7 @@ redis cluster的高可用的原理，几乎跟哨兵是类似的
 
 缓存穿透也就是，由黑客发出的非法请求，请求大量的无效key，导致无法命中缓存，同时数据库也查询不到，最终导致缓存穿透把数据库打死了。
 
-![03_缓存穿透现象以及解决方案](images/03_缓存穿透现象以及解决方案.png)
+![03_缓存穿透现象以及解决方案](https://cdn.losey.top/blog/03_缓存穿透现象以及解决方案.png)
 
 ### 如何解决缓存穿透
 
@@ -290,7 +290,7 @@ redis cluster的高可用的原理，几乎跟哨兵是类似的
 
 （2）更新的时候，先删除缓存，然后再更新数据库
 
-![cache aside pattern](images/cache aside pattern.png)
+![cache aside pattern](https://cdn.losey.top/blog/cache aside pattern.png)
 
 ### 为什么是删除缓存，而不是更新缓存呢？
 
@@ -332,11 +332,11 @@ mybatis，hibernate，懒加载，思想
 
 问题：先修改数据库，再删除缓存，如果删除缓存失败了，那么会导致数据库中是新数据，缓存中是旧数据，数据出现不一致，解决思路是：先删除缓存，再修改数据库，如果删除缓存成功了，如果修改数据库失败了，那么数据库中是旧数据，缓存中是空的，那么数据不会不一致，因为读的时候缓存没有，则读数据库中旧数据，然后更新到缓存中
 
-![最初级的数据库+缓存双写不一致问题](images/最初级的数据库+缓存双写不一致问题.png)
+![最初级的数据库+缓存双写不一致问题](https://cdn.losey.top/blog/最初级的数据库+缓存双写不一致问题.png)
 
 假设删除缓存成功，但是更新数据库失败了，那么不会出现双写不一致的问题
 
-![最初级的数据库+缓存双写不一致问题的解决方案](images/最初级的数据库+缓存双写不一致问题的解决方案.png)
+![最初级的数据库+缓存双写不一致问题的解决方案](https://cdn.losey.top/blog/最初级的数据库+缓存双写不一致问题的解决方案.png)
 
 ### 复杂的数据不一致问题
 
@@ -348,7 +348,7 @@ mybatis，hibernate，懒加载，思想
 
 完了，数据库和缓存中的数据不一样了。。。。
 
-![读写并发的时候复杂的数据库+缓存双写不一致的场景](images/读写并发的时候复杂的数据库+缓存双写不一致的场景.png)
+![读写并发的时候复杂的数据库+缓存双写不一致的场景](https://cdn.losey.top/blog/读写并发的时候复杂的数据库+缓存双写不一致的场景.png)
 
 ### 上亿流量高并发场景下，缓存会出现这个问题？
 
@@ -370,7 +370,7 @@ mybatis，hibernate，懒加载，思想
 
 待那个队列对应的工作线程完成了上一个操作的数据库的修改之后，才会去执行下一个操作，也就是缓存更新的操作，此时会从数据库中读取最新的值，然后写入缓存中
 
-如果请求还在等待时间范围内，不断轮询发现可以取到值了，那么就直接返回; 如果请求等待的时间超过一定时长，那么这一次直接从数据库中读取当前的旧值![复杂的数据库+缓存双写一致保障方案](images/复杂的数据库+缓存双写一致保障方案.png)
+如果请求还在等待时间范围内，不断轮询发现可以取到值了，那么就直接返回; 如果请求等待的时间超过一定时长，那么这一次直接从数据库中读取当前的旧值![复杂的数据库+缓存双写一致保障方案](https://cdn.losey.top/blog/复杂的数据库+缓存双写一致保障方案.png)
 
 假设出现了数据库没有这条数据的场景时：
 
@@ -444,7 +444,7 @@ mybatis，hibernate，懒加载，思想
 
 可能这个服务部署了多个实例，那么必须保证说，执行数据更新操作，以及执行缓存更新操作的请求，都通过nginx服务器路由到相同的服务实例上
 
-![机器级别的请求路由问题](images/机器级别的请求路由问题.png)
+![机器级别的请求路由问题](https://cdn.losey.top/blog/机器级别的请求路由问题.png)
 
 #### 热点商品的路由问题，导致请求的倾斜
 
@@ -465,7 +465,7 @@ mybatis，hibernate，懒加载，思想
 - 变成了：set V1、V3、V4、V2
 - 一般解决这种问题，就是使用分布式锁
 
-![01_redis并发竞争问题以及解决方案](images/01_redis并发竞争问题以及解决方案.png)
+![01_redis并发竞争问题以及解决方案](https://cdn.losey.top/blog/01_redis并发竞争问题以及解决方案.png)
 
 ### 基于Zookeeper的分布式锁
 
@@ -496,33 +496,33 @@ v4 10.00.03
 
 ### 正常执行
 
-![image-20200529212239626](images/image-20200529212239626.png)
+![image-20200529212239626](https://cdn.losey.top/blog/image-20200529212239626.png)
 
 ### 放弃事务
 
-![image-20200529212259619](images/image-20200529212259619.png)
+![image-20200529212259619](https://cdn.losey.top/blog/image-20200529212259619.png)
 
 ### 事务执行出错 - 命令错误
 
 若在事务队列中存在命令性错误（类似于java编译性错误），则执行EXEC命令时，所有命令都不会执行
 
-![image-20200529212336388](images/image-20200529212336388.png)
+![image-20200529212336388](https://cdn.losey.top/blog/image-20200529212336388.png)
 
 ### 事务执行出错 - 抛异常
 
 若在事务队列中存在语法性错误（类似于java的1/0的运行时异常），则执行EXEC命令时，其他正确命令会被执行，错误命令抛出异常
 
-![image-20200529212442082](images/image-20200529212442082.png)
+![image-20200529212442082](https://cdn.losey.top/blog/image-20200529212442082.png)
 
 ### Watch使用
 
 使用watch检测balance，事务期间balance数据未变动，事务执行成功
 
-![image-20200529212649282](images/image-20200529212649282.png)
+![image-20200529212649282](https://cdn.losey.top/blog/image-20200529212649282.png)
 
 使用watch检测balance，在开启事务后（标注1处），在新窗口执行标注2中的操作，更改balance的值，模拟其他客户端在事务执行期间更改watch监控的数据，然后再执行标注1后命令，执行EXEC后，事务未成功执行。
 
-![image-20200529212702162](images/image-20200529212702162.png)
+![image-20200529212702162](https://cdn.losey.top/blog/image-20200529212702162.png)
 
 一但执行 EXEC 开启事务的执行后，无论事务使用执行成功， WARCH 对变量的监控都将被取消。故当事务执行失败后，需重新执行WATCH命令对变量进行监控，并开启新的事务进行操作
 

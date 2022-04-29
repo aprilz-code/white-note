@@ -12,7 +12,7 @@
 
 此时一个能够生成全局唯一ID的系统是非常必要的
 
-![image-20200418080900190](images/image-20200418080900190.png)
+![image-20200418080900190](https://cdn.losey.top/blog/image-20200418080900190.png)
 
 ### ID生成规则部分硬性要求
 
@@ -73,7 +73,7 @@ UUID只能保证全局唯一性，不满足后面的趋势递增，单调递增
 
 REPLACE INTO的含义是插入一条记录，如果表中唯一索引的值遇到冲突，则替换老数据
 
-![image-20200418083435048](images/image-20200418083435048.png)
+![image-20200418083435048](https://cdn.losey.top/blog/image-20200418083435048.png)
 
 ```
 REPLACE into t_test(stub) values('b');
@@ -151,7 +151,7 @@ Twitter的分布式雪花算法SnowFlake，经测试SnowFlake每秒可以产生2
 
 雪花算法的几个核心组成部分
 
-![image-20200418091447935](images/image-20200418091447935.png)
+![image-20200418091447935](https://cdn.losey.top/blog/image-20200418091447935.png)
 
 在Java中64bit的证书是long类型，所以在SnowFlake算法生成的ID就是long类存储的
 

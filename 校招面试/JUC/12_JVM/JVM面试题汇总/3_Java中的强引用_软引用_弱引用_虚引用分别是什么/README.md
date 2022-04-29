@@ -16,7 +16,7 @@ Person p = new Person()
 
 ## 整体架构
 
-![image-20200323155120778](images/image-20200323155120778.png)
+![image-20200323155120778](https://cdn.losey.top/blog/image-20200323155120778.png)
 
 ## 强引用
 
@@ -441,4 +441,4 @@ java.lang.ref.WeakReference@7f3124
 - 蓝色部分：属于软引用，在内存不够的时候，才回收
 - 虚引用和弱引用：每次垃圾回收的时候，都会被干掉，但是它在干掉之前还会存在引用队列中，我们可以通过引用队列进行一些通知机制
 
-![image-20200324123829937](images/image-20200324123829937.png)
+![image-20200324123829937](https://cdn.losey.top/blog/image-20200324123829937.png)

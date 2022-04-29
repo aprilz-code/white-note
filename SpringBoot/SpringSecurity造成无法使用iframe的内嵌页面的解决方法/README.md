@@ -32,7 +32,7 @@
 
 但是发现无法直接正常显示：
 
-![image-20200106095854704](images/image-20200106095854704.png)
+![image-20200106095854704](https://cdn.losey.top/blog/image-20200106095854704.png)
 
 F12打开调试页面，发现下列的错误信息：
 
@@ -111,5 +111,5 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 添加后，就能够正常显示页面了：
 
-![image-20200106101231543](images/image-20200106101231543.png)
+![image-20200106101231543](https://cdn.losey.top/blog/image-20200106101231543.png)
 

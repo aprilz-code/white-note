@@ -12,7 +12,7 @@ Sentinel被称为分布式系统的流量防卫兵，这里主要讲的是CentOS
 
 Sentinel的安装非常简单，只需要去[官网](https://github.com/alibaba/Sentinel/releases)下载好对应的可执行jar包
 
-![image-20200822150208675](images/image-20200822150208675.png)
+![image-20200822150208675](https://cdn.losey.top/blog/image-20200822150208675.png)
 
 然后在配置启动脚本和关闭脚本，同时设置启动端口号8070
 
@@ -39,6 +39,6 @@ fi
 
 启动成功后，访问地址：http://youip:8070，即可打开sentinel的管理页面
 
-![image-20200822151430102](images/image-20200822151430102.png)
+![image-20200822151430102](https://cdn.losey.top/blog/image-20200822151430102.png)
 
 输入sentinel  sentinel进入即可

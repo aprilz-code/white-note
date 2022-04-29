@@ -27,7 +27,7 @@ centos              latest        8efe422e6104      210 MB
 
 > Alpine包查询网站: https://pkgs.alpinelinux.org/packages
 
-![Alpine包查询](images/image-20201206093447554.png)
+![Alpine包查询](https://cdn.losey.top/blog/image-20201206093447554.png)
 
 如果想在 **Apline** 镜像中使用 **vim** 命令的话，只需要应用包管理工具 **apk** 安装即可
 
@@ -41,7 +41,7 @@ apk add vim
 官网：https://registry.hub.docker.com/_/alpine
 ```
 
-![alpine查询](images/image-20201206093922397.png)
+![alpine查询](https://cdn.losey.top/blog/image-20201206093922397.png)
 
 可以发现，它提供了只有 **5MB** 的系统镜像可供我们进行下载使用
 
@@ -52,7 +52,7 @@ docker pull alpine
 
 同时，它还列举了一个例子 ，通过 **alpine** 制作一个 **mysql** 镜像
 
-![制作mysql镜像](images/image-20201206094302242.png)
+![制作mysql镜像](https://cdn.losey.top/blog/image-20201206094302242.png)
 
 使用 **Alpine** 和 **Ubuntu** 制作出来的镜像一个是 **36.8MB**，一个是 **145MB**，相差 **4** 倍多
 
@@ -66,7 +66,7 @@ docker pull alpine
 docker run alpine echo "hello alpine"
 ```
 
-![运行alpine镜像](images/image-20201206094817959.png)
+![运行alpine镜像](https://cdn.losey.top/blog/image-20201206094817959.png)
 
 ## 迁移至Alpine
 
@@ -76,7 +76,7 @@ docker run alpine echo "hello alpine"
 
 > nginx: https://registry.hub.docker.com/_/nginx
 
-![nginx的alpine版本](images/image-20201206095346672.png)
+![nginx的alpine版本](https://cdn.losey.top/blog/image-20201206095346672.png)
 
 还有其它一些官方镜像也都提供了 **alpine** 版本，我们可以在 **DockerHub** 上进行搜索即可
 
@@ -94,7 +94,7 @@ apk add --no-cache <package>
 
 同时如果细心看过**蘑菇博客镜**像制作过程的小伙伴，可以看到对应项目的 **Dockerfile** 文件依赖的基础镜像，其实就是带有 **alpine** 后缀的精简镜像。 
 
-![alpine镜像在蘑菇中的使用](images/image-20210719085125924.png) 
+![alpine镜像在蘑菇中的使用](https://cdn.losey.top/blog/image-20210719085125924.png) 
 
 ## 思考
 

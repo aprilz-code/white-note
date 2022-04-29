@@ -38,7 +38,7 @@ public class SingletonDemo {
 
 最后输出的结果
 
-![image-20200310164513408](images/image-20200310164513408.png)
+![image-20200310164513408](https://cdn.losey.top/blog/image-20200310164513408.png)
 
 
 
@@ -78,7 +78,7 @@ public class SingletonDemo {
 
 从下面的结果我们可以看出，我们通过SingletonDemo.getInstance() 获取到的对象，并不是同一个，而是被下面几个线程都进行了创建，那么在多线程环境下，单例模式如何保证呢？
 
-![image-20200310164720940](images/image-20200310164720940.png)
+![image-20200310164720940](https://cdn.losey.top/blog/image-20200310164720940.png)
 
 ### 解决方法1
 
@@ -95,7 +95,7 @@ public class SingletonDemo {
 
 输出结果
 
-![image-20200310164946940](images/image-20200310164946940.png)
+![image-20200310164946940](https://cdn.losey.top/blog/image-20200310164946940.png)
 
 我们能够发现，通过引入Synchronized关键字，能够解决高并发环境下的单例模式问题
 
@@ -123,7 +123,7 @@ public class SingletonDemo {
 
 最后输出的结果为：
 
-![image-20200310165703190](images/image-20200310165703190.png)
+![image-20200310165703190](https://cdn.losey.top/blog/image-20200310165703190.png)
 
 从输出结果来看，确实能够保证单例模式的正确性，但是上面的方法还是存在问题的
 
