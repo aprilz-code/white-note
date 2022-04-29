@@ -17,7 +17,7 @@
 
 因个人能力有限，笔记中可能还有**很多错误**的地方，还请大家能够多多指出交流，也欢迎各位小伙伴能够提交 **Pull Request** 请求进行完善。
 
-参考 :[陌溪的LearningNotes](https://gitee.com/moxi159753/LearningNotes)
+参考 : 陌溪
 
 [comment]: <> (## PDF下载)
 
