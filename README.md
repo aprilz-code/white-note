@@ -359,7 +359,7 @@
 - [使用Vuex进行两个页面逻辑交互](./Vue/使用Vuex进行两个页面逻辑交互/README.md)
 
 ## 杂记
-
+- [idea自动提交检查](./杂记/idea自动提交检查/README.md)
 - [CKEditor前端样式和编辑器的样式不一致的问题](./杂记/CKEditor前端样式和编辑器的样式不一致的问题/README.md)
 - [Ckeidtor中上传图片添加token信息](./杂记/ckeidtor中上传图片添加token信息/README.md)
 - [CLion搭建C语言开发环境](./杂记/CLion搭建C语言开发环境/README.md)
@@ -393,7 +393,6 @@
 - [如何给七牛云中的文件配置防盗链](./杂记/如何给七牛云中的文件配置防盗链/README.md)
 - [如何使用docsify给蘑菇博客编写开发文档](./杂记/如何使用docsify给蘑菇博客编写开发文档/README.md)
 - [如何制作github小徽章](./杂记/如何制作github小徽章/README.md)
-- [使用JustAuth集成QQ登录](./杂记/使用JustAuth集成QQ登录/README.md)
 - [使用开源项目申请JetBrains全家桶](./杂记/使用开源项目申请JetBrains全家桶/README.md)
 - [什么是CICD](./杂记/什么是CICD/README.md)
 - [将PDF转换为Kindle能识别的MOBI格式](./杂记/将PDF转换为Kindle能识别的MOBI格式/README.md)

@@ -579,9 +579,6 @@ data:
 >
 >http://moguit.cn/#/info?blogOid=247
 >
->使用JustAuth集成QQ登录：
->
->http://moguit.cn/#/info?blogOid=437
 
 ```bash
 # 第三方登录
