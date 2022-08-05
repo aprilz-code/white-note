@@ -19,15 +19,19 @@
   - [Queue-API](./Java/Queue-API/README.md)
 - **Java8新特性**
   - [HashMap变化](./校招面试/Java8新特性/1_HashMap变化/README.md)
-  - [Lambda表达式](./校招面试/Java8新特性/2_Lambda表达式/README.md) 
+  - [Lambda表达式](./校招面试/Java8新特性/2_Lambda表达式/README.md)
   - [方法引用和构造器](./校招面试/Java8新特性/3_方法引用和构造器/README.md)
   - [强大的Stream](./校招面试/Java8新特性/4_强大的Stream/README.md)
   - [并行流](./校招面试/Java8新特性/5_并行流/README.md)
   - [Optional容器类](./校招面试/Java8新特性/6_Optional容器类/README.md)
 - **NIO**
-  - [NIO是什么](./校招面试/NIO/NIO是什么/README.md) 
+  - [NIO是什么](./校招面试/NIO/NIO是什么/README.md)
   - [IO到NIO的演变](./校招面试/NIO/NIO的使用案例/README.md)
   - [传送门](http://www.moguit.cn/#/info?blogUid=28d61ec002594fc5a9c441ec8560f3ad)
+
+- **生产排查**
+  - [CPU飙高](./生产排查/CPU飙高/README.md)
+
 - **JVM**
   - [JVM与Java体系结构](JVM/1_内存与垃圾回收篇/1_JVM与Java体系结构/README.md)
   - [类加载子系统](./JVM/1_内存与垃圾回收篇/2_类加载子系统/README.md)

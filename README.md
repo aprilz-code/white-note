@@ -163,9 +163,13 @@
 
 ## NIO
 
-- [NIO是什么](./校招面试/NIO/NIO是什么/README.md) 
+- [NIO是什么](./校招面试/NIO/NIO是什么/README.md)
 - [IO到NIO的演变](./校招面试/NIO/NIO的使用案例/README.md)
 - [IO和NIO的区别](http://www.moguit.cn/#/info?blogUid=28d61ec002594fc5a9c441ec8560f3ad)
+
+## 生产排查
+
+- [CPU飙高](./生产排查/CPU飙高/README.md)
 
 ## JVM
 
