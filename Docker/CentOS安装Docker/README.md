@@ -52,3 +52,5 @@ sudo systemctl daemon-reload
 sudo systemctl restart docker
 
 ```
+
+docker exec 服务id /bin/bash

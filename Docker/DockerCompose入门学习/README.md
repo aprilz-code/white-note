@@ -225,8 +225,9 @@ redis服务使用从Docker Hub注册中心提取的公共redis图像
 在项目目录中，通过运行启动应用程序  `docker-compose up`.
 
 ```bash
-# docker-compose up
-docker-compose -f yml文件 up 指定创建并启动容器使用的yml文件
+# docker-compose up  
+# -f 指定创建并启动容器使用的yml文件   -d 后台运行
+docker-compose -f yml文件 up   -d  
 ```
 
 运行结果如下
