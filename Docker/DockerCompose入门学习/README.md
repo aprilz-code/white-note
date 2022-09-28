@@ -82,8 +82,16 @@ systemctl start docker
 
 然后下载docker-compose
 
+国外
+
 ```bash
 sudo curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+```
+
+国内加速
+
+```bash
+sudo curl -L "https://get.daocloud.io/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 ```
 
 ### 授权
@@ -217,7 +225,8 @@ redis服务使用从Docker Hub注册中心提取的公共redis图像
 在项目目录中，通过运行启动应用程序  `docker-compose up`.
 
 ```bash
-docker-compose up
+# docker-compose up
+docker-compose -f yml文件 up 指定创建并启动容器使用的yml文件
 ```
 
 运行结果如下
