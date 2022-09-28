@@ -104,6 +104,7 @@
   - [Kubernetes容器交付介绍](./K8S/19_Kubernetes容器交付介绍/README.md)
 - **Docker**
   - [DockerCompose入门学习](./Docker/DockerCompose入门学习/README.md)
+  - [CentOS安装Docker](./Docker/CentOS安装Docker/README.md)
   - [Docker操作系统之Alpine](./Docker/Docker操作系统之Alpine/README.md)
   - [Docker容器相关命令](./Docker/Docker容器相关命令/README.md)
   - [Docker图形化工具Portainer介绍与安装](./Docker/Docker图形化工具Portainer介绍与安装/README.md)
