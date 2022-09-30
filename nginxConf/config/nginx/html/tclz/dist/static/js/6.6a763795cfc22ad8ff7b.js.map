@@ -1,0 +1,50 @@
+{
+  "version": 3,
+  "sources": [
+    "webpack:///src/view/Software.vue",
+    "webpack:///./src/view/Software.vue?b351",
+    "webpack:///./src/view/Software.vue"
+  ],
+  "names": [
+    "Software",
+    "name",
+    "data",
+    "softwareList",
+    "path",
+    "mounted",
+    "dist_wow",
+    "init",
+    "view_Software",
+    "render",
+    "_vm",
+    "this",
+    "_h",
+    "$createElement",
+    "_c",
+    "_self",
+    "staticClass",
+    "attrs",
+    "id",
+    "_v",
+    "_l",
+    "item",
+    "index",
+    "key",
+    "to",
+    "_s",
+    "staticRenderFns",
+    "Component",
+    "__webpack_require__",
+    "normalizeComponent",
+    "ssrContext",
+    "__webpack_exports__"
+  ],
+  "mappings": "qHAmBAA,GACAC,KAAA,WACAC,KAFA,WAGA,OACAC,eAEAC,KAAA,sBACAH,KAAA,aAEAG,KAAA,oBACAH,KAAA,cAKAI,QAfA,YAgBA,IAAAC,EAAA,KACAC,SCjCeC,GADEC,OAFjB,WAA0B,IAAAC,EAAAC,KAAaC,EAAAF,EAAAG,eAA0BC,EAAAJ,EAAAK,MAAAD,IAAAF,EAAwB,OAAAE,EAAA,OAAiBE,YAAA,YAAAC,OAA+BC,GAAA,cAAiBJ,EAAA,OAAYE,YAAA,QAAkBF,EAAA,OAAYE,YAAA,qBAAAC,OAAwCC,GAAA,UAAaJ,EAAA,MAAWE,YAAA,oCAA8CF,EAAA,KAAAJ,EAAAS,GAAA,UAAAT,EAAAS,GAAA,KAAAT,EAAAU,GAAAV,EAAA,sBAAAW,EAAAC,GAAsF,OAAAR,EAAA,MAAgBS,IAAAD,IAAUR,EAAA,eAAoBG,OAAOO,GAAAH,EAAAjB,QAAgBM,EAAAS,GAAAT,EAAAe,GAAAJ,EAAApB,UAAA,MAAkC,KAAAS,EAAAS,GAAA,KAAAL,EAAA,OAA8BE,YAAA,wCAAAC,OAA2DC,GAAA,WAAcJ,EAAA,wBAErkBY,oBCCjB,IAcAC,EAdyBC,EAAQ,OAcjCC,CACE7B,EACAQ,GATF,EAVA,SAAAsB,GACEF,EAAQ,SAaV,kBAEA,MAUeG,EAAA,QAAAJ,EAAiB",
+  "file": "static/js/6.6a763795cfc22ad8ff7b.js",
+  "sourcesContent": [
+    "<template>\n    <div id=\"Software\" class=\"container\">\n        <div class=\"row\">\n            <div id=\"left\" class=\"col-md-4 col-xs-12\">\n                <ul class=\"left-container wow bounceInLeft\">\n                    <p>软件产品</p>\n                    <li v-for=\"(item,index) in softwareList\" :key=\"index\">\n                        <router-link :to=item.path>{{item.name}}</router-link>\n                    </li>\n                </ul>\n            </div>\n            <div id=\"right\" class=\"col-md-8 col-xs-12  wow bounceInRight\">\n                <router-view></router-view>\n            </div>\n        </div>\n    </div>\n</template>\n<script>\nimport { WOW } from \"wowjs\";\nexport default {\n    name: 'Software',\n    data(){\n        return{\n            softwareList: [\n                {\n                    path: '/software/smartTown',\n                    name: '智能小镇管理系统'\n                },{\n                    path: '/software/bigData',\n                    name: '大数据管理系统'\n                }\n            ]\n        }\n    },\n    mounted() {\n        var wow = new WOW();\n        wow.init();\n    },\n}\n</script>\n<style scoped>\n#left{\n    margin: 50px 0;\n}\n.left-container{\n    width: 60%;\n    margin: 0 auto;\n    border: 1px solid #474747;\n    border-radius: 5px;\n}\n.left-container>p{\n    text-align: center;\n    line-height: 45px;\n    padding: 0;\n    margin: 0;\n    background: #474747;\n    color: #fff;\n    font-size: 18px;\n    font-weight: bold;\n}\n.left-container>li {\n  text-align: center;\n  height: 38px;\n  line-height: 38px;\n  margin: 0;\n  border-top: 1px solid #474747;\n}\n.left-container>li>a{\n    text-decoration: none;\n}\n.left-container>li:hover{\n    background: #928989;\n}\n#right{\n    padding: 50px 0;\n}\n@media screen and (max-width: 768px){\n    #right{\n        padding: 15px;\n    }\n}\n</style>\n\n\n\n\n// WEBPACK FOOTER //\n// src/view/Software.vue",
+    "var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:\"container\",attrs:{\"id\":\"Software\"}},[_c('div',{staticClass:\"row\"},[_c('div',{staticClass:\"col-md-4 col-xs-12\",attrs:{\"id\":\"left\"}},[_c('ul',{staticClass:\"left-container wow bounceInLeft\"},[_c('p',[_vm._v(\"软件产品\")]),_vm._v(\" \"),_vm._l((_vm.softwareList),function(item,index){return _c('li',{key:index},[_c('router-link',{attrs:{\"to\":item.path}},[_vm._v(_vm._s(item.name))])],1)})],2)]),_vm._v(\" \"),_c('div',{staticClass:\"col-md-8 col-xs-12  wow bounceInRight\",attrs:{\"id\":\"right\"}},[_c('router-view')],1)])])}\nvar staticRenderFns = []\nvar esExports = { render: render, staticRenderFns: staticRenderFns }\nexport default esExports\n\n\n//////////////////\n// WEBPACK FOOTER\n// ./node_modules/vue-loader/lib/template-compiler?{\"id\":\"data-v-7e95efb0\",\"hasScoped\":true,\"transformToRequire\":{\"video\":[\"src\",\"poster\"],\"source\":\"src\",\"img\":\"src\",\"image\":\"xlink:href\"},\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./src/view/Software.vue\n// module id = null\n// module chunks = ",
+    "function injectStyle (ssrContext) {\n  require(\"!!../../node_modules/extract-text-webpack-plugin/dist/loader.js?{\\\"omit\\\":1,\\\"remove\\\":true,\\\"publicPath\\\":\\\"../../\\\"}!vue-style-loader!css-loader?{\\\"sourceMap\\\":true}!../../node_modules/vue-loader/lib/style-compiler/index?{\\\"vue\\\":true,\\\"id\\\":\\\"data-v-7e95efb0\\\",\\\"scoped\\\":true,\\\"hasInlineConfig\\\":false}!../../node_modules/vue-loader/lib/selector?type=styles&index=0!./Software.vue\")\n}\nvar normalizeComponent = require(\"!../../node_modules/vue-loader/lib/component-normalizer\")\n/* script */\nexport * from \"!!babel-loader!../../node_modules/vue-loader/lib/selector?type=script&index=0!./Software.vue\"\nimport __vue_script__ from \"!!babel-loader!../../node_modules/vue-loader/lib/selector?type=script&index=0!./Software.vue\"\n/* template */\nimport __vue_template__ from \"!!../../node_modules/vue-loader/lib/template-compiler/index?{\\\"id\\\":\\\"data-v-7e95efb0\\\",\\\"hasScoped\\\":true,\\\"transformToRequire\\\":{\\\"video\\\":[\\\"src\\\",\\\"poster\\\"],\\\"source\\\":\\\"src\\\",\\\"img\\\":\\\"src\\\",\\\"image\\\":\\\"xlink:href\\\"},\\\"buble\\\":{\\\"transforms\\\":{}}}!../../node_modules/vue-loader/lib/selector?type=template&index=0!./Software.vue\"\n/* template functional */\nvar __vue_template_functional__ = false\n/* styles */\nvar __vue_styles__ = injectStyle\n/* scopeId */\nvar __vue_scopeId__ = \"data-v-7e95efb0\"\n/* moduleIdentifier (server only) */\nvar __vue_module_identifier__ = null\nvar Component = normalizeComponent(\n  __vue_script__,\n  __vue_template__,\n  __vue_template_functional__,\n  __vue_styles__,\n  __vue_scopeId__,\n  __vue_module_identifier__\n)\n\nexport default Component.exports\n\n\n\n//////////////////\n// WEBPACK FOOTER\n// ./src/view/Software.vue\n// module id = null\n// module chunks = "
+  ],
+  "sourceRoot": ""
+}

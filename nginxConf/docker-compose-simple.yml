@@ -1,0 +1,63 @@
+version: '3'
+services:
+  elasticsearch:
+    image: elasticsearch:7.3.0
+    restart: always
+    container_name: elasticsearch
+    volumes:
+      - ./volumes/data/es7/logs:/usr/share/es7/logs:rw
+      - ./volumes/data/es7/data:/usr/share/es7/data:rw
+      - ./config/ik:/usr/share/elasticsearch/plugins/ik
+      #      - "./elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml"
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    environment:
+      cluster.name: elasticsearch
+      discovery.type: single-node
+      ES_JAVA_OPTS: "-Xms512m -Xmx1g"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+    networks:
+      - stack
+    ulimits:
+      nofile:
+        soft: 65535
+        hard: 65535
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.3.0
+    restart: always
+    container_name: kibana
+    ports:
+      - 5601:5601
+        # volumes:
+      #    - "./config/kibana.yml:/usr/share/kibana/config/kibana.yml"
+    networks:
+      - stack
+    depends_on: [ 'elasticsearch' ]
+
+
+  logstash:
+    image: logstash:7.3.0
+    restart: always
+    container_name: logstash
+    volumes:
+      - ./config/logstash-springboot.conf:/usr/share/logstash/pipeline/logstash.conf #挂载logstash的配置文件
+    networks:
+      - stack
+    depends_on: [ 'elasticsearch' ]
+    ports:
+      - 4560:4560
+
+
+
+networks:
+  rocketmq:
+    driver: bridge
+  stack:
+    driver: bridge
+
+

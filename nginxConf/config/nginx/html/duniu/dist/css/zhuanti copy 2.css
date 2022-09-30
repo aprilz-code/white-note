@@ -1,0 +1,1396 @@
+@charset "gb2312";
+@import url(css.css);
+@import url(animate_zhuanti.css);
+@import url(proscrol.css);
+/*ר��*/
+/* @media (max-width:767px) {
+    .neiye{
+        width: 767px;
+    }
+}
+@media (min-width:1200px) {
+    .neiye{
+        width: 1200px;
+    }
+} */
+.service-wrap1 {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url(../images/zhanti_bg1.jpg);
+    color: #fff;
+}
+
+.service-wrap1 .imgs {
+    float: left;
+    width: 648px;
+    height: 519px;
+    background: url(../images/zhanti1_pic1.png) right top no-repeat;
+    background-size: auto 100%;
+    position: relative;
+}
+
+.service-wrap1 .imgs img {
+    bottom: 3px;
+    position: absolute;
+    left: 0;
+    width: 221px;
+}
+
+.service-wrap1.active img.bounceInLeft {
+    animation-delay: 0.6s;
+}
+
+.service-wrap1 .txts {
+    float: right;
+    width: 720px;
+    margin-top: 39px;
+}
+
+.service-wrap1 .txts h2 {
+    font-size: 72px;
+    font-weight: normal;
+    height: 175px;
+    background: url(../images/zhanti_ico2.png) left bottom no-repeat;
+    opacity: 0;
+    filter: Alpha(opacity=0);
+}
+
+.service-wrap1 .txts h2 span {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+}
+
+.service-wrap1 .txts .p {
+    line-height: 30px;
+    font-size: 20px;
+    overflow: hidden;
+    margin-top: 44px;
+    max-width: 645px;
+    color: #fff;
+    opacity: 0;
+    filter: Alpha(opacity=0);
+}
+
+.service-wrap1 .txts .a {
+    overflow: hidden;
+    margin-top: 54px;
+}
+
+.service-wrap1 .txts .a a {
+    float: left;
+    width: 188px;
+    border-radius: 26px;
+    border: 1px solid #fff;
+    text-align: left;
+    text-indent: 30px;
+    background: url(../images/zhanti_ico1.png) 138px center no-repeat;
+    font-size: 16px;
+    height: 46px;
+    line-height: 46px;
+    color: #fff;
+    margin-right: 18px;
+    position: relative;
+}
+
+.service-wrap1 .txts .a a label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+.service-wrap1 .txts .a a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0%;
+    top: 0px;
+    height: 46px;
+    width: 0;
+    background: url(../images/zhanti_ico1_on.png) #fff 138px center no-repeat;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+    border-radius: 24px;
+}
+
+.service-wrap1 .txts .a a:hover:before {
+    width: 100%;
+}
+
+.service-wrap1 .txts .a a:hover label {
+    color: #027ffd;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+
+.service-wrap1.active .txts .p.fadeInUp {
+    animation-delay: 0.5s;
+}
+
+.service-wrap1.active .txts .a.fadeInUp {
+    animation-delay: 0.8s;
+}
+
+.service-wrap2 {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url(../images/zhanti_bg2.jpg);
+    color: #000;
+}
+
+.service-wrap2 .txts {
+    float: left;
+    width: 646px;
+    margin-top: 39px;
+    margin-bottom: 39px;
+}
+
+.service-wrap2 .txts h2 {
+    font-size: 72px;
+    font-weight: normal;
+    height: 175px;
+    background: url(../images/zhuanti2_ico1.png) left bottom no-repeat;
+    opacity: 0;
+    filter: Alpha(opacity=0);
+}
+
+.service-wrap2 .txts h2 span {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+    color: #333;
+}
+
+.service-wrap2 .txts .p {
+    line-height: 30px;
+    font-size: 20px;
+    overflow: hidden;
+    margin-top: 44px;
+    max-width: 645px;
+    color: #666;
+    opacity: 0;
+    filter: Alpha(opacity=0);
+}
+
+.service-wrap2 .txts .a {
+    overflow: hidden;
+    margin-top: 54px;
+}
+
+.service-wrap2 .txts .a a {
+    float: left;
+    width: 188px;
+    border-radius: 26px;
+    border: 1px solid #000;
+    text-align: left;
+    text-indent: 30px;
+    background: url(../images/zhanti_ico3.png) 138px center no-repeat;
+    font-size: 16px;
+    height: 46px;
+    line-height: 46px;
+    color: #000;
+    margin-right: 18px;
+    position: relative;
+}
+
+.service-wrap2 .txts .a a label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+.service-wrap2 .txts .a a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0%;
+    top: 0px;
+    height: 46px;
+    width: 0;
+    background: url(../images/zhanti_ico1.png) #f67524 138px center no-repeat;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+    border-radius: 24px;
+}
+
+.service-wrap2 .txts .a a:hover {
+    border: 1px solid #f67524;
+}
+
+.service-wrap2 .txts .a a:hover:before {
+    width: 100%;
+}
+
+.service-wrap2 .txts .a a:hover label {
+    color: #fff;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+
+.service-wrap2.active .txts .p.fadeInUp {
+    animation-delay: 0.5s;
+}
+
+.service-wrap2.active .txts .a.fadeInUp {
+    animation-delay: 0.8s;
+}
+
+.service-wrap2 .imgs1 {
+    position: absolute;
+    height: 49.7%;
+    right: 14%;
+    top: 7%;
+    opacity: 0;
+}
+
+.service-wrap2 .imgs2 {
+    position: absolute;
+    height: 47.6%;
+    right: 19%;
+    top: 51%;
+    opacity: 0;
+}
+
+.service-wrap2 .imgs3 {
+    position: absolute;
+    height: 49.6%;
+    right: 0%;
+    top: 24.3%;
+    opacity: 0;
+}
+
+.service-wrap2.active .imgs1, .service-wrap2.active .imgs2, .service-wrap2.active .imgs3 {
+    opacity: 1;
+}
+
+.service-wrap2.active .imgs1.bounceInRight {
+    animation-delay: 0.5s;
+}
+
+.service-wrap2.active .imgs3.bounceInRight {
+    animation-delay: 0.8s;
+}
+
+.service-wrap3 {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url(../images/zhanti_bg3.jpg);
+    color: #fff;
+}
+
+.service-wrap3 .imgs {
+    float: left;
+    width: 676px;
+    height: 396px;
+    background: url(../images/zhuanti3_pic1.png) no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: 57px;
+    margin-bottom: 47px;
+}
+
+.service-wrap3 .imgs img {
+    display: block;
+    width: 514px;
+    height: 322px;
+    margin: 0 auto;
+    margin-top: 24px;
+}
+
+.service-wrap3 .imgs i {
+    display: block;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.service-wrap3 .imgs i.bgs1 {
+    width: 150px;
+    height: 150px;
+    right: 0;
+    top: -57px;
+    background-image: url(../images/zhuanti3_ico1.png);
+}
+
+.service-wrap3 .imgs i.bgs2 {
+    width: 155px;
+    height: 155px;
+    left: -3px;
+    top: 62px;
+    background-image: url(../images/zhuanti3_ico2.png);
+}
+
+.service-wrap3 .imgs i.bgs3 {
+    width: 181px;
+    height: 181px;
+    right: -16px;
+    bottom: -47px;
+    background-image: url(../images/zhuanti3_ico3.png);
+}
+
+.service-wrap3.active .imgs i.bgs1.flipInY {
+    animation-delay: 0.5s;
+}
+
+.service-wrap3.active .imgs i.bgs2.flipInY {
+    animation-delay: 0.8s;
+}
+
+.service-wrap3.active .imgs i.bgs3.flipInY {
+    animation-delay: 1.1s;
+}
+
+.service-wrap3 .txts {
+    float: right;
+    width: 660px;
+    margin-top: 43px;
+}
+
+.service-wrap3 .txts h2 {
+    font-size: 72px;
+    font-weight: normal;
+    height: 175px;
+    background: url(../images/zhanti_ico2.png) left bottom no-repeat;
+    opacity: 0;
+    filter: Alpha(opacity=0);
+}
+
+.service-wrap3 .txts h2 span {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+}
+
+.service-wrap3 .txts .p {
+    line-height: 30px;
+    font-size: 20px;
+    overflow: hidden;
+    margin-top: 44px;
+    max-width: 645px;
+    color: #fff;
+    opacity: 0;
+    filter: Alpha(opacity=0);
+}
+
+.service-wrap3 .txts .a {
+    overflow: hidden;
+    margin-top: 54px;
+}
+
+.service-wrap3 .txts .a a {
+    float: left;
+    width: 188px;
+    border-radius: 26px;
+    border: 1px solid #fff;
+    text-align: left;
+    text-indent: 30px;
+    background: url(../images/zhanti_ico1.png) 138px center no-repeat;
+    font-size: 16px;
+    height: 46px;
+    line-height: 46px;
+    color: #fff;
+    margin-right: 18px;
+    position: relative;
+}
+
+.service-wrap3 .txts .a a label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+.service-wrap3 .txts .a a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0%;
+    top: 0px;
+    height: 46px;
+    width: 0;
+    background: url(../images/zhuanti3_ico4.png) #fff 138px center no-repeat;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+    border-radius: 24px;
+}
+
+.service-wrap3 .txts .a a:hover:before {
+    width: 100%;
+}
+
+.service-wrap3 .txts .a a:hover label {
+    color: #55baad;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+
+.service-wrap3.active .txts .p.fadeInUp {
+    animation-delay: 0.5s;
+}
+
+.service-wrap3.active .txts .a.fadeInUp {
+    animation-delay: 0.8s;
+}
+
+.service-wrap4 {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url(../images/zhanti_bg4.jpg);
+    color: #fff;
+}
+
+.service-wrap4.active img.bounceInLeft {
+    animation-delay: 0.6s;
+}
+
+.service-wrap4 .txts {
+    float: left;
+    width: 650px;
+    margin-top: 39px;
+    margin-bottom: 39px;
+}
+
+.service-wrap4 .txts h2 {
+    font-size: 72px;
+    font-weight: normal;
+    height: 175px;
+    background: url(../images/zhuanti4_ico1.png) left bottom no-repeat;
+    opacity: 0;
+    filter: Alpha(opacity=0);
+}
+
+.service-wrap4 .txts h2 span {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+}
+
+.service-wrap4 .txts .p {
+    line-height: 30px;
+    font-size: 20px;
+    overflow: hidden;
+    margin-top: 44px;
+    max-width: 645px;
+    color: #fff;
+    opacity: 0;
+    filter: Alpha(opacity=0);
+}
+
+.service-wrap4 .txts .a {
+    overflow: hidden;
+    margin-top: 54px;
+}
+
+.service-wrap4 .txts .a a {
+    float: left;
+    width: 188px;
+    border-radius: 26px;
+    border: 1px solid #fff;
+    text-align: left;
+    text-indent: 30px;
+    background: url(../images/zhanti_ico1.png) 138px center no-repeat;
+    font-size: 16px;
+    height: 46px;
+    line-height: 46px;
+    color: #fff;
+    margin-right: 18px;
+    position: relative;
+}
+
+.service-wrap4 .txts .a a label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+.service-wrap4 .txts .a a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0%;
+    top: 0px;
+    height: 46px;
+    width: 0;
+    background: url(../images/zhanti_ico3.png) #fff 138px center no-repeat;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+    border-radius: 24px;
+}
+
+.service-wrap4 .txts .a a:hover:before {
+    width: 100%;
+}
+
+.service-wrap4 .txts .a a:hover label {
+    color: #000000;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+
+.service-wrap4.active .txts .p.fadeInUp {
+    animation-delay: 0.5s;
+}
+
+.service-wrap4.active .txts .a.fadeInUp {
+    animation-delay: 0.8s;
+}
+
+.service-wrap4 .imgs {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+
+.service-wrap4 .img1 {
+    top: 4.4%;
+    position: absolute;
+    left: -22px;
+    width: 467px;
+    opacity: 0;
+}
+
+.service-wrap4 .img2 {
+    top: 25.5%;
+    position: absolute;
+    left: 168px;
+    width: 639px;
+    opacity: 0;
+}
+
+.service-wrap4.active .img1, .service-wrap4.active .img2 {
+    opacity: 1;
+}
+
+.service-wrap5 {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url(../images/zhanti_bg5.jpg);
+    color: #fff;
+}
+
+.service-wrap5 .imgs {
+    float: left;
+    width: 648px;
+    height: 540px;
+    background: url(../images/zhuanti5_pic1.png) no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.service-wrap5 .imgs img {
+    display: block;
+    width: 596px;
+    height: 336px;
+    margin: 0 auto;
+    margin-top: 26px;
+}
+
+.service-wrap5 .txts {
+    float: right;
+    width: 660px;
+    margin-top: 49px;
+}
+
+.service-wrap5 .txts h2 {
+    font-size: 72px;
+    font-weight: normal;
+    height: 175px;
+    background: url(../images/zhanti_ico2.png) left bottom no-repeat;
+    opacity: 0;
+    filter: Alpha(opacity=0);
+}
+
+.service-wrap5 .txts h2 span {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+}
+
+.service-wrap5 .txts .p {
+    line-height: 30px;
+    font-size: 20px;
+    overflow: hidden;
+    margin-top: 44px;
+    max-width: 645px;
+    color: #fff;
+    opacity: 0;
+    filter: Alpha(opacity=0);
+}
+
+.service-wrap5 .txts .a {
+    overflow: hidden;
+    margin-top: 54px;
+}
+
+.service-wrap5 .txts .a a {
+    float: left;
+    width: 188px;
+    border-radius: 26px;
+    border: 1px solid #fff;
+    text-align: left;
+    text-indent: 30px;
+    background: url(../images/zhanti_ico1.png) 138px center no-repeat;
+    font-size: 16px;
+    height: 46px;
+    line-height: 46px;
+    color: #fff;
+    margin-right: 18px;
+    position: relative;
+}
+
+.service-wrap5 .txts .a a label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+.service-wrap5 .txts .a a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0%;
+    top: 0px;
+    height: 46px;
+    width: 0;
+    background: url(../images/zhuanti5_ico1.png) #fff 138px center no-repeat;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+    border-radius: 24px;
+}
+
+.service-wrap5 .txts .a a:hover:before {
+    width: 100%;
+}
+
+.service-wrap5 .txts .a a:hover label {
+    color: #f67524;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+
+.service-wrap5.active .txts .p.fadeInUp {
+    animation-delay: 0.5s;
+}
+
+.service-wrap5.active .txts .a.fadeInUp {
+    animation-delay: 0.8s;
+}
+
+.service-wrap6 {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url(../images/zhanti_bg6.jpg);
+    color: #000;
+}
+
+.service-wrap6 .txts {
+    float: left;
+    width: 646px;
+    margin-top: 39px;
+    margin-bottom: 39px;
+}
+
+.service-wrap6 .txts h2 {
+    font-size: 72px;
+    font-weight: normal;
+    height: 175px;
+    background: url(../images/zhuanti2_ico1.png) left bottom no-repeat;
+}
+
+.service-wrap6 .txts h2 span {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+    color: #333;
+}
+
+.service-wrap6 .txts .p {
+    line-height: 30px;
+    font-size: 20px;
+    overflow: hidden;
+    margin-top: 44px;
+    max-width: 645px;
+    color: #666;
+}
+
+.service-wrap6 .txts .a {
+    overflow: hidden;
+    margin-top: 54px;
+}
+
+.service-wrap6 .txts .a a {
+    float: left;
+    width: 188px;
+    border-radius: 26px;
+    border: 1px solid #000;
+    text-align: left;
+    text-indent: 30px;
+    background: url(../images/zhanti_ico3.png) 138px center no-repeat;
+    font-size: 16px;
+    height: 46px;
+    line-height: 46px;
+    color: #000;
+    margin-right: 18px;
+    position: relative;
+}
+
+.service-wrap6 .txts .a a label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+.service-wrap6 .txts .a a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0%;
+    top: 0px;
+    height: 46px;
+    width: 0;
+    background: url(../images/zhanti_ico1.png) #f67524 138px center no-repeat;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+    border-radius: 24px;
+}
+
+.service-wrap6 .txts .a a:hover {
+    border: 1px solid #f67524;
+}
+
+.service-wrap6 .txts .a a:hover:before {
+    width: 100%;
+}
+
+.service-wrap6 .txts .a a:hover label {
+    color: #fff;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+
+.service-wrap6.active .txts .p.fadeInUp {
+    animation-delay: 0.5s;
+}
+
+.service-wrap6.active .txts .a.fadeInUp {
+    animation-delay: 0.8s;
+}
+
+.service-wrap6 .imgs {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+
+.service-wrap6 .imgs1 {
+    position: absolute;
+    width: 736px;
+    max-width: 100%;
+    left: 0;
+    top: 18.6%;
+    opacity: 0;
+}
+
+.service-wrap6.active .imgs1 {
+    opacity: 1;
+}
+
+.service-wrap7 {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url(../images/zhanti_bg7.jpg);
+    color: #fff;
+}
+
+.service-wrap7 .imgs {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.service-wrap7 .imgs img {
+    width: 856px;
+    height: 525px;
+    position: absolute;
+    right: -100px;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.service-wrap7 .txts {
+    float: right;
+    width: 660px;
+    margin-top: 39px;
+    margin-bottom: 39px;
+}
+
+.service-wrap7 .txts h2 {
+    font-size: 72px;
+    font-weight: normal;
+    height: 175px;
+    background: url(../images/zhanti_ico2.png) left bottom no-repeat;
+}
+
+.service-wrap7 .txts h2 span {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+}
+
+.service-wrap7 .txts .p {
+    line-height: 30px;
+    font-size: 20px;
+    overflow: hidden;
+    margin-top: 44px;
+    max-width: 645px;
+    color: #fff;
+}
+
+.service-wrap7 .txts .a {
+    overflow: hidden;
+    margin-top: 54px;
+}
+
+.service-wrap7 .txts .a a {
+    float: left;
+    width: 188px;
+    border-radius: 26px;
+    border: 1px solid #fff;
+    text-align: left;
+    text-indent: 30px;
+    background: url(../images/zhanti_ico1.png) 138px center no-repeat;
+    font-size: 16px;
+    height: 46px;
+    line-height: 46px;
+    color: #fff;
+    margin-right: 18px;
+    position: relative;
+}
+
+.service-wrap7 .txts .a a label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+.service-wrap7 .txts .a a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0%;
+    top: 0px;
+    height: 46px;
+    width: 0;
+    background: url(../images/zhanti_ico3.png) #fff 138px center no-repeat;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+    border-radius: 24px;
+}
+
+.service-wrap7 .txts .a a:hover:before {
+    width: 100%;
+}
+
+.service-wrap7 .txts .a a:hover label {
+    color: #000;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+
+.service-wrap7.active .txts .p.fadeInUp {
+    animation-delay: 0.5s;
+}
+
+.service-wrap7.active .txts .a.fadeInUp {
+    animation-delay: 0.8s;
+}
+
+#fp-nav ul li, .fp-slidesNav ul li {
+    width: auto;
+    height: 50px;
+    margin: 0;
+    margin-top: 1px;
+    margin-bottom: 2px;
+}
+
+#fp-nav.right {
+    right: auto;
+    left: 0;
+}
+
+#fp-nav ul li a {
+    background: rgba(0, 0, 0, 0.5);
+    width: 50px;
+    transition: all 0.3s;
+}
+
+#fp-nav ul li a.active {
+    background: rgba(246, 117, 36, 1);
+}
+
+#fp-nav ul li a:hover {
+    background: rgba(246, 117, 36, 1);
+    width: 180px;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    width: 50px;
+    height: 50px;
+    border-radius: 0%;
+    margin: 0;
+    left: 0px;
+    top: 0;
+    transition: all 0.3s;
+}
+
+#fp-nav ul li a label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    text-align: right;
+    font-size: 14px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+#fp-nav ul li a:hover label {
+    width: 130px;
+}
+
+#fp-nav ul li a:hover span {
+    left: 130px;
+}
+
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    border-radius: 0;
+}
+
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span {
+    height: 50px;
+    width: 50px;
+    margin: 0;
+    border-radius: 0%;
+}
+
+#fp-nav ul li:hover a span, .fp-slidesNav ul li:hover a span {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+}
+
+#fp-nav ul li:last-child {
+    display: none;
+}
+
+#fp-nav ul li:nth-child(1) span {
+    background: url(../images/tool_bg1.png) center center no-repeat;
+}
+
+#fp-nav ul li:nth-child(2) span {
+    background: url(../images/tool_bg2.png) center center no-repeat;
+}
+
+#fp-nav ul li:nth-child(3) span {
+    background: url(../images/tool_bg3.png) center center no-repeat;
+}
+
+#fp-nav ul li:nth-child(4) span {
+    background: url(../images/tool_bg4.png) center center no-repeat;
+}
+
+#fp-nav ul li:nth-child(5) span {
+    background: url(../images/tool_bg5.png) center center no-repeat;
+}
+
+#fp-nav ul li:nth-child(6) span {
+    background: url(../images/tool_bg6.png) center center no-repeat;
+}
+
+#fp-nav ul li:nth-child(7) span {
+    background: url(../images/tool_bg7.png) center center no-repeat;
+}
+
+
+@media screen and (max-width: 1440px) {
+    .service-wrap1 .imgs {
+        width: 539px;
+        height: 432px;
+    }
+
+    .service-wrap1 .imgs img {
+        width: 184px;
+    }
+
+    .service-wrap1 .txts {
+        width: 599px;
+        margin-top: 32px;
+    }
+
+    .service-wrap1 .txts h2 {
+        font-size: 60px;
+        height: 146px;
+    }
+
+    .service-wrap1 .txts h2 span {
+        height: 42px;
+        line-height: 42px;
+        font-size: 25px;
+    }
+
+    .service-wrap1 .txts .p {
+        line-height: 25px;
+        font-size: 17px;
+        margin-top: 37px;
+        max-width: 537px;
+    }
+
+    .service-wrap1 .txts .a a {
+        font-size: 15px;
+        width: 156px;
+        background-position: 115px center;
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .service-wrap1 .txts .a a:before {
+        background-position: 115px center;
+        height: 38px;
+    }
+
+    .service-wrap2 .txts {
+        width: 599px;
+        margin-top: 32px;
+    }
+
+    .service-wrap2 .txts h2 {
+        font-size: 60px;
+        height: 146px;
+    }
+
+    .service-wrap2 .txts h2 span {
+        height: 42px;
+        line-height: 42px;
+        font-size: 25px;
+    }
+
+    .service-wrap2 .txts .p {
+        line-height: 25px;
+        font-size: 17px;
+        margin-top: 37px;
+        max-width: 537px;
+    }
+
+    .service-wrap2 .txts .a a {
+        font-size: 15px;
+        width: 156px;
+        background-position: 115px center;
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .service-wrap2 .txts .a a:before {
+        background-position: 115px center;
+        height: 38px;
+    }
+
+    .service-wrap3 .imgs {
+        width: 563px;
+        height: 323px;
+    }
+
+    .service-wrap3 .imgs img {
+        width: 428px;
+        height: 268px;
+        margin-top: 20px;
+    }
+
+    .service-wrap3 .imgs i.bgs1 {
+        width: 125px;
+        height: 125px;
+        top: -48px;
+    }
+
+    .service-wrap3 .imgs i.bgs2 {
+        width: 129px;
+        height: 129px;
+        left: -2.5px;
+        top: 52px;
+    }
+
+    .service-wrap3 .imgs i.bgs3 {
+        width: 150px;
+        height: 150px;
+        right: -13px;
+        bottom: -39px;
+    }
+
+    .service-wrap3 .txts {
+        width: 549px;
+    }
+
+    .service-wrap3 .txts h2 {
+        font-size: 60px;
+        height: 146px;
+    }
+
+    .service-wrap3 .txts h2 span {
+        height: 42px;
+        line-height: 42px;
+        font-size: 25px;
+    }
+
+    .service-wrap3 .txts .p {
+        line-height: 25px;
+        font-size: 17px;
+        margin-top: 37px;
+        max-width: 537px;
+    }
+
+    .service-wrap3 .txts .a a {
+        font-size: 15px;
+        width: 156px;
+        background-position: 115px center;
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .service-wrap3 .txts .a a:before {
+        background-position: 115px center;
+        height: 38px;
+    }
+
+    .service-wrap4 .txts {
+        width: 542px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    .service-wrap4 .txts h2 {
+        font-size: 60px;
+        height: 146px;
+    }
+
+    .service-wrap4 .txts h2 span {
+        height: 42px;
+        line-height: 42px;
+        font-size: 25px;
+    }
+
+    .service-wrap4 .txts .p {
+        line-height: 25px;
+        font-size: 17px;
+        margin-top: 37px;
+        max-width: 537px;
+    }
+
+    .service-wrap4 .txts .a a {
+        font-size: 15px;
+        width: 156px;
+        background-position: 115px center;
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .service-wrap4 .txts .a a:before {
+        background-position: 115px center;
+        height: 38px;
+    }
+
+    .service-wrap4 .img1 {
+        top: 4.4%;
+        position: absolute;
+        left: -18px;
+        width: 389px;
+        opacity: 0;
+    }
+
+    .service-wrap4 .img2 {
+        top: 25.5%;
+        position: absolute;
+        left: 140px;
+        width: 532px;
+        opacity: 0;
+    }
+
+    .service-wrap5 .imgs {
+        width: 540px;
+        height: 450px;
+    }
+
+    .service-wrap5 .imgs img {
+        display: block;
+        width: 496px;
+        height: 280px;
+        margin-top: 22px;
+    }
+
+    .service-wrap5 .txts {
+        width: 549px;
+    }
+
+    .service-wrap5 .txts h2 {
+        font-size: 60px;
+        height: 146px;
+    }
+
+    .service-wrap5 .txts h2 span {
+        height: 42px;
+        line-height: 42px;
+        font-size: 25px;
+    }
+
+    .service-wrap5 .txts .p {
+        line-height: 25px;
+        font-size: 17px;
+        margin-top: 37px;
+        max-width: 537px;
+    }
+
+    .service-wrap5 .txts .a a {
+        font-size: 15px;
+        width: 156px;
+        background-position: 115px center;
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .service-wrap5 .txts .a a:before {
+        background-position: 115px center;
+        height: 38px;
+    }
+
+    .service-wrap6 .txts {
+        width: 599px;
+        margin-top: 32px;
+    }
+
+    .service-wrap6 .txts h2 {
+        font-size: 60px;
+        height: 146px;
+    }
+
+    .service-wrap6 .txts h2 span {
+        height: 42px;
+        line-height: 42px;
+        font-size: 25px;
+    }
+
+    .service-wrap6 .txts .p {
+        line-height: 25px;
+        font-size: 17px;
+        margin-top: 37px;
+        max-width: 537px;
+    }
+
+    .service-wrap6 .txts .a a {
+        font-size: 15px;
+        width: 156px;
+        background-position: 115px center;
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .service-wrap6 .txts .a a:before {
+        background-position: 115px center;
+        height: 38px;
+    }
+
+    .service-wrap7 .imgs img {
+        display: block;
+        width: 713px;
+        height: 437px;
+        margin-top: 22px;
+    }
+
+    .service-wrap7 .txts {
+        width: 549px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    .service-wrap7 .txts h2 {
+        font-size: 60px;
+        height: 146px;
+    }
+
+    .service-wrap7 .txts h2 span {
+        height: 42px;
+        line-height: 42px;
+        font-size: 25px;
+    }
+
+    .service-wrap7 .txts .p {
+        line-height: 25px;
+        font-size: 17px;
+        margin-top: 37px;
+        max-width: 537px;
+    }
+
+    .service-wrap7 .txts .a a {
+        font-size: 15px;
+        width: 156px;
+        background-position: 115px center;
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .service-wrap7 .txts .a a:before {
+        background-position: 115px center;
+        height: 38px;
+    }
+}

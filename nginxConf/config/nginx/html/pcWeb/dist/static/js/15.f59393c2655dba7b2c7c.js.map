@@ -1,0 +1,21 @@
+{
+  "version": 3,
+  "sources": [
+    "webpack:///./src/views/life.vue"
+  ],
+  "names": [
+    "Object",
+    "defineProperty",
+    "__webpack_exports__",
+    "value",
+    "Component",
+    "__webpack_require__",
+    "normalizeComponent"
+  ],
+  "mappings": "uDAAAA,OAAAC,eAAAC,EAAA,cAAAC,OAAA,QAaAC,EAbAC,EAAA,OAaAC,CAXA,KAEA,MAEA,EAEA,KAEA,KAEA,MAUAJ,EAAA,QAAAE,EAAA",
+  "file": "static/js/15.f59393c2655dba7b2c7c.js",
+  "sourcesContent": [
+    "var normalizeComponent = require(\"!../../node_modules/vue-loader/lib/component-normalizer\")\n/* script */\nvar __vue_script__ = null\n/* template */\nvar __vue_template__ = null\n/* template functional */\nvar __vue_template_functional__ = false\n/* styles */\nvar __vue_styles__ = null\n/* scopeId */\nvar __vue_scopeId__ = null\n/* moduleIdentifier (server only) */\nvar __vue_module_identifier__ = null\nvar Component = normalizeComponent(\n  __vue_script__,\n  __vue_template__,\n  __vue_template_functional__,\n  __vue_styles__,\n  __vue_scopeId__,\n  __vue_module_identifier__\n)\n\nexport default Component.exports\n\n\n\n//////////////////\n// WEBPACK FOOTER\n// ./src/views/life.vue\n// module id = 9Wms\n// module chunks = 15"
+  ],
+  "sourceRoot": ""
+}

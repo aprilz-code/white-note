@@ -1,0 +1,430 @@
+/*首页调用201806*/
+.owl-carousel .owl-wrapper:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+/* display none until init*/
+.owl-carousel {
+    display: none;
+    position: relative;
+    width: 100%;
+    -ms-touch-action: pan-y;
+}
+
+.owl-carousel .owl-wrapper {
+    display: none;
+    position: relative;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+}
+
+.owl-carousel .owl-wrapper-outer {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.owl-carousel .owl-wrapper-outer.autoHeight {
+    -webkit-transition: height 500ms ease-in-out;
+    -moz-transition: height 500ms ease-in-out;
+    -ms-transition: height 500ms ease-in-out;
+    -o-transition: height 500ms ease-in-out;
+    transition: height 500ms ease-in-out;
+}
+
+.owl-carousel .owl-item {
+    float: left;
+}
+
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div {
+    cursor: pointer;
+}
+
+.owl-controls {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* mouse grab icon*/
+.grabbing {
+    cursor: url(../images/grabbing.png) 8 8, move;
+}
+
+/* fix*/
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+}
+
+.owl-theme .owl-controls {
+    text-align: right;
+    position: absolute;
+    width: 100%;
+}
+
+/* Clickable class fix problem with hover on touch devices*//* Use it for non-touch hover action*/
+.owl-theme .owl-controls.clickable .owl-buttons div:hover {
+    filter: Alpha(Opacity=100); /*IE7 fix*/
+    opacity: 1;
+    text-decoration: none;
+}
+
+/* Styling Pagination*/
+.owl-theme .owl-controls .owl-page {
+    display: inline-block;
+    zoom: 1;
+    *display: inline; /*IE7 life-saver*/
+    display: none;
+}
+
+.owl-theme .owl-controls .owl-page span {
+    display: block;
+    width: 8px;
+    height: 8px;
+    margin: 5px 3px; /*filter: Alpha(Opacity=50);opacity: 0.5;*/
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background: #fff;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+    background: #4289ce;
+}
+
+/* If PaginationNumbers is true*/
+.owl-theme .owl-controls .owl-page span.owl-numbers {
+    height: auto;
+    width: auto;
+    color: #FFF;
+    padding: 2px 10px;
+    font-size: 12px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+
+/* preloading images*/
+.owl-item.loading {
+    min-height: 150px;
+    background: url(../images/ajaxloader.gif) no-repeat center center
+}
+
+/*首页案例*/
+#owl-demo3 {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+/* Styling Next and Prev buttons*/
+#owl-demo3.owl-theme .owl-controls {
+    bottom: -20px;
+    text-align: center;
+}
+
+#owl-demo3.owl-theme .owl-controls .owl-pagination {
+    display: none;
+}
+
+#owl-demo3.owl-theme .owl-controls .owl-buttons {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    height: 0;
+}
+
+#owl-demo3.owl-theme .owl-controls .owl-buttons div {
+    color: #FFF;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    width: 52px;
+    height: 50px; /*IE7 life-saver*/
+    text-indent: 60px;
+    overflow: hidden;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+#owl-demo3.owl-theme .owl-controls .owl-buttons div.owl-prev {
+    background: #fff url(../images/works_arr.png) no-repeat 0px 0px;
+    margin-right: 55px;
+}
+
+#owl-demo3.owl-theme .owl-controls .owl-buttons div.owl-prev:hover { /*opacity:0.6;filter:Alpha(opacity=60);*/
+    background: #333 url(../images/works_arr.png) no-repeat -52px 0px;
+}
+
+#owl-demo3.owl-theme .owl-controls .owl-buttons div.owl-next {
+    background: #fff url(../images/works_arr.png) no-repeat -52px -50px;
+    margin-left: 55px;
+}
+
+#owl-demo3.owl-theme .owl-controls .owl-buttons div.owl-next:hover {
+    background: #333 url(../images/works_arr.png) no-repeat 0px -50px;
+}
+
+#owl-demo3.owl-theme .owl-controls .owl-page {
+    display: inline-block;
+}
+
+#owl-demo3 .item {
+    margin: 0 0;
+}
+
+#owl-demo3 .item img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+#owl-demo3 .item dd {
+    width: 25%;
+    margin: 0 auto;
+    text-align: left;
+    float: left;
+}
+
+#owl-demo3 .item dd .imgs {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#owl-demo3 .item dd .txts {
+    font-weight: normal;
+    color: #fff;
+    font-size: 16px;
+    line-height: 36px;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.4s;
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    text-align: center;
+}
+
+#owl-demo3 .item dd .txts h1 {
+    color: #fff;
+    font-weight: normal;
+    font-size: 24px;
+    height: 76px;
+    line-height: 76px;
+    overflow: hidden;
+    margin-top: 22%;
+}
+
+#owl-demo3 .item dd .txts a {
+    color: #fff;
+    display: inline-block;
+    width: 62px;
+    margin-left: 12px;
+    margin-right: 12px;
+    font-size: 16px;
+}
+
+#owl-demo3 .item dd .txts a i {
+    width: 48px;
+    height: 48px;
+    display: block;
+    margin: 0 auto;
+    transition: all 0.4s;
+}
+
+#owl-demo3 .item dd .txts a:hover i {
+    margin-top: -6%;
+    margin-bottom: 6%;
+    transform: rotate(360deg);
+}
+
+#owl-demo3 .item dd .txts a i.bgs1 {
+    background: url(../images/i_pic1.png) center top no-repeat;
+}
+
+#owl-demo3 .item dd .txts a i.bgs2 {
+    background: url(../images/i_pic2.png) center top no-repeat;
+}
+
+#owl-demo3 .item dd .txts a i.bgs3 {
+    background: url(../images/i_pic3.png) center top no-repeat;
+}
+
+#owl-demo3 .item dd h2 {
+    color: #000;
+    font-size: 18px;
+    line-height: 80px;
+    text-align: center;
+    height: 80px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    z-index: 2;
+    font-weight: normal;
+    transition: all 0.4s;
+}
+
+#owl-demo3 .item dd h2 i {
+    transition: all 0.4s;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 0;
+    background: #b49173;
+    z-index: -1;
+}
+
+#owl-demo3 .item dd:nth-child(1) h2 i {
+    background: #b39273;
+}
+
+#owl-demo3 .item dd:nth-child(2) h2 i {
+    background: #39addf;
+}
+
+#owl-demo3 .item dd:nth-child(3) h2 i {
+    background: #009fe1;
+}
+
+#owl-demo3 .item dd:nth-child(4) h2 i {
+    background: #df0011;
+}
+
+#owl-demo3 .item dd:nth-child(5) h2 i {
+    background: #0e0b0b;
+}
+
+#owl-demo3 .item dd:nth-child(6) h2 i {
+    background: #017fc9;
+}
+
+#owl-demo3 .item dd:nth-child(7) h2 i {
+    background: #858585;
+}
+
+#owl-demo3 .item dd:nth-child(8) h2 i {
+    background: #b3c902;
+}
+
+#owl-demo3 .item dd:hover img {
+    -webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+    -o-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+}
+
+#owl-demo3 .item dd:hover h2 {
+    color: #fff;
+}
+
+#owl-demo3 .item dd:hover h2 i {
+    height: 100%;
+}
+
+#owl-demo3 .item dd:hover .txts {
+    bottom: 0;
+}
+
+/*公司团队*/
+.owl-demo5 {
+    text-align: center;
+    width: 100%;
+}
+
+.owl-demo5.owl-theme .owl-pagination {
+    display: block;
+}
+
+.owl-demo5.owl-theme .owl-controls {
+    text-align: center;
+}
+
+.owl-demo5.owl-theme .owl-controls .owl-page span {
+    background: #ccc;
+}
+
+.owl-demo5.owl-theme .owl-controls .owl-page.active span,
+.owl-demo5.owl-theme .owl-controls.clickable .owl-page:hover span {
+    background: #f67524;
+}
+
+.owl-demo5.owl-theme .owl-controls {
+    padding-top: 0%;
+}
+
+.owl-demo5.owl-theme .owl-controls .owl-buttons {
+    position: absolute;
+    top: 32%;
+    width: 100%;
+    left: 0;
+    height: 0;
+    display: none;
+}
+
+.owl-demo5.owl-theme .owl-controls .owl-page {
+    display: inline-block;
+}
+
+.owl-demo5 .item {
+    margin: 0px 0%;
+    text-align: center;
+}
+
+@media screen and (max-width: 1440px) {
+    /*首页案例*/
+    #owl-demo3 .item dd .txts h1 {
+        margin-top: 16%;
+        font-size: 22px;
+    }
+
+    #owl-demo3 .item dd h2 {
+        height: 60px;
+        line-height: 60px;
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    /*首页案例*/
+    #owl-demo3 .item dd .txts h1 {
+        margin-top: 11%;
+    }
+}

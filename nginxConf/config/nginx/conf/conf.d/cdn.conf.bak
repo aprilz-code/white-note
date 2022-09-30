@@ -1,0 +1,20 @@
+    # 配置CDN支持https访问
+    server {
+        listen        443 ssl;
+        # 我们博客用来配置CDN的网址
+        server_name  cdn.losey.top;
+        ssl_certificate cert/cdn/cert-cdn.pem;
+        ssl_certificate_key cert/cdn/cert-cdn.key;
+        ssl_session_cache shared:SSL:1m;
+        ssl_session_timeout  10m;
+        ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!ADH:!RC4;
+        #表示使用的加密套件的类型。
+        ssl_protocols TLSv1.1 TLSv1.2 TLSv1.3; #表示使用的TLS协议的类型。
+       # ssl_prefer_server_ciphers on;
+
+        location / {
+            # 七牛云CDN设置的回源网址
+            proxy_pass http://qiniuyun.losey.top;
+          
+        }
+    }
