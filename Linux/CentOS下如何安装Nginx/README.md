@@ -1,7 +1,7 @@
 1、下载nginx
 ---------
 
-官方网站  http://nginx.org
+官方网站 http://nginx.org
 
 下载链接：[http://nginx.org/download/](http://nginx.org/download/)
 
@@ -33,7 +33,8 @@
 
     yum install -y zlib zlib-devel
 
-\- **OpenSSL** 是一个强大的安全套接字层密码库，囊括主要的密码算法、常用的密钥和证书封装管理功能及SSL协议，并提供丰富的应用程序供测试或其它目的使用。nginx不仅支持http协议，还支持https（即在ssl协议上传输http），所以需要在linux安装openssl库。
+\-**OpenSSL**
+是一个强大的安全套接字层密码库，囊括主要的密码算法、常用的密钥和证书封装管理功能及SSL协议，并提供丰富的应用程序供测试或其它目的使用。nginx不仅支持http协议，还支持https（即在ssl协议上传输http），所以需要在linux安装openssl库。
 
     yum install -y openssl openssl-devel
 

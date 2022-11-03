@@ -14,7 +14,7 @@
 编写脚本
 ----
 
-我们首先创建一个  startup.bat文件，然后输出下面的内容
+我们首先创建一个 startup.bat文件，然后输出下面的内容
 
     start /d  java -jar zipkin.jar
 

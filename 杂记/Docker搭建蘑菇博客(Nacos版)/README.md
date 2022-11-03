@@ -148,12 +148,12 @@ docker run --privileged -d -it -h mogu_blog_2 --name mogu_blog_2 -v /etc/localti
 蘑菇Docker内部容器SSH连接：11122
 RabbitMQ消息队列：15672
 Zipkin链路追踪: 9411
-发Email端口：465   
-图片资源：8600   
-前端Web页面:9527    
-后端Admin页面：9528  
-Redis:6379   
-Mysql:3306   
+发Email端口：465 
+图片资源：8600 
+前端Web页面:9527  
+后端Admin页面：9528 
+Redis:6379 
+Mysql:3306 
 Tomcat(里面部署的solr):8080
 HTTP端口：80
 Kibana端口：5601

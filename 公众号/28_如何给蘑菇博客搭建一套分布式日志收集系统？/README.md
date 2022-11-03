@@ -1,11 +1,12 @@
-> 大家好，我是白，欢迎点击下方的公众号名片，关注白，让我们一起成长~
+> 大家好，我是Aprilz，欢迎点击下方的公众号名片，关注Aprilz，让我们一起成长~
 
-前阵子学习了 **ElasticStack** 的技术栈，其中包括 **ElasticSearch** 、**Beats**、**Kibana**、**Logstash**。白打算将其用于蘑菇博客的项目中，搭建一套**分布式日志收集系统**。关于 **ElasticStack** 的技术栈学习，可以参考前面写的文章~
+前阵子学习了 **ElasticStack** 的技术栈，其中包括 **ElasticSearch** 、**Beats**、**Kibana**、**Logstash**。Aprilz打算将其用于蘑菇博客的项目中，搭建一套**
+分布式日志收集系统**。关于 **ElasticStack** 的技术栈学习，可以参考前面写的文章~
 
 - [万字长文带你学习ElasticSearch](https://mp.weixin.qq.com/s/9eh6rK2aZHRiBpf5bRae9g)
 - [一文带你了解轻量性日志采集器Beats的使用](https://mp.weixin.qq.com/s/GoNNoVJA4rOmVjHWc032sw)
 
-下面白开始手把手搭建蘑菇博客技术栈的**日志收集模块**，坐稳扶好，一起开车啦~
+下面Aprilz开始手把手搭建蘑菇博客技术栈的**日志收集模块**，坐稳扶好，一起开车啦~
 
 ![蘑菇博客架构图](https://cdn.losey.top/blog/image-20210603111452950.png)
 
@@ -13,7 +14,7 @@
 
 通过本教程，可以非常方便的给**蘑菇博客**项目，集成 **ELK** 用于分布式日志收集
 
-为了更加方便的部署 **ELK** 环境，白已经提前将环境打包成了 **Docker** 镜像，发布到了 **DockerHub** 中，所以我们只需要拉取我提前制作的 **ElasticStack** 镜像即可
+为了更加方便的部署 **ELK** 环境，Aprilz已经提前将环境打包成了 **Docker** 镜像，发布到了 **DockerHub** 中，所以我们只需要拉取我提前制作的 **ElasticStack** 镜像即可
 
 ```bash
 # 拉取镜像
@@ -346,20 +347,20 @@ http://your_ip:5601
 
 这里就只介绍了ElasticStack的日志收集，关于更多的Kibana图形化页面，小伙伴可以参考其它文件进行配置，这里就不列举出来啦~
 
-我是白，我们下期再见~
+我是Aprilz，我们下期再见~
 
 ## 往期推荐
 
 - [蘑菇博客从0到2000Star，分享我的Java自学路线图](https://mp.weixin.qq.com/s/3u6OOYkpj4_ecMzfMqKJRw)
 - [从三本院校到斩获字节跳动后端研发Offer-讲述我的故事](https://mp.weixin.qq.com/s/c4rR_aWpmNNFGn-mZBLWYg)
-- [白在公众号摸滚翻爬半个月，整理的入门指南](https://mp.weixin.qq.com/s/Jj1i-mD9Tw0vUEFXi5y54g)
+- [Aprilz在公众号摸滚翻爬半个月，整理的入门指南](https://mp.weixin.qq.com/s/Jj1i-mD9Tw0vUEFXi5y54g)
 - [读者问:有没有高效的记视频笔记方法？](https://mp.weixin.qq.com/s/QcQnV1yretxmDQr4ELW7_g)
 - [万字长文带你学习ElasticSearch](https://mp.weixin.qq.com/s/9eh6rK2aZHRiBpf5bRae9g)
 - [如何使用一条命令完成蘑菇博客的部署？](https://mp.weixin.qq.com/s/LgRIqdPAGzN1tCPMi0Y8RQ)
 
 ## 结语
 
-最近，应各位小伙伴们的需求，白已经把 **开源学习笔记仓库** 整理成 **PDF** 版本啦，方便大家在手机或者电脑上阅读。
+最近，应各位小伙伴们的需求，Aprilz已经把 **开源学习笔记仓库** 整理成 **PDF** 版本啦，方便大家在手机或者电脑上阅读。
 
 > 开源笔记地址：https://gitee.com/moxi159753/LearningNotes
 
@@ -375,6 +376,7 @@ http://your_ip:5601
 
 ![img](https://gitee.com/moxi159753/LearningNotes/raw/master/doc/images/qq/%E8%8E%B7%E5%8F%96PDF.jpg)
 
-同时本公众号**申请较晚**，暂时没有开通**留言**功能，欢迎小伙伴们添加我的私人微信【备注：**加群**】，我将邀请你加入到**蘑菇博客交流群**中，欢迎小伙伴们找白一块聊天唠嗑，共同学习进步，如果你觉得本文对你有所帮助，麻烦小伙伴们动动手指给文章点个「**赞**」和「**在看**」。
+同时本公众号**申请较晚**，暂时没有开通**留言**功能，欢迎小伙伴们添加我的私人微信【备注：**加群**】，我将邀请你加入到**蘑菇博客交流群**
+中，欢迎小伙伴们找Aprilz一块聊天唠嗑，共同学习进步，如果你觉得本文对你有所帮助，麻烦小伙伴们动动手指给文章点个「**赞**」和「**在看**」。
 
-![快来找白唠嗑吧](https://gitee.com/moxi159753/LearningNotes/raw/master/doc/images/qq/%E6%B7%BB%E5%8A%A0%E9%99%8C%E6%BA%AA.png)
+![快来找Aprilz唠嗑吧](https://gitee.com/moxi159753/LearningNotes/raw/master/doc/images/qq/%E6%B7%BB%E5%8A%A0%E9%99%8C%E6%BA%AA.png)

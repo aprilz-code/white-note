@@ -55,7 +55,7 @@
 name:"CommentList",
 ```
 
-如果我们想要在该组件中嵌套本身，那么直接就可以在模板中使用name属性值 递归调用自身，之前一直不太明白name字段是做什么用处的，有的时候可以加，有的时候删除也可以，今天才了解是为了在组件中调用自己的时候就能用得上。
+如果我们想要在该组件中嵌套本身，那么直接就可以在模板中使用name属性值 递归调用自身，之前一直不太明Aprilzname字段是做什么用处的，有的时候可以加，有的时候删除也可以，今天才了解是为了在组件中调用自己的时候就能用得上。
 
 ## 在父组件中调用该CommentList组件
 
@@ -65,19 +65,19 @@ name:"CommentList",
 comments: [
                     {
                         uid: 'uid000',
-                        userName: "白",
+                        userName: "Aprilz",
                         avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
                         content: '我是一级评论',
                         reply: [
                             {
                                 uid: 'uid001',
-                                userName: "白",
+                                userName: "Aprilz",
                                 avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
                                 content: '我是二级评论',
                                 reply: [
                                     {
                                         uid: 'uid002',
-                                        userName: "白",
+                                        userName: "Aprilz",
                                         avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
                                         content: '我是三级评论',
                                         reply: []
@@ -86,7 +86,7 @@ comments: [
 
                             }, {
                                 uid: 'uid003',
-                                userName: "白",
+                                userName: "Aprilz",
                                 avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
                                 content: '我是二级评论',
                                 reply: []
@@ -95,13 +95,13 @@ comments: [
                     },
                     {
                         uid: 'uid004',
-                        userName: "白",
+                        userName: "Aprilz",
                         avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
                         content: '我是一级评论',
                         reply: [
                             {
                                 uid: 'uid005',
-                                userName: "白",
+                                userName: "Aprilz",
                                 avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
                                 content: '我是二级评论',
                                 reply: []
@@ -129,19 +129,19 @@ comments: [
                 comments: [
                     {
                         uid: 'uid000',
-                        userName: "白",
+                        userName: "Aprilz",
                         avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
                         content: '我是一级评论',
                         reply: [
                             {
                                 uid: 'uid001',
-                                userName: "白",
+                                userName: "Aprilz",
                                 avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
                                 content: '我是二级评论',
                                 reply: [
                                     {
                                         uid: 'uid002',
-                                        userName: "白",
+                                        userName: "Aprilz",
                                         avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
                                         content: '我是三级评论',
                                         reply: []
@@ -150,7 +150,7 @@ comments: [
 
                             }, {
                                 uid: 'uid003',
-                                userName: "白",
+                                userName: "Aprilz",
                                 avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
                                 content: '我是二级评论',
                                 reply: []
@@ -159,13 +159,13 @@ comments: [
                     },
                     {
                         uid: 'uid004',
-                        userName: "白",
+                        userName: "Aprilz",
                         avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
                         content: '我是一级评论',
                         reply: [
                             {
                                 uid: 'uid005',
-                                userName: "白",
+                                userName: "Aprilz",
                                 avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
                                 content: '我是二级评论',
                                 reply: []
@@ -598,19 +598,19 @@ index.vue完整代码，如下
                 comments: [
                     {
                         uid: 'uid000',
-                        userName: "白",
+                        userName: "Aprilz",
                         avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
                         content: '我是一级评论',
                         reply: [
                             {
                                 uid: 'uid001',
-                                userName: "白",
+                                userName: "Aprilz",
                                 avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
                                 content: '我是二级评论',
                                 reply: [
                                     {
                                         uid: 'uid002',
-                                        userName: "白",
+                                        userName: "Aprilz",
                                         avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
                                         content: '我是三级评论',
                                         reply: []
@@ -621,7 +621,7 @@ index.vue完整代码，如下
                     },
                     {
                         uid: 'uid004',
-                        userName: "白",
+                        userName: "Aprilz",
                         avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
                         content: '我是一级评论',
                         reply: [

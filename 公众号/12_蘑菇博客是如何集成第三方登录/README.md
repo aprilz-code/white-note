@@ -1,10 +1,11 @@
 ## 前言
 
-大家好，我是**白**
+大家好，我是**Aprilz**
 
-这篇主要给搭建讲解的是，蘑菇博客项目是如何集成第三方登录。白在做第三方登录的时候，也没有上来就造轮子，而是先在 **Gitee** 中找到了一个第三方登录的开源库：**JustAuth**。
+这篇主要给搭建讲解的是，蘑菇博客项目是如何集成第三方登录。Aprilz在做第三方登录的时候，也没有上来就造轮子，而是先在 **Gitee** 中找到了一个第三方登录的开源库：**JustAuth**。
 
-**JustAuth**，如你所见，它仅仅是一个**第三方授权登录**的**工具类库**，它可以让我们脱离繁琐的第三方登录 SDK，让登录变得 **So easy!**  **JustAuth** 集成了诸如：**Github**、**Gitee**、支付宝、新浪微博、微信、Google、Facebook、Twitter、StackOverflow等国内外数十家第三方平台。
+**JustAuth**，如你所见，它仅仅是一个**第三方授权登录**的**工具类库**，它可以让我们脱离繁琐的第三方登录 SDK，让登录变得 **So easy!**  **JustAuth** 集成了诸如：**Github**、**
+Gitee**、支付宝、新浪微博、微信、Google、Facebook、Twitter、StackOverflow等国内外数十家第三方平台。
 
 >JustAuth仓库：https://gitee.com/yadong.zhang/JustAuth
 >
@@ -12,7 +13,8 @@
 
 ## 编写登录页面
 
-首先需要编写一个登录框代码，下面是白使用 **Vue** 编写的一个组件 **LoginBox.vue**，同时里面还引入了**阿里矢量库**中的几个图标，感兴趣的小伙伴可以查看这篇博客：[蘑菇博客前端页面如何引入矢量图标](https://mp.weixin.qq.com/s/mO0HlIZsjdluY16YW8rOdA)
+首先需要编写一个登录框代码，下面是Aprilz使用 **Vue** 编写的一个组件 **LoginBox.vue**，同时里面还引入了**阿里矢量库**
+中的几个图标，感兴趣的小伙伴可以查看这篇博客：[蘑菇博客前端页面如何引入矢量图标](https://mp.weixin.qq.com/s/mO0HlIZsjdluY16YW8rOdA)
 
 ```html
 <template>
@@ -616,7 +618,7 @@ http://127.0.0.1:8603/oauth/callback/github
 >
 > 蘑菇博客源码: https://gitee.com/moxi159753/mogu_blog_v2
 
-我是**白**，我们下期再见~
+我是**Aprilz**，我们下期再见~
 
 ## 往期推荐
 
@@ -624,10 +626,11 @@ http://127.0.0.1:8603/oauth/callback/github
 
 - [从三本院校到斩获字节跳动后端研发Offer-讲述我的故事](https://mp.weixin.qq.com/s/c4rR_aWpmNNFGn-mZBLWYg)
 
-- [白在公众号摸滚翻爬半个月，整理的入门指南](https://mp.weixin.qq.com/s/Jj1i-mD9Tw0vUEFXi5y54g)
+- [Aprilz在公众号摸滚翻爬半个月，整理的入门指南](https://mp.weixin.qq.com/s/Jj1i-mD9Tw0vUEFXi5y54g)
 
 ## 结语
 
-**白**是一个从三本院校一路摸滚翻爬上来的互联网大厂程序员。独立做过几个开源项目，其中**蘑菇博客**在码云上有 **2K Star** 。目前就职于**字节跳动的Data广告部门**，是字节跳动全线产品的商业变现研发团队。本公众号将会持续性的输出很多原创小知识以及学习资源。如果你觉得本文对你有所帮助，麻烦给文章点个「赞」和「在看」。同时欢迎各位小伙伴关注白，让我们一起成长~
+**Aprilz**是一个从三本院校一路摸滚翻爬上来的互联网大厂程序员。独立做过几个开源项目，其中**蘑菇博客**在码云上有 **2K Star** 。目前就职于**字节跳动的Data广告部门**
+，是字节跳动全线产品的商业变现研发团队。本公众号将会持续性的输出很多原创小知识以及学习资源。如果你觉得本文对你有所帮助，麻烦给文章点个「赞」和「在看」。同时欢迎各位小伙伴关注Aprilz，让我们一起成长~
 
-![和白一起学编程](https://cdn.losey.top/blog/image-20210122092846701.png)
+![和Aprilz一起学编程](https://cdn.losey.top/blog/image-20210122092846701.png)

@@ -64,13 +64,13 @@ git.build.version=0.0.1-SNAPSHOT
 git.commit.message.short=update banner
 git.commit.id.abbrev=6f1ef9e
 git.branch=dev
-git.build.user.name=白_
+git.build.user.name=Aprilz_
 git.closest.tag.commit.count=
 git.commit.id.describe=6f1ef9e-dirty
 git.commit.id=6f1ef9e48bbd0f3cb825b7934152dde21d821456
 git.tags=
 git.build.time=2020-01-07T21\:25\:46+0800
-git.commit.user.name=白_
+git.commit.user.name=Aprilz_
 
 ```
 

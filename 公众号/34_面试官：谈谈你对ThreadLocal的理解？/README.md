@@ -1,6 +1,6 @@
-> 大家好，我是白，欢迎点击下方的公众号名片，关注白，让我们一起成长~
+> 大家好，我是Aprilz，欢迎点击下方的公众号名片，关注Aprilz，让我们一起成长~
 
-**ThreadLocal** 作为 **Java** 面试的高频题，白在之前面试的时候也遇到过，所以后面专门针对 **ThreadLocal** 写了一份笔记，让我们一起来看看~
+**ThreadLocal** 作为 **Java** 面试的高频题，Aprilz在之前面试的时候也遇到过，所以后面专门针对 **ThreadLocal** 写了一份笔记，让我们一起来看看~
 
 ## 什么是ThreadLocal？
 
@@ -441,13 +441,13 @@ Java中的引用有4种类型：强、软、弱、虚。当前这个问题主要
 
 - [蘑菇博客从0到2000Star，分享我的Java自学路线图](https://mp.weixin.qq.com/s/3u6OOYkpj4_ecMzfMqKJRw)
 - [从三本院校到斩获字节跳动后端研发Offer-讲述我的故事](https://mp.weixin.qq.com/s/c4rR_aWpmNNFGn-mZBLWYg)
-- [白在公众号摸滚翻爬半个月，整理的入门指南](https://mp.weixin.qq.com/s/Jj1i-mD9Tw0vUEFXi5y54g)
+- [Aprilz在公众号摸滚翻爬半个月，整理的入门指南](https://mp.weixin.qq.com/s/Jj1i-mD9Tw0vUEFXi5y54g)
 - [读者问:有没有高效的记视频笔记方法？](https://mp.weixin.qq.com/s/QcQnV1yretxmDQr4ELW7_g)
 - [万字长文带你学习ElasticSearch](https://mp.weixin.qq.com/s/9eh6rK2aZHRiBpf5bRae9g)
 
 ## 结语
 
-应各位小伙伴们的需求，白已经把 **学习笔记** 已经整理成 **PDF** 版本啦，方便大家在手机或者电脑上阅读。以下笔记仓库的部分 **PDF** 文件 ~
+应各位小伙伴们的需求，Aprilz已经把 **学习笔记** 已经整理成 **PDF** 版本啦，方便大家在手机或者电脑上阅读。以下笔记仓库的部分 **PDF** 文件 ~
 
 ![周阳老师大厂面试第二季](https://cdn.losey.top/blog/image-20210523171559176.png)
 
@@ -459,6 +459,7 @@ Java中的引用有4种类型：强、软、弱、虚。当前这个问题主要
 
 ![img](https://gitee.com/moxi159753/LearningNotes/raw/master/doc/images/qq/%E8%8E%B7%E5%8F%96PDF.jpg)
 
-同时本公众号**申请较晚**，暂时没有开通**留言**功能，欢迎小伙伴们添加我的私人微信【备注：**加群**】，我将邀请你加入到**蘑菇博客交流群**中，欢迎小伙伴们找白一块聊天唠嗑，共同学习进步，如果你觉得本文对你有所帮助，麻烦小伙伴们动动手指给文章点个「**赞**」和「**在看**」。
+同时本公众号**申请较晚**，暂时没有开通**留言**功能，欢迎小伙伴们添加我的私人微信【备注：**加群**】，我将邀请你加入到**蘑菇博客交流群**
+中，欢迎小伙伴们找Aprilz一块聊天唠嗑，共同学习进步，如果你觉得本文对你有所帮助，麻烦小伙伴们动动手指给文章点个「**赞**」和「**在看**」。
 
-![快来找白唠嗑吧](https://gitee.com/moxi159753/LearningNotes/raw/master/doc/images/qq/%E6%B7%BB%E5%8A%A0%E9%99%8C%E6%BA%AA.png)
+![快来找Aprilz唠嗑吧](https://gitee.com/moxi159753/LearningNotes/raw/master/doc/images/qq/%E6%B7%BB%E5%8A%A0%E9%99%8C%E6%BA%AA.png)

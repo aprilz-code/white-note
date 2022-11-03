@@ -1,14 +1,14 @@
 ![](https://cdn.losey.top/blog/0.jpg)
 
-​                                                                                                                                                                           作者：白
+​ 作者：Aprilz
 
-​                                                                                                                         白的学习笔记：http://note.moguit.cn大家好，我是 **白**。
+​ Aprilz的学习笔记：http://note.moguit.cn大家好，我是 **Aprilz**。
 
 我们都知道在一个团队中是由很多角色组成的，例如：业务、产品、设计、前端、后端、测试。每个角色各司其职，一起合作完成项目的交付。
 
 而前端与后端的沟通则是需要通过一个统一的文件进行沟通交流，即通过接口文档事先约定好后端的接口返回内容，然后大家就按照这个文档约定完成前后端的开发。并且一般接口文档都是通过后端人员编写的，维护流程也比较繁琐。
 
-最近被群里小伙伴安利了一款接口管理工具 **ApiPost**，白在使用后觉的非常不错，在这里我也分享给大家。
+最近被群里小伙伴安利了一款接口管理工具 **ApiPost**，Aprilz在使用后觉的非常不错，在这里我也分享给大家。
 
 ApiPost 包含了以下四种功能，同时具备接口调试，接口文档，以及 **Mock** 工具，以及接口流程测试。
 
@@ -20,7 +20,7 @@ ApiPost 包含了以下四种功能，同时具备接口调试，接口文档，
 - Mock工具：主要用于前端根据接口生成对应的数据，如 **RAP** 等工具。
 - 接口测试：常见的接口测试工具有 **JMeter**
 
-同时 **ApiPost** 也是国人开发的一款接口管理工具，致力于打造更好用的、中文的、接口调试与文档管理工具（简直是对于白这种英语渣渣的福音~）
+同时 **ApiPost** 也是国人开发的一款接口管理工具，致力于打造更好用的、中文的、接口调试与文档管理工具（简直是对于Aprilz这种英语渣渣的福音~）
 
 ![ApiPost首页](https://cdn.losey.top/blog/image-20210923222729647.png)
 
@@ -42,7 +42,7 @@ ApiPost 包含了以下四种功能，同时具备接口调试，接口文档，
 
 ![image-20210923230008166](https://cdn.losey.top/blog/image-20210923230008166.png)
 
-没有对比就没有伤害，在看看 **Postman** 的输出，白每次只能把结果复制出来，然后打开 **Json** 在线格式化，才能够看到返回的结果，简直增加了额外的负担。
+没有对比就没有伤害，在看看 **Postman** 的输出，Aprilz每次只能把结果复制出来，然后打开 **Json** 在线格式化，才能够看到返回的结果，简直增加了额外的负担。
 
 > Json格式化：https://www.sojson.com/
 
@@ -50,7 +50,7 @@ ApiPost 包含了以下四种功能，同时具备接口调试，接口文档，
 
 ### 全局参数
 
-同时，还有一个让白非常喜欢的点，就是 **全局参数**。
+同时，还有一个让Aprilz非常喜欢的点，就是 **全局参数**。
 
 在上面的示例中，我们需要给接口填写对应的鉴权请求头，才能够请求后台获得数据。
 
@@ -190,7 +190,7 @@ ApiPost 包含了以下四种功能，同时具备接口调试，接口文档，
 
 更多关于 **ApiPost** 的功能，还等待小伙伴去发现。好啦，本期就到这里啦。
 
-我是白，我们下次再见~
+我是Aprilz，我们下次再见~
 
 往期推荐
 ----
@@ -201,17 +201,20 @@ ApiPost 包含了以下四种功能，同时具备接口调试，接口文档，
 *   [双非本科，折戟成沙铁未销，九面字节终上岸！](https://mp.weixin.qq.com/s/SRf2f8wFFyjz2BUUXD_pmg)
 *   [如何使用一条命令完成蘑菇博客的部署？](https://mp.weixin.qq.com/s/LgRIqdPAGzN1tCPMi0Y8RQ)
 *   [为什么你们制作镜像只有5MB，而我却200MB？](https://mp.weixin.qq.com/s/iWpivtTAKMPKT6gq_3nwaA)
-*   [字节二面：蘑菇博客是怎么解决缓存穿透的?](https://mp.weixin.qq.com/s/JNnL6sTySXL9ta5p0rjjXg)
-*   [还在用破解IDEA？白手把手教如何申请正版](https://mp.weixin.qq.com/s/mZjoSjk0QqeKFxPbFySomg)
-*   [32图，教你部署一个博客小程序](https://mp.weixin.qq.com/s/hFfsDPBdBpaLjXV8Bm5Ycg)
+* [字节二面：蘑菇博客是怎么解决缓存穿透的?](https://mp.weixin.qq.com/s/JNnL6sTySXL9ta5p0rjjXg)
+* [还在用破解IDEA？Aprilz手把手教如何申请正版](https://mp.weixin.qq.com/s/mZjoSjk0QqeKFxPbFySomg)
+* [32图，教你部署一个博客小程序](https://mp.weixin.qq.com/s/hFfsDPBdBpaLjXV8Bm5Ycg)
 
 结语
 --
 
-博主就职于字节跳动商业化部门，一直在维护校招笔记仓库 **LearningNote**「在Gitee上已有 **3.9k+ star**，仓库地址：https://gitee.com/moxi159753/LearningNotes」，公众号上的文章也会在此同步更新，欢迎各位小伙伴一起交流学习，回复 「**PDF**」获取PDF笔记，点击查看原文可以**在线阅读**。
+博主就职于字节跳动商业化部门，一直在维护校招笔记仓库 **LearningNote**「在Gitee上已有 **3.9k+ star**
+，仓库地址：https://gitee.com/moxi159753/LearningNotes」，公众号上的文章也会在此同步更新，欢迎各位小伙伴一起交流学习，回复 「**PDF**」获取PDF笔记，点击查看原文可以**在线阅读**。
 
-同时，想要丰富项目经验的小伙伴，可以参考我维护的开源微服务博客项目： **蘑菇博客**「 **Gitee** 官方推荐项目，博客类搜索排名**第一**，在 **Gitee** 已有 **3.6K** star，仓库地址：https://gitee.com/moxi159753/mogu_blog_v2 」。
+同时，想要丰富项目经验的小伙伴，可以参考我维护的开源微服务博客项目： **蘑菇博客**「 **Gitee** 官方推荐项目，博客类搜索排名**第一**，在 **Gitee** 已有 **3.6K**
+star，仓库地址：https://gitee.com/moxi159753/mogu_blog_v2 」。
 
-本公众号**申请较晚**，暂时没有开通**留言**功能，欢迎小伙伴们添加我的私人微信 **coder_moxi**【备注：**加群**】，我将邀请你加入到**蘑菇博客交流群**中，欢迎小伙伴们找白一块聊天唠嗑，共同学习进步。最后，如果你觉得本文对你有所帮助，麻烦小伙伴们动动手指给文章点个「**赞**」和「**在看**」，非常感谢大家的支持。
+本公众号**申请较晚**，暂时没有开通**留言**功能，欢迎小伙伴们添加我的私人微信 **coder_moxi**【备注：**加群**】，我将邀请你加入到**蘑菇博客交流群**
+中，欢迎小伙伴们找Aprilz一块聊天唠嗑，共同学习进步。最后，如果你觉得本文对你有所帮助，麻烦小伙伴们动动手指给文章点个「**赞**」和「**在看**」，非常感谢大家的支持。
 
-![快来找白唠嗑吧](https://gitee.com/moxi159753/LearningNotes/raw/master/doc/images/qq/%E6%B7%BB%E5%8A%A0%E9%99%8C%E6%BA%AA.png)
+![快来找Aprilz唠嗑吧](https://gitee.com/moxi159753/LearningNotes/raw/master/doc/images/qq/%E6%B7%BB%E5%8A%A0%E9%99%8C%E6%BA%AA.png)

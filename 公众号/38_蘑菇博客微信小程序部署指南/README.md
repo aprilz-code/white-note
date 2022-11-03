@@ -1,16 +1,16 @@
 ![](https://cdn.losey.top/blog/0.jpg)
 
-​                                                                                                                                                                           作者：白
+​ 作者：Aprilz
 
-​                                                                                                                         白的学习笔记：http://note.moguit.cn
+​ Aprilz的学习笔记：http://note.moguit.cn
 
-大家好，我是 **白**。
+大家好，我是 **Aprilz**。
 
-最近小伙伴一直叫我出一份 **蘑菇博客微信小程序** 的部署文章，这阵子刚好我小程序的证书也到期了，借此机会刚好就可以带着各位小伙伴一块完成微信小程序部署了，大家坐稳扶好，白准备发车啦~
+最近小伙伴一直叫我出一份 **蘑菇博客微信小程序** 的部署文章，这阵子刚好我小程序的证书也到期了，借此机会刚好就可以带着各位小伙伴一块完成微信小程序部署了，大家坐稳扶好，Aprilz准备发车啦~
 
 ## 前置条件
 
-在部署小程序之前，首先需要完成蘑菇博客的部署。如果还没有部署的小伙伴，可以参考白周末录制的一键部署视频，快速完成博客的搭建。
+在部署小程序之前，首先需要完成蘑菇博客的部署。如果还没有部署的小伙伴，可以参考Aprilz周末录制的一键部署视频，快速完成博客的搭建。
 
 > https://www.bilibili.com/video/BV13y4y1V7Us/
 
@@ -44,7 +44,7 @@
 
 证书一般都需要到对应的云服务厂商进行购买，当然也可以自己生成证书，但是自己生成的证书也会出现不安全的提示，所以推荐还是通过云服务厂商购买免费的 **SSL** 证书。
 
-白本着能不花钱就不花钱的态度，来到了 腾讯云 **SSL** 证书的地址
+Aprilz本着能不花钱就不花钱的态度，来到了 腾讯云 **SSL** 证书的地址
 
 > SSL证书：https://cloud.tencent.com/product/ssl
 
@@ -224,7 +224,7 @@ https://gateway.moguit.cn/doc.html
 
 ![搜索小程序](https://cdn.losey.top/blog/image-20210816084853141.png)
 
-点击第一个 **白教你学编程** 小程序，即可打开进行体验了
+点击第一个 **Aprilz教你学编程** 小程序，即可打开进行体验了
 
 ![发布成功](https://cdn.losey.top/blog/image-20210816085039732.png)
 
@@ -232,7 +232,7 @@ https://gateway.moguit.cn/doc.html
 
 ![扫码体验](https://cdn.losey.top/blog/image-20210816085207081.png)
 
-好啦，本期就到这里，我是白，我们下期再见~
+好啦，本期就到这里，我是Aprilz，我们下期再见~
 
 ## 往期推荐
 
@@ -243,15 +243,17 @@ https://gateway.moguit.cn/doc.html
 - [如何使用一条命令完成蘑菇博客的部署？](https://mp.weixin.qq.com/s/LgRIqdPAGzN1tCPMi0Y8RQ)
 - [为什么你们制作镜像只有5MB，而我却200MB？](https://mp.weixin.qq.com/s/iWpivtTAKMPKT6gq_3nwaA)
 - [字节二面：蘑菇博客是怎么解决缓存穿透的?](https://mp.weixin.qq.com/s/JNnL6sTySXL9ta5p0rjjXg)
-- [还在用破解IDEA？白手把手教如何申请正版](https://mp.weixin.qq.com/s/mZjoSjk0QqeKFxPbFySomg)
+- [还在用破解IDEA？Aprilz手把手教如何申请正版](https://mp.weixin.qq.com/s/mZjoSjk0QqeKFxPbFySomg)
 
 ## 结语
 
-应各位小伙伴们的需求，白已经把 **大厂校招笔记** 已经整理成 **PDF** 版本啦，方便大家在手机或者电脑上阅读。以下笔记仓库的部分 **PDF** 文件 。如果有需要离线阅读的小伙伴可以到公众号回复 **PDF** ，即可获取下载地址~
+应各位小伙伴们的需求，Aprilz已经把 **大厂校招笔记** 已经整理成 **PDF** 版本啦，方便大家在手机或者电脑上阅读。以下笔记仓库的部分 **PDF** 文件 。如果有需要离线阅读的小伙伴可以到公众号回复 **PDF**
+，即可获取下载地址~
 
 ![下载校招笔记](https://gitee.com/moxi159753/LearningNotes/raw/master/doc/images/qq/%E8%8E%B7%E5%8F%96PDF.jpg)
 
-同时本公众号**申请较晚**，暂时没有开通**留言**功能，欢迎小伙伴们添加我的私人微信【备注：**加群**】，我将邀请你加入到**蘑菇博客交流群**中，欢迎小伙伴们找白一块聊天唠嗑，共同学习进步。最后，如果你觉得本文对你有所帮助，麻烦小伙伴们动动手指给文章点个「**赞**」和「**在看**」，非常感谢大家的支持。
+同时本公众号**申请较晚**，暂时没有开通**留言**功能，欢迎小伙伴们添加我的私人微信【备注：**加群**】，我将邀请你加入到**蘑菇博客交流群**
+中，欢迎小伙伴们找Aprilz一块聊天唠嗑，共同学习进步。最后，如果你觉得本文对你有所帮助，麻烦小伙伴们动动手指给文章点个「**赞**」和「**在看**」，非常感谢大家的支持。
 
-![快来找白唠嗑吧](https://gitee.com/moxi159753/LearningNotes/raw/master/doc/images/qq/%E6%B7%BB%E5%8A%A0%E9%99%8C%E6%BA%AA.png)
+![快来找Aprilz唠嗑吧](https://gitee.com/moxi159753/LearningNotes/raw/master/doc/images/qq/%E6%B7%BB%E5%8A%A0%E9%99%8C%E6%BA%AA.png)
 

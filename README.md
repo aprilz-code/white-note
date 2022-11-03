@@ -1,8 +1,8 @@
-# 📙白的学习笔记
+# 📙Aprilz的学习笔记
 
 [comment]: <> (## 关于我)
 
-[comment]: <> ([**白**]&#40;https://gitee.com/moxi159753/LearningNotes/raw/master/doc/images/qq/添加白.png&#41; 是一个从三本院校一路摸滚翻爬上来的程序员。目前就职于字节跳动的Data广告部门，是字节跳动全线产品的商业变现研发团队。这两天创建了一个 **微信公众号【[白教你学编程]&#40;https://gitee.com/moxi159753/LearningNotes/raw/master/doc/images/qq/公众号2.jpg&#41;】**，未来将会在公众号上持续性的输出很多原创小知识以及学习资源，欢迎各位小伙伴关注我，和我一起共同学习，同时我也希望各位小伙伴能够给 **LearningNotes** 项目多多 **Star** 支持，您的**点赞**就是我维护的动力！)
+[comment]: <> ([**Aprilz**]&#40;https://gitee.com/moxi159753/LearningNotes/raw/master/doc/images/qq/添加Aprilz.png&#41; 是一个从三本院校一路摸滚翻爬上来的程序员。目前就职于字节跳动的Data广告部门，是字节跳动全线产品的商业变现研发团队。这两天创建了一个 **微信公众号【[Aprilz教你学编程]&#40;https://gitee.com/moxi159753/LearningNotes/raw/master/doc/images/qq/公众号2.jpg&#41;】**，未来将会在公众号上持续性的输出很多原创小知识以及学习资源，欢迎各位小伙伴关注我，和我一起共同学习，同时我也希望各位小伙伴能够给 **LearningNotes** 项目多多 **Star** 支持，您的**点赞**就是我维护的动力！)
 
 
 [comment]: <> (🔗友情链接：我的好友阿秀前段时间收集了超过1000本计算机经典书籍的PDF，包括C++、Java、Python、操作系统、计算机网络、数据库等方面的书籍都有收录，基本上你能听过的都在里面了。这是他的仓库 [CS-Books]&#40;https://github.com/forthespada/CS-Books&#41;，大家可以去看看，以后看书不花钱不是梦了哈哈，欢迎Star⭐)
@@ -21,7 +21,7 @@
 
 [comment]: <> (## PDF下载)
 
-[comment]: <> (本仓库中整理的笔记同时提供 **PDF** 离线版本，请扫描下方公众号『**白教你学编程**』后，回复关键字『**PDF**』，即可下载 **仓库最新 PDF 版本的笔记**。)
+[comment]: <> (本仓库中整理的笔记同时提供 **PDF** 离线版本，请扫描下方公众号『**Aprilz教你学编程**』后，回复关键字『**PDF**』，即可下载 **仓库最新 PDF 版本的笔记**。)
 
 [comment]: <> (<p align=center>)
 
@@ -51,13 +51,13 @@
 
 [comment]: <> (## 公众号文章)
 
-[comment]: <> (> 来源白的个人公众号：**[白教你学编程]&#40;https://gitee.com/moxi159753/wx_picture/raw/master/picture/%E5%85%AC%E4%BC%97%E5%8F%B7.jpg&#41;**)
+[comment]: <> (> 来源Aprilz的个人公众号：**[Aprilz教你学编程]&#40;https://gitee.com/moxi159753/wx_picture/raw/master/picture/%E5%85%AC%E4%BC%97%E5%8F%B7.jpg&#41;**)
 
 [comment]: <> (- [大型生产事故,开源项目蘑菇博客差点被删库]&#40;http://www.moguit.cn/#/info?blogOid=392&#41;)
 
 [comment]: <> (- [蘑菇博客从0到2000Star，分享我的Java自学路线图]&#40;http://www.moguit.cn/#/info?blogOid=581&#41;)
 
-[comment]: <> (- [白在开源社区逛了几个月, 终于写下了蘑菇博客的开源文档]&#40;http://www.moguit.cn/#/info?blogOid=347&#41;)
+[comment]: <> (- [Aprilz在开源社区逛了几个月, 终于写下了蘑菇博客的开源文档]&#40;http://www.moguit.cn/#/info?blogOid=347&#41;)
 
 [comment]: <> (- [从三本院校到斩获字节跳动后端研发Offer-讲述我的故事]&#40;http://www.moguit.cn/#/info?blogOid=587&#41;)
 
@@ -67,7 +67,7 @@
 
 [comment]: <> (- [Windows+VMware快速搭建蘑菇博客本地开发环境]&#40;http://www.moguit.cn/#/info?blogOid=583&#41;)
 
-[comment]: <> (- [白在公众号摸滚翻爬半个月，整理的入门指南]&#40;http://www.moguit.cn/#/info?blogOid=585&#41;)
+[comment]: <> (- [Aprilz在公众号摸滚翻爬半个月，整理的入门指南]&#40;http://www.moguit.cn/#/info?blogOid=585&#41;)
 
 [comment]: <> (- [Nacos出现重大安全漏洞,开源项目险遭脱库]&#40;http://www.moguit.cn/#/info?blogOid=586&#41;)
 
@@ -75,9 +75,9 @@
 
 [comment]: <> (- [使用IDEA发布蘑菇博客Docker镜像到服务器]&#40;http://www.moguit.cn/#/info?blogOid=588&#41;)
 
-[comment]: <> (- [白在Github网上冲浪时遇到的问题]&#40;http://www.moguit.cn/#/info?blogOid=589&#41;)
+[comment]: <> (- [Aprilz在Github网上冲浪时遇到的问题]&#40;http://www.moguit.cn/#/info?blogOid=589&#41;)
 
-[comment]: <> (- [白终于有时间写代码了]&#40;http://www.moguit.cn/#/info?blogOid=592&#41;)
+[comment]: <> (- [Aprilz终于有时间写代码了]&#40;http://www.moguit.cn/#/info?blogOid=592&#41;)
 
 [comment]: <> (- [开源项目蘑菇博客是如何集成第三方登录]&#40;http://www.moguit.cn/#/info?blogOid=247&#41;)
 
@@ -103,7 +103,7 @@
 
 [comment]: <> (- [如何给蘑菇博客搭建一套全链路追踪模块？]&#40;http://www.moguit.cn/#/info?blogOid=95&#41;)
 
-[comment]: <> (- [白在字节跳动工作两周啦~]&#40;http://www.moguit.cn/#/info?blogOid=600&#41;)
+[comment]: <> (- [Aprilz在字节跳动工作两周啦~]&#40;http://www.moguit.cn/#/info?blogOid=600&#41;)
 
 [comment]: <> (- [为什么你们制作镜像只有5MB，而我却200MB？]&#40;http://www.moguit.cn/#/info?blogOid=573&#41;)
 
@@ -111,7 +111,7 @@
 
 [comment]: <> (- [字节二面：蘑菇博客是怎么解决缓存穿透的]&#40;http://www.moguit.cn/#/info?blogOid=602&#41;)
 
-[comment]: <> (- [还在用破解IDEA？白手把手教如何申请正版]&#40;http://www.moguit.cn/#/info?blogOid=604&#41;)
+[comment]: <> (- [还在用破解IDEA？Aprilz手把手教如何申请正版]&#40;http://www.moguit.cn/#/info?blogOid=604&#41;)
 
 [comment]: <> (- [32图，教你部署一个博客小程序]&#40;http://www.moguit.cn/#/info?blogOid=605&#41;)
 
@@ -119,11 +119,11 @@
 
 [comment]: <> (- [14次架构升级，淘宝是如何从单机到支持千万级别并发？]&#40;http://www.moguit.cn/#/info?blogOid=71&#41;)
 
-[comment]: <> (- [白让公司损失了100万。。。]&#40;http://www.moguit.cn/#/info?blogOid=606&#41;)
+[comment]: <> (- [Aprilz让公司损失了100万。。。]&#40;http://www.moguit.cn/#/info?blogOid=606&#41;)
 
 [comment]: <> (- [如何用可视化工具，管理蘑菇博客中的微服务组件？]&#40;http://www.moguit.cn/#/info?blogOid=570&#41;)
 
-[comment]: <> (- [白准备买房啦~]&#40;http://www.moguit.cn/#/info?blogOid=611&#41;)
+[comment]: <> (- [Aprilz准备买房啦~]&#40;http://www.moguit.cn/#/info?blogOid=611&#41;)
 
 [comment]: <> (- [学妹问：我可以用蘑菇博客作为毕设么？]&#40;http://www.moguit.cn/#/info?blogOid=612&#41;)
 
@@ -422,7 +422,7 @@
 - [Redis中的数据结构](./Redis/Redis中的数据结构/README.md)
 - [Redis中的跳跃表](./Redis/Redis中的跳跃表/README.md)
 - [Redis缓存穿透-布隆过滤器](./Redis/Redis缓存穿透-布隆过滤器/README.md)
-- [大白话谈IO模型](./Redis/大白话谈IO模型/README.md)
+- [大Aprilz话谈IO模型](./Redis/大Aprilz话谈IO模型/README.md)
 - [IO多路复用底层原理](./Redis/IO多路复用底层原理/README.md)
 - [Redis实现分布式锁](./Redis/Redis实现分布式锁/README.md)
 

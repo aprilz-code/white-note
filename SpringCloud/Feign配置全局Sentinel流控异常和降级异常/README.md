@@ -38,7 +38,7 @@ public String deal_testHotKey (String p1, String p2, BlockException exception)
 /**
  * 图片服务feign远程调用
  *
- * @author 白
+ * @author Aprilz
  * @date 2020年10月3日21:16:34
  */
 @FeignClient(name = "mogu-picture", fallback = PictureFeignFallback.class)

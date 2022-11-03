@@ -25,7 +25,7 @@
     /**
      * 日志记录、自定义注解
      *
-     * @author 白
+     * @author Aprilz
      * @date 2020年2月27日08:55:02
      */
     @Target(ElementType.METHOD)
@@ -332,7 +332,7 @@
     
     /**
      * AOP相关的工具
-     * @author 白
+     * @author Aprilz
      * @date 2020年2月27日08:44:28
      */
     public enum AspectUtil {
@@ -445,7 +445,7 @@
 
 需要注意的是，我们在进行日志收集的时候，采用的是@Async注解修饰，也就是异步调用
 
->  在Spring中，基于@Async标注的方法，称之为异步方法；这些方法将在执行的时候，将会在独立的线程中被执行，调用者无需等待它的完成，即可继续其他的操作。
+> 在Spring中，基于@Async标注的方法，称之为异步方法；这些方法将在执行的时候，将会在独立的线程中被执行，调用者无需等待它的完成，即可继续其他的操作。
 
         @Async
         @Override
@@ -479,14 +479,14 @@
             webVisit.insert();
         }
 
-tip：在使用@Async注解时候，需要在启动类中加入  @EnableAsync  才能够开启异步功能
+tip：在使用@Async注解时候，需要在启动类中加入 @EnableAsync 才能够开启异步功能
 
 指定接口进行收集
 --------
 
-最后我们使用  @BussinessLog 在我们需要收集的日志出进行标记，标记后AOP的环绕通知 就会获取该接口的相关参数，将其实例化到数据库中
+最后我们使用 @BussinessLog 在我们需要收集的日志出进行标记，标记后AOP的环绕通知 就会获取该接口的相关参数，将其实例化到数据库中
 
-  示例代码如下：
+示例代码如下：
 
         @BussinessLog(value = "发表评论", behavior = EBehavior.PUBLISH_COMMENT)
         @ApiOperation(value = "增加评论", notes = "增加评论")

@@ -13,7 +13,7 @@
 
 例如我对上面设置了disabled属性，让按钮无法被点击，但是我把全部的disabled都给删除后，还是有这样的错误
 
- 经过了排查，发现是因为element-ui的其它组件而引起的：[Dropdown 下拉菜单](https://element.eleme.cn/#/zh-CN/component/dropdown)
+经过了排查，发现是因为element-ui的其它组件而引起的：[Dropdown 下拉菜单](https://element.eleme.cn/#/zh-CN/component/dropdown)
 
 引入的代码如下所示：
 

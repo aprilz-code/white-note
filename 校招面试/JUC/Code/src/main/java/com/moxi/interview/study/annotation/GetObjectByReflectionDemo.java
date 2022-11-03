@@ -31,7 +31,7 @@ public class GetObjectByReflectionDemo {
         // 获取setName 方法
         Method setName = clazz.getDeclaredMethod("setName", String.class);
         // 执行setName方法，传入对象 和 参数
-        setName.invoke(user3, "小白");
+        setName.invoke(user3, "小Aprilz");
         System.out.println(user3);
 
         System.out.println("============");

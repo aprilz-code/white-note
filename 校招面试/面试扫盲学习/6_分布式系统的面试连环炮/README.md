@@ -450,4 +450,3 @@ public class HelloServiceMock implements HelloService {
 
 retries，3次，设置retries，还一般是在读请求的时候，比如你要查询个数据，你可以设置个retries，如果第一次没读到，报错，重试指定的次数，尝试再次读取2次
 
- 

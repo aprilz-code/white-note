@@ -1,8 +1,8 @@
 ![](https://cdn.losey.top/blog/0.jpg)
 
-​                                                                                                                                                                           作者：白
+​ 作者：Aprilz
 
-​                                                                                                                         白的学习笔记：http://note.moguit.cn大家好，我是 **白** 
+​ Aprilz的学习笔记：http://note.moguit.cn大家好，我是 **Aprilz**
 
 今天给大家带来的是蘑菇博客中管理微服务组件，一款 **Docker** 可视化工具 **Portainer**。
 

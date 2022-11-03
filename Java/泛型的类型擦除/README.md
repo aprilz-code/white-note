@@ -26,7 +26,7 @@ Java 泛型（Generic）的引入加强了参数类型的安全性，减少了�
 *   List<? extends E>、List<? super E> 擦除后的类型为 List<E>。
 *   List<T extends Serialzable & Cloneable> 擦除后类型为 List<Serializable>。
 
-        Java 为什么这么处理呢？有以下两个原因：
+Java 为什么这么处理呢？有以下两个原因：
 
 避免 JVM 的大换血。如果 JVM 将泛型类型延续到运行期，那么到运行期时 JVM 就需要进行大量的重构工作了，提高了运行期的效率。  
 版本兼容。 在编译期擦除可以更好地支持原生类型（Raw Type）。
@@ -36,7 +36,7 @@ Java 泛型（Generic）的引入加强了参数类型的安全性，减少了�
 泛型的 class 对象是相同的
 ----------------
 
- 每个类都有一个 class 属性，泛型化不会改变 class 属性的返回值，例如：
+每个类都有一个 class 属性，泛型化不会改变 class 属性的返回值，例如：
 
     public static void main(String[] args) {
     	List<String> ls = new ArrayList<String>();
@@ -46,7 +46,7 @@ Java 泛型（Generic）的引入加强了参数类型的安全性，减少了�
 
 代码返回值为 true，原因很简单，List<String> 和 List<Integer> 擦除后的类型都是 List。
 
- 泛型数组初始化时不能声明泛型类型
+泛型数组初始化时不能声明泛型类型
 -----------------
 
 如下代码编译时通不过：

@@ -19,11 +19,11 @@
 乐观锁：1：先查询，获得版本号 version =1
 
 -- A 线程
-update user set name = "白", version = version + 1 
+update user set name = "Aprilz", version = version + 1 
 where id = 2 and version = 1
 
 -- B 线程抢先完成，这个时候Version = 2，导致A修改失败
-update user set name = "白", version = version + 1 
+update user set name = "Aprilz", version = version + 1 
 where id = 2 and version = 1
 ```
 
