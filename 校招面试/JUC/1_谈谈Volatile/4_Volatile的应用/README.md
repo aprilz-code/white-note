@@ -203,3 +203,16 @@ public class SingletonDemo {
 }
 ```
 
+> 但是DCL单例类无法解决反序列化会破坏单例的问题，所以可以选择采用枚举类即可
+> 枚举实现的单例是天生线程安全的。 枚举可避免反序列化破坏单例
+
+```java
+public enum SingLeton{
+    INSTANCE;
+    public  void method(){
+        // do something
+    }    
+}
+
+```
+
