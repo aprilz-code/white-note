@@ -1,3 +1,7 @@
+### <center>Volatile和JMM内存模型的可见性
+
+***
+
 - JUC（java.util.concurrent）
   - 进程和线程
     - 进程：后台运行的程序（我们打开的一个软件，就是进程）
@@ -9,8 +13,6 @@
   - java.util.concurrent
     - java.util.concurrent.atomic
     - java.util.concurrent.locks
-
-
 
 ## 谈谈对Volatile的理解
 
@@ -35,9 +37,7 @@ JMM关于同步的规定：
 
 ![image-20200309153225758](https://cdn.losey.top/blog/image-20200309153225758.png)
 
-数据传输速率：硬盘 < 内存 < < cache < CPU   
-
-
+数据传输速率：硬盘 < 内存 < < cache < CPU
 
 上面提到了两个概念：主内存  和 工作内存
 
@@ -166,7 +166,7 @@ public class VolatileDemo {
 
 输出结果为
 
-![image-20200309162154191](https://cdn.losey.top/blog/image-20200309162154191.png)	
+![image-20200309162154191](https://cdn.losey.top/blog/image-20200309162154191.png)
 
 最后线程没有停止，并行没有输出  mission is over 这句话，说明没有用volatile修饰的变量，是没有可见性
 
@@ -193,8 +193,6 @@ class MyData {
 ![image-20200309162314054](https://cdn.losey.top/blog/image-20200309162314054.png)
 
 主线程也执行完毕了，说明volatile修饰的变量，是具备JVM轻量级同步机制的，能够感知其它线程的修改后的值。
-
-
 
 ## 参考
 
