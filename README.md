@@ -374,27 +374,47 @@
 - [SpringBoot项目启动增加自定义Banner](./杂记/SpringBoot项目启动增加自定义Banner/README.md)
 - [VSCode服务版搭建教程,让平板化为生产力工具](./杂记/VSCode服务版搭建教程/README.md)
 - [Windows平台编写bat脚本让后台启动多个程序](./杂记/Windows平台编写bat脚本让后台启动多个程序/README.md)
-- [记一次蘑菇博客差点被删库的经历](./杂记/记一次蘑菇博客差点被删库的经历/README.md)
+- [记一次博客差点被删库的经历](杂记/记一次博客差点被删库的经历/README.md)
 - [解决git默认不区分大小写的问题](./杂记/解决git默认不区分大小写的问题/README.md)
-- [蘑菇博客从Eureka迁移到Nacos](./杂记/蘑菇博客从Eureka迁移到Nacos/README.md)
-- [Windows环境下搭建蘑菇博客](./杂记/Windows环境下搭建蘑菇博客/README.md)
-- [Docker搭建蘑菇博客(Eureka版)](./杂记/Docker搭建蘑菇博客(Eureka版)/README.md)
-- [Docker搭建蘑菇博客(Nacos版)](./杂记/Docker搭建蘑菇博客(Nacos版)/README.md)
-- [DockerCompose一键部署蘑菇博客(Nacos版)](./杂记/DockerCompose一键部署蘑菇博客(Nacos版)/README.md)
-- [蘑菇博客Nacos安装指南](./杂记/蘑菇博客Nacos安装指南/README.md)
-- [蘑菇博客Sentinel安装指南](./杂记/蘑菇博客Sentinel安装指南/README.md)
-- [蘑菇博客QQ小程序发布指南](./杂记/蘑菇博客QQ小程序发布指南/README.md)
-- [蘑菇博客后台登录页面增加粒子特效](./杂记/蘑菇博客后台登录页面增加粒子特效/README.md)
-- [蘑菇博客集成MarkDown编辑器tui-editor](./杂记/蘑菇博客集成MarkDown编辑器tui-editor/README.md)
-- [蘑菇博客配置七牛云存储](./杂记/蘑菇博客配置七牛云存储/README.md)
-- [蘑菇博客配置域名解析](./杂记/蘑菇博客配置域名解析/README.md)
-- [蘑菇博客切换搜索模式](./杂记/蘑菇博客切换搜索模式/README.md)
-- [蘑菇博客部署到阿里云服务器(Eureka版)](./杂记/蘑菇博客部署到阿里云服务器(Eureka版)/README.md)
-- [蘑菇博客部署到阿里云服务器(Nacos版)](./杂记/蘑菇博客部署到阿里云服务器(Nacos版)/README.md)
-- [蘑菇博客如何扩展新的功能和页面](./杂记/蘑菇博客如何扩展新的功能和页面/README.md)
-- [蘑菇博客使用GithubAction完成持续集成](./杂记/蘑菇博客使用GithubAction完成持续集成/README.md)
-- [蘑菇博客使用SQL语句进行搜索出的内容忽略大小写并添加高亮效果](./杂记/蘑菇博客使用SQL语句进行搜索出的内容忽略大小写并添加高亮效果/README.md)
-- [蘑菇博客添加本地Markdown文件上传功能](./杂记/蘑菇博客添加本地Markdown文件上传功能/README.md)
+
+[comment]: <> (- [蘑菇博客从Eureka迁移到Nacos]&#40;./杂记/蘑菇博客从Eureka迁移到Nacos/README.md&#41;)
+
+[comment]: <> (- [Windows环境下搭建蘑菇博客]&#40;./杂记/Windows环境下搭建蘑菇博客/README.md&#41;)
+
+[comment]: <> (- [Docker搭建蘑菇博客&#40;Eureka版&#41;]&#40;./杂记/Docker搭建蘑菇博客&#40;Eureka版&#41;/README.md&#41;)
+
+[comment]: <> (- [Docker搭建蘑菇博客&#40;Nacos版&#41;]&#40;./杂记/Docker搭建蘑菇博客&#40;Nacos版&#41;/README.md&#41;)
+
+[comment]: <> (- [DockerCompose一键部署蘑菇博客&#40;Nacos版&#41;]&#40;./杂记/DockerCompose一键部署蘑菇博客&#40;Nacos版&#41;/README.md&#41;)
+
+[comment]: <> (- [蘑菇博客Nacos安装指南]&#40;./杂记/蘑菇博客Nacos安装指南/README.md&#41;)
+
+[comment]: <> (- [蘑菇博客Sentinel安装指南]&#40;./杂记/蘑菇博客Sentinel安装指南/README.md&#41;)
+
+[comment]: <> (- [蘑菇博客QQ小程序发布指南]&#40;./杂记/蘑菇博客QQ小程序发布指南/README.md&#41;)
+
+[comment]: <> (- [蘑菇博客后台登录页面增加粒子特效]&#40;./杂记/蘑菇博客后台登录页面增加粒子特效/README.md&#41;)
+
+[comment]: <> (- [蘑菇博客集成MarkDown编辑器tui-editor]&#40;./杂记/蘑菇博客集成MarkDown编辑器tui-editor/README.md&#41;)
+
+[comment]: <> (- [蘑菇博客配置七牛云存储]&#40;./杂记/蘑菇博客配置七牛云存储/README.md&#41;)
+
+[comment]: <> (- [蘑菇博客配置域名解析]&#40;./杂记/蘑菇博客配置域名解析/README.md&#41;)
+
+[comment]: <> (- [蘑菇博客切换搜索模式]&#40;./杂记/蘑菇博客切换搜索模式/README.md&#41;)
+
+[comment]: <> (- [蘑菇博客部署到阿里云服务器&#40;Eureka版&#41;]&#40;./杂记/蘑菇博客部署到阿里云服务器&#40;Eureka版&#41;/README.md&#41;)
+
+[comment]: <> (- [蘑菇博客部署到阿里云服务器&#40;Nacos版&#41;]&#40;./杂记/蘑菇博客部署到阿里云服务器&#40;Nacos版&#41;/README.md&#41;)
+
+[comment]: <> (- [蘑菇博客如何扩展新的功能和页面]&#40;./杂记/蘑菇博客如何扩展新的功能和页面/README.md&#41;)
+
+[comment]: <> (- [蘑菇博客使用GithubAction完成持续集成]&#40;./杂记/蘑菇博客使用GithubAction完成持续集成/README.md&#41;)
+
+[comment]: <> (- [蘑菇博客使用SQL语句进行搜索出的内容忽略大小写并添加高亮效果]&#40;./杂记/蘑菇博客使用SQL语句进行搜索出的内容忽略大小写并添加高亮效果/README.md&#41;)
+
+[comment]: <> (- [蘑菇博客添加本地Markdown文件上传功能]&#40;./杂记/蘑菇博客添加本地Markdown文件上传功能/README.md&#41;)
+
 - [如何给七牛云中的文件配置防盗链](./杂记/如何给七牛云中的文件配置防盗链/README.md)
 - [如何使用docsify给蘑菇博客编写开发文档](./杂记/如何使用docsify给蘑菇博客编写开发文档/README.md)
 - [如何制作github小徽章](./杂记/如何制作github小徽章/README.md)
