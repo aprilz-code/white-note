@@ -416,7 +416,7 @@
 [comment]: <> (- [蘑菇博客添加本地Markdown文件上传功能]&#40;./杂记/蘑菇博客添加本地Markdown文件上传功能/README.md&#41;)
 
 - [如何给七牛云中的文件配置防盗链](./杂记/如何给七牛云中的文件配置防盗链/README.md)
-- [如何使用docsify给蘑菇博客编写开发文档](./杂记/如何使用docsify给蘑菇博客编写开发文档/README.md)
+- [如何使用docsify给博客编写开发文档](杂记/如何使用docsify给博客编写开发文档/README.md)
 - [如何制作github小徽章](./杂记/如何制作github小徽章/README.md)
 - [使用开源项目申请JetBrains全家桶](./杂记/使用开源项目申请JetBrains全家桶/README.md)
 - [什么是CICD](./杂记/什么是CICD/README.md)

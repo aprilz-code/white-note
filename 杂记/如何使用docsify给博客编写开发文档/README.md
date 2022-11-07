@@ -1,4 +1,4 @@
-### <center>如何使用docsify给蘑菇博客编写开发文档
+### <center>如何使用docsify给博客编写开发文档
 ***
 ## 前言
 
@@ -6,7 +6,7 @@
 
 ![image-20200209103832912](https://cdn.losey.top/blog/image-20200209103832912.png)
 
-后面就开始琢磨着，自己也编写一个帮助文档，来展示蘑菇博客的一些配置博客都放在上面，这样即使网站宕机了，也能够查看到相关的文档
+后面就开始琢磨着，自己也编写一个帮助文档，来展示博客的一些配置博客都放在上面，这样即使网站宕机了，也能够查看到相关的文档
 
 经过技术调查，发现别人开源项目的文档都是通过docsify进行编写的
 
@@ -79,20 +79,20 @@ docsify serve
 然后新增一个markdown文件`_sidebar.md` , 如我的侧边栏为下面所示，其实是使用了超链接，每个目录都链接到我的目录下的markdown文件。
 
 ```
-- [**蘑菇博客**](README.md)
+- [**博客**](README.md)
 
 - **文档**
 
   - [项目介绍](doc/文档/项目介绍.md)
   - [技术选型](doc/文档/技术选型.md)
   - 项目搭建
-    - [Windows环境下搭建蘑菇博客](doc/文档/项目搭建/Windows环境下搭建蘑菇博客/README.md)
-    - [Docker搭建蘑菇博客](doc/文档/项目搭建/Docker搭建蘑菇博客/README.md)
-    - [蘑菇博客部署到云服务器](doc/文档/项目搭建/蘑菇博客部署到云服务器/README.md)
-    - [Github Actions完成蘑菇博客持续集成](doc/文档/项目搭建/蘑菇博客使用GithubAction完成持续集成/README.md)
-    - [蘑菇博客切换搜索模式](doc/文档/项目搭建/蘑菇博客切换搜索模式/README.md)
-    - [蘑菇博客配置七牛云对象存储](doc/文档/项目搭建/蘑菇博客配置七牛云存储/README.md)
-    - [使用Zipkin搭建蘑菇博客链路追踪](doc/文档/项目搭建/使用Zipkin搭建蘑菇博客链路追踪/README.md)
+    - [Windows环境下搭建博客](doc/文档/项目搭建/Windows环境下搭建博客/README.md)
+    - [Docker搭建博客](doc/文档/项目搭建/Docker搭建博客/README.md)
+    - [博客部署到云服务器](doc/文档/项目搭建/博客部署到云服务器/README.md)
+    - [Github Actions完成博客持续集成](doc/文档/项目搭建/博客使用GithubAction完成持续集成/README.md)
+    - [博客切换搜索模式](doc/文档/项目搭建/博客切换搜索模式/README.md)
+    - [博客配置七牛云对象存储](doc/文档/项目搭建/博客配置七牛云存储/README.md)
+    - [使用Zipkin搭建博客链路追踪](doc/文档/项目搭建/使用Zipkin搭建博客链路追踪/README.md)
 
 - **其他**
 
@@ -178,9 +178,9 @@ docsify默认是没有封面的，默认有个首页`./README.md`。
 ```
 <img width="180px" style="border-radius: 50%" bor src="./doc/images/gitee/favicon002.ico">
 
-# 蘑菇博客
+# 博客
 
-- 蘑菇博客，一个基于微服务架构的前后端分离博客系统。前台使用Vue + Element , 后端使用spring boot + spring cloud + mybatis-plus进行开发，使用 Jwt + Spring Security做登录验证和权限校验，使用ElasticSearch和Solr作为全文检索服务，使用Github Actions完成博客的持续集成，文件支持上传七牛云。
+- 博客，一个基于微服务架构的前后端分离博客系统。前台使用Vue + Element , 后端使用spring boot + spring cloud + mybatis-plus进行开发，使用 Jwt + Spring Security做登录验证和权限校验，使用ElasticSearch和Solr作为全文检索服务，使用Github Actions完成博客的持续集成，文件支持上传七牛云。
 
 [![star](https://gitee.com/moxi159753/mogu_blog_v2/badge/star.svg?theme=dark)](https://gitee.com/moxi159753/mogu_blog_v2/stargazers)
 [![fork](https://gitee.com/moxi159753/mogu_blog_v2/badge/fork.svg?theme=dark)](https://gitee.com/moxi159753/mogu_blog_v2/members)
@@ -299,13 +299,21 @@ doc.moguit.cn
 
 ![image-20200210132754297](https://cdn.losey.top/blog/image-20200210132754297.png)
 
-
-
 注意，这边moxi624.github.io就是我们刚刚创建的仓库名
 
 创建完成后，我们等待十分钟后，就能够正常访问我们的页面了~
 
 ![image-20200210132925813](https://cdn.losey.top/blog/image-20200210132925813.png)
+
+如需要设置主域名 ，则参考以下apex domain设置
+https://docs.github.com/cn/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site
+
+![img.png](img.png)
+
+![img_1.png](img_1.png)
+
+然后访问 https://losey.top/
+![img_2.png](img_2.png)
 
 ### 评论插件Gitalk
 
@@ -355,3 +363,4 @@ Gitalk 的特性：
 页面引入后的效果图
 
 ![image-20200210131515154](https://cdn.losey.top/blog/image-20200210131515154.png)
+
