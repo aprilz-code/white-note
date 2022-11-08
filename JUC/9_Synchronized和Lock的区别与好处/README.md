@@ -18,10 +18,10 @@
 
 - synchronized 和 lock 有什么区别？用新的lock有什么好处？举例说明
 
-1）synchronized属于JVM层面，属于java的关键字
+1）synchronized属于JVM层面，属于java的关键字,是隐式锁
 
-- ​	monitorenter（底层是通过monitor对象来完成，其实wait/notify等方法也依赖于monitor对象 只能在同步块或者方法中才能调用 wait/ notify等方法）
-- Lock是具体类（java.util.concurrent.locks.Lock）是api层面的锁
+- monitorenter（底层是通过monitor对象来完成，其实wait/notify等方法也依赖于monitor对象 只能在同步块或者方法中才能调用 wait/ notify等方法）
+- Lock是具体类（java.util.concurrent.locks.Lock）是api层面的锁,是显式锁
 
 2）使用方法：
 

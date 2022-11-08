@@ -50,6 +50,13 @@
   - [垃圾回收相关算法](./JVM/1_内存与垃圾回收篇/15_垃圾回收相关算法/README.md)
   - [垃圾回收相关概念](./JVM/1_内存与垃圾回收篇/16_垃圾回收相关概念/README.md)
   - [垃圾回收器](./JVM/1_内存与垃圾回收篇/17_垃圾回收器/README.md)
+  - [垃圾回收器2](./JVM/1_内存与垃圾回收篇/18_垃圾回收器2/README.md)
+  - [什么是GCRoots能做什么](./JVM/1_内存与垃圾回收篇/19_什么是GCRoots能做什么/README.md)
+  - [JVM参数调优](./JVM/1_内存与垃圾回收篇/20_JVM参数调优/README.md)
+  - [Java中的强引用_软引用_弱引用_虚引用分别是什么](./JVM/1_内存与垃圾回收篇/21_Java中的强引用_软引用_弱引用_虚引用分别是什么/README.md)
+  - [Java内存溢出OOM](./JVM/1_内存与垃圾回收篇/22_Java内存溢出OOM/README.md)
+  - [JVM体系结构](./JVM/1_内存与垃圾回收篇/JVM体系结构/README.md)
+
 - **JUC**
   - [Volatile和JMM内存模型的可见性](./JUC/1_谈谈Volatile/1_Volatile和JMM内存模型的可见性/README.md)
   - [Volatile不保证原子性](./JUC/1_谈谈Volatile/2_Volatile不保证原子性/README.md)
@@ -70,12 +77,7 @@
   - [Synchronized和Lock的区别与好处](./JUC/9_Synchronized和Lock的区别与好处/README.md)
   - [Java线程池详解](./JUC/10_线程池/README.md)
   - [死锁编码及快速定位](./JUC/11_死锁编码及快速定位/README.md)
-  - [JVM体系结构](./JUC/12_JVM/JVM体系结构/README.md)
-  - [什么是GCRoots能做什么](./JUC/12_JVM/JVM面试题汇总/1_什么是GCRoots能做什么/README.md)
-  - [JVM参数调优](./JUC/12_JVM/JVM面试题汇总/2_JVM参数调优/README.md)
-  - [Java中的强引用_软引用_弱引用_虚引用分别是什么](./JUC/12_JVM/JVM面试题汇总/3_Java中的强引用_软引用_弱引用_虚引用分别是什么/README.md)
-  - [Java内存溢出OOM](./JUC/12_JVM/JVM面试题汇总/4_Java内存溢出OOM/README.md)
-  - [垃圾回收器](./JUC/12_JVM/JVM面试题汇总/5_垃圾回收器/README.md)
+
 
   - [Github学习](./JUC/14_Github学习/README.md)
   - [乐观锁和悲观锁](./JUC/15_乐观锁和悲观锁/README.md)

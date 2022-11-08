@@ -23,7 +23,7 @@
 - [Synchronized和Lock的区别与好处](http://www.moguit.cn/#/info?blogUid=12f448bcca7fc10c94c4c232bef7a1fa)
 - [Java线程池详解](http://www.moguit.cn/#/info?blogUid=c0e5cbeaeb39d9a3139331a72432fbb1)
 - [死锁编码及快速定位](http://www.moguit.cn/#/info?blogUid=666b0babb173833986840a48e09173a8)
-- [JVM体系结构](./12_JVM/JVM体系结构)
+- [JVM体系结构](../JVM/1_内存与垃圾回收篇/JVM体系结构)
 - [什么是GCRoots能做什么](http://www.moguit.cn/#/info?blogUid=a38f34e2e708b279f9bfd5df7807bdd1)
 - [JVM参数调优](http://www.moguit.cn/#/info?blogUid=fca3fbcefaed38d2bbecca2e6a111905)
 - [Java中的强引用_软引用_弱引用_虚引用分别是什么](http://www.moguit.cn/#/info?blogUid=a6977c422f1da0a71a292e9fdeabf3c2)
