@@ -158,7 +158,7 @@
   - [Kibana安装与介绍](./ElasticStack/3_Kibana安装与介绍/README.md)
   - [Logstash入门简介](./ElasticStack/4_Logstash入门简介/README.md)
   - [ElasticStack综合案例](./ElasticStack/5_ElasticStack综合案例/README.md)
-  - [使用ELK搭建蘑菇博客日志收集](./ElasticStack/6_使用ELK搭建蘑菇博客日志收集/README.md)
+  - [使用ELK搭建博客日志收集](./ElasticStack/6_使用ELK搭建博客日志收集/README.md)
 
 
 - **SpringBoot**
@@ -205,8 +205,8 @@
   - [Windows平台编写bat脚本让后台启动多个程序](./杂记/Windows平台编写bat脚本让后台启动多个程序/README.md)
   - [记一次博客差点被删库的经历](杂记/记一次博客差点被删库的经历/README.md)
   - [解决git默认不区分大小写的问题](./杂记/解决git默认不区分大小写的问题/README.md)
-
-[comment]: <> (  - [蘑菇博客从Eureka迁移到Nacos]&#40;./杂记/蘑菇博客从Eureka迁移到Nacos/README.md&#41;)
+  - [Knife4j无法显示展开响应model](./杂记/Knife4j无法显示展开响应model/README.md)
+    [comment]: <> (  - [蘑菇博客从Eureka迁移到Nacos]&#40;./杂记/蘑菇博客从Eureka迁移到Nacos/README.md&#41;)
 
 [comment]: <> (  - [Windows环境下搭建蘑菇博客]&#40;./杂记/Windows环境下搭建蘑菇博客/README.md&#41;)
 
