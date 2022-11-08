@@ -120,14 +120,18 @@ jinfo -flag PrintGCDetails 13540
 jinfo -flags ***
 ```
 
+-Xmx256m -XX:+PrintGCDetails
+
+![img.png](img.png)
+
 ## 题外话（坑题）
 
-两个经典参数：-Xms  和 -Xmx，这两个参数 如何解释
+两个经典参数：-Xms 和 -Xmx，这两个参数 如何解释
 
 这两个参数，还是属于XX参数，因为取了别名
 
-- -Xms  等价于 -XX:InitialHeapSize  ：初始化堆内存（默认只会用最大物理内存的64分1）
-- -Xmx 等价于 -XX:MaxHeapSize    ：最大堆内存（默认只会用最大物理内存的4分1）
+- -Xms 等价于 -XX:InitialHeapSize ：初始化堆内存（默认只会用最大物理内存的64分1）
+- -Xmx 等价于 -XX:MaxHeapSize ：最大堆内存（默认只会用最大物理内存的4分1）
 
 ## 查看JVM默认参数
 
