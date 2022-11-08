@@ -196,7 +196,7 @@
 - [什么是GCRoots能做什么](./JVM/1_内存与垃圾回收篇/19_什么是GCRoots能做什么/README.md)
 - [JVM参数调优](./JVM/1_内存与垃圾回收篇/20_JVM参数调优/README.md)
 - [Java中的强引用_软引用_弱引用_虚引用分别是什么](./JVM/1_内存与垃圾回收篇/21_Java中的强引用_软引用_弱引用_虚引用分别是什么/README.md)
-- [Java内存溢出OOM](JVM/1_内存与垃圾回收篇/22_Java内存溢出OOM/README.md)
+- [Java内存溢出OOM](./JVM/1_内存与垃圾回收篇/22_Java内存溢出OOM/README.md)
 - [JVM体系结构](./JVM/1_内存与垃圾回收篇/JVM体系结构/README.md)
 
 ## JUC
