@@ -1,5 +1,15 @@
 ### <center>垃圾回收器
+
 ***
+
+```shell
+java -XX:+PrintCommandLineFlags -version
+```
+
+![img.png](img.png)
+
+UseParallelGC 即 Parallel Scavenge + Parallel Old,即JDK1.8默认垃圾回收器为ParallelGC：并行垃圾收集器
+
 ## GC分类与性能指标
 
 垃圾收集器没有在规范中进行过多的规定，可以由不同的厂商、不同版本的JVM来实现。
@@ -129,6 +139,9 @@
 - 串行回收器：Serial、Serial old
 - 并行回收器：ParNew、Parallel Scavenge、Parallel old
 - 并发回收器：CMS、G11
+
+并行回收器：指多条垃圾收集线程并行工作，但此时用户线程仍处于等待状态。STW 并发回收器：指用户线程与垃圾收集线程同时执行（但不一定是并行的，可能会交替执行），垃圾回收线程在执行时不会停顿用户程序的运行。
+用户程序在继续运行，而垃圾收集程序线程运行于另一个CPU上。
 
 ![image-20200713093551365](https://cdn.losey.top/blog/image-20200713093551365.png)
 
