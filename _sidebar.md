@@ -208,7 +208,8 @@
   - [记一次博客差点被删库的经历](杂记/记一次博客差点被删库的经历/README.md)
   - [解决git默认不区分大小写的问题](./杂记/解决git默认不区分大小写的问题/README.md)
   - [Knife4j无法显示展开响应model](./杂记/Knife4j无法显示展开响应model/README.md)
-    [comment]: <> (  - [蘑菇博客从Eureka迁移到Nacos]&#40;./杂记/蘑菇博客从Eureka迁移到Nacos/README.md&#41;)
+
+[comment]: <> (  - [蘑菇博客从Eureka迁移到Nacos]&#40;./杂记/蘑菇博客从Eureka迁移到Nacos/README.md&#41;)
 
 [comment]: <> (  - [Windows环境下搭建蘑菇博客]&#40;./杂记/Windows环境下搭建蘑菇博客/README.md&#41;)
 
