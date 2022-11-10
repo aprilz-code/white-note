@@ -154,12 +154,12 @@
 
 > 来源Bilibili尚硅谷李贺飞老师学习视频：[Java8新特性](https://www.bilibili.com/video/BV1ut411g7E9)
 
-- [HashMap变化](./校招面试/Java8新特性/1_HashMap变化/README.md)
-- [Lambda表达式](./校招面试/Java8新特性/2_Lambda表达式/README.md) 
-- [方法引用和构造器](./校招面试/Java8新特性/3_方法引用和构造器/README.md)
-- [强大的Stream](./校招面试/Java8新特性/4_强大的Stream/README.md)
-- [并行流](./校招面试/Java8新特性/5_并行流/README.md)
-- [Optional容器类](./校招面试/Java8新特性/6_Optional容器类/README.md)
+- [HashMap变化](./Java8新特性/1_HashMap变化/README.md)
+- [Lambda表达式](./Java8新特性/2_Lambda表达式/README.md)
+- [方法引用和构造器](./Java8新特性/3_方法引用和构造器/README.md)
+- [强大的Stream](./Java8新特性/4_强大的Stream/README.md)
+- [并行流](./Java8新特性/5_并行流/README.md)
+- [Optional容器类](./Java8新特性/6_Optional容器类/README.md)
 
 ## NIO
 

@@ -11,13 +11,20 @@
 - 最大化减少空指针异常（Optional）
 - 。。。。
 
+# HashMap1.8 底层源码分析
+
+两种情况下会扩容(resize)：1.初始化后第一次put，2.元素个数大于threshold值
+
+未设置初始容量（懒加载机制） – 第一次put 初始化capacity为16，threshold为12 – 元素个数大于threshold 将capacity扩大一倍，threshold也扩大一倍 设置过初始容量 – 第一次put
+将构造器中得到的threshold赋值给capacity，并将capacity的0.75赋值给threshold – 元素个数大于threshold 将capacity扩大一倍，threshold也扩大一倍
+
 ## HashMap1.7
 
 在JDK1.7 到 JDK1.8的时候，对HashMap做了优化
 
 首先JDK1.7的HashMap当出现Hash碰撞的时候，最后插入的元素会放在前面，这个称为 “头插法”
 
->JDK7用头插是考虑到了一个所谓的热点数据的点(新插入的数据可能会更早用到)，但这其实是个伪命题,因为JDK7中rehash的时候，旧链表迁移新链表的时候，如果在新表的数组索引位置相同，则链表元素会倒置(就是因为头插) 所以最后的结果 还是打乱了插入的顺序 所以总的来看支撑JDK7使用头插的这点原因也不足以支撑下去了 所以就干脆换成尾插 一举多得
+> JDK7用头插是考虑到了一个所谓的热点数据的点(新插入的数据可能会更早用到)，但这其实是个伪命题,因为JDK7中rehash的时候，旧链表迁移新链表的时候，如果在新表的数组索引位置相同，则链表元素会倒置(就是因为头插) 所以最后的结果 还是打乱了插入的顺序 所以总的来看支撑JDK7使用头插的这点原因也不足以支撑下去了 所以就干脆换成尾插 一举多得
 
 ![image-20200405101639700](https://cdn.losey.top/blog/image-20200405101639700.png)
 
@@ -350,6 +357,7 @@ OOM错误发生概率降低
 
 ## 参考
 
+- https://blog.csdn.net/u011357213/article/details/118463719
 - https://blog.csdn.net/zhangvalue/article/details/101483736
 - https://blog.csdn.net/apeopl/article/details/88935422
 - https://blog.csdn.net/chenyiminnanjing/article/details/82706942
