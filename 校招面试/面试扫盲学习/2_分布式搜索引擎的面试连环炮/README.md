@@ -85,6 +85,8 @@ Trie树，是一种树形结构，是一种哈希树的变种。典型应用是�
 
 ![01_elasticsearch分布式架构原理](https://cdn.losey.top/blog/01_elasticsearch分布式架构原理.png)
 
+(es 7.x 已经取消type)
+
 elasticsearch设计的理念就是分布式搜索引擎，底层其实还是基于lucene的。
 
 核心思想就是在多台机器上启动多个es进程实例，组成了一个es集群。
@@ -237,7 +239,7 @@ es里的写流程，有4个底层的核心概念，refresh、flush、translog、
 
 ## ES在数据量很大的情况下（数十亿级别）如何提高查询性能？
 
-![01_filesystem cache对es性能的影响](https://cdn.losey.top/blog/01_filesystem cache对es性能的影响.png)
+![01_filesystem cache对es性能的影响](https://cdn.losey.top/blog/01_filesystem%20cache%E5%AF%B9es%E6%80%A7%E8%83%BD%E7%9A%84%E5%BD%B1%E5%93%8D.png)
 
 说实话，es性能优化是没有什么银弹的，啥意思呢？就是不要期待着随手调一个参数，就可以万能的应对所有的性能慢的场景。也许有的场景是你换个参数，或者调整一下语法，就可以搞定，但是绝对不是所有场景都可以这样。
 
