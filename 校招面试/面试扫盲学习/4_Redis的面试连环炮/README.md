@@ -4,8 +4,8 @@
 ***
 ## 面试题
 
-- [Redis和Memcache有什么区别](##Redis和Memcache有什么区别)
-- [Redis的线程模型是什么？](##Redis的线程模型是什么？)
+- [Redis和Memcache有什么区别](?id=Redis和Memcache有什么区别)
+- [Redis的线程模型是什么？](?id=Redis的线程模型是什么？)
 - Redis的数据类型及应用场景？
 - 为什么单线程的Redis比多线程的Memcache的效率要高？
 - 为什么Redis是单线程但是还可以支撑高并发？

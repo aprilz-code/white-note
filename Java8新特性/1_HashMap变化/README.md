@@ -13,7 +13,8 @@
 
 # HashMap1.8 底层源码分析
 
-两种情况下会扩容(resize)：1.初始化后第一次put，2.元素个数大于threshold值
+两种情况下会扩容(resize)：  
+1.初始化后第一次put，2.元素个数大于threshold值
 
 未设置初始容量（懒加载机制）  
 – 第一次put 初始化capacity为16，threshold为12   
