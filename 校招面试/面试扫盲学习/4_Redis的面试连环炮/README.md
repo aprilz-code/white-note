@@ -4,19 +4,19 @@
 ***
 ## 面试题
 
-- [Redis和Memcache有什么区别](?id=Redis和Memcache有什么区别)
-- [Redis的线程模型是什么？](?id=Redis的线程模型是什么？)
-- Redis的数据类型及应用场景？
-- 为什么单线程的Redis比多线程的Memcache的效率要高？
-- 为什么Redis是单线程但是还可以支撑高并发？
-- Redis如何通过读写分离来承受百万的QPS
-- Redis的持久化策略有哪些？AOF和RDB各有什么优缺点
-- Redis的过期策略以及LRU算法
-- 如何保证Redis的高并发和高可用？
-- redis的主从复制原理能介绍一下么？
-- redis的哨兵原理能介绍一下么？
-- Redis主备切换的数据丢失问题：异步复制、集群脑裂
-- Redis哨兵的底层原理
+1. Redis和Memcache有什么区别
+2. Redis的线程模型是什么？
+3. Redis的数据类型及应用场景？
+4. 为什么单线程的Redis比多线程的Memcache的效率要高？
+5. 为什么Redis是单线程但是还可以支撑高并发？
+6. Redis如何通过读写分离来承受百万的QPS
+7. Redis的持久化策略有哪些？AOF和RDB各有什么优缺点
+8. Redis的过期策略以及LRU算法
+9. 如何保证Redis的高并发和高可用？
+10. redis的主从复制原理能介绍一下么？
+11. redis的哨兵原理能介绍一下么？
+12. Redis主备切换的数据丢失问题：异步复制、集群脑裂
+13. Redis哨兵的底层原理
 
 ## 剖析
 
