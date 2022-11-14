@@ -248,7 +248,7 @@ redis cluster的高可用的原理，几乎跟哨兵是类似的
 
 ### 缓存雪崩发生的现象
 
-因为缓存宕机，大量的请求打入数据库，导致整个系统宕机
+因为缓存宕机 or 缓存中数据大批量到过期时间，而查询数据量巨大，大量的请求打入数据库，导致整个系统宕机
 
 ![01_缓存雪崩现象](https://cdn.losey.top/blog/01_缓存雪崩现象.png)
 
@@ -274,8 +274,9 @@ redis cluster的高可用的原理，几乎跟哨兵是类似的
 
 ### 如何解决缓存穿透
 
-解决方案，每次系统从系统库只要没有查询到，就写一个空值到缓存中查找。
-
+解决方案  
+1. 每次系统从系统库只要没有查询到，就写一个空值到缓存中查找。
+2.  布隆过滤器         
 
 
 ## 如何保证缓存与数据库的双写一致性？
@@ -290,7 +291,7 @@ redis cluster的高可用的原理，几乎跟哨兵是类似的
 
 （2）更新的时候，先删除缓存，然后再更新数据库
 
-![cache aside pattern](https://cdn.losey.top/blog/cache aside pattern.png)
+![cache aside pattern](https://cdn.losey.top/blog/cache%20aside%20pattern.png)
 
 ### 为什么是删除缓存，而不是更新缓存呢？
 
