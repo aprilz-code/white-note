@@ -10,7 +10,7 @@
 原理
 --
 
-首先Js在设置cookie的时候，默认会存放在当前的域名下，因为我登录后，会返回www.moguit.cn的页面，同时附带token信息，那么我们的token也就值保存在了 www.moguit.cn页面，而我们通过浏览器输入www.moguit.cn其实访问的是moguit.cn的顶级域名
+首先Js在设置cookie的时候，默认会存放在当前的域名下，因为我登录后，会返回`www.moguit.cn`的页面，同时附带token信息，那么我们的token也就值保存在了`www.moguit.cn` 页面，而我们通过浏览器输入 `www.moguit.cn` 其实访问的是`moguit.cn`的顶级域名
 
 那么就会造成：二级子域名下的cookie和顶级域名不共享的。同理 a.example.com下设置cookie， 在b.example.com下也是无法正常使用的
 
