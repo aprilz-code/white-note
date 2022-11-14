@@ -285,7 +285,7 @@ redis cluster的高可用的原理，几乎跟哨兵是类似的
 
 ### Cache Aside Pattern
 
-最经典的缓存+数据库读写的模式，cache aside pattern
+最经典的缓+数据库读写存的模式，cache aside pattern
 
 （1）读的时候，先读缓存，缓存没有的话，那么就读数据库，然后取出数据后放入缓存，同时返回响应
 
@@ -293,7 +293,7 @@ redis cluster的高可用的原理，几乎跟哨兵是类似的
 
 ![cache aside pattern](https://cdn.losey.top/blog/cache%20aside%20pattern.png)
 
-### 为什么是删除缓存，而不是更新缓存呢？
+### Cache-Aside缓存模式写请求时，为什么是删除缓存，而不是更新缓存呢？
 
 原因很简单，很多时候，复杂点的缓存的场景，因为缓存有的时候，不简单是数据库中直接取出来的值
 
@@ -323,7 +323,24 @@ mybatis，hibernate，懒加载，思想
 
 先查部门，同时要访问里面的员工，那么这个时候只有在你要访问里面的员工的时候，才会去数据库里面查询1000个员工
 
+常规
+读请求流程  
 
+![读请求](https://img-blog.csdnimg.cn/347b6efb0cae4efb97a9f1d5fdebd3cc.png#pic_center)
+
+写请求流程  
+![写请求](https://img-blog.csdnimg.cn/d76cf95a69e649818a1cc436c335cc89.png#pic_center)
+
+
+模拟流程  
+
+模拟两个线程A和B，都对服务器发出写请求，并用数字标号记录操作的顺序，如下图所示。
+
+![模拟流程](https://img-blog.csdnimg.cn/bbf78e5bbf894ee1b8defa5bf2bfdc50.png#pic_center)
+
+走完上述流程后不难发现，缓存保存的是A的数据（老数据），数据库保存的是B的数据（新数据），数据不一致了，脏数据出现。因此删除缓存，而不是更新缓存，这是原因之一。
+其次，写入缓存值需要经过复杂计算，如果更新缓存频率高，会极大浪费性能。
+最后，在写多读少的场景，数据经常没有读就更新了，也浪费了性能。因此，写多的时候，使用缓存不是很划算。
 
 ### 数据库双写不一致问题分析与解决方案设计
 
