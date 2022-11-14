@@ -90,7 +90,7 @@ Redis Cluster有固定的16384个Hash slot，对每个key计算CRC16值，然后
 
 如果有一台master宕机了，其它节点上的缓存几乎不受影响，因为它取模运算是根据 Hash slot来的，也就是 16384，而不是根据Redis的机器数。
 
-![redis cluster hash slot算法](https://cdn.losey.top/blog/redis cluster hash slot算法.png)
+![redis cluster hash slot算法](https://cdn.losey.top/blog/redis%20cluster%20hash%20slot%E7%AE%97%E6%B3%95.png)
 
 ### Redis Cluster节点通信
 
