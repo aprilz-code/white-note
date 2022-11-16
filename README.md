@@ -341,6 +341,7 @@
 - [使用DevTool实现SpringBoot项目热部署](./SpringBoot/使用DevTool实现SpringBoot项目热部署/README.md)
 - [使用自定义日志接口收集用户访问日志](./SpringBoot/使用自定义日志接口收集用户访问日志/README.md)
 - [Bean的生命周期](./SpringBoot/Bean的生命周期/README.md)
+- [Hibernate Validator常用注解](./SpringBoot/Hibernate Validator常用注解/README.md)
 
 ## Vue
 
