@@ -171,6 +171,10 @@
 
 - [CPU飙高](./生产排查/CPU飙高/README.md)
 
+## 生产问题
+
+- [记录点赞数异步化解决方案](./生产问题/记录点赞数异步化解决方案/README.md)
+
 ## JVM
 
 > 来源Bilibili尚硅谷宋红康老师JVM教程：[硅谷2020最新版宋红康JVM教程](https://www.bilibili.com/video/BV1PJ411n7xZ)
