@@ -482,6 +482,11 @@
 - [数据链路层](./计算机网络/5_数据链路层/README.md)
 - [http中的状态码](./计算机网络/http中的状态码/README.md)
 
+## 青龙
+
+- [windows安装docker版青龙面板](./ql/windows安装docker版青龙面板/README.md)
+
+
 ## 面经
 
 - [京东面经](./校招面试/面经汇总/1_京东面经/README.md)
