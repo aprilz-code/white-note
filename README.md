@@ -486,6 +486,10 @@
 
 - [windows安装docker版青龙面板](./ql/windows安装docker版青龙面板/README.md)
 
+## 小米运动
+
+- [小米运动修改支付宝微信步数(支持定时)](./mi/小米运动修改支付宝微信步数(支持定时)/README.md)
+
 
 ## 面经
 
