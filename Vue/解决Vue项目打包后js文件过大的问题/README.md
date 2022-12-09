@@ -23,7 +23,7 @@ productionGzipExtensions: ['js', 'css'],
 
 然后在修改 **build/webpack.prod.conf.js** 文件，修改如下内容
 
-```bash
+```javascript
 // 判断配置文件是否开启了gzip加速
 if (config.build.productionGzip) {
   // 引入压缩文件的组件，该插件会对生成的文件进行压缩，生成一个.gz文件
@@ -37,7 +37,7 @@ if (config.build.productionGzip) {
       ),
       threshold: 10240, // 资源大于10240=10KB时会被压缩
       minRatio: 0.8,
-      deleteOriginalAssets: false, // 是否删除原资源
+      deleteOriginalAssets: false, // 是否删除原资源,必须true,否则会出现找不到文件404
     })
   )
 }

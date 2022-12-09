@@ -200,6 +200,8 @@
   - [Vue中防止XSS脚本攻击](./Vue/Vue中防止XSS脚本攻击/README.md)
   - [Vue如何使用G2绘制图片](./Ant/G2/Vue如何使用G2绘制图片/README.md)
   - [使用Vuex进行两个页面逻辑交互](./Vue/使用Vuex进行两个页面逻辑交互/README.md)
+  - [ELEMENTUI修改类库的全局配置的默认属性(npm以及CDN引入)](./Vue/ELEMENTUI修改类库的全局配置的默认属性(npm以及CDN引入)/README.md)
+
 - **杂记**
   - [idea自动提交检查](./杂记/idea自动提交检查/README.md)
   - [CKEditor前端样式和编辑器的样式不一致的问题](./杂记/CKEditor前端样式和编辑器的样式不一致的问题/README.md)
