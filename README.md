@@ -176,6 +176,10 @@
 - [记录点赞数异步化解决方案](./生产问题/记录点赞数异步化解决方案/README.md)
 - [JVM 优化踩坑记](https://www.javazhiyin.com/106110.html)
 - [MySQL 上亿大表如何优化？](https://www.javazhiyin.com/106056.html)
+  
+## 解决方案
+
+- [解决方案](./解决方案/1_秒杀系统难点解决方案/README.md)
 
 ## JVM
 
