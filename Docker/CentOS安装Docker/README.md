@@ -2,7 +2,7 @@
 
 官方文档 ：[https://docs.docker.com/engine/install/centos/](https://docs.docker.com/engine/install/centos/)
 
-![Untitled](image/Untitled.png)
+![png](https://file.losey.top/20230119docker.png)
 
 ```bash
 # 1 卸载旧版本
