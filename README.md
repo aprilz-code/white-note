@@ -251,6 +251,8 @@
 - [如何将镜像推送到阿里云容器镜像服务](./Docker/如何将镜像推送到阿里云容器镜像服务/README)
 - [使用DockerCompose制作蘑菇博客YAML镜像文件](./Docker/使用DockerCompose制作蘑菇博客YAML镜像文件/README.md)
 - [使用GithubAction构建蘑菇博客镜像提交DockerHub](./Docker/使用GithubAction构建蘑菇博客镜像提交DockerHub/README.md)
+- [docker容器大小查看及清理docker磁盘空间](./Docker/docker容器大小查看及清理docker磁盘空间.md)
+
 
 ## K8S
 

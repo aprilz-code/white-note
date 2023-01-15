@@ -1,4 +1,4 @@
-### <center>Java8新特性
+### <center>Java8新特性之HashMap
 ***
 ## 主要特性
 

@@ -2,7 +2,7 @@
 ***
 
 
-## 1.下载docker
+## 1.下载dochuker
 
 Docker Desktop 官方下载地址： [windows docker](https://docs.docker.com/desktop/install/windows-install/)
 

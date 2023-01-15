@@ -40,9 +40,6 @@ ip2region - 准确率99.9%的离线IP地址定位库，0.0x毫秒级查询，ip2
 
 ![image-20200531084709141](https://cdn.losey.top/blog/image-20200531084709141.png)
 
-然后我们放在我们工具类的resource目录下，创建一个city文件夹存放
-
-![image-20200531084752121](https://cdn.losey.top/blog/image-20200531084752121.png)
 
 然后在原来的IP工具类中，添加下面方法
 
@@ -264,9 +261,6 @@ int algorithm = DbSearcher.BTREE_ALGORITHM;
 ```
 
 最后运行后，会发现在项目的根目录下，会创建一个temp目录，用于存放我们的`.db`文件
-
-![image-20200531095340010](https://cdn.losey.top/blog/image-20200531095340010.png)
-
 我们再次打包部署服务器后，发现能够成功获取到IP城市信息了~
 
 ![image-20200531100104493](https://cdn.losey.top/blog/image-20200531100104493.png)

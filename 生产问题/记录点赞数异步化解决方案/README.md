@@ -10,7 +10,7 @@
 ### 1 业务场景
 老师登录教研平台，会看到课程列表，点击课程后，课程会以视频的形式展现出来。
 
-![img](img/img.png)
+![img](https://file.losey.top/blog/202301101031466.png)
 
 访问课程详情页面，包含两个核心动作：
 
@@ -55,7 +55,7 @@
 当时按照这种粗糙的方法优化后，红包系统非常稳定，再也没有出现接口响应超时的问题。
 
 回到教研的场景，见下图，我们也可以设计类似线程池模型的方案：
-![img2](img/img2.png)
+![img2](https://file.losey.top/blog/202301101031489.png)
 
 使用线程池模式，需要注意如下几点：
 
@@ -67,7 +67,7 @@
 开源中国统计浏览数的方案非常经典。
 
 用户访问过一次文章、新闻、代码详情页面，访问次数字段加 1 , 在 oschina 上这个操作是异步的，访问的时候只是将数据在内存中保存，每隔固定时间将这些数据写入数据库。
-![img3](img/img3.png)
+![img3](https://file.losey.top/blog/202301101031891.png)
 
 示例代码如下：
 
@@ -200,7 +200,7 @@ public class VisitStatService extends TimerTask {
 
 ### 4 MQ模式
 很多同学们会想到 MQ 模式 ，消息队列最核心的功能是异步和解耦，MQ 模式架构清晰，易于扩展。
-![img4](img/img4.png)
+![img4](https://file.losey.top/blog/202301101031680.png)
 
 核心流程如下：
 
@@ -216,7 +216,7 @@ public class VisitStatService extends TimerTask {
 
 ### 5 Agent 服务 + MQ 模式
 互联网大厂还有一种常见的异步的方案：Agent 服务 + MQ 模式。
-![img5](img/img5.png)
+![img5](https://file.losey.top/blog/202301101031007.png)
 教研服务器上部署 Agent 服务（独立的进程） , 教研服务接收写请求后，将请求按照固定的格式（比如 JSON ）写入到磁盘中，然后给前端返回成功信息。
 
 Agent 服务会监听文件变动，将文件内容发送到消息队列 , 消费者服务获取观看行为记录，将其存储到 MySQL 数据库中。
