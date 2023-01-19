@@ -476,6 +476,7 @@
 - [MySQL基础](./数据库/MySQL基础/README.md)
 - [MySQL优化](./数据库/MySQL优化/README.md)
 - [MySQL索引](./数据库/MySQL索引/README.md)
+- [MySQL索引](./数据库/mysql定时备份并上传Gitee私有仓库.md)
 
 ## 操作系统
 
