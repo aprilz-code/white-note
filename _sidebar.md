@@ -218,10 +218,10 @@
   - [SpringBoot项目启动增加自定义Banner](./杂记/SpringBoot项目启动增加自定义Banner/README.md)
   - [VSCode服务版搭建教程,让平板化为生产力工具](./杂记/VSCode服务版搭建教程/README.md)
   - [Windows平台编写bat脚本让后台启动多个程序](./杂记/Windows平台编写bat脚本让后台启动多个程序/README.md)
-  - [记一次博客差点被删库的经历](杂记/记一次博客差点被删库的经历/README.md)
   - [解决git默认不区分大小写的问题](./杂记/解决git默认不区分大小写的问题/README.md)
   - [Knife4j无法显示展开响应model](./杂记/Knife4j无法显示展开响应model/README.md)
   - [申请免费域名以及SSL证书的方法以及总结](./杂记/申请免费域名以及SSL证书的方法以及总结/README.md)
+  - [使用GitAction完成Springboot构建Docker镜像部署并推送到阿里云镜像](./杂记/使用GitAction完成Springboot构建Docker镜像部署并推送到阿里云镜像.md)
 
 [comment]: <> (  - [蘑菇博客从Eureka迁移到Nacos]&#40;./杂记/蘑菇博客从Eureka迁移到Nacos/README.md&#41;)
 

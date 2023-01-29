@@ -35,7 +35,7 @@ mutt moxi0624@gmail.com -s "mogu_blog备份脚本" -a mogu_blog_business.sql
 yum install git
 
 # 创建一个README文件
-echo "# MoguSQLBak" >> README.md
+echo "# MoguSQLBak" >> 使用GitAction完成Springboot构建Docker镜像部署并推送到阿里云镜像.md
 
 # 将全部信息添加到暂存区
 git add *
