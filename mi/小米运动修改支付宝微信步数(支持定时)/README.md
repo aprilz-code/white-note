@@ -9,7 +9,7 @@
 
 ## 2 打开 网址直接刷即可
 
-刷步数网址 :  [mi.losey.top](https://mi.losey.top)
+刷步数网址 :  [www.losey.top](https://www.losey.top) 然后点击 `工具`
 
 完成即可
 
