@@ -38,8 +38,8 @@
   - [MySQL 上亿大表如何优化？](https://www.javazhiyin.com/106056.html)
 
 - **解决方案**
-  - [解决方案](./解决方案/1_秒杀系统难点解决方案/README.md)
-  - [解决方案](./解决方案/2_excel大批量导出解决方案/README.md)
+  - [秒杀系统难点](./解决方案/1_秒杀系统难点解决方案/README.md)
+  - [Excel大批量导出](./解决方案/2_excel大批量导出解决方案/README.md)
 
 - **JVM**
   - [JVM与Java体系结构](JVM/1_内存与垃圾回收篇/1_JVM与Java体系结构/README.md)
