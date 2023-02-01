@@ -33,14 +33,21 @@ jobs:
 
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-java@v1
+      - uses: actions/checkout@v3
+      - uses: actions/setup-java@v3.9.0
         with:
-          java-version: 1.8
+          java-version: 8.0.362+9
+          distribution: 'temurin'
+          cache: maven
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJSON(github) }}
+        # 将GTIHUB的信息都打印出来，后面的脚本可以使用这些信息，例如后面的镜像TAG用的就是这里面的commitid
+        run: echo "Hello ${{ github.event.commits[0].id }}"
       - uses: docker/setup-buildx-action@v1
-#      - uses: actions/setup-node@v1
+#      - uses: actions/setup-node@v3.6.0
 #        with:
-#          node-version: 12.x
+#          node-version: 14.x
       # 安装maven依赖
       - name: Maven Clean Install
         run: |
@@ -50,21 +57,39 @@ jobs:
           echo '=====开始mvn install&&package====='
           mvn install -DskipTests=true && mvn package -DskipTests=true
 
-
-        # 构建镜像，指定镜像名   这里pom使用了docker-maven-plugin，如不使用，自行修改成shell，去使用Dockerfile也可以
-      - name: Build Java Docker Images
+      - name: Extract files from jar && Build Java Docker Images
+        # 从构建好的jar中提取制作镜像所需的内容，例如依赖jar、class、配置文件等
         run: |
+          echo '=====提取jar并Build Java Docker Images====='
+          cp yudao-server/target/yudao-server.jar yudao-server/src/main/resources/yudao-server.jar
+          cd ./yudao-server/src/main/resources
+          docker build -t registry.cn-shenzhen.aliyuncs.com/whiteblog/yudao-server .
+          cd ../../../..
 
-          echo '=====开始构建镜像====='
-          echo '=====开始构建gateway====='
-          cd gateway
-          mvn docker:build
-          cd ..
-
+#      - name: Build yudao-ui-admin
+#        run: |
+#          echo '=====开始安装yudao-ui-admin依赖====='
+#          cd ./yudao-ui-admin
+#          npm install
+#          npm run build:prod
+#          cd ..
+#
+#
+#      # 构建镜像，指定镜像名
+#      - name: Build Vue Docker Images
+#        run: |
+#
+#          echo '=====开始构建镜像====='
+#          echo '=====开始构建yudao-ui-admin====='
+#          cd yudao-ui-admin
+#          docker build -t registry.cn-shenzhen.aliyuncs.com/whiteblog/yudao_ui_admin .
+#          cd ..
+#
+#          echo '=====镜像构建结束====='
 
       # 登录到 阿里云镜像服务，使用 GitHub secrets 传入账号密码，密码被加密存储在 GitHub 服务器
       - name: Login to Aliyun
-        uses: docker/login-action@v1
+        uses: docker/login-action@v2  # 三方的action操作， 执行docker login
         with:
           registry: registry.cn-shenzhen.aliyuncs.com
           username: ${{ secrets.ALIYUN_USER_NAME }}
@@ -73,11 +98,9 @@ jobs:
       - name: Push Docker Image
         run: |
           echo '=====开始上传镜像====='
-          echo '=====开始上传gateway====='
-          docker push registry.cn-shenzhen.aliyuncs.com/whiteblog/gateway
-
+          docker push registry.cn-shenzhen.aliyuncs.com/whiteblog/yudao-server
           echo '=====镜像上传结束====='
-# ssh方式
+
 #      - name: Update New Docker Image And Restart Server
 #        uses: appleboy/ssh-action@master
 #        with:
@@ -90,7 +113,7 @@ jobs:
 #            ./update.sh
 
 
-# 用户名密码方式
+
       - name: Update New Docker Image And Restart Server
         uses: appleboy/ssh-action@master
         with:
@@ -100,29 +123,27 @@ jobs:
      #     key: ${{ secrets.REMOTE_ACCESS_TOKEN }}
           script: |
             cd /home
-            ./baseUpdate.sh
+            chmod +x deployDocker.sh
+            ./deployDocker.sh
+
 
 ```
 
 
-bashUpdate.sh
+deployDocker.sh
 
 ```shell
 #!/usr/bin/env bash
-
-echo '=====开始更新镜像====='
 
 echo '=====开始关闭运行的容器====='
 echo '=========================='
 echo '=====结束后台服务运行====='
 echo '=========================='
 
-echo '=====结束运行gateway====='
-docker-compose -f ./gateway.yml down
+docker-compose -f ./yudao-server.yml down
 
-
-echo '=====开始更新gateway====='
-docker pull registry.cn-shenzhen.aliyuncs.com/whiteblog/gateway
+echo '=====开始更新镜像====='
+docker pull registry.cn-shenzhen.aliyuncs.com/whiteblog/yudao-server
 
 
 echo '=====删除docker标签为none的镜像====='
@@ -133,10 +154,12 @@ echo '======================'
 echo '=====开始运行后台====='
 echo '======================'
 
-echo '=====开始运行gateway====='
-docker-compose -f ./gateway.yml up -d
-
+echo '=====开始运行容器====='
+docker-compose -f ./yudao-server.yml up -d
 
 echo '执行完成 日志目录: ./log'
 
+
 ```
+
+具体GITHUB代码地址 ： https://github.com/aprilz-code/ruoyi-vue-pro.git
