@@ -23,12 +23,16 @@ public class TestHashMap {
         //取出keyset转数组
         Object[] keys = map.keySet().toArray();
 
+        //取出values转数组
+        Object[] values = map.values().toArray();
+
         //随机一个index
         int index= (int)(Math.random() * keys.length);
 
+        System.out.println( values[index]);
+
         //取出随便index下标 hashmap里的值
         System.out.println(map.get(index));
-
 
     }
 }
