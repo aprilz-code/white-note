@@ -1,28 +1,47 @@
-### <center>Java8新特性之HashMap
-***
-## 主要特性
-
-- Lambda表达式
-- 函数式接口
-- 方法引用与构造器引用
-- Stream API
-- 接口中默认方法与静态方法
-- 新时间日期API
-- 最大化减少空指针异常（Optional）
-- 。。。。
-
-# HashMap1.8 底层源码分析
 
 两种情况下会扩容(resize)：  
 1.初始化后第一次put，2.元素个数大于threshold值
 
 未设置初始容量（懒加载机制）  
 – 第一次put 初始化capacity为16，threshold为12   
-– 元素个数大于threshold 将capacity扩大一倍，threshold也扩大一倍  
+– 元素个数大于threshold 将capacity扩大一倍，threshold也扩大一倍
 
 设置过初始容量   
 – 第一次put 将构造器中得到的threshold赋值给capacity，并将capacity的0.75赋值给threshold   
-– 元素个数大于threshold 将capacity扩大一倍，threshold也扩大一倍  
+– 元素个数大于threshold 将capacity扩大一倍，threshold也扩大一倍
+
+## 放入元素
+我们每放入一个元素的时候，放入的是 key:value
+
+然后HashMap内部会通过key计算出一个hash(key)。
+这个hash(key)就是放在table数组中的元素。
+
+那在读写元素的时候，会先通过hash(key)计算出在table数组中的位置，
+然后将其放置在该数组元素后面对应的 链表或红黑树 中。
+因此，如果多个元素hash(key)一样，则放置在同一个数组元素后面而不会引发覆盖，
+如果key一样才会真正引发覆盖。
+
+
+## HashMap的put方 法的底层原理
+1.根据key的hashCode计算出数组index
+
+2.落槽时
+
+1.如果数组中节点为null,创建新的节点对象，把k,v存储在节点对象中，把节点对象存储在数组中
+
+2.如果数组的节点不为nu1l,判断节点的key与插入元素的key是否相等
+
+1.相等，直接用新的k, v覆盖原节点中的k,v
+
+2.不相等，判断此时节点是否为红黑树
+
+1.是红黑树，创建红黑树节点对象存储k,v,插入到红黑树中
+
+2.不是红黑树，创建链表节点对象存储k,v,插入到链表中，判断链表长度是否大于阈值8
+
+1.大于阈值8，切数组长度大于64后才将链表转换为红黑树，否则继续创建链表节点插入
+
+3.判断++size是否大于阈值，是就扩容
 
 ## HashMap1.7
 
@@ -184,7 +203,7 @@ e.next = newTable[i] 导致 key(3).next 指向了 key(7)
 
 ![image-20200405105401674](https://cdn.losey.top/blog/image-20200405105401674.png)
 
- 第一个截图是向HashMap中添加元素putVal()方法的部分源码，可以看出，向集合中添加元素时，会使用(n - 1) & hash的计算方法来得出该元素在集合中的位置；而第二个截图是HashMap扩容时调用resize()方法中的部分源码，可以看出会新建一个tab，然后遍历旧的tab，将旧的元素进过e.hash & (newCap - 1)的计算添加进新的tab中，也就是(n - 1) & hash的计算方法，其中n是集合的容量，hash是添加的元素进过hash函数计算出来的hash值
+第一个截图是向HashMap中添加元素putVal()方法的部分源码，可以看出，向集合中添加元素时，会使用(n - 1) & hash的计算方法来得出该元素在集合中的位置；而第二个截图是HashMap扩容时调用resize()方法中的部分源码，可以看出会新建一个tab，然后遍历旧的tab，将旧的元素进过e.hash & (newCap - 1)的计算添加进新的tab中，也就是(n - 1) & hash的计算方法，其中n是集合的容量，hash是添加的元素进过hash函数计算出来的hash值
 
 HashMap的容量为什么是2的n次幂，和这个(n - 1) & hash的计算方法有着千丝万缕的关系，符号&是按位与的计算，这是位运算，计算机能直接运算，特别高效，按位与&的计算方法是，只有当对应位置的数据都为1时，运算结果也为1，当HashMap的容量是2的n次幂时，(n-1)的2进制也就是1111111***111这样形式的，这样与添加元素的hash值进行位运算时，能够充分的散列，使得添加的元素均匀分布在HashMap的每个位置上，减少hash碰撞，下面举例进行说明。
 
@@ -202,7 +221,7 @@ HashMap的容量为什么是2的n次幂，和这个(n - 1) & hash的计算方法
 
 ## JDK1.8结构变化
 
-由JDK1.7的，数组 + 链表 
+由JDK1.7的，数组 + 链表
 
 JDK1.8变为：数组 + 链表 + 红黑树
 
@@ -210,7 +229,7 @@ JDK1.8变为：数组 + 链表 + 红黑树
 
 这么做的好处是什么：除了添加元素外，查询和删除效率比链表快
 
-红黑树查询、增加和删除的时间复杂度：O(log<sub>2</sub>n) 
+红黑树查询、增加和删除的时间复杂度：O(log<sub>2</sub>n)
 
 链表的查询和删除的时间复杂度： O(n)，插入为：O(1)
 
@@ -273,14 +292,14 @@ JDK1.8的ConcurrentHashMap摒弃了1.7的segment设计，而是JDK1.8版本的Ha
 
 ```java
 Node<K,V> f; int n, i, fh; K fk; V fv;
-if (tab == null || (n = tab.length) == 0)
-    // 这里在整个map第一次操作时，初始化hash桶， 也就是一个table
-    tab = initTable(); 
-else if ((f = tabAt(tab, i = (n - 1) & hash)) == null) {
-    //如果是第一个object， 则直接cas放入， 不用锁
-    if (casTabAt(tab, i, null, new Node<K,V>(hash, key, value)))
-        break;                   
-}
+        if (tab == null || (n = tab.length) == 0)
+        // 这里在整个map第一次操作时，初始化hash桶， 也就是一个table
+        tab = initTable();
+        else if ((f = tabAt(tab, i = (n - 1) & hash)) == null) {
+        //如果是第一个object， 则直接cas放入， 不用锁
+        if (casTabAt(tab, i, null, new Node<K,V>(hash, key, value)))
+        break;
+        }
 ```
 
 然后， 如果不是链表第一个object， 则直接用链表第一个object加锁，这里加的锁是Synchronized，虽然效率不如 ReentrantLock， 但节约了空间，这里会一直用第一个object为锁， 直到重新计算map大小， 比如扩容或者操作了第一个object为止。
@@ -288,40 +307,40 @@ else if ((f = tabAt(tab, i = (n - 1) & hash)) == null) {
 ```java
 // 这里的f即为第一个链表的object
 synchronized (f) {
-    if (tabAt(tab, i) == f) {
+        if (tabAt(tab, i) == f) {
         if (fh >= 0) {
-            binCount = 1;
-            for (Node<K,V> e = f;; ++binCount) {
-                K ek;
-                if (e.hash == hash &&
-                    ((ek = e.key) == key ||
-                     (ek != null && key.equals(ek)))) {
-                    oldVal = e.val;
-                    if (!onlyIfAbsent)
-                        e.val = value;
-                    break;
-                }
-                Node<K,V> pred = e;
-                if ((e = e.next) == null) {
-                    pred.next = new Node<K,V>(hash, key, value);
-                    break;
-                }
-            }
+        binCount = 1;
+        for (Node<K,V> e = f;; ++binCount) {
+        K ek;
+        if (e.hash == hash &&
+        ((ek = e.key) == key ||
+        (ek != null && key.equals(ek)))) {
+        oldVal = e.val;
+        if (!onlyIfAbsent)
+        e.val = value;
+        break;
+        }
+        Node<K,V> pred = e;
+        if ((e = e.next) == null) {
+        pred.next = new Node<K,V>(hash, key, value);
+        break;
+        }
+        }
         }
         else if (f instanceof TreeBin) { // 太长会用红黑树
-            Node<K,V> p;
-            binCount = 2;
-            if ((p = ((TreeBin<K,V>)f).putTreeVal(hash, key,
-                                           value)) != null) {
-                oldVal = p.val;
-                if (!onlyIfAbsent)
-                    p.val = value;
-            }
+        Node<K,V> p;
+        binCount = 2;
+        if ((p = ((TreeBin<K,V>)f).putTreeVal(hash, key,
+        value)) != null) {
+        oldVal = p.val;
+        if (!onlyIfAbsent)
+        p.val = value;
+        }
         }
         else if (f instanceof ReservationNode)
-            throw new IllegalStateException("Recursive update");
-    }
-}
+        throw new IllegalStateException("Recursive update");
+        }
+        }
 ```
 
 分段锁技术是在java8以前使用的，在java8已经弃用了，更新为synchronized+cas
@@ -367,3 +386,4 @@ OOM错误发生概率降低
 - https://blog.csdn.net/zhangvalue/article/details/101483736
 - https://blog.csdn.net/apeopl/article/details/88935422
 - https://blog.csdn.net/chenyiminnanjing/article/details/82706942
+- https://blog.csdn.net/yanyanzhenshuai/article/details/125626772
