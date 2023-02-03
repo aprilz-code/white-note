@@ -96,7 +96,8 @@ mkdir $dt_now
 find  /var/lib/mysql-files/bak/  -mtime +21 -exec rm -rf {} \;（删除超过21天的备份）
 
 echo "start backup mysql"    #（这里我们随便找一个数据库为例）
-mysqldump -uroot -ppeiqi666 mi > /var/lib/mysql-files/bak/$dt_now/mi.sql
+#mysqldump -uroot -ppeiqi666 mi > /var/lib/mysql-files/bak/$dt_now/mi.sql
+mysqldump --defaults-extra-file=/etc/my.cnf mi > /var/lib/mysql-files/bak/$dt_now/mi.sql
 ```
 
 pushGitee.sh
@@ -118,7 +119,13 @@ git commit -m "commit"
 git push -u origin master
 ```
 
-
+在my.cnf中添加
+```
+[mysqldump]
+user = root
+password = 'peiqi666'
+```
+否则会报错，参考：https://blog.csdn.net/m0_63410395/article/details/126821972
 
 先放出我的docker-compose-mysql.yml
 
@@ -254,7 +261,7 @@ systemctl enable crond
 
 
 
-## 拓展以及可能出现的问题： 
+## 拓展以及可能出现的问题：
 
 1、/bin/sh是/bin/bash的软连接，在一般的[linux](https://so.csdn.net/so/search?q=linux&spm=1001.2101.3001.7020)系统当中，使用sh调用执行脚本相当于打开了bash的POSIX标准模式，也就是说 /bin/sh 相当于 /bin/bash --posix
 2、/bin/sh执行过程中，若出现命令执行失败，则会停止执行；/bin/bash执行过程中，若命令执行失败，仍然会继续执行
