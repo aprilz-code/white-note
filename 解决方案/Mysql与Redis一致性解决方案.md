@@ -3,13 +3,13 @@
    伪代码
 ```java
    public void 延时双删{
-   // 减少延后删除导致的其他线程读取老数据的尝尽出现。
-   delCache(key);
-   updateMysql(data);
-   // 解决缓存与mysql无法保证最终一致性的问题。
-   sleep(time);
-   delCaChe(key)
-   }   
+        // 减少延后删除导致的其他线程读取老数据的尝尽出现。
+        delCache(key);
+        updateMysql(data);
+        // 解决缓存与mysql无法保证最终一致性的问题。
+        sleep(time);
+        delCaChe(key)
+        }   
 ```      
 系统并发量不高的情况下可以使用这种方式解决
 
@@ -22,3 +22,6 @@
 3. 基于MQ或者Canal实现最终一致性(基于监听Mysql binlog)
 
 系统并发量高的情况下可以使用这种方式解决,但是也要考虑第三方中间件成本
+
+4. 使用读写锁  
+   强一致性，但是性能较差,不推荐
