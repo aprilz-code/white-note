@@ -40,6 +40,8 @@
 - **解决方案**
   - [秒杀系统难点](./解决方案/1_秒杀系统难点解决方案/README.md)
   - [Excel大批量导出](./解决方案/2_excel大批量导出解决方案/README.md)
+  - [HashMap取出任意位置元素最效率](./解决方案/3_HashMap取出任意位置元素最效率/HashMap取出任意位置元素最效率.md)
+  - [Mysql与Redis一致性解决方案](./解决方案/Mysql与Redis一致性解决方案.md)
 
 - **JVM**
   - [JVM与Java体系结构](JVM/1_内存与垃圾回收篇/1_JVM与Java体系结构/README.md)

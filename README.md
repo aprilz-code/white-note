@@ -181,6 +181,8 @@
 
 - [秒杀系统难点](./解决方案/1_秒杀系统难点解决方案/README.md)
 - [Excel大批量导出](./解决方案/2_excel大批量导出解决方案/README.md)
+- [HashMap取出任意位置元素最效率](./解决方案/3_HashMap取出任意位置元素最效率/HashMap取出任意位置元素最效率.md)
+- [Mysql与Redis一致性解决方案](./解决方案/Mysql与Redis一致性解决方案.md)
 
 ## JVM
 
@@ -395,43 +397,6 @@
 - [申请免费域名以及SSL证书的方法以及总结](./杂记/申请免费域名以及SSL证书的方法以及总结/README.md)
 - [使用GitAction完成Springboot构建Docker镜像部署并推送到阿里云镜像](./杂记/使用GitAction完成Springboot构建Docker镜像部署并推送到阿里云镜像.md)
 
-[comment]: <> (- [蘑菇博客从Eureka迁移到Nacos]&#40;./杂记/蘑菇博客从Eureka迁移到Nacos/README.md&#41;)
-
-[comment]: <> (- [Windows环境下搭建蘑菇博客]&#40;./杂记/Windows环境下搭建蘑菇博客/README.md&#41;)
-
-[comment]: <> (- [Docker搭建蘑菇博客&#40;Eureka版&#41;]&#40;./杂记/Docker搭建蘑菇博客&#40;Eureka版&#41;/README.md&#41;)
-
-[comment]: <> (- [Docker搭建蘑菇博客&#40;Nacos版&#41;]&#40;./杂记/Docker搭建蘑菇博客&#40;Nacos版&#41;/README.md&#41;)
-
-[comment]: <> (- [DockerCompose一键部署蘑菇博客&#40;Nacos版&#41;]&#40;./杂记/DockerCompose一键部署蘑菇博客&#40;Nacos版&#41;/README.md&#41;)
-
-[comment]: <> (- [蘑菇博客Nacos安装指南]&#40;./杂记/蘑菇博客Nacos安装指南/README.md&#41;)
-
-[comment]: <> (- [蘑菇博客Sentinel安装指南]&#40;./杂记/蘑菇博客Sentinel安装指南/README.md&#41;)
-
-[comment]: <> (- [蘑菇博客QQ小程序发布指南]&#40;./杂记/蘑菇博客QQ小程序发布指南/README.md&#41;)
-
-[comment]: <> (- [蘑菇博客后台登录页面增加粒子特效]&#40;./杂记/蘑菇博客后台登录页面增加粒子特效/README.md&#41;)
-
-[comment]: <> (- [蘑菇博客集成MarkDown编辑器tui-editor]&#40;./杂记/蘑菇博客集成MarkDown编辑器tui-editor/README.md&#41;)
-
-[comment]: <> (- [蘑菇博客配置七牛云存储]&#40;./杂记/蘑菇博客配置七牛云存储/README.md&#41;)
-
-[comment]: <> (- [蘑菇博客配置域名解析]&#40;./杂记/蘑菇博客配置域名解析/README.md&#41;)
-
-[comment]: <> (- [蘑菇博客切换搜索模式]&#40;./杂记/蘑菇博客切换搜索模式/README.md&#41;)
-
-[comment]: <> (- [蘑菇博客部署到阿里云服务器&#40;Eureka版&#41;]&#40;./杂记/蘑菇博客部署到阿里云服务器&#40;Eureka版&#41;/README.md&#41;)
-
-[comment]: <> (- [蘑菇博客部署到阿里云服务器&#40;Nacos版&#41;]&#40;./杂记/蘑菇博客部署到阿里云服务器&#40;Nacos版&#41;/README.md&#41;)
-
-[comment]: <> (- [蘑菇博客如何扩展新的功能和页面]&#40;./杂记/蘑菇博客如何扩展新的功能和页面/README.md&#41;)
-
-[comment]: <> (- [蘑菇博客使用GithubAction完成持续集成]&#40;./杂记/蘑菇博客使用GithubAction完成持续集成/README.md&#41;)
-
-[comment]: <> (- [蘑菇博客使用SQL语句进行搜索出的内容忽略大小写并添加高亮效果]&#40;./杂记/蘑菇博客使用SQL语句进行搜索出的内容忽略大小写并添加高亮效果/README.md&#41;)
-
-[comment]: <> (- [蘑菇博客添加本地Markdown文件上传功能]&#40;./杂记/蘑菇博客添加本地Markdown文件上传功能/README.md&#41;)
 
 - [如何给七牛云中的文件配置防盗链](./杂记/如何给七牛云中的文件配置防盗链/README.md)
 - [如何使用docsify给博客编写开发文档](杂记/如何使用docsify给博客编写开发文档/README.md)
@@ -509,24 +474,4 @@
 - [京东零售提前批Java二面](./校招面试/面经汇总/4_京东零售提前批Java二面/README.md)
 - [滴滴出行提前批Java123面](./校招面试/面经汇总/5_滴滴出行提前批Java123面/README.md)
 
-
-[comment]: <> (## 关注&交流)
-
-[comment]: <> (刚刚创建了 **QQ**/ **微信群**，目前项目还存在很多不足之处，欢迎各位老哥进群进行技术交流，为了识别同行，防止广告进入，希望加群的时候能添加备注，谢谢~)
-
-[comment]: <> (|                   微信群【备注：加群】                   |          ~~QQ群（备注：`蘑菇博客`）【群满】~~          | QQ群（备注：`蘑菇博客`）【推荐】                       |)
-
-[comment]: <> (| :------------------------------------------------------: | :----------------------------------------------------: | ------------------------------------------------------ |)
-
-[comment]: <> (| <img src="./doc/images/qq/coder_moxi.png" width="200" /> | <img src="./doc/images/qq/qqGroup2.png" width="200" /> | <img src="./doc/images/qq/qqGroup3.png" width="200" /> |)
-
-[comment]: <> (## 赞赏)
-
-[comment]: <> (如果觉得**本仓库**对您有帮助的话，希望朋友能够给博主**喝一杯咖啡**（ps.. 小伙伴赞赏的时候可以备注一下下~）)
-
-[comment]: <> (|                       微信                       |                      支付宝                       |)
-
-[comment]: <> (| :----------------------------------------------: | :-----------------------------------------------: |)
-
-[comment]: <> (| <img src="./doc/images/qq/wx.png" width="200" /> | <img src="./doc/images/qq/zfb.png" width="200" /> |)
 
