@@ -18,7 +18,7 @@
   - [ArrayList扩容机制](./Java/ArrayList扩容机制/README.md)
   - [Queue-API](./Java/Queue-API/README.md)
 - **Java8新特性**
-  - [HashMap变化](./Java8新特性/1_HashMap变化/README.md)
+  - [HashMap变化](./Java8新特性/1_HashMap变化/Java8新特性之HashMap.md)
   - [Lambda表达式](./Java8新特性/2_Lambda表达式/README.md)
   - [方法引用和构造器](./Java8新特性/3_方法引用和构造器/README.md)
   - [强大的Stream](./Java8新特性/4_强大的Stream/README.md)

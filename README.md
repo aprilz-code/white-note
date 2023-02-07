@@ -154,7 +154,7 @@
 
 > 来源Bilibili尚硅谷李贺飞老师学习视频：[Java8新特性](https://www.bilibili.com/video/BV1ut411g7E9)
 
-- [HashMap变化](./Java8新特性/1_HashMap变化/README.md)
+- [HashMap变化](./Java8新特性/1_HashMap变化/Java8新特性之HashMap.md)
 - [Lambda表达式](./Java8新特性/2_Lambda表达式/README.md)
 - [方法引用和构造器](./Java8新特性/3_方法引用和构造器/README.md)
 - [强大的Stream](./Java8新特性/4_强大的Stream/README.md)
