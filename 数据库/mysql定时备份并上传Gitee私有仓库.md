@@ -107,7 +107,10 @@ pushGitee.sh
 echo start backup mysql
 docker exec -i mysql /var/lib/mysql-files/mysqlbackup.sh
 
-echo "start push gitee"  
+echo "start push gitee" 
+
+# 切换到外部bak路径进行git提交
+cd /home/mysql8.0/mysql-files 
 
 # 将全部信息添加到暂存区
 git add *
@@ -242,7 +245,7 @@ systemctl enable crond
 首先使用 **crontab -e** 命令 ，会打开一个创建定时任务的 **vi** 窗口，在上面输入需要执行脚本的命令
 
 ```shell
-10 2 * * *   ./home/mysql8.0/mysql-files/pushGitee.sh > /root/bak.log  2>&1 &
+10 2 * * *   sh /home/mysql8.0/mysql-files/pushGitee.sh > /root/bak.log  2>&1 &
 ```
 
 第一行是云服务器，默认云监控启动的任务，暂不管他
