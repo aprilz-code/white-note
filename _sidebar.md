@@ -224,6 +224,7 @@
   - [Knife4j无法显示展开响应model](./杂记/Knife4j无法显示展开响应model/README.md)
   - [申请免费域名以及SSL证书的方法以及总结](./杂记/申请免费域名以及SSL证书的方法以及总结/README.md)
   - [使用GitAction完成Springboot构建Docker镜像部署并推送到阿里云镜像](./杂记/使用GitAction完成Springboot构建Docker镜像部署并推送到阿里云镜像.md)
+  - [maven多仓库配置](./杂记/maven多仓库配置.md)
 
 [comment]: <> (  - [蘑菇博客从Eureka迁移到Nacos]&#40;./杂记/蘑菇博客从Eureka迁移到Nacos/README.md&#41;)
 
