@@ -1,8 +1,8 @@
-# CentOS安装docker
+# 1. 官方步骤手动安装docker
 
 官方文档 ：[https://docs.docker.com/engine/install/centos/](https://docs.docker.com/engine/install/centos/)
 
-![png](https://file.losey.top/20230119docker.png)
+![wait](https://file.losey.top/20230119docker.png)
 
 ```bash
 # 1 卸载旧版本
@@ -53,4 +53,40 @@ sudo systemctl restart docker
 
 ```
 
-docker exec 服务id /bin/bash
+# 2. 使用脚本快速安装docker
+
+Docker 官方为了简化安装流程，提供了一套安装脚本，Ubuntu 和 Debian 系统可 以使用这套脚本安装：
+```
+curl -sSL https://get.docker.com/ | sh
+```
+执行这个命令后，脚本就会自动的将一切准备工作做好，并且把 Docker 安装在系 统中。
+
+不过，由于伟大的墙的原因，在国内使用这个脚本可能会出现某些下载出现错误的 情况。国内的一些云服务商提供了这个脚本的修改版本，使其使用国内的 Docker 软件源镜像安装，这样就避免了墙的干扰。
+
+阿里云的安装脚本
+```
+curl -sSL http://acs-public-mirror.oss-cn-hangzhou.aliyuncs.com/docker-engine/internet | sh -
+```
+
+个人一键安装docker以及docker-compose脚本(centos)
+
+```
+bash <(curl -s -S -L https://cdn.losey.top/sh/dockerInit.sh)
+ 
+```
+
+
+背景：
+我在本地服务器的CentOS7.9下安装了Docker，突然发现按TAB键无法自动补全，在网上找到了答案：
+
+解决：
+CentOS最小化安装，会出现一些命令无法自动补全的情况，例如在docker start 无法自动补全 start 命令，无法自动补全docker容器名字。出现这种情况的可参考以下操作：
+```shell
+#安装bash-completion
+yum install -y bash-completion
+#刷新文件
+source /usr/share/bash-completion/completions/docker
+source /usr/share/bash-completion/bash_completion
+
+```
+
