@@ -19,113 +19,8 @@
 
 参考 : 陌溪
 
-[comment]: <> (## PDF下载)
-
-[comment]: <> (本仓库中整理的笔记同时提供 **PDF** 离线版本，请扫描下方公众号『**Aprilz教你学编程**』后，回复关键字『**PDF**』，即可下载 **仓库最新 PDF 版本的笔记**。)
-
-[comment]: <> (<p align=center>)
-
-[comment]: <> (    <img src="./doc/images/qq//获取PDF.jpg" width="500" />)
-
-[comment]: <> (</p>)
 
 
-
-[comment]: <> (## 仓库地址)
-
-[comment]: <> (本仓库同步托管在Github和Gitee中)
-
-[comment]: <> (- Gitee仓库：https://gitee.com/moxi159753/LearningNotes)
-
-[comment]: <> (- Github仓库：https://github.com/moxi624/LearningNotes)
-
-[comment]: <> (## 个人博客搭建)
-
-[comment]: <> (如果想搭建个人的博客系统，可以购买优惠服务器后，参考 [20分钟部署一个微服务架构的博客系统]&#40;https://www.bilibili.com/video/BV13y4y1V7Us&#41;  在服务器搭建 [蘑菇博客项目]&#40;https://gitee.com/moxi159753/mogu_blog_v2&#41; 用于知识点的梳理)
-
-[comment]: <> (> 【阿里云】云服务器狂欢特惠，**2核2G5M** 轻量级应用服务器 **60** 元/年【博主目前使用】 [点我传送]&#40;https://www.aliyun.com/minisite/goods?userCode=w7aungxw&#41;)
-
-[comment]: <> (>)
-
-[comment]: <> (> 【腾讯云】云产品限时秒杀，爆款 **2核4G8M** 云服务器，首年**74**元/年【博主强烈推荐】 [点我进入]&#40;https://curl.qcloud.com/zry6xub9&#41;)
-
-[comment]: <> (## 公众号文章)
-
-[comment]: <> (> 来源Aprilz的个人公众号：**[Aprilz教你学编程]&#40;https://gitee.com/moxi159753/wx_picture/raw/master/picture/%E5%85%AC%E4%BC%97%E5%8F%B7.jpg&#41;**)
-
-[comment]: <> (- [大型生产事故,开源项目蘑菇博客差点被删库]&#40;http://www.moguit.cn/#/info?blogOid=392&#41;)
-
-[comment]: <> (- [蘑菇博客从0到2000Star，分享我的Java自学路线图]&#40;http://www.moguit.cn/#/info?blogOid=581&#41;)
-
-[comment]: <> (- [Aprilz在开源社区逛了几个月, 终于写下了蘑菇博客的开源文档]&#40;http://www.moguit.cn/#/info?blogOid=347&#41;)
-
-[comment]: <> (- [从三本院校到斩获字节跳动后端研发Offer-讲述我的故事]&#40;http://www.moguit.cn/#/info?blogOid=587&#41;)
-
-[comment]: <> (- [年轻人不讲码德,竟然用1核2G服务器来部署蘑菇博客]&#40;http://www.moguit.cn/#/info?blogOid=96&#41;)
-
-[comment]: <> (- [蘑菇博客前端页面如何引入矢量图标]&#40;http://www.moguit.cn/#/info?blogOid=39&#41;)
-
-[comment]: <> (- [Windows+VMware快速搭建蘑菇博客本地开发环境]&#40;http://www.moguit.cn/#/info?blogOid=583&#41;)
-
-[comment]: <> (- [Aprilz在公众号摸滚翻爬半个月，整理的入门指南]&#40;http://www.moguit.cn/#/info?blogOid=585&#41;)
-
-[comment]: <> (- [Nacos出现重大安全漏洞,开源项目险遭脱库]&#40;http://www.moguit.cn/#/info?blogOid=586&#41;)
-
-[comment]: <> (- [还在人肉运维？看看蘑菇博客是如何实现自动化部署]&#40;http://www.moguit.cn/#/info?blogOid=13&#41;)
-
-[comment]: <> (- [使用IDEA发布蘑菇博客Docker镜像到服务器]&#40;http://www.moguit.cn/#/info?blogOid=588&#41;)
-
-[comment]: <> (- [Aprilz在Github网上冲浪时遇到的问题]&#40;http://www.moguit.cn/#/info?blogOid=589&#41;)
-
-[comment]: <> (- [Aprilz终于有时间写代码了]&#40;http://www.moguit.cn/#/info?blogOid=592&#41;)
-
-[comment]: <> (- [开源项目蘑菇博客是如何集成第三方登录]&#40;http://www.moguit.cn/#/info?blogOid=247&#41;)
-
-[comment]: <> (- [SpringBoot项目启动时增加自定义Banner]&#40;http://www.moguit.cn/#/info?blogOid=245&#41;)
-
-[comment]: <> (- [开源项目蘑菇博客如何集成Minio对象存储服务器]&#40;http://www.moguit.cn/#/info?blogOid=278&#41;)
-
-[comment]: <> (- [读者问:有没有高效的记视频笔记方法？]&#40;http://www.moguit.cn/#/info?blogOid=594&#41;)
-
-[comment]: <> (- [不限速的阿里云盘PC桌面版本来了~]&#40;http://www.moguit.cn/#/info?blogOid=596&#41;)
-
-[comment]: <> (- [万字长文带你学习ElasticSearch]&#40;http://www.moguit.cn/#/info?blogOid=375&#41;)
-
-[comment]: <> (- [一文带你了解轻量性日志采集器Beats的使用]&#40;http://www.moguit.cn/#/info?blogOid=203&#41;)
-
-[comment]: <> (- [如何使用一条命令完成蘑菇博客的部署？]&#40;http://www.moguit.cn/#/info?blogOid=597&#41;)
-
-[comment]: <> (- [双非本科，折戟成沙铁未销，九面字节终上岸！]&#40;http://www.moguit.cn/#/info?blogOid=598&#41;)
-
-[comment]: <> (- [如何给蘑菇博客搭建一套分布式日志收集系统？]&#40;http://www.moguit.cn/#/info?blogOid=436&#41;)
-
-[comment]: <> (- [蘑菇博客被跨站脚本攻击了？]&#40;http://www.moguit.cn/#/info?blogOid=613&#41;)
-
-[comment]: <> (- [如何给蘑菇博客搭建一套全链路追踪模块？]&#40;http://www.moguit.cn/#/info?blogOid=95&#41;)
-
-[comment]: <> (- [Aprilz在字节跳动工作两周啦~]&#40;http://www.moguit.cn/#/info?blogOid=600&#41;)
-
-[comment]: <> (- [为什么你们制作镜像只有5MB，而我却200MB？]&#40;http://www.moguit.cn/#/info?blogOid=573&#41;)
-
-[comment]: <> (- [面试官：谈谈你对ThreadLocal的理解？]&#40;http://www.moguit.cn/#/info?blogOid=54&#41;)
-
-[comment]: <> (- [字节二面：蘑菇博客是怎么解决缓存穿透的]&#40;http://www.moguit.cn/#/info?blogOid=602&#41;)
-
-[comment]: <> (- [还在用破解IDEA？Aprilz手把手教如何申请正版]&#40;http://www.moguit.cn/#/info?blogOid=604&#41;)
-
-[comment]: <> (- [32图，教你部署一个博客小程序]&#40;http://www.moguit.cn/#/info?blogOid=605&#41;)
-
-[comment]: <> (- [为什么我向开源项目作者提问，他却不理我？]&#40;http://www.moguit.cn/#/info?blogOid=311&#41;)
-
-[comment]: <> (- [14次架构升级，淘宝是如何从单机到支持千万级别并发？]&#40;http://www.moguit.cn/#/info?blogOid=71&#41;)
-
-[comment]: <> (- [Aprilz让公司损失了100万。。。]&#40;http://www.moguit.cn/#/info?blogOid=606&#41;)
-
-[comment]: <> (- [如何用可视化工具，管理蘑菇博客中的微服务组件？]&#40;http://www.moguit.cn/#/info?blogOid=570&#41;)
-
-[comment]: <> (- [Aprilz准备买房啦~]&#40;http://www.moguit.cn/#/info?blogOid=611&#41;)
-
-[comment]: <> (- [学妹问：我可以用蘑菇博客作为毕设么？]&#40;http://www.moguit.cn/#/info?blogOid=612&#41;)
 
 ## Java
 
@@ -446,6 +341,7 @@
 - [MySQL索引](./数据库/MySQL索引/README.md)
 - [mysql定时备份并上传Gitee私有仓库](./数据库/mysql定时备份并上传Gitee私有仓库.md)
 - [Mysql大表查询慢怎么优化](./数据库/Mysql大表查询慢怎么优化.md)
+- [单表查询和多表连接查询哪个效率更快？](./数据库/单表查询和多表连接查询哪个效率更快.md)
 
 ## 操作系统
 
