@@ -101,7 +101,7 @@ disconnect_timeout=60
 客户端选无配置文件模式,都走服务端web配置
 
 ```shell
-docker run -d --name npc --net=host ffdfgdfg/npc -server=serverip:port -vkey=key -type=tcp
+docker run -d  --restart=always --privileged=true --name npc --net=host ffdfgdfg/npc -server=serverip:port -vkey=key -type=tcp
 
 ```
 
