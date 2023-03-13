@@ -90,3 +90,37 @@ source /usr/share/bash-completion/bash_completion
 
 ```
 
+### 彻底卸载清除所有docker内容
+1. 杀死所有运行容器
+```shell
+docker kill $(docker ps -a -q)
+``` 
+
+2. 删除所有容器
+```shell
+docker rm $(docker ps -a -q)
+``` 
+3. 删除所有镜像
+```shell
+docker rmi $(docker images -q)
+```
+4.  停止 docker 服务
+```shell
+systemctl stop docker
+```
+5.  删除存储目录
+```shell
+ rm -rf /etc/docker
+ rm -rf /run/docker
+ rm -rf /var/lib/dockershim
+ rm -rf /var/lib/docker
+```
+6.  卸载 docker
+```shell
+yum list installed | grep docker
+```
+7.  卸载相关包
+```shell
+yum remove -y containerd.io.x86_64  docker-ce.x86_64  docker-ce-cli.x86_64 
+```
+
