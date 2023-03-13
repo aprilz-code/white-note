@@ -329,7 +329,7 @@
 - [大Aprilz话谈IO模型](./Redis/大Aprilz话谈IO模型/README.md)
 - [IO多路复用底层原理](./Redis/IO多路复用底层原理/README.md)
 - [Redis实现分布式锁](./Redis/Redis实现分布式锁/README.md)
-- [Redis实现分布式锁](./Redis/Redis配置解析.md)
+- [Redis配置解析](./Redis/Redis配置解析.md)
 
 ## JavaScript
 
