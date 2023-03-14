@@ -22,8 +22,8 @@ sudo yum install -y yum-utils
 # 3 设置存储库  （国内会报错，所以不按官方文档走） 这里我们采用aliyun库
 sudo yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
 
-# 4 安装docker 一路按Y
-sudo yum install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+# 4 安装docker 
+sudo yum install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
 # 5 检测docker版本
 docker version
