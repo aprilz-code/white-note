@@ -192,6 +192,7 @@
   - [使用自定义日志接口收集用户访问日志](./SpringBoot/使用自定义日志接口收集用户访问日志/README.md)
   - [Bean的生命周期](./SpringBoot/Bean的生命周期/README.md)
   - [Hibernate Validator常用注解](./SpringBoot/HibernateValidator常用注解/README.md)
+  - [Springboot集成Hibernate-Validator实现校验,自定义校验中无法注入springBean](./SpringBoot/Springboot集成Hibernate-Validator实现校验,自定义校验中无法注入springBean.md)
 - **Vue**
   - [Axios中拦截器的使用](./Vue/Axios中拦截器的使用/README.md)
   - [ElementUI中Upload如何批量上传](./Vue/ElementUI中Upload如何批量上传/README.md)
@@ -295,7 +296,7 @@
   - [大白话谈IO模型](./Redis/大白话谈IO模型/README.md)
   - [IO多路复用底层原理](./Redis/IO多路复用底层原理/README.md)
   - [Redis实现分布式锁](./Redis/Redis实现分布式锁/README.md)
-  - [Redis实现分布式锁](./Redis/Redis配置解析.md)
+  - [Redis配置解析](./Redis/Redis配置解析.md)
 - **JavaScript**
   - [Js设置二级域名和顶级域名下共享Cookie](./JavaScript/Js设置二级域名和顶级域名下共享Cookie/README.md)
   - [如何通过Js将时间转换为刚刚_几分钟前_几小时前](./JavaScript/如何通过Js将时间转换为刚刚_几分钟前_几小时前/README.md)
