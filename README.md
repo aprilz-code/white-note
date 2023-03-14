@@ -83,6 +83,12 @@
 - [HashMap取出任意位置元素最效率](./解决方案/3_HashMap取出任意位置元素最效率/HashMap取出任意位置元素最效率.md)
 - [Mysql与Redis一致性解决方案](./解决方案/Mysql与Redis一致性解决方案.md)
 
+
+## 软路由
+
+- [Pve上使用keepalive脚本保活虚拟机](./软路由/Pve上使用keepalive脚本保活虚拟机.md)
+
+
 ## JVM
 
 > 来源Bilibili尚硅谷宋红康老师JVM教程：[硅谷2020最新版宋红康JVM教程](https://www.bilibili.com/video/BV1PJ411n7xZ)

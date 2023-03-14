@@ -48,6 +48,10 @@
   - [HashMap取出任意位置元素最效率](./解决方案/3_HashMap取出任意位置元素最效率/HashMap取出任意位置元素最效率.md)
   - [Mysql与Redis一致性解决方案](./解决方案/Mysql与Redis一致性解决方案.md)
 
+- **软路由**
+  - [Pve上使用keepalive脚本保活虚拟机](./软路由/Pve上使用keepalive脚本保活虚拟机.md)
+
+
 - **JVM**
   - [JVM与Java体系结构](JVM/1_内存与垃圾回收篇/1_JVM与Java体系结构/README.md)
   - [类加载子系统](./JVM/1_内存与垃圾回收篇/2_类加载子系统/README.md)
