@@ -57,7 +57,9 @@ crontab -e
 并添加以下内容
 ```shell
   */10 * * * *  bash /home/keepalive.sh  100 centos7.6 192.168.1.20 >> /home/logs/keepalive/centos7.6.log  2>&1 &
+  0 1 1 * *   echo > /home/logs/keepalive/centos7.6.log
 ```
-每10分钟检测一次centos活跃性，可根据自己的需求进行选择cron表达式
+每10分钟检测一次centos活跃性，可根据自己的需求进行选择cron表达式,
+下面这个定时任务每月1号1点清空log日志
 > tips： [在线cron表达式查询](https://tool.lu/crontab/)
 
