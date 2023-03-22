@@ -67,6 +67,7 @@
 
 ## MQ
 - [RocketMQ中Push模式有感](./MQ/RocketMQ中Push模式有感.md)
+- [RocketMQ中NameServer有感](./MQ/RocketMQ中NameServer有感.md)
 
 ## 生产排查
 
