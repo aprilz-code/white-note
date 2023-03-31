@@ -301,6 +301,7 @@
   - [IO多路复用底层原理](./Redis/IO多路复用底层原理/README.md)
   - [Redis实现分布式锁](./Redis/Redis实现分布式锁/README.md)
   - [Redis配置解析](./Redis/Redis配置解析.md)
+  - [Redis常用数据类型以及使用场景](./Redis/Redis常用数据类型以及使用场景.md)
 - **JavaScript**
   - [Js设置二级域名和顶级域名下共享Cookie](./JavaScript/Js设置二级域名和顶级域名下共享Cookie/README.md)
   - [如何通过Js将时间转换为刚刚_几分钟前_几小时前](./JavaScript/如何通过Js将时间转换为刚刚_几分钟前_几小时前/README.md)
