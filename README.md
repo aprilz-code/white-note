@@ -65,6 +65,10 @@
 ## 源码解析
 - [Nacos解析](./源码解析/Nacos解析.md)
 
+## MQ
+- [RocketMQ中Push模式有感](./MQ/RocketMQ中Push模式有感.md)
+- [RocketMQ中NameServer有感](./MQ/RocketMQ中NameServer有感.md)
+
 ## 生产排查
 
 - [CPU飙高](./生产排查/CPU飙高/README.md)
@@ -336,6 +340,7 @@
 - [IO多路复用底层原理](./Redis/IO多路复用底层原理/README.md)
 - [Redis实现分布式锁](./Redis/Redis实现分布式锁/README.md)
 - [Redis配置解析](./Redis/Redis配置解析.md)
+- [Redis常用数据类型以及使用场景](./Redis/Redis常用数据类型以及使用场景.md)
 
 ## JavaScript
 
@@ -375,12 +380,6 @@
 - [小米运动修改支付宝微信步数(支持定时)](./mi/小米运动修改支付宝微信步数(支持定时)/README.md)
 
 
-## 面经
 
-- [京东面经](./校招面试/面经汇总/1_京东面经/README.md)
-- [字节跳动面试总结](./校招面试/面经汇总/2_字节跳动面试总结/README.md)
-- [京东零售提前批Java一面](./校招面试/面经汇总/3_京东零售提前批Java一面/README.md)
-- [京东零售提前批Java二面](./校招面试/面经汇总/4_京东零售提前批Java二面/README.md)
-- [滴滴出行提前批Java123面](./校招面试/面经汇总/5_滴滴出行提前批Java123面/README.md)
 
 
