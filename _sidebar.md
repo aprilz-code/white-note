@@ -54,6 +54,7 @@
 
 - **软路由**
   - [Pve上使用keepalive脚本保活虚拟机](./软路由/Pve上使用keepalive脚本保活虚拟机.md)
+  - [Proxmox-VE(PVE)添加新硬盘存储](./软路由/Proxmox-VE(PVE)添加新硬盘存储.md)
 
 
 - **JVM**
