@@ -1,7 +1,7 @@
 ## 1.服务器设置密钥 为了能让备份好的数据脚本，能够上传到 Gitee 私有仓库中 首先，就需要创建秘钥，用于配置服务器的无密提交，通过下面命令创建秘钥
 
 ```shell
-ssh-keygen -t rsa -C "liushaohui777@163.com"
+ssh-keygen -t rsa -C "aprilz777@163.com"
 ```
 
 
@@ -77,7 +77,7 @@ ssh -T git@gitee.com
 
 ```shell
 git config --global user.name "Aprilz"
-git config --global user.email "liushaohui777@163.com"
+git config --global user.email "aprilz777@163.com"
 ```
 
 注意下面两个文件待会有用
@@ -89,15 +89,15 @@ mysqlbackup.sh
 
 dt_now=`date +%Y%m%d`
 
-cd /var/lib/mysql-files/bak
+cd /home/mysql8.0/mysql-files/bak
 
 mkdir $dt_now
 
-find  /var/lib/mysql-files/bak/  -mtime +21 -exec rm -rf {} \;（删除超过21天的备份）
+find  /home/mysql8.0/mysql-files/bak/  -mtime +21 -exec rm -rf {} \;（删除超过21天的备份）
 
 echo "start backup mysql"    #（这里我们随便找一个数据库为例）
-#mysqldump -uroot -ppeiqi666 mi > /var/lib/mysql-files/bak/$dt_now/mi.sql
-mysqldump --defaults-extra-file=/etc/my.cnf mi > /var/lib/mysql-files/bak/$dt_now/mi.sql
+#mysqldump -uroot -ppeiqi666 mi > /home/mysql8.0/mysql-files/bak/$dt_now/mi.sql
+mysqldump --defaults-extra-file=/etc/my.cnf mi > /home/mysql8.0/mysql-files/bak/$dt_now/mi.sql
 ```
 
 pushGitee.sh
@@ -105,7 +105,7 @@ pushGitee.sh
 ```shell
 #!/bin/sh
 echo start backup mysql
-docker exec -i mysql /var/lib/mysql-files/mysqlbackup.sh
+docker exec -i mysql /home/mysql8.0/mysql-files/mysqlbackup.sh
 
 echo "start push gitee" 
 
@@ -152,7 +152,7 @@ services:
     volumes:
       - ./mysql8.0/my.cnf:/etc/mysql/conf.d/my.cnf
       - ./mysql8.0/data:/var/lib/mysql
-      - ./mysql8.0/mysql-files:/var/lib/mysql-files
+      - ./mysql8.0/mysql-files:/home/mysql8.0/mysql-files
       - ./mysql8.0/init/:/docker-entrypoint-initdb.d/
     networks:
       - ap
@@ -245,7 +245,7 @@ systemctl enable crond
 首先使用 **crontab -e** 命令 ，会打开一个创建定时任务的 **vi** 窗口，在上面输入需要执行脚本的命令
 
 ```shell
-10 2 * * *   sh /home/mysql8.0/mysql-files/pushGitee.sh > /root/bak.log  2>&1 &
+10 2 * * *   sh  /home/mysql8.0/mysql-files/pushGitee.sh > /root/bak.log  2>&1 &
 ```
 
 第一行是云服务器，默认云监控启动的任务，暂不管他
