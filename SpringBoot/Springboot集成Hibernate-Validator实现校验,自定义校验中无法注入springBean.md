@@ -48,17 +48,17 @@ public class ValidatorConfig {
 
 excel中同上，Validators类中使用自定义validators
 ```java
-package cn.aprilz.excel.core;
+package com.hujiang.excel.core;
 
 import cn.hutool.extra.spring.SpringUtil;
 
-import javax.validation.*;
+import javax.validation.ConstraintViolation;
+import javax.validation.ValidationException;
+import javax.validation.Validator;
 import java.util.Set;
 
 /**
  * 校验工具
- *
- * @author L.cm
  */
 public final class Validators {
 
@@ -68,11 +68,9 @@ public final class Validators {
     private static final Validator VALIDATOR;
 
     static {
-        
 //        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
 //        VALIDATOR = factory.getValidator();
-        //使用自定义validator
-        VALIDATOR= SpringUtil.getBean("validator");
+        VALIDATOR = SpringUtil.getBean(Validator.class);
     }
 
     /**
@@ -91,6 +89,7 @@ public final class Validators {
     }
 
 }
+
 
 ```
 
