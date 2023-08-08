@@ -42,8 +42,8 @@
 
 - **生产问题**
   - [记录点赞数异步化解决方案](./生产问题/记录点赞数异步化解决方案/README.md)
-  - [JVM 优化踩坑记](https://www.javazhiyin.com/106110.html)
-  - [MySQL 上亿大表如何优化？](https://www.javazhiyin.com/106056.html)
+  - [JVM 优化踩坑记](https://www.bmabk.com/index.php/post/category/zhiyin)
+  - [MySQL 上亿大表如何优化？](https://www.bmabk.com/index.php/post/category/zhiyin)
   - [nps导致cpu飙升90+%](./生产问题/nps导致cpu飙升90+%，解决方案.md)
 
 - **解决方案**
