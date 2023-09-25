@@ -8,7 +8,7 @@ echo "start push gitee"
 cd /home/mysql8.0/mysql-files 
 
 # 将全部信息添加到暂存区
-git add *
+git add -A .
 
 # 提交
 git commit -m "commit"
