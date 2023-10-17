@@ -288,6 +288,7 @@
 - [OCR文字识别软件](./杂记/OCR文字识别软件/README.md)
 - [如何向开源社区正确提问](./杂记/如何向开源社区正确提问/README.md)
 - **Linux**
+  - [CentOS下增加虚拟内存(swap)](./Linux/CentOS下增加虚拟内存(swap)/CentOS下增加虚拟内存(swap).md) 
   - [Linux下查看文件和文件夹占用空间大小](./Linux/Linux下查看文件和文件夹占用空间大小/README.md)
   - [Linux下通过nginx配置https](./Linux/Linux下通过nginx配置https/README.md)
   - [CentOS下如何安装Nginx](./Linux/CentOS下如何安装Nginx/README.md)
