@@ -150,7 +150,7 @@ services:
     ports:
       - 3306:3306
     volumes:
-      - ./mysql8.0/my.cnf:/etc/mysql/conf.d/my.cnf
+      - ./mysql8.0/my.cnf:/etc/my.cnf
       - ./mysql8.0/data:/var/lib/mysql
       - ./mysql8.0/mysql-files:/home/mysql8.0/mysql-files
       - ./mysql8.0/init/:/docker-entrypoint-initdb.d/
