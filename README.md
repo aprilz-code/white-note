@@ -44,6 +44,7 @@
 - [ArrayList扩容机制](./Java/ArrayList扩容机制/README.md)
 - [Queue-API](./Java/Queue-API/README.md)
 - [Mybatis-LocalDateTime作为传参.0以及.9999毫秒数问题](./Java/Mybatis-LocalDateTime作为传参.0以及.9999毫秒数问题/README.md)
+- [当Transactional碰到锁，有个大坑，要小心。](./Java/当Transactional碰到锁，有个大坑，要小心。/README.md)
 
 
 ## Java8新特性
