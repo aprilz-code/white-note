@@ -37,7 +37,7 @@ MySQL是一个经过互联网检验过的生产级别的成熟数据库，对于
 
 
 在两个表进行连接时，用**小表来驱动大表**可以提高系统的执行效率。
- ```sql
+ ```
 两表连接时，先执行的是两个表的笛卡尔积，接着是 on 的条件筛选，然后是 join 类型进行外部行的添加。
 
 如果是 inner join，没有什么差别；
@@ -45,9 +45,11 @@ MySQL是一个经过互联网检验过的生产级别的成熟数据库，对于
 如果是 left join，就应该把大表放在后面；
 
 如果是 right join，就应该把大表放在前面。
-
+```
  
-select * from A where id in(select id from b),
+
+```sql
+select * from A where id in(select id from b);
+```
 
 当B表的数据集必须小于A表的数据集时，用in优于exists.
-```
