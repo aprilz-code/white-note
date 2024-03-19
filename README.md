@@ -295,6 +295,7 @@
 
 ## 杂记
 - [idea自动提交检查](./杂记/idea自动提交检查/README.md)
+- [【规范】看看人家Git提交描述，那叫一个规矩](./杂记/【规范】看看人家Git提交描述，那叫一个规矩/README.md)
 - [CKEditor前端样式和编辑器的样式不一致的问题](./杂记/CKEditor前端样式和编辑器的样式不一致的问题/README.md)
 - [Ckeidtor中上传图片添加token信息](./杂记/ckeidtor中上传图片添加token信息/README.md)
 - [CLion搭建C语言开发环境](./杂记/CLion搭建C语言开发环境/README.md)
