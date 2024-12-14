@@ -313,6 +313,7 @@
 - [申请免费域名以及SSL证书的方法以及总结](./杂记/申请免费域名以及SSL证书的方法以及总结/README.md)
 - [使用GitAction完成Springboot构建Docker镜像部署并推送到阿里云镜像](./杂记/使用GitAction完成Springboot构建Docker镜像部署并推送到阿里云镜像.md)
 - [maven多仓库配置](./杂记/maven多仓库配置.md)
+- [Certd私有化ssl证书自动续签](./杂记/Certd私有化ssl证书自动续签/README.md)
 
 
 - [如何给七牛云中的文件配置防盗链](./杂记/如何给七牛云中的文件配置防盗链/README.md)
