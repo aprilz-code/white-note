@@ -246,6 +246,7 @@
   - [使用GitAction完成Springboot构建Docker镜像部署并推送到阿里云镜像](./杂记/使用GitAction完成Springboot构建Docker镜像部署并推送到阿里云镜像.md)
   - [maven多仓库配置](./杂记/maven多仓库配置.md)
   - [Certd私有化ssl证书自动续签](./杂记/Certd私有化ssl证书自动续签/README.md)
+  - [Java使用Selenium+ChromeDrive驱动爬取网页内容](./杂记/Java使用Selenium+ChromeDrive驱动爬取网页内容/README.md)
 
 [comment]: <> (  - [蘑菇博客从Eureka迁移到Nacos]&#40;./杂记/蘑菇博客从Eureka迁移到Nacos/README.md&#41;)
 
